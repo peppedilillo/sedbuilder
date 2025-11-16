@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sedbuilder"
+description = "A client to the ASI-SSDC's SED Builder API. "
+keywords = ["astrophysics", "astronomy", "ssdc"]
+version = "0.1.0"
+authors = [
+    { name="Giuseppe Dilillo", email="peppedilillo@gmail.com" },
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "astropy~=7.1",
+    "httpx~=0.28",
+    "pydantic~=2.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstrument~=5.0",
+    "black~=24.10",
+    "isort~=5.13",
+    "ipython~=8.31",
+]
+docs = [
+    "mkdocs~=1.6",
+    "mkdocs-material~=9.7",
+]
+
