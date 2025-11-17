@@ -166,6 +166,8 @@ MAP_COLUMN_UNIT = {
     "AngularDistance": u.arcsec,
     "StartTime": u.d,
     "StopTime": u.d,
+    "ErrorRadius": u.arcsec,
+    "Nh": u.cm**-2,
 }
 
 
@@ -202,18 +204,21 @@ class SEDResponse(BaseModel):
         rows = []
 
         for catalog_entry in self.Catalogs:
-            catalog = catalog_entry.Catalog.CatalogName
-
             for source_data in catalog_entry.SourceData:
                 # TODO: remove once API is fixed to return data for warning-tagged rows
                 if not isinstance(source_data, SourceData):
                     continue
 
-                row = {"Catalog": catalog, **source_data.model_dump()}
+                row = {
+                    **source_data.model_dump(),
+                    "Catalog": catalog_entry.Catalog.CatalogName,
+                    "ErrorRadius": catalog_entry.Catalog.ErrorRadius,
+                }
                 rows.append(row)
 
         table = Table(rows=rows)
-        for column, unit in MAP_COLUMN_UNIT.items():
-            if column in table.columns:
-                table[column].unit = unit
+        for column in table.columns:
+            if column in MAP_COLUMN_UNIT:
+                table[column].unit = MAP_COLUMN_UNIT[column]
+        table.meta["Nh"] = self.Properties.Nh * MAP_COLUMN_UNIT["Nh"]
         return table

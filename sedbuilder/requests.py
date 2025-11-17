@@ -20,6 +20,7 @@ def get_data(
     ra: Annotated[float, Field(ge=0.0, lt=360.0, description="Right ascension in degrees.")],
     dec: Annotated[float, Field(ge=-90.0, le=90.0, description="Declination in degrees.")],
     fmt: Literal["raw", "astropy"] = "astropy",
+    timeout: Annotated[float, Field(gt=0.0, description="Request timeout in seconds.")] = 30.0,
 ) -> dict | Table:
     """Retrieve SED data from astronomical coordinates.
 
@@ -32,6 +33,7 @@ def get_data(
         fmt: Output format for the data. Options:
                 - "raw": Returns a dictionary from the response JSON.
                 - "astropy": Returns an astropy Table with flattened catalog data.
+        timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
         If format="raw": Dictionary containing the complete API response.
@@ -40,7 +42,8 @@ def get_data(
 
     Raises:
         ValidationError: If coordinates are out of valid range.
-        httpx.HTTPError: If the HTTP request fails.
+        TimeoutError: If the API request exceeds the timeout.
+        RuntimeError: If the API request fails for other reasons.
 
     Example:
         >>> # Get data as astropy Table (default)
@@ -48,7 +51,16 @@ def get_data(
         >>> # Get raw JSON response
         >>> data = get_data(ra=194.04625, dec=-5.789167, fmt="raw")
     """
-    r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec))
+    try:
+        r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
+        r.raise_for_status()
+    except httpx.ReadTimeout as _:
+        raise TimeoutError(f"API request timed out after {timeout}s. Try increasing the timeout parameter.")
+    except httpx.HTTPStatusError as e:
+        raise RuntimeError(f"API request failed with status code {e.response.status_code}.")
+    except httpx.RequestError as e:
+        raise RuntimeError(f"An error occurred while requesting {e.request.url!r}.")
+
     response = SEDResponse(**r.json())
 
     if fmt == "raw":
