@@ -3,23 +3,20 @@
 This module provides functions to interact with the ASI-SSDC SED Builder
 REST API endpoints.
 """
+
 from typing import Annotated
 
 import httpx
-from pydantic import Field, validate_call
+from pydantic import Field
+from pydantic import validate_call
+
 from ._endpoints import APIPaths
 
 
 @validate_call
 def get_data(
-        ra: Annotated[
-            float,
-            Field(ge=0., lt=360., description="Right ascension in degrees.")
-        ],
-        dec: Annotated[
-            float,
-            Field(ge=-90., le=90., description="Declination in degrees.")
-        ],
+    ra: Annotated[float, Field(ge=0.0, lt=360.0, description="Right ascension in degrees.")],
+    dec: Annotated[float, Field(ge=-90.0, le=90.0, description="Declination in degrees.")],
 ) -> dict:
     """Retrieve SED data for astronomical coordinates.
 

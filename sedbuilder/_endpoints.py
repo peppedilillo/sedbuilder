@@ -3,6 +3,7 @@
 This module contains the base URL and endpoint path builders for
 the supported endpoints of the ASI-SSDC SED Builder REST API.
 """
+
 from enum import Enum
 from typing import Callable
 
@@ -29,9 +30,9 @@ class APIPaths(Enum):
     Each member stores a callable that builds the complete URL for
     the corresponding API endpoint.
     """
+
     GET_DATA: Callable = _get_data
 
     def __call__(self, *args, **kwargs):
         """Make enum members callable by delegating to their value."""
         return self.value(*args, **kwargs)
-

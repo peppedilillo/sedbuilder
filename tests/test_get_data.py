@@ -1,7 +1,10 @@
 """Tests for the `get_data` interface."""
-import pytest
+
+from unittest.mock import Mock
+from unittest.mock import patch
+
 from pydantic import ValidationError
-from unittest.mock import patch, Mock
+import pytest
 
 from sedbuilder.requests import get_data
 
@@ -68,13 +71,13 @@ class TestGetDataValidation:
     def test_special_float_values(self):
         """Test special float values (NaN, Inf)."""
         with pytest.raises(ValidationError):
-            get_data(ra=float('nan'), dec=0.0)
+            get_data(ra=float("nan"), dec=0.0)
 
         with pytest.raises(ValidationError):
-            get_data(ra=float('inf'), dec=0.0)
+            get_data(ra=float("inf"), dec=0.0)
 
         with pytest.raises(ValidationError):
-            get_data(ra=0.0, dec=float('-inf'))
+            get_data(ra=0.0, dec=float("-inf"))
 
 
 class TestGetDataHTTP:
