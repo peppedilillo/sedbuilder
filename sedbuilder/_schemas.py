@@ -4,8 +4,10 @@ This module defines the schema for the JSON responses returned by the
 SED Builder API, providing validation and type safety.
 """
 
-from typing import Annotated, Literal, Optional
+from typing import Annotated, Optional
 
+from astropy.table import Table
+import astropy.units as u
 from pydantic import BaseModel
 from pydantic import Field
 
@@ -29,7 +31,13 @@ class Properties(BaseModel):
         Nh: Hydrogen column density in cm^-2 along the line of sight.
     """
 
-    Nh: Annotated[float, Field(ge=0.0, description="Hydrogen column density in cm^-2.")]
+    Nh: Annotated[
+        float,
+        Field(
+            ge=0.0,
+            description="Hydrogen column density in cm^-2.",
+        ),
+    ]
 
 
 class Catalog(BaseModel):
@@ -41,7 +49,13 @@ class Catalog(BaseModel):
     """
 
     CatalogName: str
-    ErrorRadius: Annotated[float, Field(ge=0.0, description="Error radius in arcsec.")]
+    ErrorRadius: Annotated[
+        float,
+        Field(
+            ge=0.0,
+            description="Error radius in arcsec.",
+        ),
+    ]
 
 
 class SourceData(BaseModel):
@@ -50,19 +64,69 @@ class SourceData(BaseModel):
     This model represents a single row from a catalog.
     """
 
-    Frequency: Annotated[float, Field(gt=0.0, description="Frequency of the observation in Hz.")]
-    Nufnu: Annotated[float, Field(description="Spectral flux density (nu*F_nu) in erg/cm^2/s.")]
-    FrequencyError: Annotated[float, Field(ge=0.0, description="Error on frequency in Hz.")]
-    NufnuError: Annotated[float, Field(description="Error on spectral flux density in erg/cm^2/s.")]
-    Name: Annotated[Optional[str], Field(default=None, description="Optional source name in the catalog.")]
-    AngularDistance: Annotated[
-        Optional[float], Field(default=None, ge=0.0, description="Angular distance from query position in arcsec.")
+    Frequency: Annotated[
+        float,
+        Field(
+            gt=0.0,
+            description="Frequency of the observation in Hz.",
+        ),
     ]
-    StartTime: Annotated[Optional[float], Field(default=None, ge=0.0, description="Start time of observation in MJD.")]
-    StopTime: Annotated[Optional[float], Field(default=None, ge=0.0, description="End time of observation in MJD.")]
+    Nufnu: Annotated[
+        float,
+        Field(
+            description="Spectral flux density (nu*F_nu) in erg/cm^2/s.",
+        ),
+    ]
+    FrequencyError: Annotated[
+        float,
+        Field(
+            ge=0.0,
+            description="Error on frequency in Hz.",
+        ),
+    ]
+    NufnuError: Annotated[
+        float,
+        Field(
+            description="Error on spectral flux density in erg/cm^2/s.",
+        ),
+    ]
+    Name: Annotated[
+        Optional[str],
+        Field(
+            default=None,
+            description="Optional source name in the catalog.",
+        ),
+    ]
+    AngularDistance: Annotated[
+        Optional[float],
+        Field(
+            default=None,
+            ge=0.0,
+            description="Angular distance from query position in arcsec.",
+        ),
+    ]
+    StartTime: Annotated[
+        Optional[float],
+        Field(
+            default=None,
+            ge=0.0,
+            description="Start time of observation in MJD.",
+        ),
+    ]
+    StopTime: Annotated[
+        Optional[float],
+        Field(
+            default=None,
+            ge=0.0,
+            description="End time of observation in MJD.",
+        ),
+    ]
     Info: Annotated[
         Optional[str],
-        Field(default=None, description="Optional information flag (e.g., 'Upper Limit', quality notes)."),
+        Field(
+            default=None,
+            description="Optional information flag (e.g., 'Upper Limit', quality notes).",
+        ),
     ]
 
 
@@ -74,7 +138,11 @@ class UpperLimits(BaseModel):
     """
 
     Info: Annotated[
-        str, Field(default=None, description="Optional information flag (e.g., 'Upper Limit', quality notes).")
+        str,
+        Field(
+            default=None,
+            description="Optional information flag (e.g., 'Upper Limit', quality notes).",
+        ),
     ]
 
 
@@ -88,6 +156,17 @@ class CatalogEntry(BaseModel):
 
     Catalog: Catalog
     SourceData: list[SourceData | UpperLimits]
+
+
+MAP_COLUMN_UNIT = {
+    "Frequency": u.Hz,
+    "Nufnu": u.erg / (u.cm**2 * u.s),
+    "FrequencyError": u.Hz,
+    "NufnuError": u.erg / (u.cm**2 * u.s),
+    "AngularDistance": u.arcsec,
+    "StartTime": u.d,
+    "StopTime": u.d,
+}
 
 
 class SEDResponse(BaseModel):
@@ -112,3 +191,29 @@ class SEDResponse(BaseModel):
             True if the response status code is 'OK'.
         """
         return self.ResponseInfo.statusCode == "OK"
+
+    def to_astropy(self) -> Table:
+        """Convert SEDResponse to a flattened astropy Table.
+
+        Returns:
+            Astropy Table with one row per SourceData entry, including catalog column.
+            Columns have appropriate physical units assigned.
+        """
+        rows = []
+
+        for catalog_entry in self.Catalogs:
+            catalog = catalog_entry.Catalog.CatalogName
+
+            for source_data in catalog_entry.SourceData:
+                # TODO: remove once API is fixed to return data for warning-tagged rows
+                if not isinstance(source_data, SourceData):
+                    continue
+
+                row = {"Catalog": catalog, **source_data.model_dump()}
+                rows.append(row)
+
+        table = Table(rows=rows)
+        for column, unit in MAP_COLUMN_UNIT.items():
+            if column in table.columns:
+                table[column].unit = unit
+        return table

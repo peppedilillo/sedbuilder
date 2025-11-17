@@ -4,8 +4,9 @@ This module provides functions to interact with the ASI-SSDC SED Builder
 REST API endpoints.
 """
 
-from typing import Annotated
+from typing import Annotated, Literal
 
+from astropy.table import Table
 import httpx
 from pydantic import Field
 from pydantic import validate_call
@@ -18,8 +19,9 @@ from ._schemas import SEDResponse
 def get_data(
     ra: Annotated[float, Field(ge=0.0, lt=360.0, description="Right ascension in degrees.")],
     dec: Annotated[float, Field(ge=-90.0, le=90.0, description="Declination in degrees.")],
-) -> SEDResponse:
-    """Retrieve SED data for astronomical coordinates.
+    fmt: Literal["raw", "astropy"] = "astropy",
+) -> dict | Table:
+    """Retrieve SED data from astronomical coordinates.
 
     Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
     data for the specified sky coordinates.
@@ -27,16 +29,31 @@ def get_data(
     Args:
         ra: Right ascension in degrees (0 to 360).
         dec: Declination in degrees (-90 to 90).
+        fmt: Output format for the data. Options:
+                - "raw": Returns a dictionary from the response JSON.
+                - "astropy": Returns an astropy Table with flattened catalog data.
 
     Returns:
-        Dictionary containing the SED data from the API response.
+        If format="raw": Dictionary containing the complete API response.
+        If format="astropy": Astropy Table with one row per measurement, including
+                            a Catalog column. Upper limit entries are excluded.
 
     Raises:
         ValidationError: If coordinates are out of valid range.
         httpx.HTTPError: If the HTTP request fails.
 
     Example:
-        > data = get_data(ra=194.04625, dec=-5.789167)
+        >>> # Get data as astropy Table (default)
+        >>> table = get_data(ra=194.04625, dec=-5.789167)
+        >>> # Get raw JSON response
+        >>> data = get_data(ra=194.04625, dec=-5.789167, fmt="raw")
     """
     r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec))
-    return SEDResponse(**r.json())
+    response = SEDResponse(**r.json())
+
+    if fmt == "raw":
+        return response.model_dump()
+    elif fmt == "astropy":
+        return response.to_astropy()
+    else:
+        raise ValueError(f"Unknown format: {fmt}")

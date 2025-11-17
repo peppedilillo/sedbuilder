@@ -11,7 +11,9 @@ The SSDC SED Builder is a web-based program developed at the ASI Space Science D
 ## Installation
 
 ```bash
-pip install sedbuilder
+git clone https://github.com/peppedilillo/sedbuilder.git
+cd sedbuilder
+pip install .
 ```
 
 ## Quick Start
@@ -21,41 +23,6 @@ from sedbuilder import get_data
 
 # Query SED data for astronomical coordinates (RA, Dec in degrees)
 data = get_data(ra=194.04625, dec=-5.789167)
-```
-
-## Development
-
-### Setup
-
-Clone the repository and install with development dependencies:
-
-```bash
-git clone https://github.com/peppedilillo/sedbuilder.git
-cd sedbuilder
-pip install -e ".[dev]"
-```
-
-### Pre-commit Hooks
-
-Install pre-commit hooks to automatically format code before commits:
-
-```bash
-pre-commit install
-```
-
-This runs `black` (line length 120) and `isort` (Google profile) automatically.
-
-### Running Tests
-
-```bash
-pytest
-```
-
-### Building Documentation
-
-```bash
-pip install -e ".[docs]"
-mkdocs serve
 ```
 
 ## API Reference
