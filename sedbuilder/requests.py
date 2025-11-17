@@ -11,13 +11,14 @@ from pydantic import Field
 from pydantic import validate_call
 
 from ._endpoints import APIPaths
+from ._schemas import SEDResponse
 
 
 @validate_call
 def get_data(
     ra: Annotated[float, Field(ge=0.0, lt=360.0, description="Right ascension in degrees.")],
     dec: Annotated[float, Field(ge=-90.0, le=90.0, description="Declination in degrees.")],
-) -> dict:
+) -> SEDResponse:
     """Retrieve SED data for astronomical coordinates.
 
     Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
@@ -35,7 +36,7 @@ def get_data(
         httpx.HTTPError: If the HTTP request fails.
 
     Example:
-        >>> data = get_data(ra=194.04625, dec=-5.789167)
+        > data = get_data(ra=194.04625, dec=-5.789167)
     """
     r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec))
-    return r.json()
+    return SEDResponse(**r.json())

@@ -9,23 +9,29 @@ import pytest
 from sedbuilder.requests import get_data
 
 
+@pytest.fixture
+def mock_response():
+    """Minimal valid API response for testing."""
+    return {"ResponseInfo": {"statusCode": "OK", "message": None}, "Properties": {"Nh": 1e20}, "Catalogs": []}
+
+
 class TestGetDataValidation:
     """Test coordinate validation for get_data function."""
 
-    def test_valid_coordinates(self):
+    def test_valid_coordinates(self, mock_response):
         """Test that valid coordinates are accepted."""
         with patch("httpx.get") as mock_get:
-            mock_get.return_value = Mock(json=lambda: {"data": "test"})
+            mock_get.return_value = Mock(json=lambda: mock_response)
 
             # Crab
             get_data(ra=83.6329, dec=22.0144)
             # Galactic center
             get_data(ra=266.4, dec=-29.0)
 
-    def test_ra_boundaries(self):
+    def test_ra_boundaries(self, mock_response):
         """Test RA boundary values."""
         with patch("httpx.get") as mock_get:
-            mock_get.return_value = Mock(json=lambda: {"data": "test"})
+            mock_get.return_value = Mock(json=lambda: mock_response)
 
             # Valid: minimum RA
             get_data(ra=0.0, dec=0.0)
@@ -41,10 +47,10 @@ class TestGetDataValidation:
             with pytest.raises(ValidationError):
                 get_data(ra=-1.0, dec=0.0)
 
-    def test_dec_boundaries(self):
+    def test_dec_boundaries(self, mock_response):
         """Test Dec boundary values."""
         with patch("httpx.get") as mock_get:
-            mock_get.return_value = Mock(json=lambda: {"data": "test"})
+            mock_get.return_value = Mock(json=lambda: mock_response)
 
             # Valid: South pole
             get_data(ra=0.0, dec=-90.0)
@@ -83,10 +89,10 @@ class TestGetDataValidation:
 class TestGetDataHTTP:
     """Test HTTP behavior of get_data function."""
 
-    def test_correct_url_construction(self):
+    def test_correct_url_construction(self, mock_response):
         """Test that the correct URL is constructed."""
         with patch("httpx.get") as mock_get:
-            mock_get.return_value = Mock(json=lambda: {})
+            mock_get.return_value = Mock(json=lambda: mock_response)
 
             get_data(ra=194.04625, dec=-5.789167)
 
