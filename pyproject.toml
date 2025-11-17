@@ -12,7 +12,7 @@ authors = [
 ]
 readme = "README.md"
 license = {file = "LICENSE"}
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.13",
@@ -27,7 +27,8 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pyinstrument~=5.0",
+    "pytest~=9.0",
+    "pyinstrument~=5.1",
     "black~=24.10",
     "isort~=5.13",
     "ipython~=8.31",
@@ -35,5 +36,6 @@ dev = [
 docs = [
     "mkdocs~=1.6",
     "mkdocs-material~=9.7",
+    "mkdocstrings[python]~=0.30",
 ]
 
