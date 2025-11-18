@@ -4,24 +4,31 @@ This module provides functions to interact with the ASI-SSDC SED Builder
 REST API endpoints.
 """
 
-from typing import Annotated, Literal
+from typing import Annotated
 
-from astropy.table import Table
 import httpx
 from pydantic import Field
 from pydantic import validate_call
 
 from ._endpoints import APIPaths
-from ._schemas import SEDResponse
+from .schemas import Response
 
 
 @validate_call
 def get_data(
-    ra: Annotated[float, Field(ge=0.0, lt=360.0, description="Right ascension in degrees.")],
-    dec: Annotated[float, Field(ge=-90.0, le=90.0, description="Declination in degrees.")],
-    fmt: Literal["raw", "astropy"] = "astropy",
-    timeout: Annotated[float, Field(gt=0.0, description="Request timeout in seconds.")] = 30.0,
-) -> dict | Table:
+    ra: Annotated[
+        float,
+        Field(ge=0.0, lt=360.0, description="Right ascension in degrees."),
+    ],
+    dec: Annotated[
+        float,
+        Field(ge=-90.0, le=90.0, description="Declination in degrees."),
+    ],
+    timeout: Annotated[
+        float,
+        Field(gt=0.0, description="Request timeout in seconds."),
+    ] = 30.0,
+) -> Response:
     """Retrieve SED data from astronomical coordinates.
 
     Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
@@ -30,15 +37,11 @@ def get_data(
     Args:
         ra: Right ascension in degrees (0 to 360).
         dec: Declination in degrees (-90 to 90).
-        fmt: Output format for the data. Options:
-                - "raw": Returns a dictionary from the response JSON.
-                - "astropy": Returns an astropy Table with flattened catalog data.
         timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
-        If format="raw": Dictionary containing the complete API response.
-        If format="astropy": Astropy Table with one row per measurement, including
-                            a Catalog column. Upper limit entries are excluded.
+        A response object. You can use its methods to recover data in different
+        formats, e.g. astropy table, dictionary, json.
 
     Raises:
         ValidationError: If coordinates are out of valid range.
@@ -46,10 +49,16 @@ def get_data(
         RuntimeError: If the API request fails for other reasons.
 
     Example:
-        >>> # Get data as astropy Table (default)
-        >>> table = get_data(ra=194.04625, dec=-5.789167)
-        >>> # Get raw JSON response
-        >>> data = get_data(ra=194.04625, dec=-5.789167, fmt="raw")
+        ```python
+        # Get SED data for astronomical coordinates
+        response = get_data(ra=194.04625, dec=-5.789167)
+
+        # Access data in different formats
+        table = response.to_astropy()  # Astropy Table
+        data_dict = response.to_dict() # Python dictionary
+        json_str = response.to_json()  # JSON string
+        df = response.to_pandas()      # Pandas DataFrame (requires pandas)
+        ```
     """
     try:
         r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
@@ -59,13 +68,31 @@ def get_data(
     except httpx.HTTPStatusError as e:
         raise RuntimeError(f"API request failed with status code {e.response.status_code}.")
     except httpx.RequestError as e:
-        raise RuntimeError(f"An error occurred while requesting {e.request.url!r}.")
+        raise RuntimeError(f"A connectivity error occurred while requesting {e.request.url!r}.")
 
-    response = SEDResponse(**r.json())
+    return Response(**r.json())
 
-    if fmt == "raw":
-        return response.model_dump()
-    elif fmt == "astropy":
-        return response.to_astropy()
-    else:
-        raise ValueError(f"Unknown format: {fmt}")
+
+"""
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣷⣮⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣻⣿⣿⣿⣿⣿⠂⠀⠀
+⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⠋⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⢸⣧⠁⠀⠀⠀
+⠀⡀⠀⠀⠀⠀⢸⣿⣿⣿⣸⣿⣷⣄⠀⠀
+⠀⠈⠫⠂⠀⠀⠊⣿⢿⣿⡏⣿⠿⠟⠀⠀
+⠀⠀⠀⠀⠱⡀⠈⠁⠀⢝⢷⡸⡇⠀⠀⠀
+⠀⠀⠀⠀⢀⠇⠀⠀⢀⣾⣦⢳⡀⠀⠀⠀
+⠀⠀⠀⢀⠎⠀⢀⣴⣿⣿⣿⡇⣧⠀⠀⠀
+⠀⢀⡔⠁⠀⢠⡟⢻⡻⣿⣿⣿⣌⡀⠀⠀
+⢀⡎⠀⠀⠀⣼⠁⣼⣿⣦⠻⣿⣿⣷⡀⠀
+⢸⠀⠀⠀⠀⡟⢰⣿⣿⡟⠀⠘⢿⣿⣷⡀
+⠈⠳⠦⠴⠞⠀⢸⣿⣿⠁⠀⠀⠀⠹⣿⡧
+⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⢰⣿⡇
+⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⢸⣿⡇
+⠀⠀⠀⠀⠀⡀⢸⣿⠁⠀⠀⠀⠀⢸⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⣿⣆⠀⠀⠀⠀⠀⣿⣧
+⠀⠀⠀⠀⠀⠀⠀⠏⢿⠄⠀⠀⠀⠐⢸⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉
+"""

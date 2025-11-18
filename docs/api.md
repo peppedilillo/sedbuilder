@@ -1,5 +1,9 @@
 # API Reference
 
-## Main Functions
+## Classes
+
+::: sedbuilder.schemas.Response
+
+## Functions
 
 ::: sedbuilder.requests.get_data

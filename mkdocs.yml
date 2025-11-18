@@ -22,7 +22,19 @@ plugins:
             show_source: True
             show_root_heading: true
             show_root_full_path: false
+markdown_extensions:
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
 nav:
   - Home: index.md
   - API reference: api.md
   - Developer guide: development.md
+  - Credits: credits.md
+extra:
+  generator: false
