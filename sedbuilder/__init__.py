@@ -6,7 +6,7 @@ from sedbuilder.schemas import Response
 from sedbuilder.utils import get_data_from_json
 
 __all__ = [
-    get_data,
-    get_data_from_json,
-    Response,
+    "get_data",
+    "get_data_from_json",
+    "Response",
 ]

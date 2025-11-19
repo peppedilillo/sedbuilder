@@ -50,6 +50,8 @@ def get_data(
 
     Example:
         ```python
+        from sedbuilder import get_data
+
         # Get SED data for astronomical coordinates
         response = get_data(ra=194.04625, dec=-5.789167)
 

@@ -4,11 +4,14 @@ This module defines the schema for the JSON responses returned by the
 SED Builder API, providing validation and type safety.
 """
 
+from dataclasses import dataclass
 import json
-from typing import Annotated, Literal, Optional
+from typing import Annotated, Literal, NamedTuple, Optional
 
+from astropy.table import hstack
 from astropy.table import Table
 import astropy.units as u
+import numpy as np
 from pydantic import BaseModel
 from pydantic import Field
 from pydantic import validate_call
@@ -78,7 +81,7 @@ class SourceData(BaseModel):
     ]
     Name: Annotated[
         Optional[str],
-        Field(default=None, description="Optional source name in the catalog."),
+        Field(default="", description="Optional source name in the catalog."),
     ]
     AngularDistance: Annotated[
         Optional[float],
@@ -94,7 +97,7 @@ class SourceData(BaseModel):
     ]
     Info: Annotated[
         Optional[str],
-        Field(default=None, description="Optional information flag (e.g., 'Upper Limit', quality notes)."),
+        Field(default="", description="Optional information flag (e.g., 'Upper Limit', quality notes)."),
     ]
 
 
@@ -123,17 +126,60 @@ class CatalogEntry(BaseModel):
     SourceData: list[SourceData | UpperLimits]
 
 
-MAP_COLUMN_UNIT = {
-    "Frequency": u.Hz,
-    "Nufnu": u.erg / (u.cm**2 * u.s),
-    "FrequencyError": u.Hz,
-    "NufnuError": u.erg / (u.cm**2 * u.s),
-    "AngularDistance": u.arcsec,
-    "StartTime": u.d,
-    "StopTime": u.d,
-    "ErrorRadius": u.arcsec,
-    "Nh": u.cm**-2,
-}
+class DataColumn(NamedTuple):
+    name: str  # field name in SourceData
+    dtype: type
+    units: u.Unit | None
+
+
+class CatalogColumn(NamedTuple):
+    name: str  # field name in Catalog
+    dtype: type
+    units: u.Unit | None
+
+
+class PropertyMetadata(NamedTuple):
+    name: str  # field name in Properties
+    units: u.Unit | None
+
+
+@dataclass(frozen=True)
+class AstropySchema:
+    NAME = DataColumn("Name", str, None)
+    FREQUENCY = DataColumn("Frequency", np.float64, u.Hz)
+    NUFNU = DataColumn("Nufnu", np.float64, u.erg / (u.cm**2 * u.s))
+    FREQUENCY_ERROR = DataColumn("FrequencyError", np.float64, u.Hz)
+    NUFNU_ERROR = DataColumn("NufnuError", np.float64, u.erg / (u.cm**2 * u.s))
+    ANGULAR_DISTANCE = DataColumn("AngularDistance", np.float64, u.arcsec)
+    START_TIME = DataColumn("StartTime", np.float64, u.d)
+    STOP_TIME = DataColumn("StopTime", np.float64, u.d)
+    INFO = DataColumn("Info", str, None)
+    CATALOG = CatalogColumn("CatalogName", str, None)
+    ERROR_RADIUS = CatalogColumn("ErrorRadius", np.float64, u.arcsec)
+    METADATA_NH = PropertyMetadata("Nh", u.cm**-2)
+
+    def columns(self, kind: Literal["data", "catalog", "all"] = "all"):
+        """Iterate over columns, defines table order."""
+        if kind == "all" or kind == "data":
+            yield self.NAME
+            yield self.FREQUENCY
+            yield self.NUFNU
+            yield self.FREQUENCY_ERROR
+            yield self.NUFNU_ERROR
+            yield self.ANGULAR_DISTANCE
+            yield self.START_TIME
+            yield self.STOP_TIME
+            yield self.INFO
+        if kind == "all" or kind == "catalog":
+            yield self.CATALOG
+            yield self.ERROR_RADIUS
+
+    def metadata(self):
+        """Iterate over metadata, defines table order."""
+        yield self.METADATA_NH
+
+
+TABLE_SCHEMA = AstropySchema()
 
 
 class Response(BaseModel):
@@ -203,26 +249,41 @@ class Response(BaseModel):
             Columns have appropriate physical units assigned. Hydrogen column is added
             to the table's metadata.
         """
-        rows = []
-
+        # we build two different tables one for the data columns and one for the catalog columns.
+        # then, we stack them horizontally
+        rows_data, rows_catalog = [], []
         for catalog_entry in self.Catalogs:
+            catalog_dump = catalog_entry.Catalog.model_dump()
             for source_data in catalog_entry.SourceData:
-                # TODO: remove once API is fixed to return data for warning-tagged rows
                 if not isinstance(source_data, SourceData):
                     continue
+                rows_data.append(source_data.model_dump())
+                rows_catalog.append(catalog_dump)
 
-                row = {
-                    **source_data.model_dump(),
-                    "Catalog": catalog_entry.Catalog.CatalogName,
-                    "ErrorRadius": catalog_entry.Catalog.ErrorRadius,
-                }
-                rows.append(row)
+        # first, the column table
+        columns_data = [*TABLE_SCHEMA.columns(kind="data")]
+        table_data = Table(
+            rows_data,
+            names=[col.name for col in columns_data],
+            dtype=[col.dtype for col in columns_data],
+            units=[col.units for col in columns_data],
+        )
 
-        table = Table(rows=rows)
-        for column in table.columns:
-            if column in MAP_COLUMN_UNIT:
-                table[column].unit = MAP_COLUMN_UNIT[column]
-        table.meta["Nh"] = self.Properties.Nh * MAP_COLUMN_UNIT["Nh"]
+        # second, the catalog property table
+        columns_catalog = [*TABLE_SCHEMA.columns(kind="catalog")]
+        table_catalog = Table(
+            rows_catalog,
+            names=[col.name for col in columns_catalog],
+            dtype=[col.dtype for col in columns_catalog],
+            units=[col.units for col in columns_catalog],
+        )
+        # finally, we stack
+        table = hstack((table_data, table_catalog))
+        # and add metadata
+        for m in TABLE_SCHEMA.metadata():
+            table.meta[m.name] = getattr(self.Properties, m.name)
+            if m.units:
+                table.meta[m.name] *= m.units
         return table
 
     @validate_call
@@ -248,9 +309,9 @@ class Response(BaseModel):
             str,
             Field(description="Name identifier for the object."),
         ] = "new-src",
-    ) -> dict:
+    ) -> Table:
         # noinspection PyUnresolvedReferences
-        """Convert SED data t   able to Jetset format.
+        """Convert SED data to Jetset format.
 
         The output includes both the data table with renamed columns and appropriate units,
         plus metadata needed for Jetset analysis.
@@ -266,9 +327,7 @@ class Response(BaseModel):
             obj_name: Name identifier for the object. Default is "new-src".
 
         Returns:
-            Dictionary with two keys:
-                - "data_table": Astropy Table with Jetset column names and units.
-                - "meta_data": Dictionary containing Jetset metadata.
+            A table with column names, units and metadata, compatible with `jetset.data_loader.Data`.
 
         Raises:
             ValueError: If z < 0, ul_cl is not in (0, 1), restframe or data_scale
@@ -278,41 +337,31 @@ class Response(BaseModel):
         Example:
             ```python
             from sedbuilder import get_data
-            from jetset_data.data_loader import Data
+            from jetset.data_loader import Data
 
             # Get response from SED for astronomical coordinates
             response = get_data(ra=194.04625, dec=-5.789167)
             # Initialize jetset data structure
-            jetset_data = Data(**response.to_jetset(z=0.034))
+            jetset_data = Data(response.to_jetset(z=0.034))
             ```
         """
-        map_column_jetset = {
-            "Frequency": "x",
-            "Nufnu": "y",
-            "FrequencyError": "dx",
-            "NufnuError": "dy",
-            "StartTime": "T_start",
-            "StopTime": "T_stop",
-            "Catalog": "data_set",
-        }
-        table = self.to_astropy()
-        missing_columns = [*filter(lambda x: x not in table.colnames, map_column_jetset.keys())]
-        if any(missing_columns):
-            raise ValueError(f"Table missing required columns: {', '.join(missing_columns)}")
-
-        jetset_table = Table()
-        for col_label, col_label_jetset in map_column_jetset.items():
-            jetset_table.add_column(table[col_label], name=col_label_jetset)
-            if col_label in MAP_COLUMN_UNIT:
-                jetset_table[col_label_jetset].unit = MAP_COLUMN_UNIT[col_label]
-
-        return {
-            "data_table": jetset_table,
-            "meta_data": {
-                "z": z,
-                "UL_CL": ul_cl,
-                "restframe": restframe,
-                "data_scale": data_scale,
-                "obj_name": obj_name,
-            },
-        }
+        # type and label choice from Jetset documentation, "Data format and SED data".
+        t = self.to_astropy()
+        table = Table()
+        table.add_column(t[TABLE_SCHEMA.FREQUENCY.name].astype(np.float64), name="x")
+        table.add_column(t[TABLE_SCHEMA.FREQUENCY_ERROR.name].astype(np.float64), name="dx")
+        table.add_column(t[TABLE_SCHEMA.NUFNU.name].astype(np.float64), name="y")
+        table.add_column(t[TABLE_SCHEMA.NUFNU_ERROR.name].astype(np.float64), name="dy")
+        table.add_column(
+            np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start"
+        )
+        table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
+        # TODO: fix this once we have proper warning/info
+        table.add_column(np.zeros(len(t), dtype=bool), name="UL")
+        table.add_column(t[TABLE_SCHEMA.CATALOG.name].astype(str), name="dataset")
+        table.meta["z"] = z
+        table.meta["UL_CL"] = ul_cl
+        table.meta["restframe"] = restframe
+        table.meta["data_scale"] = data_scale
+        table.meta["obj_name"] = obj_name
+        return table

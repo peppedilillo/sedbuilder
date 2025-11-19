@@ -30,7 +30,7 @@ response = get_data(ra=194.04625, dec=-5.789167)
 # Access data in different formats
 table = response.to_astropy()    # Astropy Table
 data_dict = response.to_dict()   # Python dictionary
-json_str = response.to_jetset()  # Jetset
+jetset = response.to_jetset()  # Jetset
 json_str = response.to_json()    # JSON string
 df = response.to_pandas()        # Pandas DataFrame (requires pandas)
 ```

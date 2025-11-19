@@ -12,6 +12,9 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+watch:
+  - README.md
+  - sedbuilder/
 plugins:
   - search
   - mkdocstrings:
