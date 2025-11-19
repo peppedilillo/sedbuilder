@@ -241,9 +241,7 @@ class Response(BaseModel):
         """Convert data to an astropy Table.
 
         Returns:
-            Astropy Table with one row per SourceData entry, including catalog column.
-            Columns have appropriate physical units assigned. Hydrogen column is added
-            to the table's metadata.
+            Astropy Table with one row per measurements.
         """
         # we build two different tables one for the data columns and one for the catalog columns.
         # then, we stack them horizontally
