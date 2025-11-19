@@ -46,4 +46,4 @@ Need a new feature? Don't hesitate to ask in our [discussion section](https://gi
 
 ## Documentation
 
-Check out our [documentation](https://peppedilillo.github.io/sedbuilder/).
+Check out our [API reference](https://peppedilillo.github.io/sedbuilder/api/).
