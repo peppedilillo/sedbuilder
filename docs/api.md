@@ -5,8 +5,12 @@ The package provides functions to query astronomical sources and convert spectra
 
 !!! warning
     At present, `sedbuilder` is only internally operational.
-    This means you must need to be on the ASI-SSDC network to use it.
+    This means you need to be on the ASI-SSDC network to use it.
     We will release to public soon.
+
+!!! note
+    At present, only internally hosted catalogs are supported. More will come.
+
 
 ## Functions
 

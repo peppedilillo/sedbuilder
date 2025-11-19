@@ -49,3 +49,18 @@ nav:
   - Credits: credits.md
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/peppedilillo/sedbuilder
+      name: sedbuilder on GitHub
+    - icon: fontawesome/solid/globe
+      link: https://www.ssdc.asi.it/
+      name: ASI-SSDC Website
+    - icon: fontawesome/solid/envelope
+      link: mailto:giuseppe.dilillo@inaf.it
+      name: Contact via email
+    - icon: fontawesome/brands/creative-commons
+      link: https://github.com/peppedilillo/sedbuilder/blob/main/LICENSE
+      name: GPL License
+
+copyright: A joint by ASI-SSDC. Rome, Italy. ~p25

@@ -29,7 +29,7 @@ def get_data_from_json(
         Response object with validated SED data.
 
     Raises:
-        ValidationError: If the file does not exists, or if file content does not
+        ValidationError: If the file does not exist, or if file content does not
                          match the expected response schema.
 
     Example:

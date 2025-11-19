@@ -294,7 +294,7 @@ class Response(BaseModel):
         ],
         ul_cl: Annotated[
             float,
-            Field(ge=0.0, le=1.0, description="Confidence level for upper limits,must be between 0 and 1."),
+            Field(ge=0.0, le=1.0, description="Confidence level for upper limits, must be between 0 and 1."),
         ] = 0.95,
         restframe: Annotated[
             Literal["obs", "src"],
@@ -316,8 +316,8 @@ class Response(BaseModel):
         plus metadata needed for Jetset analysis.
 
         Args:
-            z: Source redshift, must be between 0 and 1,
-            ul_cl: Confidence level for upper limits,must be between 0 and 1,
+            z: Source redshift, must be between 0 and 1.
+            ul_cl: Confidence level for upper limits, must be between 0 and 1,
                 exclusive. Default is 0.95.
             restframe: Reference frame for the data. Options are "obs" for observed flux (default)
                 and "src" for source luminosities.
