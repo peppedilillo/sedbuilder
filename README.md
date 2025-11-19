@@ -2,7 +2,6 @@
 
 The **sedbuilder** package provides a Python interface to the ASI Space Science Data Center's SED Builder REST API for retrieving Spectral Energy Distribution data for astronomical sources.
 
-> NOTE
 > At present, `sedbuilder` is only internally operational. 
 > This means you must need to be on the ASI-SSDC network to use it.
 > We will release to public soon.

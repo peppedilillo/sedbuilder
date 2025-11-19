@@ -6,7 +6,7 @@ SED Builder API, providing validation and type safety.
 
 from dataclasses import dataclass
 import json
-from typing import Annotated, Literal, NamedTuple, Optional
+from typing import Annotated, Any, Literal, NamedTuple, Optional
 
 from astropy.table import hstack
 from astropy.table import Table
@@ -37,8 +37,8 @@ class Properties(BaseModel):
     """
 
     Nh: Annotated[
-        float,
-        Field(ge=0.0, description="Hydrogen column density in cm^-2."),
+        Optional[float],
+        Field(default=None, ge=0.0, description="Hydrogen column density in cm^-2."),
     ]
 
 
@@ -223,12 +223,11 @@ class Response(BaseModel):
         """
         return json.dumps(self.model_dump())
 
-    def to_pandas(self):
+    def to_pandas(self) -> Any:
         """
         Converts data to a pandas DataFrame.
 
-        Requires pandas to be installed. Install with:
-            pip install pandas
+        Requires pandas to be installed. Install with `pip install pandas`.
 
         Returns:
             A pandas dataframe.

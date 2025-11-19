@@ -22,15 +22,15 @@ def get_data_from_json(
 
     Args:
         filepath: Path to a JSON file containing SED Builder response data.
-            The file must exist and contain valid JSON matching the `get_data`
-            response schema.
+                  The file must exist and contain valid JSON matching the `get_data`
+                  response schema.
 
     Returns:
         Response object with validated SED data.
 
     Raises:
         ValidationError: If the file does not exists, or if file content does not
-         match the expected response schema.
+                         match the expected response schema.
 
     Example:
         ```python

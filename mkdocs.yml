@@ -1,6 +1,9 @@
 site_name: sedbuilder docs
 theme:
   name: material
+  font:
+    text: Roboto
+    code: Roboto Mono
   palette:
     - scheme: default
       primary: deep purple
@@ -25,7 +28,12 @@ plugins:
             show_source: True
             show_root_heading: true
             show_root_full_path: false
+            heading_level: 3
 markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.highlight:

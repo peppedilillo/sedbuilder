@@ -4,7 +4,7 @@ This module provides functions to interact with the ASI-SSDC SED Builder
 REST API endpoints.
 """
 
-from typing import Annotated
+from typing import Annotated, Union
 
 import httpx
 from pydantic import Field
@@ -25,7 +25,7 @@ def get_data(
         Field(ge=-90.0, le=90.0, description="Declination in degrees."),
     ],
     timeout: Annotated[
-        float,
+        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
         Field(gt=0.0, description="Request timeout in seconds."),
     ] = 30.0,
 ) -> Response:
