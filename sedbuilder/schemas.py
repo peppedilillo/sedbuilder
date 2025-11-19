@@ -183,7 +183,7 @@ TABLE_SCHEMA = AstropySchema()
 
 
 class Response(BaseModel):
-    """Complete SED Builder API response.
+    """Complete SED Builder API response to `getData` endpoint.
 
     To retrieve data you call `.to_astropy()`, or `.to_dict()` and other methods.
 
@@ -206,8 +206,7 @@ class Response(BaseModel):
         return self.ResponseInfo.statusCode == "OK"
 
     def to_dict(self) -> dict:
-        """
-        Converts data to a dictionary.
+        """Converts data to a dictionary.
 
         Returns:
             A dictionary from the response JSON.
@@ -215,8 +214,7 @@ class Response(BaseModel):
         return self.model_dump()
 
     def to_json(self) -> str:
-        """
-        Converts data to JSON.
+        """Converts data to JSON.
 
         Returns:
             A JSON string.
@@ -224,8 +222,7 @@ class Response(BaseModel):
         return json.dumps(self.model_dump())
 
     def to_pandas(self) -> Any:
-        """
-        Converts data to a pandas DataFrame.
+        """Converts data to a pandas DataFrame.
 
         Requires pandas to be installed. Install with `pip install pandas`.
 
@@ -318,7 +315,7 @@ class Response(BaseModel):
         ] = "new-src",
     ) -> Table:
         # noinspection PyUnresolvedReferences
-        """Convert SED data to Jetset format.
+        """Convert data to Jetset format.
 
         The output includes both the data table with renamed columns and appropriate units,
         plus metadata needed for Jetset analysis.

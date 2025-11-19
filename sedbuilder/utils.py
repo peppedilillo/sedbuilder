@@ -15,9 +15,7 @@ def get_data_from_json(
         Field(description="Path to JSON file."),
     ],
 ) -> Response:
-    """Load SED data from a JSON file.
-
-    Reads a JSON file containing SED Builder API response data and validates it
+    """Reads a JSON file containing SED Builder API response data and validates it
     against `get_data` response schema.
 
     Args:

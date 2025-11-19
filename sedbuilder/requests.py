@@ -29,9 +29,7 @@ def get_data(
         Field(gt=0.0, description="Request timeout in seconds."),
     ] = 30.0,
 ) -> Response:
-    """Retrieve SED data from astronomical coordinates.
-
-    Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
+    """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
     data for the specified sky coordinates.
 
     Args:
