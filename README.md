@@ -10,7 +10,7 @@ It is based on [SED Builder](https://tools.ssdc.asi.it/SED/), a software develop
 ## Installation
 
 ```bash
-pip install sedbuilder
+pip install ssdc-sedbuilder
 ```
 
 ## Quick Start
