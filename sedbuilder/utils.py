@@ -13,7 +13,7 @@ def get_data_from_json(
     filepath: Annotated[
         FilePath,
         Field(description="Path to JSON file."),
-    ]
+    ],
 ) -> Response:
     """Load SED data from a JSON file.
 

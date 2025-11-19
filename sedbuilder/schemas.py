@@ -261,6 +261,9 @@ class Response(BaseModel):
 
         # first, the column table
         columns_data = [*TABLE_SCHEMA.columns(kind="data")]
+        # TODO: this is a hack around astropy 6.x, which we need to support over 3.10. remove when 3.11
+        if not rows_data:
+            rows_data.append({col.name: [] for col in columns_data})
         table_data = Table(
             rows_data,
             names=[col.name for col in columns_data],
@@ -270,14 +273,19 @@ class Response(BaseModel):
 
         # second, the catalog property table
         columns_catalog = [*TABLE_SCHEMA.columns(kind="catalog")]
+        # TODO: this is a hack around astropy 6.x, which we need to support over 3.10. remove when 3.11
+        if not rows_catalog:
+            rows_catalog.append({col.name: [] for col in columns_catalog})
         table_catalog = Table(
             rows_catalog,
             names=[col.name for col in columns_catalog],
             dtype=[col.dtype for col in columns_catalog],
             units=[col.units for col in columns_catalog],
         )
-        # finally, we stack
+
+        # then, we stack
         table = hstack((table_data, table_catalog))
+
         # and add metadata
         for m in TABLE_SCHEMA.metadata():
             table.meta[m.name] = getattr(self.Properties, m.name)

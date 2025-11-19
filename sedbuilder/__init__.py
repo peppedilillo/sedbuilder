@@ -1,5 +1,4 @@
-"""sedbuilder - a Python client for the ASI-SSDC SED Builder API. ~p25
-"""
+"""sedbuilder - a Python client for the ASI-SSDC SED Builder API. ~p25"""
 
 from sedbuilder.requests import get_data
 from sedbuilder.schemas import Response
