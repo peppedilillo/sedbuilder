@@ -63,4 +63,4 @@ extra:
       link: https://github.com/peppedilillo/sedbuilder/blob/main/LICENSE
       name: GPL License
 
-copyright: Made in ASI-SSDC. Rome, Italy
+copyright: Made in ASI-SSDC. Rome, Italy</br>with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener"> Material for MkDocs Insiders </a>
