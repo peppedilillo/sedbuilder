@@ -50,14 +50,15 @@ def get_data(
         ```python
         from sedbuilder import get_data
 
-        # Get SED data for astronomical coordinates
+        # Get response from SED for astronomical coordinates
         response = get_data(ra=194.04625, dec=-5.789167)
 
         # Access data in different formats
-        table = response.to_astropy()  # Astropy Table
-        data_dict = response.to_dict() # Python dictionary
-        json_str = response.to_json()  # JSON string
-        df = response.to_pandas()      # Pandas DataFrame (requires pandas)
+        table = response.to_astropy()     # Astropy Table
+        data_dict = response.to_dict()    # Python dictionary
+        jt = response.to_jetset(z=0.034)  # Jetset table
+        json_str = response.to_json()     # JSON string
+        df = response.to_pandas()         # Pandas DataFrame (requires pandas)
         ```
     """
     try:
