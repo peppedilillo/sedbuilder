@@ -6,5 +6,66 @@
   "Properties": {
     "Nh": 7.45e+19
   },
-  "Catalogs": []
+  "Catalogs": [
+    {
+      "Catalog": {
+        "CatalogName": "WISE W1 PointPsf",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Frequency": 88170000000000.0,
+          "Nufnu": 6.138005278740269e-14,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.448987090125911e-15,
+          "Name": "",
+          "AngularDistance": 0.09281778399566679,
+          "StartTime": 55316.73125995,
+          "StopTime": 55318.12051844,
+          "Info": ""
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogName": "WISE W2 PointPsf",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Frequency": 65170000000000.0,
+          "Nufnu": 3.9865263461212955e-14,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.587359458435545e-15,
+          "Name": "",
+          "AngularDistance": 0.09281778399566679,
+          "StartTime": 55316.73125995,
+          "StopTime": 55318.12051844,
+          "Info": ""
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogName": "WISE W3 PointPsf",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogName": "WISE W4 PointPsf",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Info": "Upper Limit"
+        }
+      ]
+    }
+  ]
 }

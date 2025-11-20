@@ -38,8 +38,7 @@ def get_data(
         timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
-        A response object. You can use its methods to recover data in different
-        formats, e.g. astropy table, dictionary, json.
+        A response object. Use its methods to recover data in different formats.
 
     Raises:
         ValidationError: If coordinates are out of valid range.
