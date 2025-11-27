@@ -12,7 +12,9 @@ import json
 from pathlib import Path
 from time import sleep
 
-from sedbuilder import get_data
+import httpx
+
+from sedbuilder._endpoints import APIPaths
 
 TEST_SOURCES = [
     (343.49061, +16.14821, "3C 454.3"),  # Bright blazar
@@ -49,11 +51,12 @@ def format_filename(ra: float, dec: float, source_name: str) -> str:
     return f"{ra_str}_{dec_str}_{name_str}.json"
 
 
-def fetch_and_save_test_data(output_dir: Path = Path("data")) -> None:
+def fetch_and_save_test_data(output_dir: Path = Path("data"), timeout: int = 10) -> None:
     """Fetch test data from API and save as JSON files.
 
     Args:
         output_dir: Directory to save JSON files (default: tests/data).
+        timeout: Timeout in seconds (default: 10).
     """
     print(f"Fetching test data for {len(TEST_SOURCES)} sources...")
     print(f"Output directory: {output_dir.absolute()}\n")
@@ -65,8 +68,8 @@ def fetch_and_save_test_data(output_dir: Path = Path("data")) -> None:
         print(f"Fetching {description} (RA={ra}, Dec={dec})...", end=" ")
 
         try:
-            response = get_data(ra=ra, dec=dec, timeout=10.0)
-            filepath.write_text(json.dumps(response.to_dict(), indent=2))
+            response = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
+            filepath.write_text(json.dumps(response.json(), indent=2))
             print(f" Saved to {filename}")
         except Exception as e:
             print(f" Failed: {e}")

@@ -38,7 +38,7 @@ class Properties(BaseModel):
 
     Nh: Annotated[
         Optional[float],
-        Field(default=None, ge=0.0, description="Hydrogen column density in cm^-2."),
+        Field(default=None, description="Hydrogen column density in cm^-2."),
     ]
 
 
@@ -55,6 +55,9 @@ class Catalog(BaseModel):
         float,
         Field(ge=0.0, description="Error radius in arcsec."),
     ]
+
+    def __repr__(self) -> str:
+        return f"Catalog(CatalogName={self.CatalogName!r}, ErrorRadius={self.ErrorRadius})"
 
 
 class SourceData(BaseModel):
@@ -81,7 +84,7 @@ class SourceData(BaseModel):
     ]
     Name: Annotated[
         Optional[str],
-        Field(default="", description="Optional source name in the catalog."),
+        Field(default=None, description="Optional source name in the catalog."),
     ]
     AngularDistance: Annotated[
         Optional[float],
@@ -101,19 +104,6 @@ class SourceData(BaseModel):
     ]
 
 
-class UpperLimits(BaseModel):
-    """At present, the get_data API cuts out data from measurements with warning error.
-    We have to parse these separately for the moment, but will be later removed once the schema is fixed.
-
-    TODO: Ask Fabrizio to not drop data from entries tagged with warnings, then remove and update `CatalogEntry`.
-    """
-
-    Info: Annotated[
-        str,
-        Field(default=None, description="Optional information flag (e.g., 'Upper Limit', quality notes)."),
-    ]
-
-
 class CatalogEntry(BaseModel):
     """A catalog entry with its associated source data.
 
@@ -123,7 +113,10 @@ class CatalogEntry(BaseModel):
     """
 
     Catalog: Catalog
-    SourceData: list[SourceData | UpperLimits]
+    SourceData: list[SourceData]
+
+    def __repr__(self) -> str:
+        return f"CatalogEntry({self.Catalog!r}, SourceData: [#{len(self.SourceData)} entries])"
 
 
 class DataColumn(NamedTuple):
@@ -197,6 +190,9 @@ class Response(BaseModel):
     Properties: Properties
     Catalogs: list[CatalogEntry]
 
+    def __repr__(self) -> str:
+        return f"Response(status={self.ResponseInfo.statusCode!r}, " f"Catalogs: [#{len(self.Catalogs)} entries])"
+
     def is_successful(self) -> bool:
         """Check if the API response indicates success.
 
@@ -243,43 +239,50 @@ class Response(BaseModel):
         Returns:
             Astropy Table with one row per measurements.
         """
-        # we build two different tables one for the data columns and one for the catalog columns.
-        # then, we stack them horizontally
+        # the gist of it is to build two different tables and to stack them horizontally.
+        # the first table is for data columns, the second for the catalog columns.
+        columns_data = [*TABLE_SCHEMA.columns(kind="data")]
+        columns_catalog = [*TABLE_SCHEMA.columns(kind="catalog")]
+
+        # first we have to unpack the data
         rows_data, rows_catalog = [], []
         for catalog_entry in self.Catalogs:
             catalog_dump = catalog_entry.Catalog.model_dump()
             for source_data in catalog_entry.SourceData:
-                if not isinstance(source_data, SourceData):
-                    continue
                 rows_data.append(source_data.model_dump())
                 rows_catalog.append(catalog_dump)
 
-        # first, the column table
-        columns_data = [*TABLE_SCHEMA.columns(kind="data")]
-        # TODO: this is a hack around astropy 6.x, which we need to support over 3.10. remove when 3.11
+        # TODO: this is an awful hack around astropy 6, which we need to support over 3.10.
+        #  remove when we stop supporting astropy 6.
+        #  N! i am unsure on whether we could have catalog info without data. the contrary should not be possible.
+        #  N! this said, no data means no science: it seems safe to me to just check for `rows_data`
         if not rows_data:
-            rows_data.append({col.name: [] for col in columns_data})
-        table_data = Table(
-            rows_data,
-            names=[col.name for col in columns_data],
-            dtype=[col.dtype for col in columns_data],
-            units=[col.units for col in columns_data],
-        )
+            columns = columns_data + columns_catalog
+            table = Table(
+                np.zeros(len(columns)),
+                names=[col.name for col in columns],
+                dtype=[col.dtype for col in columns],
+                units=[col.units for col in columns],
+            )[:0]
+        else:
+            # first, the column table
+            table_data = Table(
+                rows_data,
+                names=[col.name for col in columns_data],
+                dtype=[col.dtype for col in columns_data],
+                units=[col.units for col in columns_data],
+            )
 
-        # second, the catalog property table
-        columns_catalog = [*TABLE_SCHEMA.columns(kind="catalog")]
-        # TODO: this is a hack around astropy 6.x, which we need to support over 3.10. remove when 3.11
-        if not rows_catalog:
-            rows_catalog.append({col.name: [] for col in columns_catalog})
-        table_catalog = Table(
-            rows_catalog,
-            names=[col.name for col in columns_catalog],
-            dtype=[col.dtype for col in columns_catalog],
-            units=[col.units for col in columns_catalog],
-        )
+            # second, the catalog property table
+            table_catalog = Table(
+                rows_catalog,
+                names=[col.name for col in columns_catalog],
+                dtype=[col.dtype for col in columns_catalog],
+                units=[col.units for col in columns_catalog],
+            )
 
-        # then, we stack
-        table = hstack((table_data, table_catalog))
+            # then, we stack
+            table = hstack((table_data, table_catalog))
 
         # and add metadata
         for m in TABLE_SCHEMA.metadata():
@@ -348,22 +351,21 @@ class Response(BaseModel):
             ```
         """
         # type and label choice from Jetset documentation, "Data format and SED data".
+        # fmt: off
         t = self.to_astropy()
         table = Table()
         table.add_column(t[TABLE_SCHEMA.FREQUENCY.name].astype(np.float64), name="x")
         table.add_column(t[TABLE_SCHEMA.FREQUENCY_ERROR.name].astype(np.float64), name="dx")
         table.add_column(t[TABLE_SCHEMA.NUFNU.name].astype(np.float64), name="y")
         table.add_column(t[TABLE_SCHEMA.NUFNU_ERROR.name].astype(np.float64), name="dy")
-        table.add_column(
-            np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start"
-        )
+        table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
-        # TODO: fix this once we have proper warning/info
-        table.add_column(np.zeros(len(t), dtype=bool), name="UL")
+        table.add_column(t["Info"] == "Upper Limit", name="UL")
         table.add_column(t[TABLE_SCHEMA.CATALOG.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
         table.meta["restframe"] = restframe
         table.meta["data_scale"] = data_scale
         table.meta["obj_name"] = obj_name
+        # fmt: on
         return table
