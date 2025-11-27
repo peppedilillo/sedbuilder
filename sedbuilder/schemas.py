@@ -147,7 +147,7 @@ class AstropySchema:
     START_TIME = DataColumn("StartTime", np.float64, u.d)
     STOP_TIME = DataColumn("StopTime", np.float64, u.d)
     INFO = DataColumn("Info", str, None)
-    CATALOG = CatalogColumn("CatalogName", str, None)
+    CATALOG_NAME = CatalogColumn("CatalogName", str, None)
     ERROR_RADIUS = CatalogColumn("ErrorRadius", np.float64, u.arcsec)
     METADATA_NH = PropertyMetadata("Nh", u.cm**-2)
 
@@ -164,7 +164,7 @@ class AstropySchema:
             yield self.STOP_TIME
             yield self.INFO
         if kind == "all" or kind == "catalog":
-            yield self.CATALOG
+            yield self.CATALOG_NAME
             yield self.ERROR_RADIUS
 
     def metadata(self):
@@ -175,8 +175,8 @@ class AstropySchema:
 TABLE_SCHEMA = AstropySchema()
 
 
-class Response(BaseModel):
-    """Complete SED Builder API response to `getData` endpoint.
+class GetDataResponse(BaseModel):
+    """SED Builder API response to `getData` endpoint.
 
     To retrieve data you call `.to_astropy()`, or `.to_dict()` and other methods.
 
@@ -361,7 +361,7 @@ class Response(BaseModel):
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
         table.add_column(t["Info"] == "Upper Limit", name="UL")
-        table.add_column(t[TABLE_SCHEMA.CATALOG.name].astype(str), name="dataset")
+        table.add_column(t[TABLE_SCHEMA.CATALOG_NAME.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
         table.meta["restframe"] = restframe
@@ -369,3 +369,51 @@ class Response(BaseModel):
         table.meta["obj_name"] = obj_name
         # fmt: on
         return table
+
+
+# TODO: unify this with `Catalog`
+class CatalogInfo(Catalog):
+    CatalogId: int
+    SubGroupName: Annotated[
+        Optional[str],
+        Field(default=None, description="Catalog spectral classifier."),
+    ]
+
+    def __repr__(self) -> str:
+        return (
+            f"CatalogInfo(CatalogName={self.CatalogName!r}, "
+            f"CatalogId={self.CatalogId}, "
+            f"ErrorRadius={self.ErrorRadius}, "
+            f"SubGroupName={self.SubGroupName!r})"
+        )
+
+
+class CatalogsResponse(BaseModel):
+    """SED Builder API response to `catalogs` endpoint.
+
+    Contains information about all available catalogs in the SED Builder system,
+    including their names, identifiers, error radii, and spectral classifications.
+
+    Attributes:
+        ResponseInfo: Status information about the API response.
+        Catalogs: List of catalog information entries.
+    """
+
+    ResponseInfo: ResponseInfo
+    Catalogs: list[CatalogInfo]
+
+    def is_successful(self) -> bool:
+        """Check if the API response indicates success.
+
+        Returns:
+            True if the response status code is 'OK'.
+        """
+        return self.ResponseInfo.statusCode == "OK"
+
+    def to_list(self) -> list[dict]:
+        """Converts catalog data to a list of dictionaries.
+
+        Returns:
+            A list of dictionaries, one per catalog, containing all catalog metadata.
+        """
+        return [c.model_dump() for c in self.Catalogs]

@@ -52,28 +52,35 @@ def format_filename(ra: float, dec: float, source_name: str) -> str:
 
 
 def fetch_and_save_test_data(output_dir: Path = Path("data"), timeout: int = 10) -> None:
-    """Fetch test data from API and save as JSON files.
+    """Fetch test data and catalogs from API and save as JSON files.
 
     Args:
         output_dir: Directory to save JSON files (default: tests/data).
         timeout: Timeout in seconds (default: 10).
     """
-    print(f"Fetching test data for {len(TEST_SOURCES)} sources...")
     print(f"Output directory: {output_dir.absolute()}\n")
 
+    print(f"Fetching test data for {len(TEST_SOURCES)} sources...")
     for ra, dec, description in TEST_SOURCES:
         filename = format_filename(ra, dec, description)
-        filepath = output_dir / filename
-
+        filepath_source = output_dir / filename
         print(f"Fetching {description} (RA={ra}, Dec={dec})...", end=" ")
-
         try:
             response = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
-            filepath.write_text(json.dumps(response.json(), indent=2))
+            filepath_source.write_text(json.dumps(response.json(), indent=2))
             print(f" Saved to {filename}")
         except Exception as e:
             print(f" Failed: {e}")
         sleep(1.0)
+
+    print(f"Fetching catalogs data..")
+    filepath_catalog = output_dir / "catalogs.json"
+    try:
+        response = httpx.get(APIPaths.CATALOGS(), timeout=timeout)
+        filepath_catalog.write_text(json.dumps(response.json(), indent=2))
+        print(f" Saved to {filepath_catalog}")
+    except Exception as e:
+        print(f" Failed: {e}")
 
     print(f"\nComplete. Test data saved to {output_dir.absolute()}")
 

@@ -1,0 +1,1263 @@
+{
+  "ResponseInfo": {
+    "statusCode": "OK",
+    "message": null
+  },
+  "Catalogs": [
+    {
+      "CatalogId": 4143,
+      "CatalogName": "CLASSSCAT",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 12,
+      "CatalogName": "CRATES",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 3,
+      "CatalogName": "DIXON",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 10,
+      "CatalogName": "FIRST",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 2444,
+      "CatalogName": "JVASPOL",
+      "ErrorRadius": 0.1
+    },
+    {
+      "CatalogId": 1,
+      "CatalogName": "KUEHR",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 2428,
+      "CatalogName": "NIEPPOCAT",
+      "ErrorRadius": 0.1
+    },
+    {
+      "CatalogId": 9,
+      "CatalogName": "NVSS",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 2,
+      "CatalogName": "PKSCAT90",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 13,
+      "CatalogName": "PMN",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 8,
+      "CatalogName": "SUMSS",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 2426,
+      "CatalogName": "VLANEP",
+      "ErrorRadius": 0.1
+    },
+    {
+      "CatalogId": 12466,
+      "CatalogName": "VLSSr",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 19,
+      "CatalogName": "WENSS",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 2799,
+      "CatalogName": "IRASFSC 12",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2800,
+      "CatalogName": "IRASFSC 25",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2801,
+      "CatalogName": "IRASFSC 60",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2802,
+      "CatalogName": "IRASFSC100",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2809,
+      "CatalogName": "IRASPSC 12",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2810,
+      "CatalogName": "IRASPSC 25",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2811,
+      "CatalogName": "IRASPSC 60",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2812,
+      "CatalogName": "IRASPSC100",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2441,
+      "CatalogName": "AT20GCAT ( flux 20 GHz)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 2443,
+      "CatalogName": "AT20GCAT ( flux 5 GHz)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 2442,
+      "CatalogName": "AT20GCAT ( flux 8 GHz)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 2439,
+      "CatalogName": "ATCAPMN ( flux 3.6 cm)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 2440,
+      "CatalogName": "ATCAPMN ( flux 6 cm)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 3852,
+      "CatalogName": "ATPMNCAT",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 88,
+      "CatalogName": "ERCSC030",
+      "ErrorRadius": 7.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 89,
+      "CatalogName": "ERCSC044 ",
+      "ErrorRadius": 7.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 90,
+      "CatalogName": "ERCSC070",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 91,
+      "CatalogName": "ERCSC100",
+      "ErrorRadius": 4.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 92,
+      "CatalogName": "ERCSC143",
+      "ErrorRadius": 3.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 93,
+      "CatalogName": "ERCSC217",
+      "ErrorRadius": 2.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 94,
+      "CatalogName": "ERCSC353",
+      "ErrorRadius": 2.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 95,
+      "CatalogName": "ERCSC545",
+      "ErrorRadius": 2.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 96,
+      "CatalogName": "ERCSC857",
+      "ErrorRadius": 2.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4,
+      "CatalogName": "GB6",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 2427,
+      "CatalogName": "GB87CAT",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 20,
+      "CatalogName": "NORTH20CM (flux 20 cm)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 21,
+      "CatalogName": "NORTH20CM (flux 6 cm)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 22,
+      "CatalogName": "NORTH20CM (flux 80 cm)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4161,
+      "CatalogName": "PCCS1F030 ",
+      "ErrorRadius": 4.7,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4162,
+      "CatalogName": "PCCS1F044",
+      "ErrorRadius": 5.5,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4163,
+      "CatalogName": "PCCS1F070",
+      "ErrorRadius": 3.6,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4164,
+      "CatalogName": "PCCS1F100",
+      "ErrorRadius": 2.6,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4165,
+      "CatalogName": "PCCS1F143",
+      "ErrorRadius": 1.8,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4168,
+      "CatalogName": "PCCS1F217",
+      "ErrorRadius": 1.8,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4169,
+      "CatalogName": "PCCS1F353",
+      "ErrorRadius": 2.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4170,
+      "CatalogName": "PCCS1F545",
+      "ErrorRadius": 1.3,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 4171,
+      "CatalogName": "PCCS1F857",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7487,
+      "CatalogName": "PCCS2E100",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7488,
+      "CatalogName": "PCCS2E143",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7489,
+      "CatalogName": "PCCS2E217",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7490,
+      "CatalogName": "PCCS2E353",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7491,
+      "CatalogName": "PCCS2E545",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7492,
+      "CatalogName": "PCCS2E857",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7442,
+      "CatalogName": "PCCS2F030",
+      "ErrorRadius": 4.7,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7459,
+      "CatalogName": "PCCS2F044",
+      "ErrorRadius": 5.5,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7460,
+      "CatalogName": "PCCS2F070",
+      "ErrorRadius": 3.6,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7461,
+      "CatalogName": "PCCS2F100",
+      "ErrorRadius": 2.6,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7462,
+      "CatalogName": "PCCS2F143",
+      "ErrorRadius": 1.8,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7463,
+      "CatalogName": "PCCS2F217",
+      "ErrorRadius": 1.8,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7464,
+      "CatalogName": "PCCS2F353",
+      "ErrorRadius": 2.1,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7465,
+      "CatalogName": "PCCS2F545",
+      "ErrorRadius": 1.3,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 7466,
+      "CatalogName": "PCCS2F857",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 79,
+      "CatalogName": "WMAP5 (Freq. 23e9 Hz)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 80,
+      "CatalogName": "WMAP5 (Freq. 33e9 Hz)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 81,
+      "CatalogName": "WMAP5 (Freq. 41e9 Hz)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 82,
+      "CatalogName": "WMAP5 (Freq. 61e9 Hz)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 83,
+      "CatalogName": "WMAP5 (Freq. 94e9 Hz)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Radio"
+    },
+    {
+      "CatalogId": 65,
+      "CatalogName": "AKARIBSC 065",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 66,
+      "CatalogName": "AKARIBSC 090",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 67,
+      "CatalogName": "AKARIBSC 140",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 68,
+      "CatalogName": "AKARIBSC 160",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 63,
+      "CatalogName": "AKARIPSC 09",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 64,
+      "CatalogName": "AKARIPSC 18",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 5227,
+      "CatalogName": "allwise w1",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 5228,
+      "CatalogName": "allwise w2",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 5229,
+      "CatalogName": "allwise w3",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 5230,
+      "CatalogName": "allwise w4",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3200,
+      "CatalogName": "WISE W1 ExtEll",
+      "ErrorRadius": 0.25,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3205,
+      "CatalogName": "WISE W1 PointPsf",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3201,
+      "CatalogName": "WISE W2 ExtEll",
+      "ErrorRadius": 0.25,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3206,
+      "CatalogName": "WISE W2 PointPsf",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3202,
+      "CatalogName": "WISE W3 ExtEll",
+      "ErrorRadius": 0.25,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3207,
+      "CatalogName": "WISE W3 PointPsf",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3203,
+      "CatalogName": "WISE W4 ExtEll",
+      "ErrorRadius": 0.25,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 3208,
+      "CatalogName": "WISE W4 PointPsf",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 4524,
+      "CatalogName": "DENIS_3_i",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 4525,
+      "CatalogName": "DENIS_3_j",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 4526,
+      "CatalogName": "DENIS_3_k",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 2671,
+      "CatalogName": "GALEXAISFUV",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 2670,
+      "CatalogName": "GALEXAISNUV",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 2677,
+      "CatalogName": "GALEXMISFUV",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 2676,
+      "CatalogName": "GALEXMISNUV",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 98,
+      "CatalogName": "UVOTPLKSED",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6349,
+      "CatalogName": "UVOTSSC v",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6350,
+      "CatalogName": "UVOTSSC b",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6351,
+      "CatalogName": "UVOTSSC u",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6354,
+      "CatalogName": "UVOTSSC uvw1",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6353,
+      "CatalogName": "UVOTSSC uvm2",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 6352,
+      "CatalogName": "UVOTSSC uvw2",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Optical UV"
+    },
+    {
+      "CatalogId": 2893,
+      "CatalogName": "1SWXRT (0.1-10 keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2600,
+      "CatalogName": "1SWXRT (0.1-2.4 keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2578,
+      "CatalogName": "1SWXRT (2-10 keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 7069,
+      "CatalogName": "1SXPS(0.3-1keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 7072,
+      "CatalogName": "1SXPS(0.3\u201410 keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 7070,
+      "CatalogName": "1SXPS(1-2keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 7071,
+      "CatalogName": "1SXPS(2\u201410 keV)",
+      "ErrorRadius": 0.3,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2737,
+      "CatalogName": "ARIEL3A",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 74,
+      "CatalogName": "ASCASIS (0.5-12 keV)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14790,
+      "CatalogName": "band 0 (0.2 - 5.0 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14791,
+      "CatalogName": "band 1 (0.2 - 0.6 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14792,
+      "CatalogName": "band 2 (0.6 - 2.3 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14793,
+      "CatalogName": "band 3 (2.3 - 5.0 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 73,
+      "CatalogName": "BMW",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2858,
+      "CatalogName": "CHANDRASRC (0.2-0.5 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2859,
+      "CatalogName": "CHANDRASRC (0.5-1.2 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2860,
+      "CatalogName": "CHANDRASRC (1.2-2.0 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2861,
+      "CatalogName": "CHANDRASRC (2.0-7.0 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2729,
+      "CatalogName": "CMA",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 10489,
+      "CatalogName": "hatlasdr1 (100um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 10490,
+      "CatalogName": "hatlasdr1 (160um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 10491,
+      "CatalogName": "hatlasdr1 (250um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 10492,
+      "CatalogName": "hatlasdr1 (350um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 10493,
+      "CatalogName": "hatlasdr1 (500um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 7818,
+      "CatalogName": "HGOODSDR1 (100um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 7819,
+      "CatalogName": "HGOODSDR1 (160um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 7820,
+      "CatalogName": "HGOODSDR1 (250um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 7821,
+      "CatalogName": "HGOODSDR1 (350um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 7822,
+      "CatalogName": "HGOODSDR1 (500um)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Infrared"
+    },
+    {
+      "CatalogId": 6,
+      "CatalogName": "IPC",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 5,
+      "CatalogName": "IPCSLEW",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14,
+      "CatalogName": "RASS",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 8059,
+      "CatalogName": "RXS2CAT",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 8185,
+      "CatalogName": "SAXMECS",
+      "ErrorRadius": 1.5,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 100,
+      "CatalogName": "SKYROSAT",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14795,
+      "CatalogName": "suppl band 1 (0.2 - 2.3 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14796,
+      "CatalogName": "suppl band P1 (0.2 - 0.5 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14797,
+      "CatalogName": "suppl band P2 (0.5 - 1 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14798,
+      "CatalogName": "suppl band P3 (1 - 2 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14799,
+      "CatalogName": "suppl band P4 (2 - 5 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14800,
+      "CatalogName": "suppl band P5 (5 - 8 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2738,
+      "CatalogName": "UHURU4",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2936,
+      "CatalogName": "WFCCAT",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2935,
+      "CatalogName": "WFCCAT FULL",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 15,
+      "CatalogName": "WGACAT2",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14640,
+      "CatalogName": "XMMSL2 (0.2-12 keV)",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14642,
+      "CatalogName": "XMMSL2 (0.2-2 keV)",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14641,
+      "CatalogName": "XMMSL2 (2-12 keV)",
+      "ErrorRadius": 0.5,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 17,
+      "CatalogName": "XRTGRBDEEP",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14783,
+      "CatalogName": "band 1 (0.2 - 2.3 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14334,
+      "CatalogName": "4XMM-DR12 (0.5-1 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14784,
+      "CatalogName": "band P1 (0.2 - 0.5 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14335,
+      "CatalogName": "4XMM-DR12 (1-2 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14785,
+      "CatalogName": "band P2 (0.5 - 1 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14336,
+      "CatalogName": "4XMM-DR12 (2-4.5 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14786,
+      "CatalogName": "band P3 (1 - 2 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14337,
+      "CatalogName": "4XMM-DR12 (4.5-12 keV)",
+      "ErrorRadius": 0.1,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14787,
+      "CatalogName": "band P4 (2 - 5 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 14788,
+      "CatalogName": "band P5 (5 - 8 keV)",
+      "ErrorRadius": 0.15,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 3156,
+      "CatalogName": "MAXIGSC",
+      "ErrorRadius": 12.0
+    },
+    {
+      "CatalogId": 5907,
+      "CatalogName": "MAXIGSCHGL-HB",
+      "ErrorRadius": 12.0
+    },
+    {
+      "CatalogId": 5906,
+      "CatalogName": "MAXIGSCHGL-SB",
+      "ErrorRadius": 12.0
+    },
+    {
+      "CatalogId": 7902,
+      "CatalogName": "2FHL (1081GeV)",
+      "ErrorRadius": 6.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 7901,
+      "CatalogName": "2FHL (316GeV)",
+      "ErrorRadius": 6.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 7900,
+      "CatalogName": "2FHL (92GeV)",
+      "ErrorRadius": 6.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5375,
+      "CatalogName": "A2PIC",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Soft X-Ray"
+    },
+    {
+      "CatalogId": 2752,
+      "CatalogName": "A4 (13-25 keV)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 2753,
+      "CatalogName": "A4 (25-40 keV)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 2754,
+      "CatalogName": "A4 (40-80 keV)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 2755,
+      "CatalogName": "A4 (80-180 keV)",
+      "ErrorRadius": 1.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 35,
+      "CatalogName": "BAT39MCAT (10-150keV)",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 34,
+      "CatalogName": "BAT39MCAT (15-30keV)",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 103,
+      "CatalogName": "BAT54MCAT (15-150keV)",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 102,
+      "CatalogName": "BAT54MCAT (15-50keV)",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 3052,
+      "CatalogName": "BAT60AGN (15 - 55 keV)",
+      "ErrorRadius": 3.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 8051,
+      "CatalogName": "BATPA100",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 14344,
+      "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14345,
+      "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14346,
+      "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14347,
+      "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14349,
+      "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14351,
+      "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14348,
+      "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 14350,
+      "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 56,
+      "CatalogName": "Fermi1FGL (200 Mev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 58,
+      "CatalogName": "Fermi1FGL (2Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 57,
+      "CatalogName": "Fermi1FGL (600 Mev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 60,
+      "CatalogName": "Fermi1FGL (60Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 59,
+      "CatalogName": "Fermi1FGL (6Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 114,
+      "CatalogName": "Fermi2FGL (200 Mev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 116,
+      "CatalogName": "Fermi2FGL (2Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 115,
+      "CatalogName": "Fermi2FGL (600 Mev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 118,
+      "CatalogName": "Fermi2FGL (60Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 117,
+      "CatalogName": "Fermi2FGL (6Gev)",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 2884,
+      "CatalogName": "Fermi2FglLC",
+      "ErrorRadius": 30.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5953,
+      "CatalogName": "Fermi3FGL (200 Mev)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5955,
+      "CatalogName": "Fermi3FGL (2Gev)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5954,
+      "CatalogName": "Fermi3FGL (600 Mev)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5957,
+      "CatalogName": "Fermi3FGL (60Gev)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 5956,
+      "CatalogName": "Fermi3FGL (6Gev)",
+      "ErrorRadius": 15.0,
+      "SubGroupName": "Gamma-Ray"
+    },
+    {
+      "CatalogId": 61,
+      "CatalogName": "IBISSG4CAT (20-40 keV)",
+      "ErrorRadius": 6.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 62,
+      "CatalogName": "IBISSG4CAT (40-100 keV)",
+      "ErrorRadius": 6.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 12344,
+      "CatalogName": "SWBAT105 (14-195 keV)",
+      "ErrorRadius": 5.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 3865,
+      "CatalogName": "SWBAT70M  (14-195 keV)",
+      "ErrorRadius": 3.0,
+      "SubGroupName": "Hard X-Ray"
+    },
+    {
+      "CatalogId": 85,
+      "CatalogName": "AGILE Grid",
+      "ErrorRadius": 60.0
+    },
+    {
+      "CatalogId": 7,
+      "CatalogName": "EGRET3",
+      "ErrorRadius": 60.0
+    },
+    {
+      "CatalogId": 5092,
+      "CatalogName": "ARGO2LAC",
+      "ErrorRadius": 1.0
+    },
+    {
+      "CatalogId": 3957,
+      "CatalogName": "HESS",
+      "ErrorRadius": 10.0
+    },
+    {
+      "CatalogId": 3956,
+      "CatalogName": "MAGIC",
+      "ErrorRadius": 10.0
+    },
+    {
+      "CatalogId": 3958,
+      "CatalogName": "VERITAS",
+      "ErrorRadius": 10.0
+    }
+  ]
+}

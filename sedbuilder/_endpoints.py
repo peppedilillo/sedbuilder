@@ -32,6 +32,7 @@ class APIPaths(Enum):
     """
 
     GET_DATA: Callable = _get_data
+    CATALOGS: Callable = lambda: f"{BASE_URL}/catalogs"
 
     def __call__(self, *args, **kwargs):
         """Make enum members callable by delegating to their value."""

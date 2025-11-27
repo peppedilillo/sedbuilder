@@ -4,7 +4,7 @@
     "message": null
   },
   "Properties": {
-    "Nh": -1.0,
+    "Nh": 8.77e+20,
     "axis_X": "Frequency (Hz)",
     "axis_X_unit": "Hz",
     "axis_Y": "nuFnu (erg/cm^2/s)",
@@ -348,8 +348,8 @@
           "AngularDistance": 0.3225900230374546,
           "Frequency": 2.42e+17,
           "FrequencyError": 0.0,
-          "Nufnu": 2.084713053504178e-13,
-          "NufnuError": 5.239333079116892e-14,
+          "Nufnu": 2.2836615206410327e-13,
+          "NufnuError": 5.739333442791707e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -358,8 +358,8 @@
           "AngularDistance": 0.40161256974104986,
           "Frequency": 2.42e+17,
           "FrequencyError": 0.0,
-          "Nufnu": 2.917642336438616e-13,
-          "NufnuError": 4.043869563952625e-14,
+          "Nufnu": 3.196078963250331e-13,
+          "NufnuError": 4.4297843783187766e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }

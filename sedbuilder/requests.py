@@ -11,7 +11,34 @@ from pydantic import Field
 from pydantic import validate_call
 
 from ._endpoints import APIPaths
-from .schemas import Response
+from .schemas import CatalogsResponse
+from .schemas import GetDataResponse
+
+
+def _get_and_validate(url: str, timeout: float) -> httpx.Response:
+    """Make HTTP request and handle errors.
+
+    Args:
+        url: The URL to request.
+        timeout: Request timeout in seconds.
+
+    Returns:
+        The validated HTTP response.
+
+    Raises:
+        TimeoutError: If the request times out.
+        RuntimeError: If the request fails for other reasons.
+    """
+    try:
+        response = httpx.get(url, timeout=timeout)
+        response.raise_for_status()
+        return response
+    except httpx.ReadTimeout:
+        raise TimeoutError(f"API request timed out after {timeout}s. Try increasing the timeout parameter.")
+    except httpx.HTTPStatusError as e:
+        raise RuntimeError(f"API request failed with status code {e.response.status_code}.")
+    except httpx.RequestError as e:
+        raise RuntimeError(f"A connectivity error occurred while requesting {e.request.url!r}.")
 
 
 @validate_call
@@ -28,7 +55,7 @@ def get_data(
         Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
         Field(gt=0.0, description="Request timeout in seconds."),
     ] = 30.0,
-) -> Response:
+) -> GetDataResponse:
     """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
     data for the specified sky coordinates.
 
@@ -60,17 +87,42 @@ def get_data(
         df = response.to_pandas()         # Pandas DataFrame (requires pandas)
         ```
     """
-    try:
-        r = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
-        r.raise_for_status()
-    except httpx.ReadTimeout as _:
-        raise TimeoutError(f"API request timed out after {timeout}s. Try increasing the timeout parameter.")
-    except httpx.HTTPStatusError as e:
-        raise RuntimeError(f"API request failed with status code {e.response.status_code}.")
-    except httpx.RequestError as e:
-        raise RuntimeError(f"A connectivity error occurred while requesting {e.request.url!r}.")
+    r = _get_and_validate(APIPaths.GET_DATA(ra=ra, dec=dec), timeout)
+    return GetDataResponse(**r.json())
 
-    return Response(**r.json())
+
+@validate_call
+def catalogs(
+    timeout: Annotated[
+        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
+        Field(gt=0.0, description="Request timeout in seconds."),
+    ] = 30.0,
+) -> CatalogsResponse:
+    """Queries the SSDC SED Builder API to retrieve the list of available catalogs.
+
+    Args:
+        timeout: Request timeout in seconds (default: 30.0).
+
+    Returns:
+        A response object containing catalog information. Use its methods to recover data in different formats.
+
+    Raises:
+        TimeoutError: If the API request exceeds the timeout.
+        RuntimeError: If the API request fails for other reasons.
+
+    Example:
+        ```python
+        from sedbuilder import catalogs
+
+        # Get list of available catalogs
+        response = catalogs()
+
+        # Access catalog data as a list of dictionaries
+        catalog_list = response.to_list()
+        ```
+    """
+    r = _get_and_validate(APIPaths.CATALOGS(), timeout)
+    return CatalogsResponse(**r.json())
 
 
 """
