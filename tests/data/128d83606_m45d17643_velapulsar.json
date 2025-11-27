@@ -4,3470 +4,3123 @@
     "message": null
   },
   "Properties": {
-    "Nh": 7.78e+21
+    "Nh": 7.78e+21,
+    "axis_X": "Frequency (Hz)",
+    "axis_X_unit": "Hz",
+    "axis_Y": "nuFnu (erg/cm^2/s)",
+    "axis_Y_unit": "erg cm**(-2) s**(-1)"
   },
   "Catalogs": [
     {
       "Catalog": {
+        "CatalogId": 3,
         "CatalogName": "DIXON",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
+          "Name": "PSR 0833-45",
+          "AngularDistance": 0.028199982150826183,
           "Frequency": 400000000.0,
+          "FrequencyError": 0.0,
           "Nufnu": 1.1208e-14,
-          "FrequencyError": 0.0,
-          "NufnuError": 0.0,
-          "Name": "PSR 0833-45",
-          "AngularDistance": 0.028199982150826183,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "NufnuError": 0.0
         },
         {
+          "Name": "PSR 0833-45",
+          "AngularDistance": 0.028199982150826183,
           "Frequency": 1400000000.0,
-          "Nufnu": 1.5694e-14,
           "FrequencyError": 0.0,
-          "NufnuError": 0.0,
-          "Name": "PSR 0833-45",
-          "AngularDistance": 0.028199982150826183,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Nufnu": 1.5694e-14,
+          "NufnuError": 0.0
         },
         {
-          "Frequency": 408000000.0,
-          "Nufnu": 2.8396800000000003e-14,
-          "FrequencyError": 0.0,
-          "NufnuError": 0.0,
           "Name": "CC 263-02.8",
           "AngularDistance": 0.47852053492674984,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 408000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.8396800000000003e-14,
+          "NufnuError": 0.0
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 4524,
         "CatalogName": "DENIS_3_i",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 379000000000000.0,
-          "Nufnu": 8.685813570122325e-13,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2799887560456524e-13,
-          "Name": "",
           "AngularDistance": 0.06765126741933757,
+          "Frequency": 379000000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.685813570122325e-13,
+          "NufnuError": 1.2799887560456524e-13,
           "StartTime": 50149.091285,
-          "StopTime": 50149.091285,
-          "Info": ""
+          "StopTime": 50149.091285
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 4525,
         "CatalogName": "DENIS_3_j",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 244100000000000.0,
-          "Nufnu": 1.1137381164885718e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1541603678794374e-13,
-          "Name": "",
           "AngularDistance": 0.06765126741933757,
+          "Frequency": 244100000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1137381164885718e-12,
+          "NufnuError": 2.1541603678794374e-13,
           "StartTime": 50149.091285,
-          "StopTime": 50149.091285,
-          "Info": ""
+          "StopTime": 50149.091285
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7069,
         "CatalogName": "1SXPS(0.3-1keV)",
         "ErrorRadius": 0.3
       },
       "SourceData": [
         {
-          "Frequency": 1.325e+17,
-          "Nufnu": 1.7831800480649918e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.295929848490253e-11,
           "Name": "1SXPS_J083520.2-451033",
           "AngularDistance": 0.08011271702964368,
+          "Frequency": 1.325e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7831800480649918e-09,
+          "NufnuError": 3.295929848490253e-11,
           "StartTime": 53367.135498,
-          "StopTime": 53395.960046,
-          "Info": ""
+          "StopTime": 53395.960046
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7072,
         "CatalogName": "1SXPS(0.3\u201410 keV)",
         "ErrorRadius": 0.3
       },
       "SourceData": [
         {
-          "Frequency": 4.188e+17,
-          "Nufnu": 2.0087899399445774e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.0151599573053902e-12,
           "Name": "1SXPS_J083520.2-451033",
           "AngularDistance": 0.08011271702964368,
+          "Frequency": 4.188e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.0087899399445774e-10,
+          "NufnuError": 2.0151599573053902e-12,
           "StartTime": 53367.135498,
-          "StopTime": 53395.960046,
-          "Info": ""
+          "StopTime": 53395.960046
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7070,
         "CatalogName": "1SXPS(1-2keV)",
         "ErrorRadius": 0.3
       },
       "SourceData": [
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 1.8069699903033865e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.201390107870905e-12,
           "Name": "1SXPS_J083520.2-451033",
           "AngularDistance": 0.08011271702964368,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8069699903033865e-10,
+          "NufnuError": 3.201390107870905e-12,
           "StartTime": 53367.135498,
-          "StopTime": 53395.960046,
-          "Info": ""
+          "StopTime": 53395.960046
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7071,
         "CatalogName": "1SXPS(2\u201410 keV)",
         "ErrorRadius": 0.3
       },
       "SourceData": [
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 1.0842000214283942e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1150800295216543e-12,
           "Name": "1SXPS_J083520.2-451033",
           "AngularDistance": 0.08011271702964368,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0842000214283942e-10,
+          "NufnuError": 2.1150800295216543e-12,
           "StartTime": 53367.135498,
-          "StopTime": 53395.960046,
-          "Info": ""
+          "StopTime": 53395.960046
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2737,
         "CatalogName": "ARIEL3A",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
+          "AngularDistance": 4.657557570667278,
           "Frequency": 8.376e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.24054825026482e-10,
-          "FrequencyError": 0.0,
           "NufnuError": -3.5334365922766302e-09,
-          "Name": "",
-          "AngularDistance": 4.657557570667278,
-          "StartTime": null,
-          "StopTime": null,
           "Info": "Nufnu Flux error is bigger than Flux"
         },
         {
+          "AngularDistance": 4.657557570667278,
           "Frequency": 8.376e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 1.0601370626115101e-10,
-          "FrequencyError": 0.0,
           "NufnuError": -3.5334365922766302e-09,
-          "Name": "",
-          "AngularDistance": 4.657557570667278,
-          "StartTime": null,
-          "StopTime": null,
           "Info": "Nufnu Flux error is bigger than Flux"
         },
         {
-          "Frequency": 8.376e+17,
-          "Nufnu": 1.66088130163098e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": -3.5334365922766302e-09,
-          "Name": "",
           "AngularDistance": 4.657557570667278,
-          "StartTime": null,
-          "StopTime": null,
+          "Frequency": 8.376e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.66088130163098e-10,
+          "NufnuError": -3.5334365922766302e-09,
           "Info": "Nufnu Flux error is bigger than Flux"
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14790,
         "CatalogName": "band 0 (0.2 - 5.0 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 2.418e+17,
-          "Nufnu": 5.169219913225831e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2019199654642043e-12,
           "Name": "1eRASS_J083523.7-451043",
           "AngularDistance": 0.038955477699445996,
+          "Frequency": 2.418e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.169219913225831e-11,
+          "NufnuError": 1.2019199654642043e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14791,
         "CatalogName": "band 1 (0.2 - 0.6 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 8.376e+16,
-          "Nufnu": 7.478449859377179e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7561499476848041e-10,
           "Name": "1eRASS_J083523.7-451043",
           "AngularDistance": 0.038955477699445996,
+          "Frequency": 8.376e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.478449859377179e-09,
+          "NufnuError": 1.7561499476848041e-10,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14792,
         "CatalogName": "band 2 (0.6 - 2.3 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 2.841e+17,
-          "Nufnu": 5.189240009917384e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1607999717694328e-12,
           "Name": "1eRASS_J083523.7-451043",
           "AngularDistance": 0.038955477699445996,
+          "Frequency": 2.841e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.189240009917384e-11,
+          "NufnuError": 1.1607999717694328e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14793,
         "CatalogName": "band 3 (2.3 - 5.0 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 8.2e+17,
-          "Nufnu": 2.8356900161341514e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.855389973604016e-12,
           "Name": "1eRASS_J083523.7-451043",
           "AngularDistance": 0.038955477699445996,
+          "Frequency": 8.2e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.8356900161341514e-11,
+          "NufnuError": 1.855389973604016e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2729,
         "CatalogName": "CMA",
         "ErrorRadius": 0.5
       },
       "SourceData": [
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.261496335605057e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.957664181462085e-11,
-          "Name": "",
           "AngularDistance": 0.17927220699221427,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.261496335605057e-10,
+          "NufnuError": 2.957664181462085e-11,
           "StartTime": 46204.441406,
-          "StopTime": 46204.441406,
-          "Info": ""
+          "StopTime": 46204.441406
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.099992501754401e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.0831575421927804e-11,
-          "Name": "",
           "AngularDistance": 0.1916875901092999,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.099992501754401e-10,
+          "NufnuError": 2.0831575421927804e-11,
           "StartTime": 45607.792969,
-          "StopTime": 45607.792969,
-          "Info": ""
+          "StopTime": 45607.792969
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.882392904852407e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.162559455837848e-11,
-          "Name": "",
           "AngularDistance": 0.24318677647501843,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.882392904852407e-10,
+          "NufnuError": 2.162559455837848e-11,
           "StartTime": 45607.386719,
-          "StopTime": 45607.386719,
-          "Info": ""
+          "StopTime": 45607.386719
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.312617116581349e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6957662653301192e-11,
-          "Name": "",
           "AngularDistance": 0.25341402229349685,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.312617116581349e-10,
+          "NufnuError": 1.6957662653301192e-11,
           "StartTime": 45607.441406,
-          "StopTime": 45607.441406,
-          "Info": ""
+          "StopTime": 45607.441406
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.8478133584882111e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.8484882819252305e-11,
-          "Name": "",
           "AngularDistance": 0.042505124877053074,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8478133584882111e-10,
+          "NufnuError": 2.8484882819252305e-11,
           "StartTime": 45794.355469,
-          "StopTime": 45794.355469,
-          "Info": ""
+          "StopTime": 45794.355469
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.6285606539326867e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.768777820998967e-11,
-          "Name": "",
           "AngularDistance": 0.04924188175024183,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.6285606539326867e-10,
+          "NufnuError": 1.768777820998967e-11,
           "StartTime": 45607.792969,
-          "StopTime": 45607.792969,
-          "Info": ""
+          "StopTime": 45607.792969
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.372956748798151e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1925737293146014e-11,
-          "Name": "",
           "AngularDistance": 0.09297845674423041,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.372956748798151e-10,
+          "NufnuError": 2.1925737293146014e-11,
           "StartTime": 45794.03125,
-          "StopTime": 45794.03125,
-          "Info": ""
+          "StopTime": 45794.03125
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.099637999888335e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.977360464200906e-11,
-          "Name": "",
           "AngularDistance": 0.14940744465459954,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.099637999888335e-10,
+          "NufnuError": 1.977360464200906e-11,
           "StartTime": 45607.714844,
-          "StopTime": 45607.714844,
-          "Info": ""
+          "StopTime": 45607.714844
         },
         {
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.2557401516141884e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.6273088469545505e-12,
-          "Name": "",
           "AngularDistance": 0.2662279688319945,
+          "Frequency": 7.646e+16,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2557401516141884e-11,
+          "NufnuError": 4.6273088469545505e-12,
           "StartTime": 45794.125,
-          "StopTime": 45794.125,
-          "Info": ""
+          "StopTime": 45794.125
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 6,
         "CatalogName": "IPC",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
-          "Frequency": 2.42e+17,
-          "Nufnu": 4.128196073690747e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.528309277959212e-13,
           "Name": "2E0833.6-4500",
           "AngularDistance": 0.12108007908152275,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.128196073690747e-11,
+          "NufnuError": 9.528309277959212e-13,
           "StartTime": 43813.5,
-          "StopTime": 44695.5,
-          "Info": ""
+          "StopTime": 44695.5
         },
         {
-          "Frequency": 2.42e+17,
-          "Nufnu": 3.6209985605061197e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.373373214240845e-13,
           "Name": "2E0833.6-4500",
           "AngularDistance": 0.08836209537642342,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.6209985605061197e-11,
+          "NufnuError": 8.373373214240845e-13,
           "StartTime": 43813.5,
-          "StopTime": 44695.5,
-          "Info": ""
+          "StopTime": 44695.5
         },
         {
-          "Frequency": 2.42e+17,
-          "Nufnu": 3.590484371076575e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.907953285548621e-12,
           "Name": "2E0833.6-4459",
           "AngularDistance": 0.2329144807249942,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.590484371076575e-11,
+          "NufnuError": 1.907953285548621e-12,
           "StartTime": 43813.5,
-          "StopTime": 44695.5,
-          "Info": ""
+          "StopTime": 44695.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5,
         "CatalogName": "IPCSLEW",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
-          "Frequency": 2.42e+17,
-          "Nufnu": 5.302611436480184e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.408060095082608e-12,
           "Name": "HU VEL",
           "AngularDistance": 0.45348342626793514,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.302611436480184e-11,
+          "NufnuError": 7.408060095082608e-12,
           "StartTime": 43813.5,
-          "StopTime": 44695.5,
-          "Info": ""
+          "StopTime": 44695.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 8185,
         "CatalogName": "SAXMECS",
         "ErrorRadius": 1.5
       },
       "SourceData": [
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.942739884577051e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.716509963681223e-13,
-          "Name": "",
           "AngularDistance": 0.7907160062966562,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.942739884577051e-11,
+          "NufnuError": 1.716509963681223e-13,
           "StartTime": 50770.854132,
-          "StopTime": 50772.923981,
-          "Info": ""
+          "StopTime": 50772.923981
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2738,
         "CatalogName": "UHURU4",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 8.376e+17,
-          "Nufnu": 1.40173685122809e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 0.0,
-          "Name": "",
           "AngularDistance": 2.900227589453568,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 8.376e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.40173685122809e-10,
+          "NufnuError": 0.0
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2936,
         "CatalogName": "WFCCAT",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
+          "AngularDistance": 1.9013061890083596,
           "Frequency": 6.021e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 8.1128992413e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.3107472573e-11,
-          "Name": "",
-          "AngularDistance": 1.9013061890083596,
           "StartTime": 50543.386331,
-          "StopTime": 50544.420641,
-          "Info": ""
+          "StopTime": 50544.420641
         },
         {
+          "AngularDistance": 1.9013061890083596,
           "Frequency": 9.648e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.0382731881e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.4327358424e-12,
-          "Name": "",
-          "AngularDistance": 1.9013061890083596,
           "StartTime": 50543.386331,
-          "StopTime": 50544.420641,
-          "Info": ""
+          "StopTime": 50544.420641
         },
         {
+          "AngularDistance": 1.9013061890083596,
           "Frequency": 1.448e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 3.9958605869e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.095655424e-11,
-          "Name": "",
-          "AngularDistance": 1.9013061890083596,
           "StartTime": 50543.386331,
-          "StopTime": 50544.420641,
-          "Info": ""
+          "StopTime": 50544.420641
         },
         {
+          "AngularDistance": 1.9013061890083596,
           "Frequency": 2.231e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.6337899623e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.5288686983e-11,
-          "Name": "",
-          "AngularDistance": 1.9013061890083596,
           "StartTime": 50543.386331,
-          "StopTime": 50544.420641,
-          "Info": ""
+          "StopTime": 50544.420641
         },
         {
+          "AngularDistance": 1.468493837560853,
           "Frequency": 6.021e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 6.0381880052e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.944241181e-12,
-          "Name": "",
-          "AngularDistance": 1.468493837560853,
           "StartTime": 51002.7839,
-          "StopTime": 51004.430602,
-          "Info": ""
+          "StopTime": 51004.430602
         },
         {
+          "AngularDistance": 1.468493837560853,
           "Frequency": 9.648e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 2.6159480832e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 7.5847488012e-12,
-          "Name": "",
-          "AngularDistance": 1.468493837560853,
           "StartTime": 51002.7839,
-          "StopTime": 51004.430602,
-          "Info": ""
+          "StopTime": 51004.430602
         },
         {
+          "AngularDistance": 1.468493837560853,
           "Frequency": 1.448e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 7.038550992e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.5314537513e-12,
-          "Name": "",
-          "AngularDistance": 1.468493837560853,
           "StartTime": 51002.7839,
-          "StopTime": 51004.430602,
-          "Info": ""
+          "StopTime": 51004.430602
         },
         {
+          "AngularDistance": 1.468493837560853,
           "Frequency": 2.231e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 7.4617041712e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.3104749057e-11,
-          "Name": "",
-          "AngularDistance": 1.468493837560853,
           "StartTime": 51002.7839,
-          "StopTime": 51004.430602,
-          "Info": ""
+          "StopTime": 51004.430602
         },
         {
+          "AngularDistance": 1.363504840716071,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.2076311185e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.3718847826e-12,
-          "Name": "",
-          "AngularDistance": 1.363504840716071,
           "StartTime": 51454.811123,
-          "StopTime": 51457.198056,
-          "Info": ""
+          "StopTime": 51457.198056
         },
         {
+          "AngularDistance": 1.363504840716071,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.5647402525e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 7.4559108887e-12,
-          "Name": "",
-          "AngularDistance": 1.363504840716071,
           "StartTime": 51454.811123,
-          "StopTime": 51457.198056,
-          "Info": ""
+          "StopTime": 51457.198056
         },
         {
+          "AngularDistance": 1.363504840716071,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.4676003308e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.5259321264e-12,
-          "Name": "",
-          "AngularDistance": 1.363504840716071,
           "StartTime": 51454.811123,
-          "StopTime": 51457.198056,
-          "Info": ""
+          "StopTime": 51457.198056
         },
         {
+          "AngularDistance": 1.363504840716071,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.2315450583e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.5293140018e-11,
-          "Name": "",
-          "AngularDistance": 1.363504840716071,
           "StartTime": 51454.811123,
-          "StopTime": 51457.198056,
-          "Info": ""
+          "StopTime": 51457.198056
         },
         {
+          "AngularDistance": 0.7160609755758248,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 5.926335811e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.8409083286e-11,
-          "Name": "",
-          "AngularDistance": 0.7160609755758248,
           "StartTime": 50570.199965,
-          "StopTime": 50570.435234,
-          "Info": ""
+          "StopTime": 50570.435234
         },
         {
+          "AngularDistance": 0.7160609755758248,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 7.5810399625e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.4403170497e-11,
-          "Name": "",
-          "AngularDistance": 0.7160609755758248,
           "StartTime": 50570.199965,
-          "StopTime": 50570.435234,
-          "Info": ""
+          "StopTime": 50570.435234
         },
         {
+          "AngularDistance": 0.7160609755758248,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 7.1653502576e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.6647690171e-11,
-          "Name": "",
-          "AngularDistance": 0.7160609755758248,
           "StartTime": 50570.199965,
-          "StopTime": 50570.435234,
-          "Info": ""
+          "StopTime": 50570.435234
         },
         {
+          "AngularDistance": 0.7160609755758248,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 7.2116500272e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 2.352215818e-11,
-          "Name": "",
-          "AngularDistance": 0.7160609755758248,
           "StartTime": 50570.199965,
-          "StopTime": 50570.435234,
-          "Info": ""
+          "StopTime": 50570.435234
         },
         {
+          "AngularDistance": 1.075797840766189,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 2.8101541927e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.6138514136e-11,
-          "Name": "",
-          "AngularDistance": 1.075797840766189,
           "StartTime": 50570.143044,
-          "StopTime": 50570.406635,
-          "Info": ""
+          "StopTime": 50570.406635
         },
         {
+          "AngularDistance": 1.075797840766189,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 7.304590266e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.491102207e-11,
-          "Name": "",
-          "AngularDistance": 1.075797840766189,
           "StartTime": 50570.143044,
-          "StopTime": 50570.406635,
-          "Info": ""
+          "StopTime": 50570.406635
         },
         {
+          "AngularDistance": 1.075797840766189,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.5136572391e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.4941206258e-11,
-          "Name": "",
-          "AngularDistance": 1.075797840766189,
           "StartTime": 50570.143044,
-          "StopTime": 50570.406635,
-          "Info": ""
+          "StopTime": 50570.406635
         },
         {
+          "AngularDistance": 1.075797840766189,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 3.6563193445e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 2.286960378e-11,
-          "Name": "",
-          "AngularDistance": 1.075797840766189,
           "StartTime": 50570.143044,
-          "StopTime": 50570.406635,
-          "Info": ""
+          "StopTime": 50570.406635
         },
         {
+          "AngularDistance": 1.0354457792664509,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.2625392799e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.0651320104e-11,
-          "Name": "",
-          "AngularDistance": 1.0354457792664509,
           "StartTime": 50714.442106,
-          "StopTime": 50715.834549,
-          "Info": ""
+          "StopTime": 50715.834549
         },
         {
+          "AngularDistance": 1.0354457792664509,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.2414179807e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 7.8763436745e-12,
-          "Name": "",
-          "AngularDistance": 1.0354457792664509,
           "StartTime": 50714.442106,
-          "StopTime": 50715.834549,
-          "Info": ""
+          "StopTime": 50715.834549
         },
         {
+          "AngularDistance": 1.0354457792664509,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.8569617078e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.5992632246e-12,
-          "Name": "",
-          "AngularDistance": 1.0354457792664509,
           "StartTime": 50714.442106,
-          "StopTime": 50715.834549,
-          "Info": ""
+          "StopTime": 50715.834549
         },
         {
+          "AngularDistance": 1.0354457792664509,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.5952117939e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.310544815e-11,
-          "Name": "",
-          "AngularDistance": 1.0354457792664509,
           "StartTime": 50714.442106,
-          "StopTime": 50715.834549,
-          "Info": ""
+          "StopTime": 50715.834549
         },
         {
+          "AngularDistance": 0.33938619161662503,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.7828463412e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.0004154343e-12,
-          "Name": "",
-          "AngularDistance": 0.33938619161662503,
           "StartTime": 50556.476007,
-          "StopTime": 50557.400037,
-          "Info": ""
+          "StopTime": 50557.400037
         },
         {
+          "AngularDistance": 0.33938619161662503,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 5.101902581e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 6.36212567e-12,
-          "Name": "",
-          "AngularDistance": 0.33938619161662503,
           "StartTime": 50556.476007,
-          "StopTime": 50557.400037,
-          "Info": ""
+          "StopTime": 50557.400037
         },
         {
+          "AngularDistance": 0.33938619161662503,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.2257475297e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 6.8182065896e-12,
-          "Name": "",
-          "AngularDistance": 0.33938619161662503,
           "StartTime": 50556.476007,
-          "StopTime": 50557.400037,
-          "Info": ""
+          "StopTime": 50557.400037
         },
         {
+          "AngularDistance": 0.33938619161662503,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.3197643379e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.3856606515e-12,
-          "Name": "",
-          "AngularDistance": 0.33938619161662503,
           "StartTime": 50556.476007,
-          "StopTime": 50557.400037,
-          "Info": ""
+          "StopTime": 50557.400037
         },
         {
+          "AngularDistance": 0.2790244823941744,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.8129065877e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.0803737245e-11,
-          "Name": "",
-          "AngularDistance": 0.2790244823941744,
           "StartTime": 52214.937211,
-          "StopTime": 52217.462535,
-          "Info": ""
+          "StopTime": 52217.462535
         },
         {
+          "AngularDistance": 0.2790244823941744,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.6263238939e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 5.892400283e-12,
-          "Name": "",
-          "AngularDistance": 0.2790244823941744,
           "StartTime": 52214.937211,
-          "StopTime": 52217.462535,
-          "Info": ""
+          "StopTime": 52217.462535
         },
         {
+          "AngularDistance": 0.2790244823941744,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.5682652106e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 5.2534049159e-12,
-          "Name": "",
-          "AngularDistance": 0.2790244823941744,
           "StartTime": 52214.937211,
-          "StopTime": 52217.462535,
-          "Info": ""
+          "StopTime": 52217.462535
         },
         {
+          "AngularDistance": 0.2790244823941744,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.394723474e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.3891973229e-12,
-          "Name": "",
-          "AngularDistance": 0.2790244823941744,
           "StartTime": 52214.937211,
-          "StopTime": 52217.462535,
-          "Info": ""
+          "StopTime": 52217.462535
         },
         {
+          "AngularDistance": 0.40738511033261293,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 5.0026462139e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.0497661448e-12,
-          "Name": "",
-          "AngularDistance": 0.40738511033261293,
           "StartTime": 50447.357546,
-          "StopTime": 50451.227824,
-          "Info": ""
+          "StopTime": 50451.227824
         },
         {
+          "AngularDistance": 0.40738511033261293,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.7060066821e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 7.4418093216e-12,
-          "Name": "",
-          "AngularDistance": 0.40738511033261293,
           "StartTime": 50447.357546,
-          "StopTime": 50451.227824,
-          "Info": ""
+          "StopTime": 50451.227824
         },
         {
+          "AngularDistance": 0.40738511033261293,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 3.7512142698e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.3100028594e-12,
-          "Name": "",
-          "AngularDistance": 0.40738511033261293,
           "StartTime": 50447.357546,
-          "StopTime": 50451.227824,
-          "Info": ""
+          "StopTime": 50451.227824
         },
         {
+          "AngularDistance": 0.40738511033261293,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 2.4237507834e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.3326006097e-11,
-          "Name": "",
-          "AngularDistance": 0.40738511033261293,
           "StartTime": 50447.357546,
-          "StopTime": 50451.227824,
-          "Info": ""
+          "StopTime": 50451.227824
         },
         {
+          "AngularDistance": 0.9423598949382177,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.3328843985e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.1875158842e-11,
-          "Name": "",
-          "AngularDistance": 0.9423598949382177,
           "StartTime": 52046.835556,
-          "StopTime": 52049.074282,
-          "Info": ""
+          "StopTime": 52049.074282
         },
         {
+          "AngularDistance": 0.9423598949382177,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.6912043694e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.0852862879e-11,
-          "Name": "",
-          "AngularDistance": 0.9423598949382177,
           "StartTime": 52046.835556,
-          "StopTime": 52049.074282,
-          "Info": ""
+          "StopTime": 52049.074282
         },
         {
+          "AngularDistance": 0.9423598949382177,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.3149082357e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.3496376759e-11,
-          "Name": "",
-          "AngularDistance": 0.9423598949382177,
           "StartTime": 52046.835556,
-          "StopTime": 52049.074282,
-          "Info": ""
+          "StopTime": 52049.074282
         },
         {
+          "AngularDistance": 0.9423598949382177,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 8.2898937714e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 2.3048136316e-11,
-          "Name": "",
-          "AngularDistance": 0.9423598949382177,
           "StartTime": 52046.835556,
-          "StopTime": 52049.074282,
-          "Info": ""
+          "StopTime": 52049.074282
         },
         {
+          "AngularDistance": 1.2563846112154546,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.190591194e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.9695911249e-12,
-          "Name": "",
-          "AngularDistance": 1.2563846112154546,
           "StartTime": 51061.406019,
-          "StopTime": 51062.112304,
-          "Info": ""
+          "StopTime": 51062.112304
         },
         {
+          "AngularDistance": 1.2563846112154546,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 6.0941501845e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.8980029941e-12,
-          "Name": "",
-          "AngularDistance": 1.2563846112154546,
           "StartTime": 51061.406019,
-          "StopTime": 51062.112304,
-          "Info": ""
+          "StopTime": 51062.112304
         },
         {
+          "AngularDistance": 1.2563846112154546,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 6.6944012833e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.0363379425e-11,
-          "Name": "",
-          "AngularDistance": 1.2563846112154546,
           "StartTime": 51061.406019,
-          "StopTime": 51062.112304,
-          "Info": ""
+          "StopTime": 51062.112304
         },
         {
+          "AngularDistance": 1.2563846112154546,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 6.5201670452e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.5036468598e-11,
-          "Name": "",
-          "AngularDistance": 1.2563846112154546,
           "StartTime": 51061.406019,
-          "StopTime": 51062.112304,
-          "Info": ""
+          "StopTime": 51062.112304
         },
         {
+          "AngularDistance": 0.5616747015460091,
           "Frequency": 5.755e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.6455356095e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.6805740507e-12,
-          "Name": "",
-          "AngularDistance": 0.5616747015460091,
           "StartTime": 52038.514201,
-          "StopTime": 52040.464155,
-          "Info": ""
+          "StopTime": 52040.464155
         },
         {
+          "AngularDistance": 0.5616747015460091,
           "Frequency": 9.237e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 3.3710315789e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 7.9677089579e-12,
-          "Name": "",
-          "AngularDistance": 0.5616747015460091,
           "StartTime": 52038.514201,
-          "StopTime": 52040.464155,
-          "Info": ""
+          "StopTime": 52040.464155
         },
         {
+          "AngularDistance": 0.5616747015460091,
           "Frequency": 1.381e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 7.0135286467e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 9.9641944001e-12,
-          "Name": "",
-          "AngularDistance": 0.5616747015460091,
           "StartTime": 52038.514201,
-          "StopTime": 52040.464155,
-          "Info": ""
+          "StopTime": 52040.464155
         },
         {
+          "AngularDistance": 0.5616747015460091,
           "Frequency": 2.123e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 6.9618692755e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.6257530044e-11,
-          "Name": "",
-          "AngularDistance": 0.5616747015460091,
           "StartTime": 52038.514201,
-          "StopTime": 52040.464155,
-          "Info": ""
+          "StopTime": 52040.464155
         },
         {
+          "AngularDistance": 2.4403389071592563,
           "Frequency": 6.021e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.7707136852e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.3273857707e-11,
-          "Name": "",
-          "AngularDistance": 2.4403389071592563,
           "StartTime": 51970.97787,
-          "StopTime": 51973.829109,
-          "Info": ""
+          "StopTime": 51973.829109
         },
         {
+          "AngularDistance": 2.4403389071592563,
           "Frequency": 9.648e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 6.337463887e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.0109270192e-11,
-          "Name": "",
-          "AngularDistance": 2.4403389071592563,
           "StartTime": 51970.97787,
-          "StopTime": 51973.829109,
-          "Info": ""
+          "StopTime": 51973.829109
         },
         {
+          "AngularDistance": 2.4403389071592563,
           "Frequency": 1.448e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 4.5437834051e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.1294695214e-11,
-          "Name": "",
-          "AngularDistance": 2.4403389071592563,
           "StartTime": 51970.97787,
-          "StopTime": 51973.829109,
-          "Info": ""
+          "StopTime": 51973.829109
         },
         {
+          "AngularDistance": 2.4403389071592563,
           "Frequency": 2.231e+18,
+          "FrequencyError": 0.0,
           "Nufnu": 5.1592924377e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 2.0858920494e-11,
-          "Name": "",
-          "AngularDistance": 2.4403389071592563,
           "StartTime": 51970.97787,
-          "StopTime": 51973.829109,
-          "Info": ""
+          "StopTime": 51973.829109
         },
         {
+          "AngularDistance": 1.8985725943410805,
           "Frequency": 6.021e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.9436583299e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 1.5325140462e-11,
-          "Name": "",
-          "AngularDistance": 1.8985725943410805,
           "StartTime": 50889.411319,
-          "StopTime": 50890.067142,
-          "Info": ""
+          "StopTime": 50890.067142
         },
         {
+          "AngularDistance": 1.8985725943410805,
           "Frequency": 9.648e+17,
+          "FrequencyError": 0.0,
           "Nufnu": 4.3514594705e-11,
-          "FrequencyError": 0.0,
           "NufnuError": 8.4418323026e-12,
-          "Name": "",
-          "AngularDistance": 1.8985725943410805,
           "StartTime": 50889.411319,
-          "StopTime": 50890.067142,
-          "Info": ""
+          "StopTime": 50890.067142
         },
         {
+          "AngularDistance": 1.8985725943410805,
           "Frequency": 1.448e+18,
-          "Nufnu": 5.259764152e-11,
           "FrequencyError": 0.0,
+          "Nufnu": 5.259764152e-11,
           "NufnuError": 1.0403489702e-11,
-          "Name": "",
-          "AngularDistance": 1.8985725943410805,
           "StartTime": 50889.411319,
-          "StopTime": 50890.067142,
-          "Info": ""
+          "StopTime": 50890.067142
         },
         {
-          "Frequency": 2.231e+18,
-          "Nufnu": 9.4991861599e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4955016392e-11,
-          "Name": "",
           "AngularDistance": 1.8985725943410805,
+          "Frequency": 2.231e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.4991861599e-11,
+          "NufnuError": 1.4955016392e-11,
           "StartTime": 50889.411319,
-          "StopTime": 50890.067142,
-          "Info": ""
+          "StopTime": 50890.067142
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2935,
         "CatalogName": "WFCCAT FULL",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.921649074625271e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.5653330972210866e-12,
-          "Name": "",
           "AngularDistance": 1.7658371492490428,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.921649074625271e-11,
+          "NufnuError": 5.5653330972210866e-12,
           "StartTime": 50571.408299,
-          "StopTime": 50572.140741,
-          "Info": ""
+          "StopTime": 50572.140741
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 3.6635849905634374e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.974736804021712e-12,
-          "Name": "",
           "AngularDistance": 1.9013061890083596,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.6635849905634374e-11,
+          "NufnuError": 4.974736804021712e-12,
           "StartTime": 50543.386331,
-          "StopTime": 50544.420641,
-          "Info": ""
+          "StopTime": 50544.420641
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 1.8146896107849231e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.1159321728941956e-11,
-          "Name": "",
           "AngularDistance": 1.3455758432371308,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8146896107849231e-10,
+          "NufnuError": 3.1159321728941956e-11,
           "StartTime": 50828.704583,
-          "StopTime": 50830.701181,
-          "Info": ""
+          "StopTime": 50830.701181
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.2532352259192856e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.845499197405261e-12,
-          "Name": "",
           "AngularDistance": 1.468493837560853,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.2532352259192856e-11,
+          "NufnuError": 5.845499197405261e-12,
           "StartTime": 51002.7839,
-          "StopTime": 51004.430602,
-          "Info": ""
+          "StopTime": 51004.430602
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.395627309705198e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.30753086138174e-12,
-          "Name": "",
           "AngularDistance": 1.363504840716071,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.395627309705198e-11,
+          "NufnuError": 6.30753086138174e-12,
           "StartTime": 51454.811123,
-          "StopTime": 51457.198056,
-          "Info": ""
+          "StopTime": 51457.198056
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 7.690992629292166e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0785759369434076e-11,
-          "Name": "",
           "AngularDistance": 0.7160609755758248,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.690992629292166e-11,
+          "NufnuError": 1.0785759369434076e-11,
           "StartTime": 50570.199965,
-          "StopTime": 50570.435234,
-          "Info": ""
+          "StopTime": 50570.435234
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 6.57133573165086e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.064792502641833e-11,
-          "Name": "",
           "AngularDistance": 1.075797840766189,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.57133573165086e-11,
+          "NufnuError": 1.064792502641833e-11,
           "StartTime": 50570.143044,
-          "StopTime": 50570.406635,
-          "Info": ""
+          "StopTime": 50570.406635
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.6344420523532423e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.138358988776357e-12,
-          "Name": "",
           "AngularDistance": 1.0354457792664509,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.6344420523532423e-11,
+          "NufnuError": 6.138358988776357e-12,
           "StartTime": 50714.442106,
-          "StopTime": 50715.834549,
-          "Info": ""
+          "StopTime": 50715.834549
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.089060242077902e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.213378846607033e-12,
-          "Name": "",
           "AngularDistance": 0.36281673844923834,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.089060242077902e-11,
+          "NufnuError": 8.213378846607033e-12,
           "StartTime": 50438.42625,
-          "StopTime": 50440.239618,
-          "Info": ""
+          "StopTime": 50440.239618
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.30672143454849e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.633209484989594e-12,
-          "Name": "",
           "AngularDistance": 0.33938619161662503,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.30672143454849e-11,
+          "NufnuError": 4.633209484989594e-12,
           "StartTime": 50556.476007,
-          "StopTime": 50557.400037,
-          "Info": ""
+          "StopTime": 50557.400037
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.3024825989108866e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.210451138563185e-12,
-          "Name": "",
           "AngularDistance": 0.2790244823941744,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.3024825989108866e-11,
+          "NufnuError": 5.210451138563185e-12,
           "StartTime": 52214.937211,
-          "StopTime": 52217.462535,
-          "Info": ""
+          "StopTime": 52217.462535
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.984216371346579e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.744196306693731e-12,
-          "Name": "",
           "AngularDistance": 0.21048614827500547,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.984216371346579e-11,
+          "NufnuError": 7.744196306693731e-12,
           "StartTime": 50567.168206,
-          "StopTime": 50567.612316,
-          "Info": ""
+          "StopTime": 50567.612316
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 3.627412321417972e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.97024927417554e-12,
-          "Name": "",
           "AngularDistance": 0.40738511033261293,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.627412321417972e-11,
+          "NufnuError": 5.97024927417554e-12,
           "StartTime": 50447.357546,
-          "StopTime": 50451.227824,
-          "Info": ""
+          "StopTime": 50451.227824
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.381198459748749e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.837537851891094e-12,
-          "Name": "",
           "AngularDistance": 0.9423598949382177,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.381198459748749e-11,
+          "NufnuError": 8.837537851891094e-12,
           "StartTime": 52046.835556,
-          "StopTime": 52049.074282,
-          "Info": ""
+          "StopTime": 52049.074282
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.507485958637085e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.980763220980242e-12,
-          "Name": "",
           "AngularDistance": 1.2563846112154546,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.507485958637085e-11,
+          "NufnuError": 5.980763220980242e-12,
           "StartTime": 51061.406019,
-          "StopTime": 51062.112304,
-          "Info": ""
+          "StopTime": 51062.112304
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.906257731825324e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.562432576082083e-12,
-          "Name": "",
           "AngularDistance": 0.5616747015460091,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.906257731825324e-11,
+          "NufnuError": 7.562432576082083e-12,
           "StartTime": 52038.514201,
-          "StopTime": 52040.464155,
-          "Info": ""
+          "StopTime": 52040.464155
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.9002172000423244e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.481091120126937e-12,
-          "Name": "",
           "AngularDistance": 2.4403389071592563,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.9002172000423244e-11,
+          "NufnuError": 7.481091120126937e-12,
           "StartTime": 51970.97787,
-          "StopTime": 51973.829109,
-          "Info": ""
+          "StopTime": 51973.829109
         },
         {
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.838079406981973e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.834634529872388e-12,
-          "Name": "",
           "AngularDistance": 1.8985725943410805,
+          "Frequency": 1.081e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.838079406981973e-11,
+          "NufnuError": 6.834634529872388e-12,
           "StartTime": 50889.411319,
-          "StopTime": 50890.067142,
-          "Info": ""
+          "StopTime": 50890.067142
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14640,
         "CatalogName": "XMMSL2 (0.2-12 keV)",
         "ErrorRadius": 0.5
       },
       "SourceData": [
         {
-          "Frequency": 3.746e+17,
-          "Nufnu": 5.137109834740805e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.249790189897462e-12,
           "Name": "XMMSL2_J083520.7-451030",
           "AngularDistance": 0.08480850401363633,
+          "Frequency": 3.746e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.137109834740805e-11,
+          "NufnuError": 4.249790189897462e-12,
           "StartTime": 53673.20326176,
-          "StopTime": 53673.20378259,
-          "Info": ""
+          "StopTime": 53673.20378259
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14642,
         "CatalogName": "XMMSL2 (0.2-2 keV)",
         "ErrorRadius": 0.5
       },
       "SourceData": [
         {
-          "Frequency": 1.529e+17,
-          "Nufnu": 7.808800134290195e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.042459931189127e-12,
           "Name": "XMMSL2_J083520.7-451030",
           "AngularDistance": 0.08480850401363633,
+          "Frequency": 1.529e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.808800134290195e-11,
+          "NufnuError": 7.042459931189127e-12,
           "StartTime": 53673.20326176,
-          "StopTime": 53673.20378259,
-          "Info": ""
+          "StopTime": 53673.20378259
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14641,
         "CatalogName": "XMMSL2 (2-12 keV)",
         "ErrorRadius": 0.5
       },
       "SourceData": [
         {
-          "Frequency": 1.185e+18,
-          "Nufnu": 4.9614000408038095e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.881670134936904e-12,
           "Name": "XMMSL2_J083520.7-451030",
           "AngularDistance": 0.08480850401363633,
+          "Frequency": 1.185e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.9614000408038095e-11,
+          "NufnuError": 9.881670134936904e-12,
           "StartTime": 53673.20326176,
-          "StopTime": 53673.20378259,
-          "Info": ""
+          "StopTime": 53673.20378259
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14783,
         "CatalogName": "band 1 (0.2 - 2.3 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 1.64e+17,
-          "Nufnu": 6.636859811726126e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7710199626264078e-12,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 1.64e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.636859811726126e-11,
+          "NufnuError": 1.7710199626264078e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14334,
         "CatalogName": "4XMM-DR12 (0.5-1 keV)",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.7563498705696077e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.145459996945382e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08239449045843716,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7563498705696077e-10,
+          "NufnuError": 9.145459996945382e-13,
           "StartTime": 55680.34303240741,
-          "StopTime": 55680.458761574075,
-          "Info": ""
+          "StopTime": 55680.458761574075
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.674269972136045e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.90335994064134e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.060263995471413416,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.674269972136045e-10,
+          "NufnuError": 5.90335994064134e-13,
           "StartTime": 55143.969363425924,
-          "StopTime": 55144.16380787037,
-          "Info": ""
+          "StopTime": 55144.16380787037
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.7851498884956527e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.625239857254272e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.017121231404078143,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7851498884956527e-10,
+          "NufnuError": 5.625239857254272e-13,
           "StartTime": 56062.5099537037,
-          "StopTime": 56062.739432870374,
-          "Info": ""
+          "StopTime": 56062.739432870374
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.648339880728656e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.611769829891923e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07652454341353603,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.648339880728656e-10,
+          "NufnuError": 7.611769829891923e-13,
           "StartTime": 58990.854409722226,
-          "StopTime": 58990.97361111111,
-          "Info": ""
+          "StopTime": 58990.97361111111
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.53602000510611e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.437259900815174e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.070937451408194,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.53602000510611e-10,
+          "NufnuError": 7.437259900815174e-13,
           "StartTime": 57520.30625,
-          "StopTime": 57520.438206018516,
-          "Info": ""
+          "StopTime": 57520.438206018516
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.6152199850137947e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.836960247420421e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08162846894526446,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.6152199850137947e-10,
+          "NufnuError": 7.836960247420421e-13,
           "StartTime": 58260.9478125,
-          "StopTime": 58261.06354166667,
-          "Info": ""
+          "StopTime": 58261.06354166667
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.603700033354528e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.780130264674947e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05158058383689708,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.603700033354528e-10,
+          "NufnuError": 9.780130264674947e-13,
           "StartTime": 54591.47025462963,
-          "StopTime": 54591.60681712963,
-          "Info": ""
+          "StopTime": 54591.60681712963
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.8326799239586364e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.5972098780603923e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.015302214816080552,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.8326799239586364e-10,
+          "NufnuError": 3.5972098780603923e-13,
           "StartTime": 51880.513136574074,
-          "StopTime": 51881.19137731481,
-          "Info": ""
+          "StopTime": 51881.19137731481
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.6468999214657174e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.245480106791072e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.030031136398140146,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.6468999214657174e-10,
+          "NufnuError": 4.245480106791072e-13,
           "StartTime": 54221.798171296294,
-          "StopTime": 54222.34017361111,
-          "Info": ""
+          "StopTime": 54222.34017361111
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.674269972136045e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.100940065645322e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.050867500587379356,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.674269972136045e-10,
+          "NufnuError": 6.100940065645322e-13,
           "StartTime": 56414.224803240744,
-          "StopTime": 56414.45216435185,
-          "Info": ""
+          "StopTime": 56414.45216435185
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.6080199111433444e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.460890087164496e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07832109890383027,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.6080199111433444e-10,
+          "NufnuError": 7.460890087164496e-13,
           "StartTime": 58621.89491898148,
-          "StopTime": 58622.02106481481,
-          "Info": ""
+          "StopTime": 58622.02106481481
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.5777799339543606e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.266060040971023e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05547960677059431,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5777799339543606e-10,
+          "NufnuError": 7.266060040971023e-13,
           "StartTime": 57166.25042824074,
-          "StopTime": 57166.393275462964,
-          "Info": ""
+          "StopTime": 57166.393275462964
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.5792198932172994e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.806910078314353e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.0626449511761333,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5792198932172994e-10,
+          "NufnuError": 4.806910078314353e-13,
           "StartTime": 57900.15733796296,
-          "StopTime": 57900.46917824074,
-          "Info": ""
+          "StopTime": 57900.46917824074
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.534580045843171e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.360489984436364e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.03516387050567235,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.534580045843171e-10,
+          "NufnuError": 7.360489984436364e-14,
           "StartTime": 53852.54188657407,
-          "StopTime": 53853.94086805556,
-          "Info": ""
+          "StopTime": 53853.94086805556
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.723229974854746e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.598699873131222e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07022912127763961,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.723229974854746e-10,
+          "NufnuError": 9.598699873131222e-13,
           "StartTime": 59353.91747685185,
-          "StopTime": 59354.033217592594,
-          "Info": ""
+          "StopTime": 59354.033217592594
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.858600023358804e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.80745998965204e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.012233458199504662,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.858600023358804e-10,
+          "NufnuError": 3.80745998965204e-13,
           "StartTime": 51880.00244212963,
-          "StopTime": 51880.44111111111,
-          "Info": ""
+          "StopTime": 51880.44111111111
         },
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 2.605139992617467e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.737329777591837e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.063329473123241,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.605139992617467e-10,
+          "NufnuError": 4.737329777591837e-13,
           "StartTime": 56785.215416666666,
-          "StopTime": 56785.470185185186,
-          "Info": ""
+          "StopTime": 56785.470185185186
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14784,
         "CatalogName": "band P1 (0.2 - 0.5 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 1.209e+17,
-          "Nufnu": 1.5590199353709977e-08,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.426500220868547e-09,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 1.209e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5590199353709977e-08,
+          "NufnuError": 6.426500220868547e-09,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14335,
         "CatalogName": "4XMM-DR12 (1-2 keV)",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.189249988573174e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.46257002819547e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08239449045843716,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.189249988573174e-11,
+          "NufnuError": 1.46257002819547e-13,
           "StartTime": 55680.34303240741,
-          "StopTime": 55680.458761574075,
-          "Info": ""
+          "StopTime": 55680.458761574075
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.084119847869161e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.679750219687006e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.060263995471413416,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.084119847869161e-11,
+          "NufnuError": 9.679750219687006e-14,
           "StartTime": 55143.969363425924,
-          "StopTime": 55144.16380787037,
-          "Info": ""
+          "StopTime": 55144.16380787037
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.354859875488337e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.030929966503065e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.017121231404078143,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.354859875488337e-11,
+          "NufnuError": 1.030929966503065e-13,
           "StartTime": 56062.5099537037,
-          "StopTime": 56062.739432870374,
-          "Info": ""
+          "StopTime": 56062.739432870374
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.063959932465444e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3474499836220455e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07652454341353603,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.063959932465444e-11,
+          "NufnuError": 1.3474499836220455e-13,
           "StartTime": 58990.854409722226,
-          "StopTime": 58990.97361111111,
-          "Info": ""
+          "StopTime": 58990.97361111111
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.869550166402114e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0161199681148203e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.070937451408194,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.869550166402114e-11,
+          "NufnuError": 1.0161199681148203e-13,
           "StartTime": 57520.30625,
-          "StopTime": 57520.438206018516,
-          "Info": ""
+          "StopTime": 57520.438206018516
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.961710126620943e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3563099482503255e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08162846894526446,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.961710126620943e-11,
+          "NufnuError": 1.3563099482503255e-13,
           "StartTime": 58260.9478125,
-          "StopTime": 58261.06354166667,
-          "Info": ""
+          "StopTime": 58261.06354166667
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.7284200032905446e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4240700090505098e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05158058383689708,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.7284200032905446e-11,
+          "NufnuError": 1.4240700090505098e-13,
           "StartTime": 54591.47025462963,
-          "StopTime": 54591.60681712963,
-          "Info": ""
+          "StopTime": 54591.60681712963
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.1834900127435404e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.378559925255059e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.015302214816080552,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.1834900127435404e-11,
+          "NufnuError": 6.378559925255059e-14,
           "StartTime": 51880.513136574074,
-          "StopTime": 51881.19137731481,
-          "Info": ""
+          "StopTime": 51881.19137731481
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.770180001527734e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.632740282572561e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.030031136398140146,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.770180001527734e-11,
+          "NufnuError": 6.632740282572561e-14,
           "StartTime": 54221.798171296294,
-          "StopTime": 54222.34017361111,
-          "Info": ""
+          "StopTime": 54222.34017361111
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.140289847076595e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.472450086681419e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.050867500587379356,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.140289847076595e-11,
+          "NufnuError": 9.472450086681419e-14,
           "StartTime": 56414.224803240744,
-          "StopTime": 56414.45216435185,
-          "Info": ""
+          "StopTime": 56414.45216435185
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.019319946313438e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3971300245191332e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07832109890383027,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.019319946313438e-11,
+          "NufnuError": 1.3971300245191332e-13,
           "StartTime": 58621.89491898148,
-          "StopTime": 58622.02106481481,
-          "Info": ""
+          "StopTime": 58622.02106481481
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.873869974801991e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2453300651978083e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05547960677059431,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.873869974801991e-11,
+          "NufnuError": 1.2453300651978083e-13,
           "StartTime": 57166.25042824074,
-          "StopTime": 57166.393275462964,
-          "Info": ""
+          "StopTime": 57166.393275462964
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.904110021379914e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.317809688290114e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.0626449511761333,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.904110021379914e-11,
+          "NufnuError": 7.317809688290114e-14,
           "StartTime": 57900.15733796296,
-          "StopTime": 57900.46917824074,
-          "Info": ""
+          "StopTime": 57900.46917824074
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.790339916931451e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.132140118896961e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.03516387050567235,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.790339916931451e-11,
+          "NufnuError": 4.132140118896961e-14,
           "StartTime": 53852.54188657407,
-          "StopTime": 53853.94086805556,
-          "Info": ""
+          "StopTime": 53853.94086805556
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.1546901335953734e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3119999607135585e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07022912127763961,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.1546901335953734e-11,
+          "NufnuError": 1.3119999607135585e-13,
           "StartTime": 59353.91747685185,
-          "StopTime": 59354.033217592594,
-          "Info": ""
+          "StopTime": 59354.033217592594
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 4.196450131832563e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.446030147713681e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.012233458199504662,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.196450131832563e-11,
+          "NufnuError": 7.446030147713681e-14,
           "StartTime": 51880.00244212963,
-          "StopTime": 51880.44111111111,
-          "Info": ""
+          "StopTime": 51880.44111111111
         },
         {
-          "Frequency": 3.419e+17,
-          "Nufnu": 3.942990031702287e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.360450325746102e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.063329473123241,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.942990031702287e-11,
+          "NufnuError": 8.360450325746102e-14,
           "StartTime": 56785.215416666666,
-          "StopTime": 56785.470185185186,
-          "Info": ""
+          "StopTime": 56785.470185185186
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14785,
         "CatalogName": "band P2 (0.5 - 1 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 1.71e+17,
-          "Nufnu": 9.510209980634343e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.248279919660263e-11,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.510209980634343e-11,
+          "NufnuError": 9.248279919660263e-11,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14336,
         "CatalogName": "4XMM-DR12 (2-4.5 keV)",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.4578701013643354e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.5038300194957638e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08239449045843716,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.4578701013643354e-11,
+          "NufnuError": 1.5038300194957638e-13,
           "StartTime": 55680.34303240741,
-          "StopTime": 55680.458761574075,
-          "Info": ""
+          "StopTime": 55680.458761574075
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.2831900392826796e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2678299707823137e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.060263995471413416,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.2831900392826796e-11,
+          "NufnuError": 1.2678299707823137e-13,
           "StartTime": 55143.969363425924,
-          "StopTime": 55144.16380787037,
-          "Info": ""
+          "StopTime": 55144.16380787037
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.486159971810565e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2775700365241088e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.017121231404078143,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.486159971810565e-11,
+          "NufnuError": 1.2775700365241088e-13,
           "StartTime": 56062.5099537037,
-          "StopTime": 56062.739432870374,
-          "Info": ""
+          "StopTime": 56062.739432870374
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.409890078631683e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6907700554295163e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07652454341353603,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.409890078631683e-11,
+          "NufnuError": 1.6907700554295163e-13,
           "StartTime": 58990.854409722226,
-          "StopTime": 58990.97361111111,
-          "Info": ""
+          "StopTime": 58990.97361111111
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.0875999673662946e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2721099943834718e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.070937451408194,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.0875999673662946e-11,
+          "NufnuError": 1.2721099943834718e-13,
           "StartTime": 57520.30625,
-          "StopTime": 57520.438206018516,
-          "Info": ""
+          "StopTime": 57520.438206018516
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.3053299680618764e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7028599938549022e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08162846894526446,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.3053299680618764e-11,
+          "NufnuError": 1.7028599938549022e-13,
           "StartTime": 58260.9478125,
-          "StopTime": 58261.06354166667,
-          "Info": ""
+          "StopTime": 58261.06354166667
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.03101987952914e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4157499771041276e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05158058383689708,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.03101987952914e-11,
+          "NufnuError": 1.4157499771041276e-13,
           "StartTime": 54591.47025462963,
-          "StopTime": 54591.60681712963,
-          "Info": ""
+          "StopTime": 54591.60681712963
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.37299008168479e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.839480018580243e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.015302214816080552,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.37299008168479e-11,
+          "NufnuError": 6.839480018580243e-14,
           "StartTime": 51880.513136574074,
-          "StopTime": 51881.19137731481,
-          "Info": ""
+          "StopTime": 51881.19137731481
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.034709983307238e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.876269708798108e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.030031136398140146,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.034709983307238e-11,
+          "NufnuError": 6.876269708798108e-14,
           "StartTime": 54221.798171296294,
-          "StopTime": 54222.34017361111,
-          "Info": ""
+          "StopTime": 54222.34017361111
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.368070058962225e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1175100151890674e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.050867500587379356,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.368070058962225e-11,
+          "NufnuError": 1.1175100151890674e-13,
           "StartTime": 56414.224803240744,
-          "StopTime": 56414.45216435185,
-          "Info": ""
+          "StopTime": 56414.45216435185
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.296719841561213e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4244900018670764e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07832109890383027,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.296719841561213e-11,
+          "NufnuError": 1.4244900018670764e-13,
           "StartTime": 58621.89491898148,
-          "StopTime": 58622.02106481481,
-          "Info": ""
+          "StopTime": 58622.02106481481
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.14172993176598e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3018599598953878e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05547960677059431,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.14172993176598e-11,
+          "NufnuError": 1.3018599598953878e-13,
           "StartTime": 57166.25042824074,
-          "StopTime": 57166.393275462964,
-          "Info": ""
+          "StopTime": 57166.393275462964
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.205689880214635e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0386700180498032e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.0626449511761333,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.205689880214635e-11,
+          "NufnuError": 1.0386700180498032e-13,
           "StartTime": 57900.15733796296,
-          "StopTime": 57900.46917824074,
-          "Info": ""
+          "StopTime": 57900.46917824074
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.076530002976696e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.214379885450267e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.03516387050567235,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.076530002976696e-11,
+          "NufnuError": 5.214379885450267e-14,
           "StartTime": 53852.54188657407,
-          "StopTime": 53853.94086805556,
-          "Info": ""
+          "StopTime": 53853.94086805556
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.462790124086901e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.667530046337018e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07022912127763961,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.462790124086901e-11,
+          "NufnuError": 1.667530046337018e-13,
           "StartTime": 59353.91747685185,
-          "StopTime": 59354.033217592594,
-          "Info": ""
+          "StopTime": 59354.033217592594
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.429570169521945e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.10887982879735e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.012233458199504662,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.429570169521945e-11,
+          "NufnuError": 9.10887982879735e-14,
           "StartTime": 51880.00244212963,
-          "StopTime": 51880.44111111111,
-          "Info": ""
+          "StopTime": 51880.44111111111
         },
         {
-          "Frequency": 7.254e+17,
-          "Nufnu": 3.1675599643232744e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.080529979727296e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.063329473123241,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.1675599643232744e-11,
+          "NufnuError": 1.080529979727296e-13,
           "StartTime": 56785.215416666666,
-          "StopTime": 56785.470185185186,
-          "Info": ""
+          "StopTime": 56785.470185185186
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14786,
         "CatalogName": "band P3 (1 - 2 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 3.42e+17,
-          "Nufnu": 1.817790015734566e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.1076499840420055e-12,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 3.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.817790015734566e-11,
+          "NufnuError": 4.1076499840420055e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14337,
         "CatalogName": "4XMM-DR12 (4.5-12 keV)",
         "ErrorRadius": 0.1
       },
       "SourceData": [
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.4383798719627165e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.1651100468842175e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08239449045843716,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.4383798719627165e-11,
+          "NufnuError": 3.1651100468842175e-13,
           "StartTime": 55680.34303240741,
-          "StopTime": 55680.458761574075,
-          "Info": ""
+          "StopTime": 55680.458761574075
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.321550062247326e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.646570029102291e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.060263995471413416,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.321550062247326e-11,
+          "NufnuError": 2.646570029102291e-13,
           "StartTime": 55143.969363425924,
-          "StopTime": 55144.16380787037,
-          "Info": ""
+          "StopTime": 55144.16380787037
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.389619917555265e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.0335199724195313e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.017121231404078143,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.389619917555265e-11,
+          "NufnuError": 2.0335199724195313e-13,
           "StartTime": 56062.5099537037,
-          "StopTime": 56062.739432870374,
-          "Info": ""
+          "StopTime": 56062.739432870374
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.3418699191555277e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.013839991374695e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07652454341353603,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.3418699191555277e-11,
+          "NufnuError": 3.013839991374695e-13,
           "StartTime": 58990.854409722226,
-          "StopTime": 58990.97361111111,
-          "Info": ""
+          "StopTime": 58990.97361111111
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.0635200065919364e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.7130701114527755e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.070937451408194,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.0635200065919364e-11,
+          "NufnuError": 2.7130701114527755e-13,
           "StartTime": 57520.30625,
-          "StopTime": 57520.438206018516,
-          "Info": ""
+          "StopTime": 57520.438206018516
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.269740117024412e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.063150048280422e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.08162846894526446,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.269740117024412e-11,
+          "NufnuError": 3.063150048280422e-13,
           "StartTime": 58260.9478125,
-          "StopTime": 58261.06354166667,
-          "Info": ""
+          "StopTime": 58261.06354166667
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 3.8806600294316596e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.992840079495823e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05158058383689708,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.8806600294316596e-11,
+          "NufnuError": 2.992840079495823e-13,
           "StartTime": 54591.47025462963,
-          "StopTime": 54591.60681712963,
-          "Info": ""
+          "StopTime": 54591.60681712963
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.3256200704666625e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4404499999471493e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.015302214816080552,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.3256200704666625e-11,
+          "NufnuError": 1.4404499999471493e-13,
           "StartTime": 51880.513136574074,
-          "StopTime": 51881.19137731481,
-          "Info": ""
+          "StopTime": 51881.19137731481
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 3.844089976889897e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4901899430142668e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.030031136398140146,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.844089976889897e-11,
+          "NufnuError": 1.4901899430142668e-13,
           "StartTime": 54221.798171296294,
-          "StopTime": 54222.34017361111,
-          "Info": ""
+          "StopTime": 54222.34017361111
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.28397005369785e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.377340132479061e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.050867500587379356,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.28397005369785e-11,
+          "NufnuError": 2.377340132479061e-13,
           "StartTime": 56414.224803240744,
-          "StopTime": 56414.45216435185,
-          "Info": ""
+          "StopTime": 56414.45216435185
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.318510132828024e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.063550118882069e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07832109890383027,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.318510132828024e-11,
+          "NufnuError": 3.063550118882069e-13,
           "StartTime": 58621.89491898148,
-          "StopTime": 58622.02106481481,
-          "Info": ""
+          "StopTime": 58622.02106481481
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.033039874284938e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.858269990049095e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.05547960677059431,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.033039874284938e-11,
+          "NufnuError": 2.858269990049095e-13,
           "StartTime": 57166.25042824074,
-          "StopTime": 57166.393275462964,
-          "Info": ""
+          "StopTime": 57166.393275462964
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.1061900407646235e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7577000239413915e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.0626449511761333,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.1061900407646235e-11,
+          "NufnuError": 1.7577000239413915e-13,
           "StartTime": 57900.15733796296,
-          "StopTime": 57900.46917824074,
-          "Info": ""
+          "StopTime": 57900.46917824074
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 3.84713996770536e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.920019941866669e-14,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.03516387050567235,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.84713996770536e-11,
+          "NufnuError": 8.920019941866669e-14,
           "StartTime": 53852.54188657407,
-          "StopTime": 53853.94086805556,
-          "Info": ""
+          "StopTime": 53853.94086805556
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.46783998686584e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.0586199805532344e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.07022912127763961,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.46783998686584e-11,
+          "NufnuError": 3.0586199805532344e-13,
           "StartTime": 59353.91747685185,
-          "StopTime": 59354.033217592594,
-          "Info": ""
+          "StopTime": 59354.033217592594
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.266699840660415e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.672659948916133e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.012233458199504662,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.266699840660415e-11,
+          "NufnuError": 1.672659948916133e-13,
           "StartTime": 51880.00244212963,
-          "StopTime": 51880.44111111111,
-          "Info": ""
+          "StopTime": 51880.44111111111
         },
         {
-          "Frequency": 1.777e+18,
-          "Nufnu": 4.060470015776474e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.836990032744873e-13,
           "Name": "4XMM_J083520.4-451032",
           "AngularDistance": 0.063329473123241,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.060470015776474e-11,
+          "NufnuError": 1.836990032744873e-13,
           "StartTime": 56785.215416666666,
-          "StopTime": 56785.470185185186,
-          "Info": ""
+          "StopTime": 56785.470185185186
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14787,
         "CatalogName": "band P4 (2 - 5 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 7.646e+17,
-          "Nufnu": 1.6468500174671163e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0931999663149616e-12,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 7.646e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6468500174671163e-11,
+          "NufnuError": 1.0931999663149616e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14788,
         "CatalogName": "band P5 (5 - 8 keV)",
         "ErrorRadius": 0.15
       },
       "SourceData": [
         {
-          "Frequency": 1.529e+18,
-          "Nufnu": 1.7363700755002043e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.9682502036019205e-12,
           "Name": "1eRASS_J083520.4-451033",
           "AngularDistance": 0.049155277898202406,
+          "Frequency": 1.529e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7363700755002043e-11,
+          "NufnuError": 4.9682502036019205e-12,
           "StartTime": 58987.723,
-          "StopTime": 58989.223,
-          "Info": ""
+          "StopTime": 58989.223
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7902,
         "CatalogName": "2FHL (1081GeV)",
         "ErrorRadius": 6.0
       },
       "SourceData": [
         {
+          "Name": "2FHL J0835.3-4511",
+          "AngularDistance": 0.7887261712178666,
+          "Frequency": 2.614e+26,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5191261443225912e-11,
+          "NufnuError": 1.323560227477449e-20,
+          "StartTime": 54682.0,
+          "StopTime": 57116.0,
           "Info": "Upper Limit"
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7901,
         "CatalogName": "2FHL (316GeV)",
         "ErrorRadius": 6.0
       },
       "SourceData": [
         {
+          "Name": "2FHL J0835.3-4511",
+          "AngularDistance": 0.7887261712178666,
+          "Frequency": 7.64e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.816846132712273e-12,
+          "NufnuError": 3.867816976631613e-21,
+          "StartTime": 54682.0,
+          "StopTime": 57116.0,
           "Info": "Upper Limit"
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7900,
         "CatalogName": "2FHL (92GeV)",
         "ErrorRadius": 6.0
       },
       "SourceData": [
         {
-          "Frequency": 2.224e+25,
-          "Nufnu": 1.4317308189709665e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.972728500675372e-13,
           "Name": "2FHL J0835.3-4511",
           "AngularDistance": 0.7887261712178666,
+          "Frequency": 2.224e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.4317308189709665e-12,
+          "NufnuError": 4.972728500675372e-13,
           "StartTime": 54682.0,
-          "StopTime": 57116.0,
-          "Info": ""
+          "StopTime": 57116.0
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2752,
         "CatalogName": "A4 (13-25 keV)",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
-          "Frequency": 4.271e+18,
-          "Nufnu": 1.2594409761185913e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.408476358301001e-12,
-          "Name": "",
           "AngularDistance": 0.4626706590251006,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 4.271e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2594409761185913e-10,
+          "NufnuError": 7.408476358301001e-12
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2753,
         "CatalogName": "A4 (25-40 keV)",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
-          "Frequency": 7.646e+18,
-          "Nufnu": 1.0736512899089217e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0736513241394522e-11,
-          "Name": "",
           "AngularDistance": 0.4626706590251006,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 7.646e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0736512899089217e-10,
+          "NufnuError": 1.0736513241394522e-11
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2754,
         "CatalogName": "A4 (40-80 keV)",
         "ErrorRadius": 1.0
       },
       "SourceData": [
         {
-          "Frequency": 1.368e+19,
-          "Nufnu": 6.21482409217637e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2429648644249733e-11,
-          "Name": "",
           "AngularDistance": 0.4626706590251006,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 1.368e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.21482409217637e-11,
+          "NufnuError": 1.2429648644249733e-11
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 35,
         "CatalogName": "BAT39MCAT (10-150keV)",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 9.365e+18,
-          "Nufnu": 4.95697726e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.473712700000001e-13,
-          "Name": "",
           "AngularDistance": 0.6400533952062282,
+          "Frequency": 9.365e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.95697726e-11,
+          "NufnuError": 7.473712700000001e-13,
           "StartTime": 53340.5,
-          "StopTime": 54525.5,
-          "Info": ""
+          "StopTime": 54525.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 34,
         "CatalogName": "BAT39MCAT (15-30keV)",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 5.129e+18,
-          "Nufnu": 6.72430556e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.288262612e-12,
-          "Name": "",
           "AngularDistance": 0.6400533952062282,
+          "Frequency": 5.129e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.72430556e-11,
+          "NufnuError": 1.288262612e-12,
           "StartTime": 53340.5,
-          "StopTime": 54525.5,
-          "Info": ""
+          "StopTime": 54525.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 103,
         "CatalogName": "BAT54MCAT (15-150keV)",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 1.147e+19,
-          "Nufnu": 6.433969e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.16667e-12,
-          "Name": "",
           "AngularDistance": 0.49496999820866366,
+          "Frequency": 1.147e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.433969e-11,
+          "NufnuError": 1.16667e-12,
           "StartTime": 53340.5,
-          "StopTime": 54525.5,
-          "Info": ""
+          "StopTime": 54525.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 102,
         "CatalogName": "BAT54MCAT (15-50keV)",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 6.622e+18,
-          "Nufnu": 4.56764175e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.20745e-13,
-          "Name": "",
           "AngularDistance": 0.49496999820866366,
+          "Frequency": 6.622e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.56764175e-11,
+          "NufnuError": 9.20745e-13,
           "StartTime": 53340.5,
-          "StopTime": 54525.5,
-          "Info": ""
+          "StopTime": 54525.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 8051,
         "CatalogName": "BATPA100",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 1.147e+19,
-          "Nufnu": 6.1486e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.628999793459e-13,
           "Name": "4PBC J0835.3-4510",
           "AngularDistance": 0.33701214958860326,
+          "Frequency": 1.147e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.1486e-11,
+          "NufnuError": 5.628999793459e-13,
           "StartTime": 53351.425781,
-          "StopTime": 56501.425781,
-          "Info": ""
+          "StopTime": 56501.425781
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14344,
         "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.709e+22,
-          "Nufnu": 8.879364465919082e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.0927234651609865e-11,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 1.709e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.879364465919082e-10,
+          "NufnuError": 5.0927234651609865e-11
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14345,
         "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 4.188e+22,
-          "Nufnu": 1.422188367072863e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.259308074486043e-10,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 4.188e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.422188367072863e-09,
+          "NufnuError": 1.259308074486043e-10
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14346,
         "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.323e+23,
-          "Nufnu": 2.4073687487913276e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.682851601125801e-11,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 1.323e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.4073687487913276e-09,
+          "NufnuError": 1.682851601125801e-11
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14347,
         "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 4.188e+23,
-          "Nufnu": 2.5636228695447016e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.026429288786268e-11,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 4.188e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5636228695447016e-09,
+          "NufnuError": 1.026429288786268e-11
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14349,
         "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 4.188e+24,
-          "Nufnu": 2.2832410961903804e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.0923666405335837e-12,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 4.188e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2832410961903804e-10,
+          "NufnuError": 3.0923666405335837e-12
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14351,
         "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
+          "AngularDistance": 0.10774562571993988,
+          "Frequency": 7.646e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.747610283019956e-13,
+          "NufnuError": 0.0,
           "Info": "Upper Limit"
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14348,
         "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.324e+24,
-          "Nufnu": 1.3860269598708896e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.730004574462267e-12,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 1.324e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3860269598708896e-09,
+          "NufnuError": 6.730004574462267e-12
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 14350,
         "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.324e+25,
-          "Nufnu": 1.1288108468787694e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0972893600691425e-12,
-          "Name": "",
           "AngularDistance": 0.10774562571993988,
-          "StartTime": null,
-          "StopTime": null,
-          "Info": ""
+          "Frequency": 1.324e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1288108468787694e-11,
+          "NufnuError": 1.0972893600691425e-12
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 56,
         "CatalogName": "Fermi1FGL (200 Mev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+22,
-          "Nufnu": 1.7241299499204388e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0353999775614131e-11,
-          "Name": "",
           "AngularDistance": 0.010333679551255831,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7241299499204388e-09,
+          "NufnuError": 1.0353999775614131e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55016.61944,
-          "Info": ""
+          "StopTime": 55016.61944
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 58,
         "CatalogName": "Fermi1FGL (2Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+23,
-          "Nufnu": 2.5304101036738302e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.571440026715276e-11,
-          "Name": "",
           "AngularDistance": 0.010333679551255831,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5304101036738302e-09,
+          "NufnuError": 1.571440026715276e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55016.61944,
-          "Info": ""
+          "StopTime": 55016.61944
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 57,
         "CatalogName": "Fermi1FGL (600 Mev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+23,
-          "Nufnu": 2.2986399450530826e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0211700408879754e-11,
-          "Name": "",
           "AngularDistance": 0.010333679551255831,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2986399450530826e-09,
+          "NufnuError": 1.0211700408879754e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55016.61944,
-          "Info": ""
+          "StopTime": 55016.61944
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 60,
         "CatalogName": "Fermi1FGL (60Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+25,
-          "Nufnu": 1.4594700448178344e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.45290980908231e-12,
-          "Name": "",
           "AngularDistance": 0.010333679551255831,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.4594700448178344e-10,
+          "NufnuError": 9.45290980908231e-12,
           "StartTime": 54682.65486,
-          "StopTime": 55016.61944,
-          "Info": ""
+          "StopTime": 55016.61944
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 59,
         "CatalogName": "Fermi1FGL (6Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+24,
-          "Nufnu": 1.372809976807332e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.8690399922194345e-11,
-          "Name": "",
           "AngularDistance": 0.010333679551255831,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.372809976807332e-09,
+          "NufnuError": 1.8690399922194345e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55016.61944,
-          "Info": ""
+          "StopTime": 55016.61944
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 114,
         "CatalogName": "Fermi2FGL (200 Mev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+22,
-          "Nufnu": 1.5843095724221712e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.221011986801139e-12,
-          "Name": "",
           "AngularDistance": 0.21224370160465778,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5843095724221712e-09,
+          "NufnuError": 6.221011986801139e-12,
           "StartTime": 54682.65486,
-          "StopTime": 55409.05347,
-          "Info": ""
+          "StopTime": 55409.05347
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 116,
         "CatalogName": "Fermi2FGL (2Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+23,
-          "Nufnu": 2.101534946064021e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.579985680268187e-12,
-          "Name": "",
           "AngularDistance": 0.21224370160465778,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.101534946064021e-09,
+          "NufnuError": 8.579985680268187e-12,
           "StartTime": 54682.65486,
-          "StopTime": 55409.05347,
-          "Info": ""
+          "StopTime": 55409.05347
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 115,
         "CatalogName": "Fermi2FGL (600 Mev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+23,
-          "Nufnu": 2.525784692508637e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.383131432614487e-12,
-          "Name": "",
           "AngularDistance": 0.21224370160465778,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.525784692508637e-09,
+          "NufnuError": 7.383131432614487e-12,
           "StartTime": 54682.65486,
-          "StopTime": 55409.05347,
-          "Info": ""
+          "StopTime": 55409.05347
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 118,
         "CatalogName": "Fermi2FGL (60Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+25,
-          "Nufnu": 2.7282154313468254e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.07603405352652e-11,
-          "Name": "",
           "AngularDistance": 0.21224370160465778,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7282154313468254e-10,
+          "NufnuError": 1.07603405352652e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55409.05347,
-          "Info": ""
+          "StopTime": 55409.05347
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 117,
         "CatalogName": "Fermi2FGL (6Gev)",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+24,
-          "Nufnu": 1.6218463239070502e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3743229644591626e-11,
-          "Name": "",
           "AngularDistance": 0.21224370160465778,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6218463239070502e-09,
+          "NufnuError": 1.3743229644591626e-11,
           "StartTime": 54682.65486,
-          "StopTime": 55409.05347,
-          "Info": ""
+          "StopTime": 55409.05347
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 2884,
         "CatalogName": "Fermi2FglLC",
         "ErrorRadius": 30.0
       },
       "SourceData": [
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.762789996779702e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.32602997763243e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.762789996779702e-09,
+          "NufnuError": 6.32602997763243e-11,
           "StartTime": 54682.7,
-          "StopTime": 54713.0,
-          "Info": ""
+          "StopTime": 54713.0
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.17109974232477e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
+          "NufnuError": 6.17109974232477e-11,
           "StartTime": 54713.0,
-          "StopTime": 54743.4,
-          "Info": ""
+          "StopTime": 54743.4
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.274380320858697e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
+          "NufnuError": 6.274380320858697e-11,
           "StartTime": 54743.4,
-          "StopTime": 54773.8,
-          "Info": ""
+          "StopTime": 54773.8
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7111499711907072e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.1969200604306e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7111499711907072e-09,
+          "NufnuError": 6.1969200604306e-11,
           "StartTime": 54773.8,
-          "StopTime": 54804.1,
-          "Info": ""
+          "StopTime": 54804.1
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
           "NufnuError": 6.222739684647038e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 54804.1,
-          "StopTime": 54834.5,
-          "Info": ""
+          "StopTime": 54834.5
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.762789996779702e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.762789996779702e-09,
           "NufnuError": 6.274380320858697e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 54834.5,
-          "StopTime": 54864.9,
-          "Info": ""
+          "StopTime": 54864.9
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.1969200604306e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
+          "NufnuError": 6.1969200604306e-11,
           "StartTime": 54864.9,
-          "StopTime": 54895.2,
-          "Info": ""
+          "StopTime": 54895.2
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
           "NufnuError": 6.429309862276966e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 54895.2,
-          "StopTime": 54925.6,
-          "Info": ""
+          "StopTime": 54925.6
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
           "NufnuError": 6.17109974232477e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 54925.6,
-          "StopTime": 54956.0,
-          "Info": ""
+          "StopTime": 54956.0
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.8144400143759185e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.32602997763243e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.8144400143759185e-09,
+          "NufnuError": 6.32602997763243e-11,
           "StartTime": 54956.0,
-          "StopTime": 54986.4,
-          "Info": ""
+          "StopTime": 54986.4
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7111499711907072e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.1969200604306e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7111499711907072e-09,
+          "NufnuError": 6.1969200604306e-11,
           "StartTime": 54986.4,
-          "StopTime": 55016.7,
-          "Info": ""
+          "StopTime": 55016.7
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 2.7111499711907072e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 6.1969200604306e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55016.7,
-          "StopTime": 55047.1,
-          "Info": ""
+          "StopTime": 55047.1
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
           "NufnuError": 6.300199945075136e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55047.1,
-          "StopTime": 55077.5,
-          "Info": ""
+          "StopTime": 55077.5
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.093640175786064e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
+          "NufnuError": 6.093640175786064e-11,
           "StartTime": 55077.5,
-          "StopTime": 55107.8,
-          "Info": ""
+          "StopTime": 55107.8
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.840260027170416e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.840260027170416e-09,
           "NufnuError": 6.403490238060527e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55107.8,
-          "StopTime": 55138.2,
-          "Info": ""
+          "StopTime": 55138.2
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.8144400143759185e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.8144400143759185e-09,
           "NufnuError": 6.042000233463796e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55138.2,
-          "StopTime": 55168.6,
-          "Info": ""
+          "StopTime": 55168.6
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.7369699839852046e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.32602997763243e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.7369699839852046e-09,
+          "NufnuError": 6.32602997763243e-11,
           "StartTime": 55168.6,
-          "StopTime": 55198.9,
-          "Info": ""
+          "StopTime": 55198.9
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 2.840260027170416e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 6.145280118108332e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55198.9,
-          "StopTime": 55229.3,
-          "Info": ""
+          "StopTime": 55229.3
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 2.8144400143759185e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 6.1969200604306e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55229.3,
-          "StopTime": 55259.7,
-          "Info": ""
+          "StopTime": 55259.7
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
           "NufnuError": 6.248560002752868e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55259.7,
-          "StopTime": 55290.1,
-          "Info": ""
+          "StopTime": 55290.1
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 2.762789996779702e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 6.119459800002502e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55290.1,
-          "StopTime": 55320.4,
-          "Info": ""
+          "StopTime": 55320.4
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 2.7369699839852046e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 6.32602997763243e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55320.4,
-          "StopTime": 55350.8,
-          "Info": ""
+          "StopTime": 55350.8
         },
         {
+          "AngularDistance": 0.20744720525841834,
           "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
           "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
           "NufnuError": 6.093640175786064e-11,
-          "Name": "",
-          "AngularDistance": 0.20744720525841834,
           "StartTime": 55350.8,
-          "StopTime": 55381.2,
-          "Info": ""
+          "StopTime": 55381.2
         },
         {
-          "Frequency": 2.42e+23,
-          "Nufnu": 2.788620001581421e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.455130180382795e-11,
-          "Name": "",
           "AngularDistance": 0.20744720525841834,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.788620001581421e-09,
+          "NufnuError": 6.455130180382795e-11,
           "StartTime": 55381.2,
-          "StopTime": 55409.0,
-          "Info": ""
+          "StopTime": 55409.0
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5953,
         "CatalogName": "Fermi3FGL (200 Mev)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+22,
-          "Nufnu": 1.5659982199878186e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.617351194255662e-12,
-          "Name": "",
           "AngularDistance": 0.1339145927771083,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5659982199878186e-09,
+          "NufnuError": 7.617351194255662e-12,
           "StartTime": 54682.65486,
-          "StopTime": 56139.94861,
-          "Info": ""
+          "StopTime": 56139.94861
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5955,
         "CatalogName": "Fermi3FGL (2Gev)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 4.84e+23,
-          "Nufnu": 3.1173279513296848e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.95691854019276e-12,
-          "Name": "",
           "AngularDistance": 0.1339145927771083,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.1173279513296848e-09,
+          "NufnuError": 8.95691854019276e-12,
           "StartTime": 54682.65486,
-          "StopTime": 56139.94861,
-          "Info": ""
+          "StopTime": 56139.94861
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5954,
         "CatalogName": "Fermi3FGL (600 Mev)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+23,
-          "Nufnu": 2.5653317248242047e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.906532207777815e-12,
-          "Name": "",
           "AngularDistance": 0.1339145927771083,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5653317248242047e-09,
+          "NufnuError": 5.906532207777815e-12,
           "StartTime": 54682.65486,
-          "StopTime": 56139.94861,
-          "Info": ""
+          "StopTime": 56139.94861
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5957,
         "CatalogName": "Fermi3FGL (60Gev)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+25,
-          "Nufnu": 4.738341385923661e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2023879288058925e-11,
-          "Name": "",
           "AngularDistance": 0.1339145927771083,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.738341385923661e-10,
+          "NufnuError": 1.2023879288058925e-11,
           "StartTime": 54682.65486,
-          "StopTime": 56139.94861,
-          "Info": ""
+          "StopTime": 56139.94861
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 5956,
         "CatalogName": "Fermi3FGL (6Gev)",
         "ErrorRadius": 15.0
       },
       "SourceData": [
         {
-          "Frequency": 1.452e+24,
-          "Nufnu": 1.724002052228002e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0009560888479818e-11,
-          "Name": "",
           "AngularDistance": 0.1339145927771083,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.724002052228002e-09,
+          "NufnuError": 1.0009560888479818e-11,
           "StartTime": 54682.65486,
-          "StopTime": 56139.94861,
-          "Info": ""
+          "StopTime": 56139.94861
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 61,
         "CatalogName": "IBISSG4CAT (20-40 keV)",
         "ErrorRadius": 6.0
       },
       "SourceData": [
         {
-          "Frequency": 6.839e+18,
-          "Nufnu": 7.422839199999999e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0915939999999999e-12,
-          "Name": "",
           "AngularDistance": 0.2640919326931765,
+          "Frequency": 6.839e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.422839199999999e-11,
+          "NufnuError": 1.0915939999999999e-12,
           "StartTime": 52671.5,
-          "StopTime": 54557.5,
-          "Info": ""
+          "StopTime": 54557.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 62,
         "CatalogName": "IBISSG4CAT (40-100 keV)",
         "ErrorRadius": 6.0
       },
       "SourceData": [
         {
-          "Frequency": 1.529e+19,
-          "Nufnu": 7.598172000000002e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0267800000000002e-12,
-          "Name": "",
           "AngularDistance": 0.2640919326931765,
+          "Frequency": 1.529e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.598172000000002e-11,
+          "NufnuError": 1.0267800000000002e-12,
           "StartTime": 52671.5,
-          "StopTime": 54557.5,
-          "Info": ""
+          "StopTime": 54557.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 12344,
         "CatalogName": "SWBAT105 (14-195 keV)",
         "ErrorRadius": 5.0
       },
       "SourceData": [
         {
-          "Frequency": 7.254e+18,
-          "Nufnu": 6.550951229903696e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.59364760676852e-13,
-          "Name": "",
           "AngularDistance": 0.4459553657576454,
+          "Frequency": 7.254e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.550951229903696e-11,
+          "NufnuError": 9.59364760676852e-13,
           "StartTime": 53340.5,
-          "StopTime": 56535.5,
-          "Info": ""
+          "StopTime": 56535.5
         },
         {
-          "Frequency": 1.693e+19,
-          "Nufnu": 6.719603677924114e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.840633440969349e-13,
-          "Name": "",
           "AngularDistance": 0.4459553657576454,
+          "Frequency": 1.693e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.719603677924114e-11,
+          "NufnuError": 9.840633440969349e-13,
           "StartTime": 53340.5,
-          "StopTime": 56535.5,
-          "Info": ""
+          "StopTime": 56535.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 3865,
         "CatalogName": "SWBAT70M  (14-195 keV)",
         "ErrorRadius": 3.0
       },
       "SourceData": [
         {
-          "Frequency": 7.254e+18,
-          "Nufnu": 6.218176648601799e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.5483175056973129e-12,
-          "Name": "",
           "AngularDistance": 0.5198468705888456,
+          "Frequency": 7.254e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.218176648601799e-11,
+          "NufnuError": 1.5483175056973129e-12,
           "StartTime": 53340.5,
-          "StopTime": 55469.5,
-          "Info": ""
+          "StopTime": 55469.5
         },
         {
-          "Frequency": 1.693e+19,
-          "Nufnu": 6.825594858534824e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6995638116268978e-12,
-          "Name": "",
           "AngularDistance": 0.5198468705888456,
+          "Frequency": 1.693e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.825594858534824e-11,
+          "NufnuError": 1.6995638116268978e-12,
           "StartTime": 53340.5,
-          "StopTime": 55469.5,
-          "Info": ""
+          "StopTime": 55469.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 85,
         "CatalogName": "AGILE Grid",
         "ErrorRadius": 60.0
       },
       "SourceData": [
         {
+          "AngularDistance": 1.918188070845134,
           "Frequency": 2.418e+23,
+          "FrequencyError": 0.0,
           "Nufnu": 1.8346599794938356e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 7.526820139380774e-11,
-          "Name": "",
-          "AngularDistance": 1.918188070845134,
           "StartTime": 54290.5,
-          "StopTime": 54647.5,
-          "Info": ""
+          "StopTime": 54647.5
         },
         {
+          "AngularDistance": 1.918188070845134,
           "Frequency": 4.836e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 1.1139700273332664e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 4.570150161087305e-11,
-          "Name": "",
-          "AngularDistance": 1.918188070845134,
           "StartTime": 54290.5,
-          "StopTime": 54647.5,
-          "Info": ""
+          "StopTime": 54647.5
         },
         {
+          "AngularDistance": 1.918188070845134,
           "Frequency": 2.418e+22,
-          "Nufnu": 8.985789889948137e-10,
           "FrequencyError": 0.0,
+          "Nufnu": 8.985789889948137e-10,
           "NufnuError": 3.6864799407565485e-11,
-          "Name": "",
-          "AngularDistance": 1.918188070845134,
           "StartTime": 54290.5,
-          "StopTime": 54647.5,
-          "Info": ""
+          "StopTime": 54647.5
         },
         {
-          "Frequency": 9.672e+22,
-          "Nufnu": 1.3809999810376894e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.665659955078617e-11,
-          "Name": "",
           "AngularDistance": 1.918188070845134,
+          "Frequency": 9.672e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3809999810376894e-09,
+          "NufnuError": 5.665659955078617e-11,
           "StartTime": 54290.5,
-          "StopTime": 54647.5,
-          "Info": ""
+          "StopTime": 54647.5
         }
       ]
     },
     {
       "Catalog": {
+        "CatalogId": 7,
         "CatalogName": "EGRET3",
         "ErrorRadius": 60.0
       },
       "SourceData": [
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 8.791306742295429e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 1.52546250526439e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 9.222415711174496e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 1.2380565260116787e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 9.61815163645323e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 4.134224470788999e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 5.208680670149134e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 4.631657896418691e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 9.159407477261402e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 2.2992478340216893e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 8.854314976208523e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 3.4488717510325335e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 1.023717989945907e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 4.697982353169317e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 1.0029363268307109e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 2.122382616020021e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 8.97369899835965e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 3.913142948286913e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 8.276186794865571e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 1.8902470173928309e-10,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 9.663473348566158e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 2.210815225020855e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 8.616652339518783e-10,
-          "FrequencyError": 0.0,
           "NufnuError": 1.613895114265224e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
+          "Name": "3EG J0834-4511",
+          "AngularDistance": 4.702931193838193,
           "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
           "Nufnu": 1.2534216918255738e-09,
-          "FrequencyError": 0.0,
           "NufnuError": 7.185149481317779e-11,
-          "Name": "3EG J0834-4511",
-          "AngularDistance": 4.702931193838193,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         },
         {
-          "Frequency": 2.42e+22,
-          "Nufnu": 1.0042628159657235e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.7193027267756517e-11,
           "Name": "3EG J0834-4511",
           "AngularDistance": 4.702931193838193,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0042628159657235e-09,
+          "NufnuError": 2.7193027267756517e-11,
           "StartTime": 48368.5,
-          "StopTime": 49993.5,
-          "Info": ""
+          "StopTime": 49993.5
         }
       ]
     }

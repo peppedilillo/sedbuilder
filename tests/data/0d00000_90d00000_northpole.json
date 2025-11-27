@@ -4,7 +4,11 @@
     "message": null
   },
   "Properties": {
-    "Nh": 6.12e+20
+    "Nh": 6.12e+20,
+    "axis_X": "Frequency (Hz)",
+    "axis_X_unit": "Hz",
+    "axis_Y": "nuFnu (erg/cm^2/s)",
+    "axis_Y_unit": "erg cm**(-2) s**(-1)"
   },
   "Catalogs": []
 }

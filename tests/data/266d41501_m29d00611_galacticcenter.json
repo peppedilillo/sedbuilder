@@ -1,0 +1,2700 @@
+{
+  "ResponseInfo": {
+    "statusCode": "OK",
+    "message": null
+  },
+  "Properties": {
+    "Nh": -1.0,
+    "axis_X": "Frequency (Hz)",
+    "axis_X_unit": "Hz",
+    "axis_Y": "nuFnu (erg/cm^2/s)",
+    "axis_Y_unit": "erg cm**(-2) s**(-1)"
+  },
+  "Catalogs": [
+    {
+      "Catalog": {
+        "CatalogId": 3,
+        "CatalogName": "DIXON",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "Name": "BTD359.9-00.0",
+          "AngularDistance": 0.3115247435694773,
+          "Frequency": 2650000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.540000000000002e-12,
+          "NufnuError": 0.0
+        },
+        {
+          "Name": "ADG000.0-00.0",
+          "AngularDistance": 0.40702968482159513,
+          "Frequency": 2695000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.9233e-12,
+          "NufnuError": 0.0
+        },
+        {
+          "Name": "ADG000.0-00.0",
+          "AngularDistance": 0.40702968482159513,
+          "Frequency": 5000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1250000000000002e-11,
+          "NufnuError": 0.0
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 9,
+        "CatalogName": "NVSS",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5326141754426227,
+          "Frequency": 1400000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.310462200000001e-15,
+          "NufnuError": 1.8940222e-16,
+          "StartTime": 49231.5,
+          "StopTime": 50508.5
+        },
+        {
+          "AngularDistance": 0.5854451902070179,
+          "Frequency": 1400000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2567426000000002e-12,
+          "NufnuError": 6.807245200000001e-14,
+          "StartTime": 49231.5,
+          "StopTime": 50508.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 2809,
+        "CatalogName": "IRASPSC 12",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.20081387741886428,
+          "Frequency": 24980000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.39764729348096e-07,
+          "NufnuError": 2.038588337964975e-08,
+          "StartTime": 45366.5,
+          "StopTime": 45659.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 2810,
+        "CatalogName": "IRASPSC 25",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.20081387741886428,
+          "Frequency": 11990000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.172127828063027e-07,
+          "NufnuError": 3.0860639871808815e-08,
+          "StartTime": 45366.5,
+          "StopTime": 45659.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 2811,
+        "CatalogName": "IRASPSC 60",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.20081387741886428,
+          "Frequency": 4997000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.273578495148033e-07,
+          "NufnuError": 1.0200936222747258e-07,
+          "StartTime": 45366.5,
+          "StopTime": 45659.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 2812,
+        "CatalogName": "IRASPSC100",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.20081387741886428,
+          "Frequency": 2998000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.994147221438465e-07,
+          "NufnuError": 2.1681855800965476e-07,
+          "StartTime": 45366.5,
+          "StopTime": 45659.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 88,
+        "CatalogName": "ERCSC030",
+        "ErrorRadius": 7.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.1694421015596195,
+          "Frequency": 30000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.4440848e-10,
+          "NufnuError": 2.599317e-12,
+          "StartTime": 55055.5,
+          "StopTime": 55354.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 89,
+        "CatalogName": "ERCSC044 ",
+        "ErrorRadius": 7.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 6.634443510726125,
+          "Frequency": 44000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.4949558800000001e-10,
+          "NufnuError": 3.73395748e-12,
+          "StartTime": 55055.5,
+          "StopTime": 55354.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 90,
+        "CatalogName": "ERCSC070",
+        "ErrorRadius": 5.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 2.724979121773023,
+          "Frequency": 70000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0812613000000001e-10,
+          "NufnuError": 5.855209500000001e-12,
+          "StartTime": 55055.5,
+          "StopTime": 55354.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 91,
+        "CatalogName": "ERCSC100",
+        "ErrorRadius": 4.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 1.2983878124280583,
+          "Frequency": 100000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.823055e-10,
+          "NufnuError": 1.1984860000000001e-11,
+          "StartTime": 55055.5,
+          "StopTime": 55354.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 92,
+        "CatalogName": "ERCSC143",
+        "ErrorRadius": 3.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 1.2983878124280583,
+          "Frequency": 143000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3933765559999998e-10,
+          "NufnuError": 1.1132565730000002e-11,
+          "StartTime": 55055.5,
+          "StopTime": 55354.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 4165,
+        "CatalogName": "PCCS1F143",
+        "ErrorRadius": 1.8
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 1.051050033471,
+          "Frequency": 143000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.654762730414336e-11,
+          "NufnuError": 1.6770073627627075e-13,
+          "StartTime": 55055.5,
+          "StopTime": 55527.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5227,
+        "CatalogName": "allwise w1",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.06313607475241548,
+          "Frequency": 88170000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.193952752804762e-07,
+          "NufnuError": 8.614492230663018e-08,
+          "StartTime": 55272.76208456,
+          "StopTime": 55453.05192492,
+          "Info": "Bad photometry see CC_FLAG or PH_QUAL"
+        },
+        {
+          "AngularDistance": 0.09742524413373355,
+          "Frequency": 88170000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.3606809779485047e-07,
+          "NufnuError": 1.2577029906424286e-07,
+          "StartTime": 55272.76208456,
+          "StopTime": 55453.05192492,
+          "Info": "Bad photometry see CC_FLAG or PH_QUAL"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5228,
+        "CatalogName": "allwise w2",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.06313607475241548,
+          "Frequency": 65170000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.22858109638824e-10,
+          "NufnuError": 0.0,
+          "StartTime": 55272.76208456,
+          "StopTime": 55452.65513983,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 0.09742524413373355,
+          "Frequency": 65170000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5715479745613834e-10,
+          "NufnuError": 0.0,
+          "StartTime": 55272.76208456,
+          "StopTime": 55452.65513983,
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5229,
+        "CatalogName": "allwise w3",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.06313607475241548,
+          "Frequency": 24980000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.60158412099554e-07,
+          "NufnuError": 7.37423206942367e-08,
+          "StartTime": 55272.76208456,
+          "StopTime": 55273.62225355
+        },
+        {
+          "AngularDistance": 0.09742524413373355,
+          "Frequency": 24980000000000.0,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.111681495392986e-07,
+          "NufnuError": 7.054045170207246e-08,
+          "StartTime": 55272.76208456,
+          "StopTime": 55273.62225355
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 6,
+        "CatalogName": "IPC",
+        "ErrorRadius": 1.0
+      },
+      "SourceData": [
+        {
+          "Name": "2E1742.5-2859",
+          "AngularDistance": 0.3225900230374546,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.084713053504178e-13,
+          "NufnuError": 5.239333079116892e-14,
+          "StartTime": 43813.5,
+          "StopTime": 44695.5
+        },
+        {
+          "Name": "2E1742.5-2858",
+          "AngularDistance": 0.40161256974104986,
+          "Frequency": 2.42e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.917642336438616e-13,
+          "NufnuError": 4.043869563952625e-14,
+          "StartTime": 43813.5,
+          "StopTime": 44695.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 8185,
+        "CatalogName": "SAXMECS",
+        "ErrorRadius": 1.5
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.2909051263691218,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.358450216683355e-12,
+          "NufnuError": 1.217789974763961e-13,
+          "StartTime": 50684.251123,
+          "StopTime": 50686.361678
+        },
+        {
+          "AngularDistance": 0.3915185444330841,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1735000124413197e-11,
+          "NufnuError": 6.088929816079613e-13,
+          "StartTime": 50913.380046,
+          "StopTime": 50914.16162
+        },
+        {
+          "AngularDistance": 0.7520734552704885,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0517299704748684e-11,
+          "NufnuError": 6.088940116000252e-13,
+          "StartTime": 50905.465116,
+          "StopTime": 50906.197269
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14640,
+        "CatalogName": "XMMSL2 (0.2-12 keV)",
+        "ErrorRadius": 0.5
+      },
+      "SourceData": [
+        {
+          "Name": "XMMSL2_J174539.6-290028",
+          "AngularDistance": 0.10597241173098151,
+          "Frequency": 3.746e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2734899940136657e-12,
+          "NufnuError": 4.078099891200587e-13,
+          "StartTime": 56564.92669926,
+          "StopTime": 56564.92722009
+        },
+        {
+          "Name": "XMMSL2_J174539.6-290028",
+          "AngularDistance": 0.046955983174472846,
+          "Frequency": 3.746e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3834400205275932e-12,
+          "NufnuError": 7.385450215800782e-13,
+          "StartTime": 56725.57728954,
+          "StopTime": 56725.57781037
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14641,
+        "CatalogName": "XMMSL2 (2-12 keV)",
+        "ErrorRadius": 0.5
+      },
+      "SourceData": [
+        {
+          "Name": "XMMSL2_J174539.6-290028",
+          "AngularDistance": 0.10597241173098151,
+          "Frequency": 1.185e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.990510163258246e-12,
+          "NufnuError": 2.5903998997905964e-12,
+          "StartTime": 56564.92669926,
+          "StopTime": 56564.92722009
+        },
+        {
+          "Name": "XMMSL2_J174539.6-290028",
+          "AngularDistance": 0.046955983174472846,
+          "Frequency": 1.185e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.745999584280906e-12,
+          "NufnuError": 4.328200124692483e-12,
+          "StartTime": 56725.57728954,
+          "StopTime": 56725.57781037
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14334,
+        "CatalogName": "4XMM-DR12 (0.5-1 keV)",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09455636412294087,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.956530121210713e-16,
+          "NufnuError": 3.891620084265978e-16,
+          "StartTime": 56194.44425925926,
+          "StopTime": 56194.90769675926,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09487526472800849,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6791600204610563e-15,
+          "NufnuError": 6.595290224293193e-16,
+          "StartTime": 58574.22212962963,
+          "StopTime": 58574.592986111114
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09467339528121575,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.6535300812815495e-15,
+          "NufnuError": 2.3122699264468364e-15,
+          "StartTime": 56001.2153587963,
+          "StopTime": 56001.377858796295
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08317287168782445,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.8378700204111805e-16,
+          "NufnuError": 4.904830043161936e-16,
+          "StartTime": 59111.608668981484,
+          "StopTime": 59112.068877314814,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08615575074559853,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.271339925261957e-16,
+          "NufnuError": 7.443590015199231e-16,
+          "StartTime": 53986.72206018519,
+          "StopTime": 53986.77978009259,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08323308310771982,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.718339907268206e-16,
+          "NufnuError": 4.3558701076287917e-16,
+          "StartTime": 58554.03097222222,
+          "StopTime": 58554.16710648148,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.07342930560141181,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3351200130000667e-14,
+          "NufnuError": 1.541689918901825e-14,
+          "StartTime": 54732.65175925926,
+          "StopTime": 54732.71030092592,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08046123847527721,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.9628599418584913e-15,
+          "NufnuError": 9.118320265104384e-16,
+          "StartTime": 58560.04886574074,
+          "StopTime": 58560.173425925925
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09647530617000429,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0665400108759472e-14,
+          "NufnuError": 6.4514798058380556e-15,
+          "StartTime": 55652.37662037037,
+          "StopTime": 55652.81105324074
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.096986207412432,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.224410396966662e-15,
+          "NufnuError": 7.316099698176197e-15,
+          "StartTime": 59109.88135416667,
+          "StopTime": 59110.41793981481
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.09937597602290679,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7122799827865888e-14,
+          "NufnuError": 6.303140196334831e-15,
+          "StartTime": 55656.31431712963,
+          "StopTime": 55656.88150462963
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.08856908785063028,
+          "Frequency": 1.71e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5106599680219952e-15,
+          "NufnuError": 9.68300960246804e-16,
+          "StartTime": 56193.863229166665,
+          "StopTime": 56194.39612268518
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14335,
+        "CatalogName": "4XMM-DR12 (1-2 keV)",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09455636412294087,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.920550032633391e-15,
+          "NufnuError": 1.3921599528220001e-15,
+          "StartTime": 56194.44425925926,
+          "StopTime": 56194.90769675926
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09487526472800849,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.869010414388559e-15,
+          "NufnuError": 1.446220030735493e-15,
+          "StartTime": 58574.22212962963,
+          "StopTime": 58574.592986111114
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09467339528121575,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.899520000870586e-15,
+          "NufnuError": 2.03787000329378e-15,
+          "StartTime": 56001.2153587963,
+          "StopTime": 56001.377858796295
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08317287168782445,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.0291300178441235e-15,
+          "NufnuError": 1.7034199969824851e-15,
+          "StartTime": 59111.608668981484,
+          "StopTime": 59112.068877314814
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08615575074559853,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.485640118832723e-15,
+          "NufnuError": 2.8496799324694575e-15,
+          "StartTime": 53986.72206018519,
+          "StopTime": 53986.77978009259
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08323308310771982,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.859490289829519e-15,
+          "NufnuError": 1.823329898523185e-15,
+          "StartTime": 58554.03097222222,
+          "StopTime": 58554.16710648148
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.07342930560141181,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.708830000044092e-15,
+          "NufnuError": 3.27959997517785e-15,
+          "StartTime": 54732.65175925926,
+          "StopTime": 54732.71030092592,
+          "Info": "Nufnu Flux error is bigger than Flux"
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08046123847527721,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.682630117197695e-15,
+          "NufnuError": 1.864390032399574e-15,
+          "StartTime": 58560.04886574074,
+          "StopTime": 58560.173425925925
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09647530617000429,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8246099347130756e-14,
+          "NufnuError": 2.2862399687030013e-15,
+          "StartTime": 55652.37662037037,
+          "StopTime": 55652.81105324074
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.096986207412432,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1664799883664718e-14,
+          "NufnuError": 3.344330021248787e-15,
+          "StartTime": 59109.88135416667,
+          "StopTime": 59110.41793981481
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.09937597602290679,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.416629993514348e-14,
+          "NufnuError": 1.8191900249934796e-15,
+          "StartTime": 55656.31431712963,
+          "StopTime": 55656.88150462963
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.08856908785063028,
+          "Frequency": 3.419e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.964889870826561e-15,
+          "NufnuError": 1.5638100149127816e-15,
+          "StartTime": 56193.863229166665,
+          "StopTime": 56194.39612268518
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14336,
+        "CatalogName": "4XMM-DR12 (2-4.5 keV)",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09455636412294087,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.119580060852861e-13,
+          "NufnuError": 1.4279999708752267e-14,
+          "StartTime": 56194.44425925926,
+          "StopTime": 56194.90769675926
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09487526472800849,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.878570099639933e-13,
+          "NufnuError": 1.3583299863042554e-14,
+          "StartTime": 58574.22212962963,
+          "StopTime": 58574.592986111114
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09467339528121575,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.424649886590858e-13,
+          "NufnuError": 1.7885200631162328e-14,
+          "StartTime": 56001.2153587963,
+          "StopTime": 56001.377858796295
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08317287168782445,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.170020127472861e-13,
+          "NufnuError": 1.681080032394245e-14,
+          "StartTime": 59111.608668981484,
+          "StopTime": 59112.068877314814
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08615575074559853,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.3631498736093335e-13,
+          "NufnuError": 2.6919299986804743e-14,
+          "StartTime": 53986.72206018519,
+          "StopTime": 53986.77978009259
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08323308310771982,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.0028099107872195e-13,
+          "NufnuError": 1.914680030192309e-14,
+          "StartTime": 58554.03097222222,
+          "StopTime": 58554.16710648148
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.07342930560141181,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.995430017649654e-13,
+          "NufnuError": 3.3821500423436915e-14,
+          "StartTime": 54732.65175925926,
+          "StopTime": 54732.71030092592
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08046123847527721,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.9105499979701086e-13,
+          "NufnuError": 2.0141599840891797e-14,
+          "StartTime": 58560.04886574074,
+          "StopTime": 58560.173425925925
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09647530617000429,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.883489938048129e-13,
+          "NufnuError": 1.4097199834339422e-14,
+          "StartTime": 55652.37662037037,
+          "StopTime": 55652.81105324074
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.096986207412432,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.4603298958851836e-13,
+          "NufnuError": 2.0809400616507087e-14,
+          "StartTime": 59109.88135416667,
+          "StopTime": 59110.41793981481
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.09937597602290679,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.1578098928206353e-13,
+          "NufnuError": 1.234870021450847e-14,
+          "StartTime": 55656.31431712963,
+          "StopTime": 55656.88150462963
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.08856908785063028,
+          "Frequency": 7.254e+17,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.9167001347935326e-13,
+          "NufnuError": 1.8153000261832142e-14,
+          "StartTime": 56193.863229166665,
+          "StopTime": 56194.39612268518
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14337,
+        "CatalogName": "4XMM-DR12 (4.5-12 keV)",
+        "ErrorRadius": 0.1
+      },
+      "SourceData": [
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09455636412294087,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.832059974865636e-13,
+          "NufnuError": 5.630219868883041e-14,
+          "StartTime": 56194.44425925926,
+          "StopTime": 56194.90769675926
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09487526472800849,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.554460208092749e-13,
+          "NufnuError": 3.3478201358046536e-14,
+          "StartTime": 58574.22212962963,
+          "StopTime": 58574.592986111114
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09467339528121575,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.486390200996506e-13,
+          "NufnuError": 4.4279599382751264e-14,
+          "StartTime": 56001.2153587963,
+          "StopTime": 56001.377858796295
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08317287168782445,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.327809791931374e-13,
+          "NufnuError": 6.843030103068776e-14,
+          "StartTime": 59111.608668981484,
+          "StopTime": 59112.068877314814
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08615575074559853,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.158260208201372e-13,
+          "NufnuError": 6.740310078742068e-14,
+          "StartTime": 53986.72206018519,
+          "StopTime": 53986.77978009259
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08323308310771982,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.766780061631672e-13,
+          "NufnuError": 4.751319848087139e-14,
+          "StartTime": 58554.03097222222,
+          "StopTime": 58554.16710648148
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.07342930560141181,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.970970025180212e-13,
+          "NufnuError": 7.661579703999166e-14,
+          "StartTime": 54732.65175925926,
+          "StopTime": 54732.71030092592
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.08046123847527721,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.938460223038234e-13,
+          "NufnuError": 4.953250131020312e-14,
+          "StartTime": 58560.04886574074,
+          "StopTime": 58560.173425925925
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.09647530617000429,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.545310083858058e-13,
+          "NufnuError": 2.8158400768420536e-14,
+          "StartTime": 55652.37662037037,
+          "StopTime": 55652.81105324074
+        },
+        {
+          "Name": "4XMM_J174539.9-290028",
+          "AngularDistance": 0.096986207412432,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0402600005357532e-12,
+          "NufnuError": 8.048370184286086e-14,
+          "StartTime": 59109.88135416667,
+          "StopTime": 59110.41793981481
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.09937597602290679,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.829759739528096e-13,
+          "NufnuError": 2.6358199951555077e-14,
+          "StartTime": 55656.31431712963,
+          "StopTime": 55656.88150462963
+        },
+        {
+          "Name": "4XMM_J174540.3-290025",
+          "AngularDistance": 0.08856908785063028,
+          "Frequency": 1.777e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0321300021251534e-12,
+          "NufnuError": 7.470659832940763e-14,
+          "StartTime": 56193.863229166665,
+          "StopTime": 56194.39612268518
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 7902,
+        "CatalogName": "2FHL (1081GeV)",
+        "ErrorRadius": 6.0
+      },
+      "SourceData": [
+        {
+          "Name": "2FHL J1745.7-2900",
+          "AngularDistance": 0.6776347070412873,
+          "Frequency": 2.614e+26,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.473667096493994e-12,
+          "NufnuError": 3.6174650514669837e-12,
+          "StartTime": 54682.0,
+          "StopTime": 57116.0
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 7901,
+        "CatalogName": "2FHL (316GeV)",
+        "ErrorRadius": 6.0
+      },
+      "SourceData": [
+        {
+          "Name": "2FHL J1745.7-2900",
+          "AngularDistance": 0.6776347070412873,
+          "Frequency": 7.64e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.997301613658301e-12,
+          "NufnuError": 2.842463243946103e-12,
+          "StartTime": 54682.0,
+          "StopTime": 57116.0
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 7900,
+        "CatalogName": "2FHL (92GeV)",
+        "ErrorRadius": 6.0
+      },
+      "SourceData": [
+        {
+          "Name": "2FHL J1745.7-2900",
+          "AngularDistance": 0.6776347070412873,
+          "Frequency": 2.224e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.384233841391865e-12,
+          "NufnuError": 2.0013396322127175e-12,
+          "StartTime": 54682.0,
+          "StopTime": 57116.0
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 8051,
+        "CatalogName": "BATPA100",
+        "ErrorRadius": 5.0
+      },
+      "SourceData": [
+        {
+          "Name": "4PBC J1745.6-2900",
+          "AngularDistance": 0.1538427519010118,
+          "Frequency": 1.147e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.1053e-11,
+          "NufnuError": 4.763000103054001e-13,
+          "StartTime": 53381.425781,
+          "StopTime": 56501.425781
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14344,
+        "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 1.709e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0994981314293995e-10,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 1.709e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0549956047656295e-10,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 1.709e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2865834786435215e-10,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14345,
+        "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 4.188e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.4643169449500846e-11,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 4.188e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.559629765086502e-11,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 4.188e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.034372472875972e-11,
+          "NufnuError": 1.3365121509512079e-11
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14346,
+        "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 1.323e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.950227282060851e-12,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 1.323e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.872005502001617e-11,
+          "NufnuError": 7.013508263736812e-12
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 1.323e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.431202264125304e-11,
+          "NufnuError": 6.725131302537379e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14347,
+        "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 4.188e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.452381585783876e-12,
+          "NufnuError": 2.337981154162949e-12
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 4.188e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.9855947575319064e-11,
+          "NufnuError": 2.7459868146700872e-12
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 4.188e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.379341664976891e-11,
+          "NufnuError": 4.247723700556705e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14349,
+        "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 4.188e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1745082987776878e-12,
+          "NufnuError": 4.739326335892469e-13
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 4.188e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.697816358672057e-12,
+          "NufnuError": 7.002438451135518e-13
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 4.188e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.059758787142929e-11,
+          "NufnuError": 1.276994243855356e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14351,
+        "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 7.646e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.120795622110149e-12,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 7.646e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.973340854066589e-13,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 7.646e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.252225962493971e-12,
+          "NufnuError": 1.0791695228412612e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14348,
+        "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 1.324e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.066166662211826e-12,
+          "NufnuError": 1.0017964105837884e-12
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 1.324e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8525020059612096e-11,
+          "NufnuError": 1.1692824443063077e-12
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 1.324e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.0526426792485424e-11,
+          "NufnuError": 1.7012494928428379e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 14350,
+        "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 10.411669391760945,
+          "Frequency": 1.324e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.105326205534112e-13,
+          "NufnuError": 0.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 13.058187808247128,
+          "Frequency": 1.324e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.187101933557594e-13,
+          "NufnuError": 4.890020137947315e-13
+        },
+        {
+          "AngularDistance": 0.5469107812712952,
+          "Frequency": 1.324e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1426435318762085e-11,
+          "NufnuError": 1.4402495038604024e-12
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 56,
+        "CatalogName": "Fermi1FGL (200 Mev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5211621549557406,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.3245400876680264e-10,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 15.504326323497272,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.156189948809839e-10,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944,
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 58,
+        "CatalogName": "Fermi1FGL (2Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5211621549557406,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2633799562067338e-10,
+          "NufnuError": 9.679500256876139e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        },
+        {
+          "AngularDistance": 15.504326323497272,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.5550698629659436e-11,
+          "NufnuError": 9.162680163210535e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 57,
+        "CatalogName": "Fermi1FGL (600 Mev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5211621549557406,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3112999575071171e-10,
+          "NufnuError": 3.493480157934492e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        },
+        {
+          "AngularDistance": 15.504326323497272,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3082500360805938e-10,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944,
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 60,
+        "CatalogName": "Fermi1FGL (60Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5211621549557406,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.1558100790630697e-11,
+          "NufnuError": 3.673639951268237e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        },
+        {
+          "AngularDistance": 15.504326323497272,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.5016899182485055e-11,
+          "NufnuError": 3.2287499496935768e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 59,
+        "CatalogName": "Fermi1FGL (6Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.5211621549557406,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.941649949825489e-11,
+          "NufnuError": 5.556119800353976e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        },
+        {
+          "AngularDistance": 15.504326323497272,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.999729978303556e-11,
+          "NufnuError": 4.85297002236762e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55016.61944
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 114,
+        "CatalogName": "Fermi2FGL (200 Mev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.018819453034528,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.4935851166963943e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 1.710119319554975,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.852445859686142e-11,
+          "NufnuError": 1.1307549514782966e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 116,
+        "CatalogName": "Fermi2FGL (2Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.018819453034528,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.63407733125387e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 1.710119319554975,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7562079568378408e-10,
+          "NufnuError": 7.622518935490596e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 115,
+        "CatalogName": "Fermi2FGL (600 Mev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.018819453034528,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.4193153437021024e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 1.710119319554975,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3960704814408587e-10,
+          "NufnuError": 1.191668985711658e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 118,
+        "CatalogName": "Fermi2FGL (60Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.018819453034528,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.001596355303951e-12,
+          "NufnuError": 2.3318517256010196e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        },
+        {
+          "AngularDistance": 1.710119319554975,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.616228505196826e-11,
+          "NufnuError": 2.4414437485575924e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 117,
+        "CatalogName": "Fermi2FGL (6Gev)",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.018819453034528,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.9893307487417466e-11,
+          "NufnuError": 3.9496838959152125e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        },
+        {
+          "AngularDistance": 1.710119319554975,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.272056568030649e-11,
+          "NufnuError": 4.650058983701744e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 55409.05347
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 2884,
+        "CatalogName": "Fermi2FglLC",
+        "ErrorRadius": 30.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.995560132752374e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.7,
+          "StopTime": 54713.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.763730043431334e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54713.0,
+          "StopTime": 54743.4,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.2324501542401194e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54743.4,
+          "StopTime": 54773.8,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.485129975750901e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54773.8,
+          "StopTime": 54804.1,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.8376298666653597e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54804.1,
+          "StopTime": 54834.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.5268400219435883e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54834.5,
+          "StopTime": 54864.9,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.216660007272388e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54864.9,
+          "StopTime": 54895.2,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.327210118004743e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54895.2,
+          "StopTime": 54925.6,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.137689843530801e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54925.6,
+          "StopTime": 54956.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.932389830429983e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54956.0,
+          "StopTime": 54986.4,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.6114799479024526e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54986.4,
+          "StopTime": 55016.7,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3455399988648864e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55016.7,
+          "StopTime": 55047.1,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.5375698897999186e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55047.1,
+          "StopTime": 55077.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8793300249342337e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55077.5,
+          "StopTime": 55107.8,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8161600695565383e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55107.8,
+          "StopTime": 55138.2,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2583599920689146e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55138.2,
+          "StopTime": 55168.6,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.1901301045245134e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55168.6,
+          "StopTime": 55198.9,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.090929926567568e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55198.9,
+          "StopTime": 55229.3,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.4794600400612765e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55229.3,
+          "StopTime": 55259.7,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.0372599440765526e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55259.7,
+          "StopTime": 55290.1,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.869219875052288e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55290.1,
+          "StopTime": 55320.4,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.000619891446732e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55320.4,
+          "StopTime": 55350.8,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.8799499163809656e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55350.8,
+          "StopTime": 55381.2,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 16.0038788820093,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.132640146232603e-11,
+          "NufnuError": 0.0,
+          "StartTime": 55381.2,
+          "StopTime": 55409.0,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.465760136158515e-11,
+          "NufnuError": 7.481020143640382e-12,
+          "StartTime": 54682.7,
+          "StopTime": 54713.0
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.684749975782722e-11,
+          "NufnuError": 7.726780153205492e-12,
+          "StartTime": 54713.0,
+          "StopTime": 54743.4
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.527459822658344e-11,
+          "NufnuError": 7.746439774358738e-12,
+          "StartTime": 54743.4,
+          "StopTime": 54773.8
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.807119979854946e-11,
+          "NufnuError": 7.36305027365658e-12,
+          "StartTime": 54773.8,
+          "StopTime": 54804.1
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.10475003881561e-11,
+          "NufnuError": 7.343389785141596e-12,
+          "StartTime": 54804.1,
+          "StopTime": 54834.5
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.635599708593176e-11,
+          "NufnuError": 7.52034025330861e-12,
+          "StartTime": 54834.5,
+          "StopTime": 54864.9
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.979659905592683e-11,
+          "NufnuError": 7.834920212612673e-12,
+          "StartTime": 54864.9,
+          "StopTime": 54895.2
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.301360128135869e-11,
+          "NufnuError": 8.61152989195535e-12,
+          "StartTime": 54895.2,
+          "StopTime": 54925.6
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.6230499423381985e-11,
+          "NufnuError": 7.195930049747057e-12,
+          "StartTime": 54925.6,
+          "StopTime": 54956.0
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.412209734880548e-11,
+          "NufnuError": 7.657969744445658e-12,
+          "StartTime": 54956.0,
+          "StopTime": 54986.4
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.655259676691117e-11,
+          "NufnuError": 7.726780153205492e-12,
+          "StartTime": 54986.4,
+          "StopTime": 55016.7
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.4908503011617e-11,
+          "NufnuError": 6.409490126146888e-12,
+          "StartTime": 55016.7,
+          "StopTime": 55047.1
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.724069911978603e-11,
+          "NufnuError": 7.677630232960642e-12,
+          "StartTime": 55047.1,
+          "StopTime": 55077.5
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.353220116135262e-11,
+          "NufnuError": 6.802709871106538e-12,
+          "StartTime": 55077.5,
+          "StopTime": 55107.8
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.166439663919277e-11,
+          "NufnuError": 6.458650021051726e-12,
+          "StartTime": 55107.8,
+          "StopTime": 55138.2
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.7972899958059756e-11,
+          "NufnuError": 7.61864963477743e-12,
+          "StartTime": 55138.2,
+          "StopTime": 55168.6
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.242380223842048e-11,
+          "NufnuError": 7.058310099589127e-12,
+          "StartTime": 55168.6,
+          "StopTime": 55198.9
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.875929868197737e-11,
+          "NufnuError": 9.417629870389632e-12,
+          "StartTime": 55198.9,
+          "StopTime": 55229.3
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.284409880847775e-11,
+          "NufnuError": 7.52034025330861e-12,
+          "StartTime": 55229.3,
+          "StopTime": 55259.7
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.92779991759329e-11,
+          "NufnuError": 6.783049816272424e-12,
+          "StartTime": 55259.7,
+          "StopTime": 55290.1
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.301360128135869e-11,
+          "NufnuError": 8.188820281584963e-12,
+          "StartTime": 55290.1,
+          "StopTime": 55320.4
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.242380223842048e-11,
+          "NufnuError": 7.52034025330861e-12,
+          "StartTime": 55320.4,
+          "StopTime": 55350.8
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.8000000635605176e-11,
+          "NufnuError": 8.916269632341933e-12,
+          "StartTime": 55350.8,
+          "StopTime": 55381.2
+        },
+        {
+          "AngularDistance": 1.7031814385590238,
+          "Frequency": 2.42e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 7.195929963010883e-11,
+          "NufnuError": 7.97254970374972e-12,
+          "StartTime": 55381.2,
+          "StopTime": 55409.0
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5953,
+        "CatalogName": "Fermi3FGL (200 Mev)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.091748658314588,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.9478231527703116e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861,
+          "Info": "Upper Limit"
+        },
+        {
+          "AngularDistance": 0.6826101128834718,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2190280729296177e-10,
+          "NufnuError": 7.713879014714653e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 12.735518580456603,
+          "Frequency": 4.84e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.2068197963465153e-11,
+          "NufnuError": 0.0,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861,
+          "Info": "Upper Limit"
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5955,
+        "CatalogName": "Fermi3FGL (2Gev)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.091748658314588,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.950705289110459e-11,
+          "NufnuError": 1.0413511199180991e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 0.6826101128834718,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.404367759918259e-11,
+          "NufnuError": 1.3480742563909409e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 12.735518580456603,
+          "Frequency": 4.84e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.796146466090612e-11,
+          "NufnuError": 5.800099983632734e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5954,
+        "CatalogName": "Fermi3FGL (600 Mev)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.091748658314588,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.103197114359915e-11,
+          "NufnuError": 9.012869443825178e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 0.6826101128834718,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.2789401322472784e-11,
+          "NufnuError": 1.2098343160626968e-11,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 12.735518580456603,
+          "Frequency": 1.452e+23,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.8167418050784043e-11,
+          "NufnuError": 7.280094062311893e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5957,
+        "CatalogName": "Fermi3FGL (60Gev)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.091748658314588,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.6182085973168743e-12,
+          "NufnuError": 1.2775827487945812e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 0.6826101128834718,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2479955437127987e-11,
+          "NufnuError": 1.7949050449064807e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 12.735518580456603,
+          "Frequency": 1.452e+25,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.036865455970707e-12,
+          "NufnuError": 1.0306607997612183e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 5956,
+        "CatalogName": "Fermi3FGL (6Gev)",
+        "ErrorRadius": 15.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 5.091748658314588,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.250901631224323e-11,
+          "NufnuError": 4.169671118797735e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 0.6826101128834718,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.392025549331379e-11,
+          "NufnuError": 4.731130417989782e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        },
+        {
+          "AngularDistance": 12.735518580456603,
+          "Frequency": 1.452e+24,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.9095227963016335e-11,
+          "NufnuError": 2.6745248810772226e-12,
+          "StartTime": 54682.65486,
+          "StopTime": 56139.94861
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 61,
+        "CatalogName": "IBISSG4CAT (20-40 keV)",
+        "ErrorRadius": 6.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 4.286845180402781,
+          "Frequency": 6.839e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.2396512e-11,
+          "NufnuError": 1.0915939999999999e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        },
+        {
+          "AngularDistance": 0.9311400994670207,
+          "Frequency": 6.839e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.003766999999999e-11,
+          "NufnuError": 1.0915939999999999e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        },
+        {
+          "AngularDistance": 1.5994441411801725,
+          "Frequency": 6.839e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 6.2220858e-11,
+          "NufnuError": 1.0915939999999999e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 62,
+        "CatalogName": "IBISSG4CAT (40-100 keV)",
+        "ErrorRadius": 6.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 4.286845180402781,
+          "Frequency": 1.529e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.9776620000000006e-11,
+          "NufnuError": 1.0267800000000002e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        },
+        {
+          "AngularDistance": 0.9311400994670207,
+          "Frequency": 1.529e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.388374e-11,
+          "NufnuError": 1.0267800000000002e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        },
+        {
+          "AngularDistance": 1.5994441411801725,
+          "Frequency": 1.529e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.799086000000001e-11,
+          "NufnuError": 1.0267800000000002e-12,
+          "StartTime": 52671.5,
+          "StopTime": 54557.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 12344,
+        "CatalogName": "SWBAT105 (14-195 keV)",
+        "ErrorRadius": 5.0
+      },
+      "SourceData": [
+        {
+          "AngularDistance": 0.41653033954592006,
+          "Frequency": 7.254e+18,
+          "FrequencyError": 0.0,
+          "Nufnu": 5.48749300901033e-11,
+          "NufnuError": 2.4442980552207558e-12,
+          "StartTime": 53340.5,
+          "StopTime": 56535.5
+        },
+        {
+          "AngularDistance": 0.41653033954592006,
+          "Frequency": 1.693e+19,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.0582288455735535e-11,
+          "NufnuError": 1.3622291285622269e-12,
+          "StartTime": 53340.5,
+          "StopTime": 56535.5
+        }
+      ]
+    },
+    {
+      "Catalog": {
+        "CatalogId": 7,
+        "CatalogName": "EGRET3",
+        "ErrorRadius": 60.0
+      },
+      "SourceData": [
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 4.3657192534089356e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8099848124844653e-10,
+          "NufnuError": 6.190282630058394e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.8346562287636832e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6271920464157117e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 9.509709547625938e-11,
+          "NufnuError": 3.364284038075214e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1864708374278588e-10,
+          "NufnuError": 2.9942127938869404e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.3112631341576718e-10,
+          "NufnuError": 8.208853052903523e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2548779462020547e-10,
+          "NufnuError": 1.3793564556108378e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6877491591010656e-10,
+          "NufnuError": 3.3867125983290483e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.20024176090119e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1023637364759783e-10,
+          "NufnuError": 1.827927660687533e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.344592187217394e-10,
+          "NufnuError": 8.29856729391886e-12,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3759921715727625e-10,
+          "NufnuError": 1.2447850940878292e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3277707670270177e-10,
+          "NufnuError": 6.840710877419602e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7606419799260288e-10,
+          "NufnuError": 2.6914272304601714e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.0373209117398577e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.496298756251809e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2391779540243704e-10,
+          "NufnuError": 1.0877851723109859e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2593636582528218e-10,
+          "NufnuError": 4.4969263308938693e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2268422458847613e-10,
+          "NufnuError": 1.7606419799260286e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.356927895357003e-10,
+          "NufnuError": 2.5456415888102452e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.1026775237970088e-10,
+          "NufnuError": 6.807068037038851e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.2963707826716492e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 3.428205434798643e-10,
+          "NufnuError": 6.066925548662302e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.7965276763321642e-10,
+          "NufnuError": 2.2316417452565586e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1797422693517083e-10,
+          "NufnuError": 1.502713537006929e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.724709938741722e-11,
+          "NufnuError": 3.880140923913413e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.0959489557208583e-10,
+          "NufnuError": 5.068854617366656e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.3815993116362213e-10,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 2.769927191348593e-10,
+          "NufnuError": 6.773425196658097e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.1808636973644e-10,
+          "NufnuError": 2.8596414323639318e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.6462563226314716e-10,
+          "NufnuError": 6.907996558181106e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.60027777411111e-10,
+          "NufnuError": 3.03906991439461e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 1.9030633375378794e-10,
+          "NufnuError": 2.803570031729345e-11,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5
+        },
+        {
+          "Name": "3EG J1746-2851",
+          "AngularDistance": 10.08661326940716,
+          "Frequency": 2.42e+22,
+          "FrequencyError": 0.0,
+          "Nufnu": 8.119138811888183e-11,
+          "NufnuError": 0.0,
+          "StartTime": 48368.5,
+          "StopTime": 49993.5,
+          "Info": "Upper Limit"
+        }
+      ]
+    }
+  ]
+}
