@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "ssdc-sedbuilder"
 description = "A client to the ASI-SSDC's SED Builder API."
 keywords = ["astrophysics", "astronomy", "ssdc"]
-version = "0.1.0"
+version = "0.2.1"
 authors = [
     { name="Giuseppe Dilillo", email="peppedilillo@gmail.com" },
 ]

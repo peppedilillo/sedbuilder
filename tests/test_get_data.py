@@ -17,7 +17,28 @@ from sedbuilder.schemas import TABLE_SCHEMA
 @pytest.fixture
 def mock_response():
     """Minimal valid API response for testing."""
-    return {"ResponseInfo": {"statusCode": "OK", "message": None}, "Properties": {"Nh": 1e20}, "Catalogs": []}
+    return {
+        "ResponseInfo": {
+            "statusCode": "OK",
+            "message": None,
+        },
+        "Properties": {
+            "Nh": 1e20,
+            "Units": {
+                "Frequency": "Hz",
+                "FrequencyError": "Hz",
+                "Nufnu": "erg cm**(-2) s**(-1)",
+                "NufnuError": "erg cm**(-2) s**(-1)",
+                "AngularDistance": "arcsec",
+                "StartTime": "mjd",
+                "StopTime": "mjd",
+                "ErrorRadius": "arcsec",
+                "Nh": "cm**-2",
+            },
+        },
+        "Datasets": [],
+        "Meta": {"InfoSeparator": ";"},
+    }
 
 
 class TestGetDataValidation:
@@ -113,11 +134,10 @@ class TestResponseConversions:
     @pytest.fixture
     def fixtures(self):
         data_dir = Path("tests/data")
-        if not data_dir.exists():
-            pytest.skip("Test data directory not found")
+        assert data_dir.exists()
+
         fixtures = [f for f in data_dir.glob("*.json") if f.name != "catalogs.json"]
-        if not fixtures:
-            pytest.skip("No test fixtures found")
+        assert fixtures
         return fixtures
 
     def test_to_dict(self, fixtures):
@@ -127,7 +147,7 @@ class TestResponseConversions:
             assert isinstance(result, dict)
             assert "ResponseInfo" in result
             assert "Properties" in result
-            assert "Catalogs" in result
+            assert "Datasets" in result
 
     def test_to_json(self, fixtures):
         for fixture in fixtures:

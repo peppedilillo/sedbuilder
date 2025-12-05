@@ -12,8 +12,7 @@ class TestCatalogsFromJson:
 
     def test_load_valid_json(self):
         fixture = Path("tests/data/catalogs.json")
-        if not fixture.exists():
-            pytest.skip("Test data not available")
+        assert fixture.exists()
 
         response = catalogs_from_json(fixture)
         assert response is not None
@@ -24,8 +23,7 @@ class TestCatalogsFromJson:
     def test_response_structure(self):
         """Test that response has expected structure."""
         fixture = Path("tests/data/catalogs.json")
-        if not fixture.exists():
-            pytest.skip("Test data not available")
+        assert fixture.exists()
 
         response = catalogs_from_json(fixture)
 
@@ -42,7 +40,7 @@ class TestCatalogsFromJson:
             assert hasattr(catalog, "ErrorRadius")
             assert hasattr(catalog, "CatalogId")
             # SubGroupName is optional
-            assert hasattr(catalog, "SubGroupName")
+            assert hasattr(catalog, "CatalogBand")
 
     def test_nonexistent_file(self):
         """Test that nonexistent file raises ValidationError."""

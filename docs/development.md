@@ -24,6 +24,8 @@ This runs `black` (line length 120) and `isort` (Google profile) automatically.
 pytest
 ```
 
+You must first `cd` into the project directory.
+
 ### Building Documentation
 
 ```bash

@@ -40,6 +40,10 @@ class Properties(BaseModel):
         Optional[float],
         Field(default=None, description="Hydrogen column density in cm^-2."),
     ]
+    Units: Annotated[
+        dict[str, str],
+        Field(default=None, description="Units of measure for data and properties."),
+    ]
 
 
 class Catalog(BaseModel):
@@ -47,17 +51,29 @@ class Catalog(BaseModel):
 
     Attributes:
         CatalogName: Name of the astronomical catalog.
+        CatalogId: Unique identifier for the catalog.
         ErrorRadius: Search radius in arcsec used for source matching.
+        CatalogBand: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
     """
 
     CatalogName: str
+    CatalogId: int
     ErrorRadius: Annotated[
         float,
         Field(ge=0.0, description="Error radius in arcsec."),
     ]
+    CatalogBand: Annotated[
+        Optional[str],
+        Field(default=None, description="Catalog spectral classifier."),
+    ]
 
     def __repr__(self) -> str:
-        return f"Catalog(CatalogName={self.CatalogName!r}, ErrorRadius={self.ErrorRadius})"
+        return (
+            f"Catalog(CatalogName={self.CatalogName!r}, "
+            f"CatalogId={self.CatalogId}, "
+            f"ErrorRadius={self.ErrorRadius}, "
+            f"CatalogBand={self.CatalogBand!r})"
+        )
 
 
 class SourceData(BaseModel):
@@ -100,11 +116,14 @@ class SourceData(BaseModel):
     ]
     Info: Annotated[
         Optional[str],
-        Field(default="", description="Optional information flag (e.g., 'Upper Limit', quality notes)."),
+        Field(
+            default="",
+            description="Optional information flags (e.g., 'Upper Limit', quality notes). Multiple values may be separated by the separator defined in Meta.InfoSeparator.",
+        ),
     ]
 
 
-class CatalogEntry(BaseModel):
+class Dataset(BaseModel):
     """A catalog entry with its associated source data.
 
     Attributes:
@@ -116,7 +135,7 @@ class CatalogEntry(BaseModel):
     SourceData: list[SourceData]
 
     def __repr__(self) -> str:
-        return f"CatalogEntry({self.Catalog!r}, SourceData: [#{len(self.SourceData)} entries])"
+        return f"Dataset({self.Catalog!r}, SourceData: [#{len(self.SourceData)} entries])"
 
 
 class DataColumn(NamedTuple):
@@ -130,6 +149,9 @@ class CatalogColumn(NamedTuple):
     dtype: type
     units: u.Unit | None
 
+    def __eq__(self, other: str):
+        return self.name == other
+
 
 class PropertyMetadata(NamedTuple):
     name: str  # field name in Properties
@@ -138,6 +160,7 @@ class PropertyMetadata(NamedTuple):
 
 @dataclass(frozen=True)
 class AstropySchema:
+    # TODO: it would be nice to have units parsed from the response!
     NAME = DataColumn("Name", str, None)
     FREQUENCY = DataColumn("Frequency", np.float64, u.Hz)
     NUFNU = DataColumn("Nufnu", np.float64, u.erg / (u.cm**2 * u.s))
@@ -148,6 +171,7 @@ class AstropySchema:
     STOP_TIME = DataColumn("StopTime", np.float64, u.d)
     INFO = DataColumn("Info", str, None)
     CATALOG_NAME = CatalogColumn("CatalogName", str, None)
+    CATALOG_BAND = CatalogColumn("CatalogBand", str, None)
     ERROR_RADIUS = CatalogColumn("ErrorRadius", np.float64, u.arcsec)
     METADATA_NH = PropertyMetadata("Nh", u.cm**-2)
 
@@ -165,6 +189,7 @@ class AstropySchema:
             yield self.INFO
         if kind == "all" or kind == "catalog":
             yield self.CATALOG_NAME
+            yield self.CATALOG_BAND
             yield self.ERROR_RADIUS
 
     def metadata(self):
@@ -175,6 +200,16 @@ class AstropySchema:
 TABLE_SCHEMA = AstropySchema()
 
 
+class Meta(BaseModel):
+    """Metadata about the response format.
+
+    Attributes:
+        InfoSeparator: Character used to separate multiple values in the Info field.
+    """
+
+    InfoSeparator: str
+
+
 class GetDataResponse(BaseModel):
     """SED Builder API response to `getData` endpoint.
 
@@ -182,16 +217,18 @@ class GetDataResponse(BaseModel):
 
     Attributes:
         ResponseInfo: Status information about the API response.
-        Properties: Additional properties for the queried source.
-        Catalogs: List of catalog entries with measurements.
+        Properties: Additional science properties for the queried source.
+        Datasets: List of catalog entries with measurements.
+        Meta: Extra, not scientific, information.
     """
 
     ResponseInfo: ResponseInfo
     Properties: Properties
-    Catalogs: list[CatalogEntry]
+    Datasets: list[Dataset]
+    Meta: Meta
 
     def __repr__(self) -> str:
-        return f"Response(status={self.ResponseInfo.statusCode!r}, " f"Catalogs: [#{len(self.Catalogs)} entries])"
+        return f"Response(status={self.ResponseInfo.statusCode!r}, " f"Datasets: [#{len(self.Datasets)} entries])"
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.
@@ -246,9 +283,9 @@ class GetDataResponse(BaseModel):
 
         # first we have to unpack the data
         rows_data, rows_catalog = [], []
-        for catalog_entry in self.Catalogs:
-            catalog_dump = catalog_entry.Catalog.model_dump()
-            for source_data in catalog_entry.SourceData:
+        for dataset in self.Datasets:
+            catalog_dump = {k: v for k, v in dataset.Catalog.model_dump().items() if k in columns_catalog}
+            for source_data in dataset.SourceData:
                 rows_data.append(source_data.model_dump())
                 rows_catalog.append(catalog_dump)
 
@@ -360,7 +397,14 @@ class GetDataResponse(BaseModel):
         table.add_column(t[TABLE_SCHEMA.NUFNU_ERROR.name].astype(np.float64), name="dy")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
-        table.add_column(t["Info"] == "Upper Limit", name="UL")
+        table.add_column(
+            [*map(
+                lambda x: "Upper Limit" in x,
+                [[*map(
+                    lambda x: x.strip(),
+                    str(s).split(self.Meta.InfoSeparator)
+                )] for s in t["Info"]]
+            )], name="UL")
         table.add_column(t[TABLE_SCHEMA.CATALOG_NAME.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
@@ -369,23 +413,6 @@ class GetDataResponse(BaseModel):
         table.meta["obj_name"] = obj_name
         # fmt: on
         return table
-
-
-# TODO: unify this with `Catalog`
-class CatalogInfo(Catalog):
-    CatalogId: int
-    SubGroupName: Annotated[
-        Optional[str],
-        Field(default=None, description="Catalog spectral classifier."),
-    ]
-
-    def __repr__(self) -> str:
-        return (
-            f"CatalogInfo(CatalogName={self.CatalogName!r}, "
-            f"CatalogId={self.CatalogId}, "
-            f"ErrorRadius={self.ErrorRadius}, "
-            f"SubGroupName={self.SubGroupName!r})"
-        )
 
 
 class CatalogsResponse(BaseModel):
@@ -400,7 +427,7 @@ class CatalogsResponse(BaseModel):
     """
 
     ResponseInfo: ResponseInfo
-    Catalogs: list[CatalogInfo]
+    Catalogs: list[Catalog]
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.

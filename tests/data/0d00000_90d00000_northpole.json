@@ -5,10 +5,20 @@
   },
   "Properties": {
     "Nh": 6.12e+20,
-    "axis_X": "Frequency (Hz)",
-    "axis_X_unit": "Hz",
-    "axis_Y": "nuFnu (erg/cm^2/s)",
-    "axis_Y_unit": "erg cm**(-2) s**(-1)"
+    "Units": {
+      "Frequency": "Hz",
+      "FrequencyError": "Hz",
+      "Nufnu": "erg cm**(-2) s**(-1)",
+      "NufnuError": "erg cm**(-2) s**(-1)",
+      "AngularDistance": "arcsec",
+      "StartTime": "mjd",
+      "StopTime": "mjd",
+      "ErrorRadius": "arcsec",
+      "Nh": "cm**-2"
+    }
   },
-  "Catalogs": []
+  "Meta": {
+    "InfoSeparator": ";"
+  },
+  "Datasets": []
 }

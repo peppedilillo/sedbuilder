@@ -13,14 +13,13 @@ class TestGetDataFromJson:
 
     def test_load_valid_json(self):
         fixture = Path("tests/data/161d25000_58d00000_lockmanhole.json")
-        if not fixture.exists():
-            pytest.skip("Test data not available")
+        assert fixture.exists()
 
         response = get_data_from_json(fixture)
         assert response is not None
         assert hasattr(response, "ResponseInfo")
         assert hasattr(response, "Properties")
-        assert hasattr(response, "Catalogs")
+        assert hasattr(response, "Datasets")
 
     def test_nonexistent_file(self):
         with pytest.raises(ValidationError):
@@ -46,8 +45,7 @@ class TestFixtureParsing:
 
     def test_all_fixtures_parse(self):
         data_dir = Path("tests/data")
-        if not data_dir.exists():
-            pytest.skip("Test data directory not found")
+        assert data_dir.exists()
 
         fixtures = [f for f in data_dir.glob("*.json") if f.name != "catalogs.json"]
         if not fixtures:

@@ -5,24 +5,35 @@
   },
   "Properties": {
     "Nh": 7.45e+19,
-    "axis_X": "Frequency (Hz)",
-    "axis_X_unit": "Hz",
-    "axis_Y": "nuFnu (erg/cm^2/s)",
-    "axis_Y_unit": "erg cm**(-2) s**(-1)"
+    "Units": {
+      "Frequency": "Hz",
+      "FrequencyError": "Hz",
+      "Nufnu": "erg cm**(-2) s**(-1)",
+      "NufnuError": "erg cm**(-2) s**(-1)",
+      "AngularDistance": "arcsec",
+      "StartTime": "mjd",
+      "StopTime": "mjd",
+      "ErrorRadius": "arcsec",
+      "Nh": "cm**-2"
+    }
   },
-  "Catalogs": [
+  "Meta": {
+    "InfoSeparator": ";"
+  },
+  "Datasets": [
     {
       "Catalog": {
         "CatalogId": 3205,
         "CatalogName": "WISE W1 PointPsf",
-        "ErrorRadius": 0.1
+        "ErrorRadius": 0.1,
+        "CatalogBand": "Infrared"
       },
       "SourceData": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 88170000000000.0,
-          "FrequencyError": 0.0,
           "Nufnu": 6.138005278740269e-14,
+          "FrequencyError": 0.0,
           "NufnuError": 5.448987090125911e-15,
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844
@@ -33,14 +44,15 @@
       "Catalog": {
         "CatalogId": 3206,
         "CatalogName": "WISE W2 PointPsf",
-        "ErrorRadius": 0.1
+        "ErrorRadius": 0.1,
+        "CatalogBand": "Infrared"
       },
       "SourceData": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 65170000000000.0,
-          "FrequencyError": 0.0,
           "Nufnu": 3.9865263461212955e-14,
+          "FrequencyError": 0.0,
           "NufnuError": 7.587359458435545e-15,
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844
@@ -51,14 +63,15 @@
       "Catalog": {
         "CatalogId": 3207,
         "CatalogName": "WISE W3 PointPsf",
-        "ErrorRadius": 0.1
+        "ErrorRadius": 0.1,
+        "CatalogBand": "Infrared"
       },
       "SourceData": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 24980000000000.0,
-          "FrequencyError": 0.0,
           "Nufnu": 8.517475326387178e-14,
+          "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844,
@@ -70,14 +83,15 @@
       "Catalog": {
         "CatalogId": 3208,
         "CatalogName": "WISE W4 PointPsf",
-        "ErrorRadius": 0.1
+        "ErrorRadius": 0.1,
+        "CatalogBand": "Infrared"
       },
       "SourceData": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 13630000000000.0,
-          "FrequencyError": 0.0,
           "Nufnu": 2.0655367336235714e-13,
+          "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844,

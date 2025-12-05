@@ -13,8 +13,7 @@ class TestCatalogsConversions:
     def test_to_list_conversion(self):
         """Test to_list() method returns proper structure."""
         fixture = Path("tests/data/catalogs.json")
-        if not fixture.exists():
-            pytest.skip("Test data not available")
+        assert fixture.exists()
 
         response = catalogs_from_json(fixture)
         catalog_list = response.to_list()
