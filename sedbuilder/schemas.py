@@ -8,6 +8,7 @@ from dataclasses import dataclass
 import json
 from typing import Annotated, Any, Literal, NamedTuple, Optional
 
+from astropy.table import Column
 from astropy.table import hstack
 from astropy.table import Table
 import astropy.units as u
@@ -387,6 +388,11 @@ class GetDataResponse(BaseModel):
             jetset_data = Data(response.to_jetset(z=0.034))
             ```
         """
+
+        def info2ul(infos: Column) -> list[bool]:
+            """Parses info column and checks where it contains 'Upper Limit' tag.'"""
+            return ["Upper Limit" in [i.strip() for i in str(info).split(self.Meta.InfoSeparator)] for info in infos]
+
         # type and label choice from Jetset documentation, "Data format and SED data".
         # fmt: off
         t = self.to_astropy()
@@ -397,14 +403,7 @@ class GetDataResponse(BaseModel):
         table.add_column(t[TABLE_SCHEMA.NUFNU_ERROR.name].astype(np.float64), name="dy")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
-        table.add_column(
-            [*map(
-                lambda x: "Upper Limit" in x,
-                [[*map(
-                    lambda x: x.strip(),
-                    str(s).split(self.Meta.InfoSeparator)
-                )] for s in t["Info"]]
-            )], name="UL")
+        table.add_column(info2ul(t[TABLE_SCHEMA.INFO.name]), name="UL")
         table.add_column(t[TABLE_SCHEMA.CATALOG_NAME.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
