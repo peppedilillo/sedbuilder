@@ -7,7 +7,7 @@ the supported endpoints of the ASI-SSDC SED Builder REST API.
 from enum import Enum
 from typing import Callable
 
-BASE_URL = r"https://toolsdev.ssdc.asi.it/SED-REST/rest"
+BASE_URL = r"https://tools.ssdc.asi.it/SED-REST/rest"
 """Base URL for the SSDC SED Builder REST API."""
 
 

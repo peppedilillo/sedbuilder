@@ -202,7 +202,7 @@ TABLE_SCHEMA = AstropySchema()
 
 
 class Meta(BaseModel):
-    """Metadata about the response format.
+    """Metadata about the response format and other non-science info.
 
     Attributes:
         InfoSeparator: Character used to separate multiple values in the Info field.
@@ -220,7 +220,7 @@ class GetDataResponse(BaseModel):
         ResponseInfo: Status information about the API response.
         Properties: Additional science properties for the queried source.
         Datasets: List of catalog entries with measurements.
-        Meta: Extra, not scientific, information.
+        Meta: Metadata about the response format and other non-science info.
     """
 
     ResponseInfo: ResponseInfo
