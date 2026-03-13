@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "-43.01944",
+      "text": "CENTAURUSA",
+      "id": "SSDC278115",
+      "valueRA": "201.365"
+    },
+    {
+      "valueDB": "NED",
+      "valueDEC": "-43.019113",
+      "text": "Centaurus A",
+      "id": "NED2null",
+      "valueRA": "201.365062"
+    },
+    {
+      "valueDB": "SIMBAD",
+      "valueDEC": "-43.019113",
+      "text": "Centaurus A",
+      "id": "SIMBAD3null",
+      "valueRA": "201.365063"
+    }
+  ]
+}

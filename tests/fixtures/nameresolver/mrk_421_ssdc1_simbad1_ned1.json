@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "38.20883",
+      "text": "MRK421",
+      "id": "SSDC1490025",
+      "valueRA": "166.1138"
+    },
+    {
+      "valueDB": "NED",
+      "valueDEC": "38.208833",
+      "text": "Mrk 421",
+      "id": "NED2null",
+      "valueRA": "166.113808"
+    },
+    {
+      "valueDB": "SIMBAD",
+      "valueDEC": "38.208833",
+      "text": "Mrk 421",
+      "id": "SIMBAD3null",
+      "valueRA": "166.113809"
+    }
+  ]
+}

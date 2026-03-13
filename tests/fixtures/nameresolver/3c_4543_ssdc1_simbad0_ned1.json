@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "16.148056",
+      "text": "3C454.3",
+      "id": "SSDC1126418",
+      "valueRA": "343.490417"
+    },
+    {
+      "valueDB": "NED",
+      "valueDEC": "16.148211",
+      "text": "3C 454.3",
+      "id": "NED2null",
+      "valueRA": "343.490616"
+    }
+  ]
+}

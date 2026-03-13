@@ -6,13 +6,15 @@ import pytest
 
 from sedbuilder import catalogs_from_json
 
+CATALOGS_FIXTURE = Path("tests/fixtures/catalogs/catalogs.json")
+
 
 class TestCatalogsConversions:
     """Test the catalog conversion."""
 
     def test_to_list_conversion(self):
         """Test to_list() method returns proper structure."""
-        fixture = Path("tests/data/catalogs.json")
+        fixture = CATALOGS_FIXTURE
         assert fixture.exists()
 
         response = catalogs_from_json(fixture)

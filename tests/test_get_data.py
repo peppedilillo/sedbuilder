@@ -13,6 +13,8 @@ from sedbuilder import get_data_from_json
 from sedbuilder.requests import get_data
 from sedbuilder.schemas import TABLE_SCHEMA
 
+GET_DATA_DIR = Path("tests/fixtures/getData")
+
 
 @pytest.fixture
 def mock_response():
@@ -97,7 +99,7 @@ class TestGetDataValidation:
         with pytest.raises(ValidationError):
             get_data(ra=0.0, dec="invalid")
 
-        with pytest.raises(ValidationError):
+        with pytest.raises(ValueError):
             get_data(ra=None, dec=0.0)
 
     def test_special_float_values(self):
@@ -128,12 +130,78 @@ class TestGetDataHTTP:
             assert "getData" in called_url
 
 
+class TestGetDataByName:
+    """Test name-based lookup in get_data."""
+
+    def test_name_resolves_via_ssdc(self, mock_response):
+        """Name resolved by SSDC catalog is used directly."""
+        with (
+            patch("sedbuilder.requests._resolve_name", return_value=(83.6329, 22.0144)) as mock_resolve,
+            patch("httpx.get") as mock_get,
+        ):
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            get_data(name="Crab Nebula")
+            mock_resolve.assert_called_once_with("Crab Nebula")
+            called_url = mock_get.call_args[0][0]
+            assert "83.6329" in called_url
+            assert "22.0144" in called_url
+
+    def test_name_resolves_via_fallback(self):
+        """When SSDC/SIMBAD/NED return nothing, astropy fallback is used."""
+        with (
+            patch("sedbuilder.requests._resolve_name_astropy", return_value=(83.6329, 22.0144)),
+            patch("sedbuilder.requests._get_and_validate", side_effect=RuntimeError("unreachable")),
+            patch("httpx.get") as mock_get,
+        ):
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            # Call _resolve_name directly to test the fallback path
+            from sedbuilder.requests import _resolve_name
+
+            ra, dec = _resolve_name("Crab Nebula")
+            assert ra == 83.6329
+            assert dec == 22.0144
+
+    def test_name_not_found_raises(self):
+        """When all resolvers fail, RuntimeError is raised."""
+        with patch("sedbuilder.requests._resolve_name", side_effect=RuntimeError("Cannot resolve source")):
+            with pytest.raises(RuntimeError):
+                get_data(name="NonExistentSource12345")
+
+    def test_name_and_coords_raises(self):
+        """Passing both name and coords raises ValueError."""
+        with pytest.raises(ValueError):
+            get_data(name="Crab", ra=83.0, dec=22.0)
+
+    def test_no_args_raises(self):
+        """Passing neither name nor coords raises ValueError."""
+        with pytest.raises(ValueError):
+            get_data()
+
+    def test_db_priority_ssdc_over_simbad(self, mock_response):
+        """SSDC result is preferred over SIMBAD when both are present."""
+        from sedbuilder.requests import _resolve_name
+        from sedbuilder.schemas import NameResolverResponse
+
+        ssdc_simbad_response = NameResolverResponse(
+            results=[
+                {"valueDB": "SIMBAD", "valueRA": "1.0", "valueDEC": "2.0", "id": "2", "text": "X"},
+                {"valueDB": "SSDC", "valueRA": "83.6329", "valueDEC": "22.0144", "id": "1", "text": "Crab"},
+            ]
+        )
+        mock_http = Mock()
+        mock_http.json.return_value = ssdc_simbad_response.model_dump(by_alias=True)
+        with patch("sedbuilder.requests._get_and_validate", return_value=mock_http):
+            ra, dec = _resolve_name("Crab Nebula")
+        assert ra == 83.6329
+        assert dec == 22.0144
+
+
 class TestResponseConversions:
     """Test conversion methods on all fixtures."""
 
     @pytest.fixture
     def fixtures(self):
-        data_dir = Path("tests/data")
+        data_dir = GET_DATA_DIR
         assert data_dir.exists()
 
         fixtures = [f for f in data_dir.glob("*.json") if f.name != "catalogs.json"]

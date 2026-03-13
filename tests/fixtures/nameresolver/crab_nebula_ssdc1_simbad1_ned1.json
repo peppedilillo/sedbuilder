@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "22.01447",
+      "text": "Crabnebula",
+      "id": "SSDC1223270",
+      "valueRA": "83.63321"
+    },
+    {
+      "valueDB": "NED",
+      "valueDEC": "22.014486",
+      "text": "Crab Nebula",
+      "id": "NED2null",
+      "valueRA": "83.633107"
+    },
+    {
+      "valueDB": "SIMBAD",
+      "valueDEC": "22.0174",
+      "text": "Crab Nebula",
+      "id": "SIMBAD3null",
+      "valueRA": "83.6324"
+    }
+  ]
+}

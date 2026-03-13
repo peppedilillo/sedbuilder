@@ -12106,14 +12106,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "TeV observations of Mrk 421 with the TACTIC ?-ray telescope during 2006-8",
-            "Authors": "Chandra, P.; Yadav, K. K.; Rannot, R. C. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010JPhG...37l5201C"
-          },
-          {
             "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
             "Authors": "Biteau, J.; Williams, D. A.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "TeV observations of Mrk 421 with the TACTIC ?-ray telescope during 2006-8",
+            "Authors": "Chandra, P.; Yadav, K. K.; Rannot, R. C. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010JPhG...37l5201C"
           }
         ]
       },
@@ -12410,14 +12410,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
-            "Authors": "Biteau, J.; Williams, D. A.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
-          },
-          {
             "Title": "TeV and Multi-wavelength Observations of Mrk 421 in 2006-2008",
             "Authors": "Acciari, V. A.; Aliu, E.; Arlen, T. et al.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2011ApJ...738...25A"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
           }
         ]
       },
@@ -13278,11 +13278,6 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "Discovery of X-ray polarization angle rotation in the jet from blazar Mrk 421.",
-            "Authors": "Maselli, Middei",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2023NatAs...7.1245D"
-          },
-          {
             "Title": "Magnetic field properties inside the jet of Mrk 421. Multiwavelength polarimetry, including the Imaging X-ray Polarimetry Explorer",
             "Authors": "Maselli, Middei",
             "URL": "https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..12K"
@@ -13291,6 +13286,11 @@
             "Title": "The X-Ray Polarization View of Mrk 421 in an Average Flux State as Observed by the Imaging X-Ray Polarimetry Explorer",
             "Authors": "Maselli, Middei",
             "URL": "https://ui.adsabs.harvard.edu/abs/2022ApJ...938L...7D"
+          },
+          {
+            "Title": "Discovery of X-ray polarization angle rotation in the jet from blazar Mrk 421.",
+            "Authors": "Maselli, Middei",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2023NatAs...7.1245D"
           }
         ]
       },

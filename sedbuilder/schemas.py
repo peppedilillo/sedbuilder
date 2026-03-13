@@ -14,6 +14,8 @@ from astropy.table import Table
 import astropy.units as u
 import numpy as np
 from pydantic import BaseModel
+from pydantic import BeforeValidator
+from pydantic import ConfigDict
 from pydantic import Field
 from pydantic import validate_call
 
@@ -48,7 +50,7 @@ class Reference(BaseModel):
     """Literature reference metadata.
 
     Attributes:
-        ID: Reference ID.
+        Id: Reference ID.
         Title: Reference title.
         Authors: Reference author.
         URL: Reference URL.
@@ -122,12 +124,30 @@ class Dataset(BaseModel):
 
 
 class DataColumn(NamedTuple):
+    """Schema descriptor for a column sourced from a `Data` measurement.
+
+    Attributes:
+        name: Column name in the output astropy Table (matches the `Data` field name).
+        dtype: NumPy or Python dtype for the column.
+        units: Astropy unit, or ``None`` for dimensionless columns.
+    """
+
     name: str  # field name in SourceData
     dtype: type
     units: u.Unit | None
 
 
 class SourceColumn(NamedTuple):
+    """Schema descriptor for a column sourced from a `Source` catalog entry.
+
+    Attributes:
+        name: Column name in the output astropy Table. More descriptive than the
+            raw model field name to avoid ambiguity when tables are stacked.
+        field: Corresponding field name in the `Source` model.
+        dtype: NumPy or Python dtype for the column.
+        units: Astropy unit, or ``None`` for dimensionless columns.
+    """
+
     # the field name could be too generic to be used as column name
     name: str  # column name in the astropy table, essentially a more descriptive alias
     field: str  # field name in Source model
@@ -136,12 +156,27 @@ class SourceColumn(NamedTuple):
 
 
 class PropertyMetadata(NamedTuple):
+    """Schema descriptor for a scalar metadata entry sourced from `Properties`.
+
+    Attributes:
+        name: Field name in the `Properties` model; also used as the key in
+            ``Table.meta``.
+        units: Astropy unit, or ``None`` for dimensionless values.
+    """
+
     name: str  # field name in Properties
     units: u.Unit | None
 
 
 @dataclass(frozen=True)
 class AstropySchema:
+    """Frozen schema definition for the output astropy Table produced by `GetDataResponse.to_astropy`.
+
+    Each class attribute is a `DataColumn`, `SourceColumn`, or `PropertyMetadata`
+    descriptor. The `columns` and `metadata` methods yield them in the canonical
+    output order.
+    """
+
     # TODO: it would be nice to have units parsed from the response!
     NAME = DataColumn("Name", str, None)
     FREQUENCY = DataColumn("Frequency", np.float64, u.Hz)
@@ -410,3 +445,33 @@ class CatalogsResponse(BaseModel):
             A list of dictionaries, one per catalog, containing all catalog metadata.
         """
         return [c.model_dump() for c in self.Catalogs]
+
+
+class NameResolverItem(BaseModel):
+    """A single result returned by the SSDC name resolver endpoint.
+
+    Attributes:
+        db: The resolver database that produced this result.
+        ra: Right ascension in degrees.
+        dec: Declination in degrees.
+        id: Internal identifier assigned by the resolver database.
+        name: Display name of the resolved source.
+    """
+
+    model_config = ConfigDict(populate_by_name=True)
+
+    db: Literal["SSDC", "NED", "SIMBAD"] = Field(alias="valueDB")
+    ra: Annotated[float, BeforeValidator(float)] = Field(alias="valueRA")
+    dec: Annotated[float, BeforeValidator(float)] = Field(alias="valueDEC")
+    id: Optional[str]
+    name: str = Field(alias="text")
+
+
+class NameResolverResponse(BaseModel):
+    """Response from the SSDC name resolver endpoint.
+
+    Attributes:
+        results: List of candidate matches, potentially from multiple databases.
+    """
+
+    results: list[NameResolverItem]

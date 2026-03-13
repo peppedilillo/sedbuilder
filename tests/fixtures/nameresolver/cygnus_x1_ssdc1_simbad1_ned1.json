@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "35.20176",
+      "text": "Cygnusx-1",
+      "id": "SSDC1435873",
+      "valueRA": "299.59018"
+    },
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "35.20176",
+      "text": "CYGNUSX-1",
+      "id": "SSDC1435875",
+      "valueRA": "299.59018"
+    },
+    {
+      "valueDB": "SIMBAD",
+      "valueDEC": "35.201607",
+      "text": "Cygnus X-1",
+      "id": "SIMBAD3null",
+      "valueRA": "299.590316"
+    }
+  ]
+}

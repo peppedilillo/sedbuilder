@@ -6016,14 +6016,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
-            "Authors": "Biteau, J.; Williams, D. A.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
-          },
-          {
             "Title": "H.E.S.S. observations of PKS 2155-304",
             "Authors": "Aharonian, F.; Akhperjanian, A. G.; Aye, K. -M. et al.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2005A%26A...430..865A"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
           }
         ]
       },
@@ -6582,14 +6582,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
-            "Authors": "Biteau, J.; Williams, D. A.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
-          },
-          {
             "Title": "Simultaneous Observations of PKS 2155-304 with HESS, Fermi, RXTE, and Atom: Spectral Energy Distributions and Variability in a Low State",
             "Authors": "Aharonian, F.; Akhperjanian, A. G.; Barres de Almeida, U. et al.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2009ApJ...696L.150A"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
           }
         ]
       },
@@ -6649,14 +6649,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
-            "Authors": "Biteau, J.; Williams, D. A.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
-          },
-          {
             "Title": "VHE ?-ray emission of PKS 2155-304: spectral and temporal variability",
             "Authors": "H.E.S.S. Collaboration",
             "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...520A..83H"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
           }
         ]
       },
@@ -6936,14 +6936,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "Constraints on axionlike particles with H.E.S.S. from the irregularity of the PKS 2155-304 energy spectrum",
-            "Authors": "Abramowski, A.; Acero, F.; Aharonian, F. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2013PhRvD..88j2003A"
-          },
-          {
             "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
             "Authors": "Biteau, J.; Williams, D. A.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "Constraints on axionlike particles with H.E.S.S. from the irregularity of the PKS 2155-304 energy spectrum",
+            "Authors": "Abramowski, A.; Acero, F.; Aharonian, F. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2013PhRvD..88j2003A"
           }
         ]
       },

@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "valueDB": "SSDC",
+      "valueDEC": "57.480131",
+      "text": "LOCKMANHOLE",
+      "id": "SSDC1749243",
+      "valueRA": "163.179236"
+    },
+    {
+      "valueDB": "SIMBAD",
+      "valueDEC": "58.0",
+      "text": "Lockman Hole",
+      "id": "SIMBAD2null",
+      "valueRA": "161.25"
+    }
+  ]
+}

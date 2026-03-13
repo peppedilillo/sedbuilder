@@ -7,13 +7,16 @@ the supported endpoints of the ASI-SSDC SED Builder REST API.
 from enum import Enum
 import os
 from typing import Callable
+from urllib.parse import quote
 
-_DEV_URL = r"https://toolsdev.ssdc.asi.it/SED-REST2/rest"
+_DEV_DOMAIN_URL = r"https://toolsdev.ssdc.asi.it"
 """Nightly URL for the SSDC SED Builder REST API."""
-_PROD_URL = r"https://tools.ssdc.asi.it/SED-REST/rest"
+_PROD_DOMAIN_URL = r"https://tools.ssdc.asi.it"
 """Production URL for the SSDC SED Builder REST API."""
-
-BASE_URL = _DEV_URL if int(os.getenv("SEDBUILDER_DEV", "0")) else _PROD_URL
+_DEV_SED_PATH = r"/SED-REST2/rest"
+_PROD_SED_PATH = r"/SED-REST/rest"
+DOMAIN_URL = _DEV_DOMAIN_URL if int(os.getenv("SEDBUILDER_DEV", "0")) else _PROD_DOMAIN_URL
+SED_URL = f"{DOMAIN_URL}{_DEV_SED_PATH}" if int(os.getenv("SEDBUILDER_DEV", "0")) else f"{DOMAIN_URL}{_PROD_SED_PATH}"
 
 
 def _get_data(*, ra: float, dec: float) -> str:
@@ -26,7 +29,30 @@ def _get_data(*, ra: float, dec: float) -> str:
     Returns:
         Complete URL for the getData endpoint.
     """
-    return f"{BASE_URL}/getData/{ra}/{dec}"
+    return f"{SED_URL}/getData/{ra}/{dec}"
+
+
+def _name_resolver(*, name: str, ssdc: bool, simbad: bool, ned: bool) -> str:
+    """Build the name resolver endpoint URL.
+
+    Args:
+        name: the term to resolve (e.g., 'Crab Nebula')
+        ssdc: whether or not to query the ssdc internal name resolver.
+        simbad: whether or not to query the simbad name resolver.
+        ned: whether or not to query the ned name resolver.
+
+    Returns:
+        Complete URL for the nameresolver endpoint.
+    """
+    return (
+        f"{DOMAIN_URL}/"
+        "AutoComplete?"
+        f"fromSelect2=true&"
+        f"term={quote(name)}&"
+        f"NameResolverLOCAL={'true' if ssdc else 'false'}&"
+        f"NameResolverSIMBAD={'true' if simbad else 'false'}&"
+        f"NameResolverNED={'true' if ned else 'false'}"
+    )
 
 
 class APIPaths(Enum):
@@ -37,7 +63,8 @@ class APIPaths(Enum):
     """
 
     GET_DATA: Callable = _get_data
-    CATALOGS: Callable = lambda: f"{BASE_URL}/catalogs"
+    CATALOGS: Callable = lambda: f"{SED_URL}/catalogs"
+    NAME_RESOLVER: Callable = _name_resolver
 
     def __call__(self, *args, **kwargs):
         """Make enum members callable by delegating to their value."""

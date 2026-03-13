@@ -6,12 +6,15 @@ import pytest
 from sedbuilder import catalogs_from_json
 from sedbuilder import CatalogsResponse
 
+CATALOGS_FIXTURE = Path("tests/fixtures/catalogs/catalogs.json")
+CATALOGS_NONEXISTENT = Path("tests/fixtures/catalogs/nonexistent.json")
+
 
 class TestCatalogsFromJson:
     """Test the catalogs_from_json utility function."""
 
     def test_load_valid_json(self):
-        fixture = Path("tests/data/catalogs.json")
+        fixture = CATALOGS_FIXTURE
         assert fixture.exists()
 
         response = catalogs_from_json(fixture)
@@ -22,7 +25,7 @@ class TestCatalogsFromJson:
 
     def test_response_structure(self):
         """Test that response has expected structure."""
-        fixture = Path("tests/data/catalogs.json")
+        fixture = CATALOGS_FIXTURE
         assert fixture.exists()
 
         response = catalogs_from_json(fixture)
@@ -45,7 +48,7 @@ class TestCatalogsFromJson:
     def test_nonexistent_file(self):
         """Test that nonexistent file raises ValidationError."""
         with pytest.raises(ValidationError):
-            catalogs_from_json("tests/data/nonexistent.json")
+            catalogs_from_json(CATALOGS_NONEXISTENT)
 
     def test_invalid_json(self, tmp_path):
         """Test that invalid JSON raises ValidationError."""

@@ -4,7 +4,8 @@ This module provides functions to interact with the ASI-SSDC SED Builder
 REST API endpoints.
 """
 
-from typing import Annotated, Union
+import logging
+from typing import Annotated, overload, Union
 
 import httpx
 from pydantic import Field
@@ -13,6 +14,9 @@ from pydantic import validate_call
 from ._endpoints import APIPaths
 from .schemas import CatalogsResponse
 from .schemas import GetDataResponse
+from .schemas import NameResolverResponse
+
+_log = logging.getLogger(__name__)
 
 
 def _get_and_validate(url: str, timeout: float) -> httpx.Response:
@@ -41,33 +45,114 @@ def _get_and_validate(url: str, timeout: float) -> httpx.Response:
         raise RuntimeError(f"A connectivity error occurred while requesting {e.request.url!r}.")
 
 
-@validate_call
-def get_data(
-    ra: Annotated[
-        float,
-        Field(ge=0.0, lt=360.0, description="Right ascension in degrees."),
-    ],
-    dec: Annotated[
-        float,
-        Field(ge=-90.0, le=90.0, description="Declination in degrees."),
-    ],
-    timeout: Annotated[
-        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
-        Field(gt=0.0, description="Request timeout in seconds."),
-    ] = 30.0,
-) -> GetDataResponse:
-    """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
-    data for the specified sky coordinates.
+_DB_PRIORITY = {"SSDC": 0, "SIMBAD": 1, "NED": 2}
+
+
+def _resolve_name_astropy(name: str) -> tuple[float, float] | None:
+    """Resolve a source name to (ra, dec) using astropy's CDS/Sesame resolver.
 
     Args:
-        ra: Right ascension in degrees (0 to 360).
-        dec: Declination in degrees (-90 to 90).
+        name: Source name to resolve.
+
+    Returns:
+        A ``(ra, dec)`` tuple in degrees, or ``None`` if the name is not found.
+    """
+    from astropy.coordinates import SkyCoord
+    from astropy.coordinates.name_resolve import NameResolveError
+
+    try:
+        coord = SkyCoord.from_name(name)
+    except NameResolveError:
+        return None
+    return coord.ra.deg, coord.dec.deg
+
+
+def _resolve_name(name: str, timeout: float = 2.0) -> tuple[float, float]:
+    """Resolve a source name to (ra, dec) via SSDC/SIMBAD/NED, with astropy fallback.
+
+    Queries the SSDC name resolver first. On failure or empty result, falls back
+    to `_resolve_name_astropy`. Logs the resolved coordinates at INFO level.
+
+    Args:
+        name: Source name to resolve (e.g. ``"Crab Nebula"``).
+        timeout: Timeout in seconds for the SSDC request. Defaults to 2.0 to
+            avoid blocking the main request when the name resolver is slow.
+
+    Returns:
+        A ``(ra, dec)`` tuple in degrees.
+
+    Raises:
+        RuntimeError: If no resolver can identify the source.
+    """
+    try:
+        r = _get_and_validate(APIPaths.NAME_RESOLVER(name=name, ssdc=True, simbad=True, ned=True), timeout)
+        response = NameResolverResponse(**r.json())
+    except (TimeoutError, RuntimeError):
+        response = NameResolverResponse(results=[])
+    if response.results:
+        item = min(response.results, key=lambda item: _DB_PRIORITY[item.db])
+        ra, dec = item.ra, item.dec
+        source = item.db
+    else:
+        coords = _resolve_name_astropy(name)
+        if coords is None:
+            raise RuntimeError(f"Cannot resolve source {name!r}.")
+        ra, dec = coords
+        source = "astropy"
+    _log.info("Resolved %r → ra=%.6f, dec=%.6f (via %s)", name, ra, dec, source)
+    return ra, dec
+
+
+@validate_call
+def _get_data_coords(
+    ra: Annotated[float, Field(ge=0.0, lt=360.0)],
+    dec: Annotated[float, Field(ge=-90.0, le=90.0)],
+    timeout: Annotated[
+        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
+        Field(gt=0.0),
+    ] = 30.0,
+) -> GetDataResponse:
+    """Fetch SED data for validated sky coordinates.
+
+    Args:
+        ra: Right ascension in degrees, must be in [0, 360).
+        dec: Declination in degrees, must be in [-90, 90].
+        timeout: Request timeout in seconds.
+
+    Returns:
+        Validated API response.
+
+    Raises:
+        ValidationError: If coordinates are out of range.
+        TimeoutError: If the request times out.
+        RuntimeError: If the request fails.
+    """
+    r = _get_and_validate(APIPaths.GET_DATA(ra=ra, dec=dec), timeout)
+    return GetDataResponse(**r.json())
+
+
+@overload
+def get_data(*, ra: float, dec: float, timeout: float = ...) -> GetDataResponse: ...
+@overload
+def get_data(*, name: str, timeout: float = ...) -> GetDataResponse: ...
+
+
+def get_data(*, name: str = None, ra=None, dec=None, timeout=30.0) -> GetDataResponse:
+    """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
+    data for the specified sky coordinates or source name.
+
+    Args:
+        ra: Right ascension in degrees (0 to 360). Mutually exclusive with `name`.
+        dec: Declination in degrees (-90 to 90). Mutually exclusive with `name`.
+        name: Source name to resolve to coordinates. Tried against SSDC, SIMBAD,
+            NED, and finally astropy's CDS/Sesame resolver.
         timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
         A response object. Use its methods to recover data in different formats.
 
     Raises:
+        ValueError: If arguments are invalid or conflicting.
         ValidationError: If coordinates are out of valid range.
         TimeoutError: If the API request exceeds the timeout.
         RuntimeError: If the API request fails for other reasons.
@@ -76,8 +161,10 @@ def get_data(
         ```python
         from sedbuilder import get_data
 
-        # Get response from SED for astronomical coordinates
+        # By coordinates
         response = get_data(ra=194.04625, dec=-5.789167)
+        # By name
+        response = get_data(name="Crab Nebula")
 
         # Access data in different formats
         table = response.to_astropy()     # Astropy Table
@@ -87,8 +174,16 @@ def get_data(
         df = response.to_pandas()         # Pandas DataFrame (requires pandas)
         ```
     """
-    r = _get_and_validate(APIPaths.GET_DATA(ra=ra, dec=dec), timeout)
-    return GetDataResponse(**r.json())
+
+    if name is not None and ((ra is None) and (dec is None)):
+        # we are calling _resolve_name leaving its default timeout
+        # this is to avoid waiting too long for just the name resolver
+        # if we get delayed by the exponential rate meter
+        ra, dec = _resolve_name(name)
+        return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
+    if name is None and ((ra is not None) and (dec is not None)):
+        return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
+    raise ValueError("Provide either 'name' or both 'ra' and 'dec'.")
 
 
 @validate_call
