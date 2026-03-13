@@ -5,10 +5,15 @@ the supported endpoints of the ASI-SSDC SED Builder REST API.
 """
 
 from enum import Enum
+import os
 from typing import Callable
 
-BASE_URL = r"https://tools.ssdc.asi.it/SED-REST/rest"
-"""Base URL for the SSDC SED Builder REST API."""
+_DEV_URL = r"https://toolsdev.ssdc.asi.it/SED-REST2/rest"
+"""Nightly URL for the SSDC SED Builder REST API."""
+_PROD_URL = r"https://tools.ssdc.asi.it/SED-REST/rest"
+"""Production URL for the SSDC SED Builder REST API."""
+
+BASE_URL = _DEV_URL if int(os.getenv("SEDBUILDER_DEV", "0")) else _PROD_URL
 
 
 def _get_data(*, ra: float, dec: float) -> str:

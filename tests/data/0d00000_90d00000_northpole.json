@@ -1,7 +1,8 @@
 {
   "ResponseInfo": {
     "statusCode": "OK",
-    "message": null
+    "message": [],
+    "APIVersion": "1.4785_1"
   },
   "Properties": {
     "Nh": 6.12e+20,

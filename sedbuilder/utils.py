@@ -1,7 +1,5 @@
 from pathlib import Path
-from typing import Annotated
 
-from pydantic import Field
 from pydantic import FilePath
 from pydantic import validate_call
 
@@ -11,10 +9,7 @@ from .schemas import GetDataResponse
 
 @validate_call
 def get_data_from_json(
-    filepath: Annotated[
-        FilePath,
-        Field(description="Path to JSON file."),
-    ],
+    filepath: FilePath,
 ) -> GetDataResponse:
     """Reads a JSON file containing SED Builder API response data and validates it
     against `get_data` response schema.
@@ -36,10 +31,7 @@ def get_data_from_json(
 
 @validate_call
 def catalogs_from_json(
-    filepath: Annotated[
-        FilePath,
-        Field(description="Path to JSON file."),
-    ],
+    filepath: FilePath,
 ) -> CatalogsResponse:
     """Reads a JSON file containing SED Builder API catalog data and validates it
     against `catalogs` response schema.

@@ -1,1286 +1,1974 @@
 {
   "ResponseInfo": {
     "statusCode": "OK",
-    "message": null
+    "message": [],
+    "APIVersion": "1.4785_1"
   },
   "Catalogs": [
     {
-      "CatalogId": 4143,
-      "CatalogName": "CLASSSCAT",
+      "Id": 4143,
+      "Name": "CLASSSCAT",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 12,
-      "CatalogName": "CRATES",
+      "Id": 12,
+      "Name": "CRATES",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3,
-      "CatalogName": "DIXON",
+      "Id": 3,
+      "Name": "DIXON",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10,
-      "CatalogName": "FIRST",
+      "Id": 10,
+      "Name": "FIRST",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2444,
-      "CatalogName": "JVASPOL",
+      "Id": 2444,
+      "Name": "JVASPOL",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 1,
-      "CatalogName": "KUEHR",
+      "Id": 1,
+      "Name": "KUEHR",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2428,
-      "CatalogName": "NIEPPOCAT",
+      "Id": 2428,
+      "Name": "NIEPPOCAT",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 9,
-      "CatalogName": "NVSS",
+      "Id": 9,
+      "Name": "NVSS",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2,
-      "CatalogName": "PKSCAT90",
+      "Id": 2,
+      "Name": "PKSCAT90",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 13,
-      "CatalogName": "PMN",
+      "Id": 13,
+      "Name": "PMN",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 8,
-      "CatalogName": "SUMSS",
+      "Id": 8,
+      "Name": "SUMSS",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2426,
-      "CatalogName": "VLANEP",
+      "Id": 2426,
+      "Name": "VLANEP",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 12466,
-      "CatalogName": "VLSSr",
+      "Id": 12466,
+      "Name": "VLSSr",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 19,
-      "CatalogName": "WENSS",
+      "Id": 19,
+      "Name": "WENSS",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2799,
-      "CatalogName": "IRASFSC 12",
+      "Id": 2799,
+      "Name": "IRASFSC 12",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2800,
-      "CatalogName": "IRASFSC 25",
+      "Id": 2800,
+      "Name": "IRASFSC 25",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2801,
-      "CatalogName": "IRASFSC 60",
+      "Id": 2801,
+      "Name": "IRASFSC 60",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2802,
-      "CatalogName": "IRASFSC100",
+      "Id": 2802,
+      "Name": "IRASFSC100",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2809,
-      "CatalogName": "IRASPSC 12",
+      "Id": 2809,
+      "Name": "IRASPSC 12",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2810,
-      "CatalogName": "IRASPSC 25",
+      "Id": 2810,
+      "Name": "IRASPSC 25",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2811,
-      "CatalogName": "IRASPSC 60",
+      "Id": 2811,
+      "Name": "IRASPSC 60",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2812,
-      "CatalogName": "IRASPSC100",
+      "Id": 2812,
+      "Name": "IRASPSC100",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2441,
-      "CatalogName": "AT20GCAT ( flux 20 GHz)",
+      "Id": 2441,
+      "Name": "AT20GCAT ( flux 20 GHz)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2443,
-      "CatalogName": "AT20GCAT ( flux 5 GHz)",
+      "Id": 2443,
+      "Name": "AT20GCAT ( flux 5 GHz)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2442,
-      "CatalogName": "AT20GCAT ( flux 8 GHz)",
+      "Id": 2442,
+      "Name": "AT20GCAT ( flux 8 GHz)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2439,
-      "CatalogName": "ATCAPMN ( flux 3.6 cm)",
+      "Id": 2439,
+      "Name": "ATCAPMN ( flux 3.6 cm)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2440,
-      "CatalogName": "ATCAPMN ( flux 6 cm)",
+      "Id": 2440,
+      "Name": "ATCAPMN ( flux 6 cm)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3852,
-      "CatalogName": "ATPMNCAT",
+      "Id": 3852,
+      "Name": "ATPMNCAT",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 88,
-      "CatalogName": "ERCSC030",
+      "Id": 88,
+      "Name": "ERCSC030",
       "ErrorRadius": 7.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 89,
-      "CatalogName": "ERCSC044 ",
+      "Id": 89,
+      "Name": "ERCSC044 ",
       "ErrorRadius": 7.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 90,
-      "CatalogName": "ERCSC070",
+      "Id": 90,
+      "Name": "ERCSC070",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 91,
-      "CatalogName": "ERCSC100",
+      "Id": 91,
+      "Name": "ERCSC100",
       "ErrorRadius": 4.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 92,
-      "CatalogName": "ERCSC143",
+      "Id": 92,
+      "Name": "ERCSC143",
       "ErrorRadius": 3.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 93,
-      "CatalogName": "ERCSC217",
+      "Id": 93,
+      "Name": "ERCSC217",
       "ErrorRadius": 2.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 94,
-      "CatalogName": "ERCSC353",
+      "Id": 94,
+      "Name": "ERCSC353",
       "ErrorRadius": 2.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 95,
-      "CatalogName": "ERCSC545",
+      "Id": 95,
+      "Name": "ERCSC545",
       "ErrorRadius": 2.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 96,
-      "CatalogName": "ERCSC857",
+      "Id": 96,
+      "Name": "ERCSC857",
       "ErrorRadius": 2.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4,
-      "CatalogName": "GB6",
+      "Id": 4,
+      "Name": "GB6",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2427,
-      "CatalogName": "GB87CAT",
+      "Id": 2427,
+      "Name": "GB87CAT",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 20,
-      "CatalogName": "NORTH20CM (flux 20 cm)",
+      "Id": 20,
+      "Name": "NORTH20CM (flux 20 cm)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 21,
-      "CatalogName": "NORTH20CM (flux 6 cm)",
+      "Id": 21,
+      "Name": "NORTH20CM (flux 6 cm)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 22,
-      "CatalogName": "NORTH20CM (flux 80 cm)",
+      "Id": 22,
+      "Name": "NORTH20CM (flux 80 cm)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4161,
-      "CatalogName": "PCCS1F030 ",
+      "Id": 4161,
+      "Name": "PCCS1F030 ",
       "ErrorRadius": 4.7,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4162,
-      "CatalogName": "PCCS1F044",
+      "Id": 4162,
+      "Name": "PCCS1F044",
       "ErrorRadius": 5.5,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4163,
-      "CatalogName": "PCCS1F070",
+      "Id": 4163,
+      "Name": "PCCS1F070",
       "ErrorRadius": 3.6,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4164,
-      "CatalogName": "PCCS1F100",
+      "Id": 4164,
+      "Name": "PCCS1F100",
       "ErrorRadius": 2.6,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4165,
-      "CatalogName": "PCCS1F143",
+      "Id": 4165,
+      "Name": "PCCS1F143",
       "ErrorRadius": 1.8,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4168,
-      "CatalogName": "PCCS1F217",
+      "Id": 4168,
+      "Name": "PCCS1F217",
       "ErrorRadius": 1.8,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4169,
-      "CatalogName": "PCCS1F353",
+      "Id": 4169,
+      "Name": "PCCS1F353",
       "ErrorRadius": 2.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4170,
-      "CatalogName": "PCCS1F545",
+      "Id": 4170,
+      "Name": "PCCS1F545",
       "ErrorRadius": 1.3,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4171,
-      "CatalogName": "PCCS1F857",
+      "Id": 4171,
+      "Name": "PCCS1F857",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7487,
-      "CatalogName": "PCCS2E100",
+      "Id": 7487,
+      "Name": "PCCS2E100",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7488,
-      "CatalogName": "PCCS2E143",
+      "Id": 7488,
+      "Name": "PCCS2E143",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7489,
-      "CatalogName": "PCCS2E217",
+      "Id": 7489,
+      "Name": "PCCS2E217",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7490,
-      "CatalogName": "PCCS2E353",
+      "Id": 7490,
+      "Name": "PCCS2E353",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7491,
-      "CatalogName": "PCCS2E545",
+      "Id": 7491,
+      "Name": "PCCS2E545",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7492,
-      "CatalogName": "PCCS2E857",
+      "Id": 7492,
+      "Name": "PCCS2E857",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7442,
-      "CatalogName": "PCCS2F030",
+      "Id": 7442,
+      "Name": "PCCS2F030",
       "ErrorRadius": 4.7,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7459,
-      "CatalogName": "PCCS2F044",
+      "Id": 7459,
+      "Name": "PCCS2F044",
       "ErrorRadius": 5.5,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7460,
-      "CatalogName": "PCCS2F070",
+      "Id": 7460,
+      "Name": "PCCS2F070",
       "ErrorRadius": 3.6,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7461,
-      "CatalogName": "PCCS2F100",
+      "Id": 7461,
+      "Name": "PCCS2F100",
       "ErrorRadius": 2.6,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7462,
-      "CatalogName": "PCCS2F143",
+      "Id": 7462,
+      "Name": "PCCS2F143",
       "ErrorRadius": 1.8,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7463,
-      "CatalogName": "PCCS2F217",
+      "Id": 7463,
+      "Name": "PCCS2F217",
       "ErrorRadius": 1.8,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7464,
-      "CatalogName": "PCCS2F353",
+      "Id": 7464,
+      "Name": "PCCS2F353",
       "ErrorRadius": 2.1,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7465,
-      "CatalogName": "PCCS2F545",
+      "Id": 7465,
+      "Name": "PCCS2F545",
       "ErrorRadius": 1.3,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7466,
-      "CatalogName": "PCCS2F857",
+      "Id": 7466,
+      "Name": "PCCS2F857",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 79,
-      "CatalogName": "WMAP5 (Freq. 23e9 Hz)",
+      "Id": 79,
+      "Name": "WMAP5 (Freq. 23e9 Hz)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 80,
-      "CatalogName": "WMAP5 (Freq. 33e9 Hz)",
+      "Id": 80,
+      "Name": "WMAP5 (Freq. 33e9 Hz)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 81,
-      "CatalogName": "WMAP5 (Freq. 41e9 Hz)",
+      "Id": 81,
+      "Name": "WMAP5 (Freq. 41e9 Hz)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 82,
-      "CatalogName": "WMAP5 (Freq. 61e9 Hz)",
+      "Id": 82,
+      "Name": "WMAP5 (Freq. 61e9 Hz)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 83,
-      "CatalogName": "WMAP5 (Freq. 94e9 Hz)",
+      "Id": 83,
+      "Name": "WMAP5 (Freq. 94e9 Hz)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Radio"
+      "Band": "Radio",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 65,
-      "CatalogName": "AKARIBSC 065",
+      "Id": 65,
+      "Name": "AKARIBSC 065",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 66,
-      "CatalogName": "AKARIBSC 090",
+      "Id": 66,
+      "Name": "AKARIBSC 090",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 67,
-      "CatalogName": "AKARIBSC 140",
+      "Id": 67,
+      "Name": "AKARIBSC 140",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 68,
-      "CatalogName": "AKARIBSC 160",
+      "Id": 68,
+      "Name": "AKARIBSC 160",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 63,
-      "CatalogName": "AKARIPSC 09",
+      "Id": 63,
+      "Name": "AKARIPSC 09",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 64,
-      "CatalogName": "AKARIPSC 18",
+      "Id": 64,
+      "Name": "AKARIPSC 18",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5227,
-      "CatalogName": "allwise w1",
+      "Id": 5227,
+      "Name": "allwise w1",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5228,
-      "CatalogName": "allwise w2",
+      "Id": 5228,
+      "Name": "allwise w2",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5229,
-      "CatalogName": "allwise w3",
+      "Id": 5229,
+      "Name": "allwise w3",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5230,
-      "CatalogName": "allwise w4",
+      "Id": 5230,
+      "Name": "allwise w4",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3200,
-      "CatalogName": "WISE W1 ExtEll",
+      "Id": 3200,
+      "Name": "WISE W1 ExtEll",
       "ErrorRadius": 0.25,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3205,
-      "CatalogName": "WISE W1 PointPsf",
+      "Id": 3205,
+      "Name": "WISE W1 PointPsf",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3201,
-      "CatalogName": "WISE W2 ExtEll",
+      "Id": 3201,
+      "Name": "WISE W2 ExtEll",
       "ErrorRadius": 0.25,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3206,
-      "CatalogName": "WISE W2 PointPsf",
+      "Id": 3206,
+      "Name": "WISE W2 PointPsf",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3202,
-      "CatalogName": "WISE W3 ExtEll",
+      "Id": 3202,
+      "Name": "WISE W3 ExtEll",
       "ErrorRadius": 0.25,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3207,
-      "CatalogName": "WISE W3 PointPsf",
+      "Id": 3207,
+      "Name": "WISE W3 PointPsf",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3203,
-      "CatalogName": "WISE W4 ExtEll",
+      "Id": 3203,
+      "Name": "WISE W4 ExtEll",
       "ErrorRadius": 0.25,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3208,
-      "CatalogName": "WISE W4 PointPsf",
+      "Id": 3208,
+      "Name": "WISE W4 PointPsf",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4524,
-      "CatalogName": "DENIS_3_i",
+      "Id": 4524,
+      "Name": "DENIS_3_i",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4525,
-      "CatalogName": "DENIS_3_j",
+      "Id": 4525,
+      "Name": "DENIS_3_j",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 4526,
-      "CatalogName": "DENIS_3_k",
+      "Id": 4526,
+      "Name": "DENIS_3_k",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2671,
-      "CatalogName": "GALEXAISFUV",
+      "Id": 2671,
+      "Name": "GALEXAISFUV",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2670,
-      "CatalogName": "GALEXAISNUV",
+      "Id": 2670,
+      "Name": "GALEXAISNUV",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2677,
-      "CatalogName": "GALEXMISFUV",
+      "Id": 2677,
+      "Name": "GALEXMISFUV",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2676,
-      "CatalogName": "GALEXMISNUV",
+      "Id": 2676,
+      "Name": "GALEXMISNUV",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 98,
-      "CatalogName": "UVOTPLKSED",
+      "Id": 98,
+      "Name": "UVOTPLKSED",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6349,
-      "CatalogName": "UVOTSSC v",
+      "Id": 6349,
+      "Name": "UVOTSSC v",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6350,
-      "CatalogName": "UVOTSSC b",
+      "Id": 6350,
+      "Name": "UVOTSSC b",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6351,
-      "CatalogName": "UVOTSSC u",
+      "Id": 6351,
+      "Name": "UVOTSSC u",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6354,
-      "CatalogName": "UVOTSSC uvw1",
+      "Id": 6354,
+      "Name": "UVOTSSC uvw1",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6353,
-      "CatalogName": "UVOTSSC uvm2",
+      "Id": 6353,
+      "Name": "UVOTSSC uvm2",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6352,
-      "CatalogName": "UVOTSSC uvw2",
+      "Id": 6352,
+      "Name": "UVOTSSC uvw2",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Optical UV"
+      "Band": "Optical UV",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2893,
-      "CatalogName": "1SWXRT (0.1-10 keV)",
+      "Id": 2893,
+      "Name": "1SWXRT (0.1-10 keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2600,
-      "CatalogName": "1SWXRT (0.1-2.4 keV)",
+      "Id": 2600,
+      "Name": "1SWXRT (0.1-2.4 keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2578,
-      "CatalogName": "1SWXRT (2-10 keV)",
+      "Id": 2578,
+      "Name": "1SWXRT (2-10 keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7069,
-      "CatalogName": "1SXPS(0.3-1keV)",
+      "Id": 7069,
+      "Name": "1SXPS(0.3-1keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7072,
-      "CatalogName": "1SXPS(0.3\u201410 keV)",
+      "Id": 7072,
+      "Name": "1SXPS(0.3\u201410 keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7070,
-      "CatalogName": "1SXPS(1-2keV)",
+      "Id": 7070,
+      "Name": "1SXPS(1-2keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7071,
-      "CatalogName": "1SXPS(2\u201410 keV)",
+      "Id": 7071,
+      "Name": "1SXPS(2\u201410 keV)",
       "ErrorRadius": 0.3,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2737,
-      "CatalogName": "ARIEL3A",
+      "Id": 2737,
+      "Name": "ARIEL3A",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 74,
-      "CatalogName": "ASCASIS (0.5-12 keV)",
+      "Id": 74,
+      "Name": "ASCASIS (0.5-12 keV)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14790,
-      "CatalogName": "band 0 (0.2 - 5.0 keV)",
+      "Id": 14790,
+      "Name": "band 0 (0.2 - 5.0 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14791,
-      "CatalogName": "band 1 (0.2 - 0.6 keV)",
+      "Id": 14791,
+      "Name": "band 1 (0.2 - 0.6 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14792,
-      "CatalogName": "band 2 (0.6 - 2.3 keV)",
+      "Id": 14792,
+      "Name": "band 2 (0.6 - 2.3 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14793,
-      "CatalogName": "band 3 (2.3 - 5.0 keV)",
+      "Id": 14793,
+      "Name": "band 3 (2.3 - 5.0 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 73,
-      "CatalogName": "BMW",
+      "Id": 73,
+      "Name": "BMW",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2858,
-      "CatalogName": "CHANDRASRC (0.2-0.5 keV)",
+      "Id": 2858,
+      "Name": "CHANDRASRC (0.2-0.5 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2859,
-      "CatalogName": "CHANDRASRC (0.5-1.2 keV)",
+      "Id": 2859,
+      "Name": "CHANDRASRC (0.5-1.2 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2860,
-      "CatalogName": "CHANDRASRC (1.2-2.0 keV)",
+      "Id": 2860,
+      "Name": "CHANDRASRC (1.2-2.0 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2861,
-      "CatalogName": "CHANDRASRC (2.0-7.0 keV)",
+      "Id": 2861,
+      "Name": "CHANDRASRC (2.0-7.0 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2729,
-      "CatalogName": "CMA",
+      "Id": 2729,
+      "Name": "CMA",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10489,
-      "CatalogName": "hatlasdr1 (100um)",
+      "Id": 10489,
+      "Name": "hatlasdr1 (100um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10490,
-      "CatalogName": "hatlasdr1 (160um)",
+      "Id": 10490,
+      "Name": "hatlasdr1 (160um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10491,
-      "CatalogName": "hatlasdr1 (250um)",
+      "Id": 10491,
+      "Name": "hatlasdr1 (250um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10492,
-      "CatalogName": "hatlasdr1 (350um)",
+      "Id": 10492,
+      "Name": "hatlasdr1 (350um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 10493,
-      "CatalogName": "hatlasdr1 (500um)",
+      "Id": 10493,
+      "Name": "hatlasdr1 (500um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7818,
-      "CatalogName": "HGOODSDR1 (100um)",
+      "Id": 7818,
+      "Name": "HGOODSDR1 (100um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7819,
-      "CatalogName": "HGOODSDR1 (160um)",
+      "Id": 7819,
+      "Name": "HGOODSDR1 (160um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7820,
-      "CatalogName": "HGOODSDR1 (250um)",
+      "Id": 7820,
+      "Name": "HGOODSDR1 (250um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7821,
-      "CatalogName": "HGOODSDR1 (350um)",
+      "Id": 7821,
+      "Name": "HGOODSDR1 (350um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7822,
-      "CatalogName": "HGOODSDR1 (500um)",
+      "Id": 7822,
+      "Name": "HGOODSDR1 (500um)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Infrared"
+      "Band": "Infrared",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 6,
-      "CatalogName": "IPC",
+      "Id": 6,
+      "Name": "IPC",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5,
-      "CatalogName": "IPCSLEW",
+      "Id": 5,
+      "Name": "IPCSLEW",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14,
-      "CatalogName": "RASS",
+      "Id": 14,
+      "Name": "RASS",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 8059,
-      "CatalogName": "RXS2CAT",
+      "Id": 8059,
+      "Name": "RXS2CAT",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 8185,
-      "CatalogName": "SAXMECS",
+      "Id": 8185,
+      "Name": "SAXMECS",
       "ErrorRadius": 1.5,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 100,
-      "CatalogName": "SKYROSAT",
+      "Id": 100,
+      "Name": "SKYROSAT",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14795,
-      "CatalogName": "suppl band 1 (0.2 - 2.3 keV)",
+      "Id": 14795,
+      "Name": "suppl band 1 (0.2 - 2.3 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14796,
-      "CatalogName": "suppl band P1 (0.2 - 0.5 keV)",
+      "Id": 14796,
+      "Name": "suppl band P1 (0.2 - 0.5 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14797,
-      "CatalogName": "suppl band P2 (0.5 - 1 keV)",
+      "Id": 14797,
+      "Name": "suppl band P2 (0.5 - 1 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14798,
-      "CatalogName": "suppl band P3 (1 - 2 keV)",
+      "Id": 14798,
+      "Name": "suppl band P3 (1 - 2 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14799,
-      "CatalogName": "suppl band P4 (2 - 5 keV)",
+      "Id": 14799,
+      "Name": "suppl band P4 (2 - 5 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14800,
-      "CatalogName": "suppl band P5 (5 - 8 keV)",
+      "Id": 14800,
+      "Name": "suppl band P5 (5 - 8 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2738,
-      "CatalogName": "UHURU4",
+      "Id": 2738,
+      "Name": "UHURU4",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2936,
-      "CatalogName": "WFCCAT",
+      "Id": 2936,
+      "Name": "WFCCAT",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2935,
-      "CatalogName": "WFCCAT FULL",
+      "Id": 2935,
+      "Name": "WFCCAT FULL",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 15,
-      "CatalogName": "WGACAT2",
+      "Id": 15,
+      "Name": "WGACAT2",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14640,
-      "CatalogName": "XMMSL2 (0.2-12 keV)",
+      "Id": 14640,
+      "Name": "XMMSL2 (0.2-12 keV)",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14642,
-      "CatalogName": "XMMSL2 (0.2-2 keV)",
+      "Id": 14642,
+      "Name": "XMMSL2 (0.2-2 keV)",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14641,
-      "CatalogName": "XMMSL2 (2-12 keV)",
+      "Id": 14641,
+      "Name": "XMMSL2 (2-12 keV)",
       "ErrorRadius": 0.5,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 17,
-      "CatalogName": "XRTGRBDEEP",
+      "Id": 17,
+      "Name": "XRTGRBDEEP",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14783,
-      "CatalogName": "band 1 (0.2 - 2.3 keV)",
+      "Id": 14783,
+      "Name": "band 1 (0.2 - 2.3 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14334,
-      "CatalogName": "4XMM-DR12 (0.5-1 keV)",
+      "Id": 14334,
+      "Name": "4XMM-DR12 (0.5-1 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14784,
-      "CatalogName": "band P1 (0.2 - 0.5 keV)",
+      "Id": 14784,
+      "Name": "band P1 (0.2 - 0.5 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14335,
-      "CatalogName": "4XMM-DR12 (1-2 keV)",
+      "Id": 14335,
+      "Name": "4XMM-DR12 (1-2 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14785,
-      "CatalogName": "band P2 (0.5 - 1 keV)",
+      "Id": 14785,
+      "Name": "band P2 (0.5 - 1 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14336,
-      "CatalogName": "4XMM-DR12 (2-4.5 keV)",
+      "Id": 14336,
+      "Name": "4XMM-DR12 (2-4.5 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14786,
-      "CatalogName": "band P3 (1 - 2 keV)",
+      "Id": 14786,
+      "Name": "band P3 (1 - 2 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14337,
-      "CatalogName": "4XMM-DR12 (4.5-12 keV)",
+      "Id": 14337,
+      "Name": "4XMM-DR12 (4.5-12 keV)",
       "ErrorRadius": 0.1,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14787,
-      "CatalogName": "band P4 (2 - 5 keV)",
+      "Id": 14787,
+      "Name": "band P4 (2 - 5 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14788,
-      "CatalogName": "band P5 (5 - 8 keV)",
+      "Id": 14788,
+      "Name": "band P5 (5 - 8 keV)",
       "ErrorRadius": 0.15,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3156,
-      "CatalogName": "MAXIGSC",
+      "Id": 3156,
+      "Name": "MAXIGSC",
       "ErrorRadius": 12.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5907,
-      "CatalogName": "MAXIGSCHGL-HB",
+      "Id": 5907,
+      "Name": "MAXIGSCHGL-HB",
       "ErrorRadius": 12.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5906,
-      "CatalogName": "MAXIGSCHGL-SB",
+      "Id": 5906,
+      "Name": "MAXIGSCHGL-SB",
       "ErrorRadius": 12.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7902,
-      "CatalogName": "2FHL (1081GeV)",
+      "Id": 7902,
+      "Name": "2FHL (1081GeV)",
       "ErrorRadius": 6.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7901,
-      "CatalogName": "2FHL (316GeV)",
+      "Id": 7901,
+      "Name": "2FHL (316GeV)",
       "ErrorRadius": 6.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7900,
-      "CatalogName": "2FHL (92GeV)",
+      "Id": 7900,
+      "Name": "2FHL (92GeV)",
       "ErrorRadius": 6.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5375,
-      "CatalogName": "A2PIC",
+      "Id": 5375,
+      "Name": "A2PIC",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Soft X-Ray"
+      "Band": "Soft X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2752,
-      "CatalogName": "A4 (13-25 keV)",
+      "Id": 2752,
+      "Name": "A4 (13-25 keV)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2753,
-      "CatalogName": "A4 (25-40 keV)",
+      "Id": 2753,
+      "Name": "A4 (25-40 keV)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2754,
-      "CatalogName": "A4 (40-80 keV)",
+      "Id": 2754,
+      "Name": "A4 (40-80 keV)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2755,
-      "CatalogName": "A4 (80-180 keV)",
+      "Id": 2755,
+      "Name": "A4 (80-180 keV)",
       "ErrorRadius": 1.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 35,
-      "CatalogName": "BAT39MCAT (10-150keV)",
+      "Id": 35,
+      "Name": "BAT39MCAT (10-150keV)",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 34,
-      "CatalogName": "BAT39MCAT (15-30keV)",
+      "Id": 34,
+      "Name": "BAT39MCAT (15-30keV)",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 103,
-      "CatalogName": "BAT54MCAT (15-150keV)",
+      "Id": 103,
+      "Name": "BAT54MCAT (15-150keV)",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 102,
-      "CatalogName": "BAT54MCAT (15-50keV)",
+      "Id": 102,
+      "Name": "BAT54MCAT (15-50keV)",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3052,
-      "CatalogName": "BAT60AGN (15 - 55 keV)",
+      "Id": 3052,
+      "Name": "BAT60AGN (15 - 55 keV)",
       "ErrorRadius": 3.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 8051,
-      "CatalogName": "BATPA100",
+      "Id": 8051,
+      "Name": "BATPA100",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14344,
-      "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+      "Id": 14344,
+      "Name": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14345,
-      "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+      "Id": 14345,
+      "Name": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14346,
-      "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+      "Id": 14346,
+      "Name": "Fermi 4FGL-DR3 (0.3-1 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14347,
-      "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
+      "Id": 14347,
+      "Name": "Fermi 4FGL-DR3 (1-3 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14349,
-      "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
+      "Id": 14349,
+      "Name": "Fermi 4FGL-DR3 (10-30 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14351,
-      "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
+      "Id": 14351,
+      "Name": "Fermi 4FGL-DR3 (100-1000 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14348,
-      "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
+      "Id": 14348,
+      "Name": "Fermi 4FGL-DR3 (3-10 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 14350,
-      "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
+      "Id": 14350,
+      "Name": "Fermi 4FGL-DR3 (30-100 GeV)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 56,
-      "CatalogName": "Fermi1FGL (200 Mev)",
+      "Id": 56,
+      "Name": "Fermi1FGL (200 Mev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 58,
-      "CatalogName": "Fermi1FGL (2Gev)",
+      "Id": 58,
+      "Name": "Fermi1FGL (2Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 57,
-      "CatalogName": "Fermi1FGL (600 Mev)",
+      "Id": 57,
+      "Name": "Fermi1FGL (600 Mev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 60,
-      "CatalogName": "Fermi1FGL (60Gev)",
+      "Id": 60,
+      "Name": "Fermi1FGL (60Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 59,
-      "CatalogName": "Fermi1FGL (6Gev)",
+      "Id": 59,
+      "Name": "Fermi1FGL (6Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 114,
-      "CatalogName": "Fermi2FGL (200 Mev)",
+      "Id": 114,
+      "Name": "Fermi2FGL (200 Mev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 116,
-      "CatalogName": "Fermi2FGL (2Gev)",
+      "Id": 116,
+      "Name": "Fermi2FGL (2Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 115,
-      "CatalogName": "Fermi2FGL (600 Mev)",
+      "Id": 115,
+      "Name": "Fermi2FGL (600 Mev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 118,
-      "CatalogName": "Fermi2FGL (60Gev)",
+      "Id": 118,
+      "Name": "Fermi2FGL (60Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 117,
-      "CatalogName": "Fermi2FGL (6Gev)",
+      "Id": 117,
+      "Name": "Fermi2FGL (6Gev)",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 2884,
-      "CatalogName": "Fermi2FglLC",
+      "Id": 2884,
+      "Name": "Fermi2FglLC",
       "ErrorRadius": 30.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5953,
-      "CatalogName": "Fermi3FGL (200 Mev)",
+      "Id": 5953,
+      "Name": "Fermi3FGL (200 Mev)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5955,
-      "CatalogName": "Fermi3FGL (2Gev)",
+      "Id": 5955,
+      "Name": "Fermi3FGL (2Gev)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5954,
-      "CatalogName": "Fermi3FGL (600 Mev)",
+      "Id": 5954,
+      "Name": "Fermi3FGL (600 Mev)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5957,
-      "CatalogName": "Fermi3FGL (60Gev)",
+      "Id": 5957,
+      "Name": "Fermi3FGL (60Gev)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5956,
-      "CatalogName": "Fermi3FGL (6Gev)",
+      "Id": 5956,
+      "Name": "Fermi3FGL (6Gev)",
       "ErrorRadius": 15.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 61,
-      "CatalogName": "IBISSG4CAT (20-40 keV)",
+      "Id": 61,
+      "Name": "IBISSG4CAT (20-40 keV)",
       "ErrorRadius": 6.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 62,
-      "CatalogName": "IBISSG4CAT (40-100 keV)",
+      "Id": 62,
+      "Name": "IBISSG4CAT (40-100 keV)",
       "ErrorRadius": 6.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 12344,
-      "CatalogName": "SWBAT105 (14-195 keV)",
+      "Id": 12344,
+      "Name": "SWBAT105 (14-195 keV)",
       "ErrorRadius": 5.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3865,
-      "CatalogName": "SWBAT70M  (14-195 keV)",
+      "Id": 3865,
+      "Name": "SWBAT70M  (14-195 keV)",
       "ErrorRadius": 3.0,
-      "CatalogBand": "Hard X-Ray"
+      "Band": "Hard X-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 85,
-      "CatalogName": "AGILE Grid",
+      "Id": 85,
+      "Name": "AGILE Grid",
       "ErrorRadius": 60.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 7,
-      "CatalogName": "EGRET3",
+      "Id": 7,
+      "Name": "EGRET3",
       "ErrorRadius": 60.0,
-      "CatalogBand": "Gamma-Ray"
+      "Band": "Gamma-Ray",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 5092,
-      "CatalogName": "ARGO2LAC",
+      "Id": 5092,
+      "Name": "ARGO2LAC",
       "ErrorRadius": 1.0,
-      "CatalogBand": "VHE"
+      "Band": "VHE",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3957,
-      "CatalogName": "HESS",
+      "Id": 3957,
+      "Name": "HESS",
       "ErrorRadius": 10.0,
-      "CatalogBand": "VHE"
+      "Band": "VHE",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3956,
-      "CatalogName": "MAGIC",
+      "Id": 3956,
+      "Name": "MAGIC",
       "ErrorRadius": 10.0,
-      "CatalogBand": "VHE"
+      "Band": "VHE",
+      "Kind": "Catalog"
     },
     {
-      "CatalogId": 3958,
-      "CatalogName": "VERITAS",
+      "Id": 3958,
+      "Name": "VERITAS",
       "ErrorRadius": 10.0,
-      "CatalogBand": "VHE"
+      "Band": "VHE",
+      "Kind": "Catalog"
+    },
+    {
+      "Id": 7656,
+      "Name": "HEGRA_2001A&A_366_62A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7664,
+      "Name": "ARGO_YBJ_2011ApJ_734_110B",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7665,
+      "Name": "ARGO_YBJ_2012ApJ_758_2B",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7666,
+      "Name": "HEGRA_2003A&A_406L_9A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7667,
+      "Name": "HESS_2005A&A_430_865A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7668,
+      "Name": "HESS_2005A&A_437_95A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7669,
+      "Name": "HESS_2005A&A_442_895A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7670,
+      "Name": "HESS_2007A&A_470_475A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7671,
+      "Name": "HESS_2007A&A_473L_25A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7672,
+      "Name": "HESS_2007A&A_475L_9A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7673,
+      "Name": "HESS_2008A&A_477_481A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7674,
+      "Name": "HESS_2008A&A_481L_103A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7675,
+      "Name": "HESS_2009ApJ_696L_150A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7676,
+      "Name": "HESS_2010A&A_511A_52H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7677,
+      "Name": "HESS_2010A&A_516A_56H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7678,
+      "Name": "HESS_2010A&A_520A_83H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7679,
+      "Name": "HESS_2012A&A_538A_103H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7680,
+      "Name": "HESS_2012A&A_539A_149H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7681,
+      "Name": "HESS_2012A&A_542A_94H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7682,
+      "Name": "HESS_2013A&A_552A_118H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7683,
+      "Name": "HESS_2013A&A_554A_107H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7684,
+      "Name": "HESS_2013A&A_554A_72H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7685,
+      "Name": "HESS_2013A&A_559A_136H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7686,
+      "Name": "HESS_2013MNRAS_434_1889H",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7687,
+      "Name": "HESS_2013PhRvD_88j2003A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7688,
+      "Name": "HESS_2015ApJ_802_65A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7689,
+      "Name": "TACTIC_2008JPhG_35f5202G",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7690,
+      "Name": "TACTIC_2010JPhG_37l5201C",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7691,
+      "Name": "TACTIC_2012JPhG_39d5201C",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7692,
+      "Name": "TACTIC_2015NIMPA_770_42S",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7693,
+      "Name": "TIBET_2013ApJ_598_242A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7694,
+      "Name": "VERITAS_2008ApJ_684L_73A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7695,
+      "Name": "VERITAS_2009ApJ_690L_126A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7696,
+      "Name": "VERITAS_2009ApJ_695_1370A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7697,
+      "Name": "VERITAS_2010ApJ_709L_163A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7698,
+      "Name": "VERITAS_2010ApJ_715L_49A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7699,
+      "Name": "VERITAS_2011ApJ_738_169A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7700,
+      "Name": "VERITAS_2011ApJ_738_25A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7701,
+      "Name": "VERITAS_2011ApJ_742_127A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7702,
+      "Name": "VERITAS_2012ApJ_750_94A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7703,
+      "Name": "VERITAS_2012ApJ_755_118A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7704,
+      "Name": "VERITAS_2013ApJ_762_92A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7705,
+      "Name": "VERITAS_2013ApJ_775_3A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7706,
+      "Name": "VERITAS_2013ApJ_776_69A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7707,
+      "Name": "VERITAS_2013ApJ_779_92A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7708,
+      "Name": "VERITAS_2014ApJ_782_13A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7709,
+      "Name": "VERITAS_2014ApJ_785L_16A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7710,
+      "Name": "VERITAS_2015ApJ_799_7A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7711,
+      "Name": "WHIPPLE_2005ApJ_621_181D",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7712,
+      "Name": "WHIPPLE_2005ApJ_634_947S",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14658,
+      "Name": "4U 0142+61",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14659,
+      "Name": "BL Lac",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14660,
+      "Name": "Mrk 501",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14661,
+      "Name": "Mrk 421",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14662,
+      "Name": "IC 4329A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14663,
+      "Name": "4U 1626-67",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14664,
+      "Name": "PG 1553+113",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14665,
+      "Name": "Centaurus A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14666,
+      "Name": "Cygnus X-1",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14667,
+      "Name": "Cassiopea A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14668,
+      "Name": "MCG-05-23-16",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14669,
+      "Name": "Vela X-1 (Nebula)",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14670,
+      "Name": "Vela X-1 (Pulsar)",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14671,
+      "Name": "Cen X-3",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14672,
+      "Name": "Hercules X-1",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14673,
+      "Name": "Circinus",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14674,
+      "Name": "GX 9+9",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14675,
+      "Name": "4U 1820-303",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14676,
+      "Name": "GRB 221009A",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14677,
+      "Name": "GS 1826-238",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14678,
+      "Name": "GRO J1008-57",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14679,
+      "Name": "GX 301-2",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14680,
+      "Name": "EXO 2030+375",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14681,
+      "Name": "XTE J1701-462",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14682,
+      "Name": "Crab (PSR+PWN)",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14683,
+      "Name": "1RXS J170849.0-400910",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14802,
+      "Name": "PKS 2155-304",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 7655,
+      "Name": "BeppoSAX Spectra (Giommi et al. 2002)",
+      "ErrorRadius": 1.0,
+      "Kind": "Paper"
+    },
+    {
+      "Id": 14923,
+      "Name": "NuBlazar",
+      "ErrorRadius": 0.15,
+      "Kind": "Paper"
     }
   ]
 }

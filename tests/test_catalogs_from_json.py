@@ -36,11 +36,11 @@ class TestCatalogsFromJson:
 
         # Each catalog should have minimum required fields
         for catalog in response.Catalogs:
-            assert hasattr(catalog, "CatalogName")
+            assert hasattr(catalog, "Name")
             assert hasattr(catalog, "ErrorRadius")
-            assert hasattr(catalog, "CatalogId")
+            assert hasattr(catalog, "Id")
             # SubGroupName is optional
-            assert hasattr(catalog, "CatalogBand")
+            assert hasattr(catalog, "Band")
 
     def test_nonexistent_file(self):
         """Test that nonexistent file raises ValidationError."""

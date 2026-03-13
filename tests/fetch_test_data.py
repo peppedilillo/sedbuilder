@@ -51,7 +51,7 @@ def format_filename(ra: float, dec: float, source_name: str) -> str:
     return f"{ra_str}_{dec_str}_{name_str}.json"
 
 
-def fetch_and_save_test_data(output_dir: Path = Path("data"), timeout: int = 10) -> None:
+def fetch_and_save_test_data(output_dir: Path = Path("data"), timeout: int = 30) -> None:
     """Fetch test data and catalogs from API and save as JSON files.
 
     Args:
@@ -66,6 +66,7 @@ def fetch_and_save_test_data(output_dir: Path = Path("data"), timeout: int = 10)
         filepath_source = output_dir / filename
         print(f"Fetching {description} (RA={ra}, Dec={dec})...", end=" ")
         try:
+            print(APIPaths.GET_DATA(ra=ra, dec=dec))
             response = httpx.get(APIPaths.GET_DATA(ra=ra, dec=dec), timeout=timeout)
             filepath_source.write_text(json.dumps(response.json(), indent=2))
             print(f" Saved to {filename}")

@@ -1,7 +1,8 @@
 {
   "ResponseInfo": {
     "statusCode": "OK",
-    "message": null
+    "message": [],
+    "APIVersion": "1.4785_1"
   },
   "Properties": {
     "Nh": 1.28e+20,
@@ -22,13 +23,21 @@
   },
   "Datasets": [
     {
-      "Catalog": {
-        "CatalogId": 12,
-        "CatalogName": "CRATES",
+      "Source": {
+        "Id": 12,
+        "Name": "CRATES",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "CRATES: An All-Sky Survey of Flat-Spectrum Radio Sources",
+            "Authors": "Healey, S. E.; Romani, R. W.; Taylor, G. B. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2007ApJS..171...61H"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "J215852-301328",
           "AngularDistance": 0.0010090976039420722,
@@ -40,13 +49,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3,
-        "CatalogName": "DIXON",
+      "Source": {
+        "Id": 3,
+        "Name": "DIXON",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "A Master List of Radio Sources",
+            "Authors": "Dixon, R. S.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1970ApJS...20....1D"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "PKS2155-304",
           "AngularDistance": 0.5172511939084206,
@@ -66,13 +83,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 9,
-        "CatalogName": "NVSS",
+      "Source": {
+        "Id": 9,
+        "Name": "NVSS",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The NRAO VLA Sky Survey",
+            "Authors": "Condon, J. J.; Cotton, W. D.; Greisen, E. W. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1998AJ....115.1693C"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.03178499722081958,
           "Frequency": 1400000000.0,
@@ -85,13 +110,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2,
-        "CatalogName": "PKSCAT90",
+      "Source": {
+        "Id": 2,
+        "Name": "PKSCAT90",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Parkes Radio Sources Catalogue, Version 1.01",
+            "Authors": "Wright, A. E.; Otrupcek, R.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1990PKS...C......0W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.064406599998651,
           "Frequency": 2700000000.0,
@@ -104,13 +137,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 13,
-        "CatalogName": "PMN",
+      "Source": {
+        "Id": 13,
+        "Name": "PMN",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Parkes-MIT-NRAO (PMN) surveys. 2: Source catalog for the southern survey (delta greater than -87.5 deg and less than -37 deg)",
+            "Authors": "Wright, A. E.; Griffith, M. R.; Burke, B. F.; Ekers, R. D.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1994ApJS...91..111W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "PMNJ2158-3013",
           "AngularDistance": 0.06969009230105624,
@@ -124,13 +165,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 8,
-        "CatalogName": "SUMSS",
+      "Source": {
+        "Id": 8,
+        "Name": "SUMSS",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Sydney University Molonglo Sky Survey (SUMSS, Version 2.1)",
+            "Authors": "Mauch, T.; Murphy, T.; Buttery, H. J. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2003MNRAS.342.1117M"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.09152056579456676,
           "Frequency": 843000000.0,
@@ -143,13 +192,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 12466,
-        "CatalogName": "VLSSr",
+      "Source": {
+        "Id": 12466,
+        "Name": "VLSSr",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "VLSSR J215852.6-301328",
           "AngularDistance": 0.13618572763913414,
@@ -163,13 +213,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2441,
-        "CatalogName": "AT20GCAT ( flux 20 GHz)",
+      "Source": {
+        "Id": 2441,
+        "Name": "AT20GCAT ( flux 20 GHz)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Australia Telescope 20 GHz Survey: The Source Catalogue",
+            "Authors": "Murphy, T.; Sadler, E. M.; Ekers, R. D. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010MNRAS.402.2403M"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.006638544313537767,
           "Frequency": 20000000000.0,
@@ -180,13 +238,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2443,
-        "CatalogName": "AT20GCAT ( flux 5 GHz)",
+      "Source": {
+        "Id": 2443,
+        "Name": "AT20GCAT ( flux 5 GHz)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Australia Telescope 20 GHz Survey: The Source Catalogue",
+            "Authors": "Murphy, T.; Sadler, E. M.; Ekers, R. D. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010MNRAS.402.2403M"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.006638544313537767,
           "Frequency": 5000000000.0,
@@ -197,13 +263,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2442,
-        "CatalogName": "AT20GCAT ( flux 8 GHz)",
+      "Source": {
+        "Id": 2442,
+        "Name": "AT20GCAT ( flux 8 GHz)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Australia Telescope 20 GHz Survey: The Source Catalogue",
+            "Authors": "Murphy, T.; Sadler, E. M.; Ekers, R. D. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010MNRAS.402.2403M"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.006638544313537767,
           "Frequency": 8000000000.0,
@@ -214,13 +288,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4164,
-        "CatalogName": "PCCS1F100",
+      "Source": {
+        "Id": 4164,
+        "Name": "PCCS1F100",
         "ErrorRadius": 2.6,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2013 results. XXVIII. The Planck Catalogue of Compact Sources",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..28P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.948724209111786,
           "Frequency": 100000000000.0,
@@ -233,13 +315,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4165,
-        "CatalogName": "PCCS1F143",
+      "Source": {
+        "Id": 4165,
+        "Name": "PCCS1F143",
         "ErrorRadius": 1.8,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2013 results. XXVIII. The Planck Catalogue of Compact Sources",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..28P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.1497449686914352,
           "Frequency": 143000000000.0,
@@ -252,13 +342,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4168,
-        "CatalogName": "PCCS1F217",
+      "Source": {
+        "Id": 4168,
+        "Name": "PCCS1F217",
         "ErrorRadius": 1.8,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2013 results. XXVIII. The Planck Catalogue of Compact Sources",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..28P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.46082437807354293,
           "Frequency": 217000000000.0,
@@ -271,13 +369,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7442,
-        "CatalogName": "PCCS2F030",
+      "Source": {
+        "Id": 7442,
+        "Name": "PCCS2F030",
         "ErrorRadius": 4.7,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2015 results. XXVI. The Second Planck Catalogue of Compact Sources",
+            "Authors": "Planck Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:1507.02058"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.932378026412685,
           "Frequency": 28400000000.0,
@@ -288,13 +394,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7461,
-        "CatalogName": "PCCS2F100",
+      "Source": {
+        "Id": 7461,
+        "Name": "PCCS2F100",
         "ErrorRadius": 2.6,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2015 results. XXVI. The Second Planck Catalogue of Compact Sources",
+            "Authors": "Planck Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:1507.02058"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4824832509630629,
           "Frequency": 100000000000.0,
@@ -305,13 +419,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7462,
-        "CatalogName": "PCCS2F143",
+      "Source": {
+        "Id": 7462,
+        "Name": "PCCS2F143",
         "ErrorRadius": 1.8,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2015 results. XXVI. The Second Planck Catalogue of Compact Sources",
+            "Authors": "Planck Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:1507.02058"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.3700737034283878,
           "Frequency": 143000000000.0,
@@ -322,13 +444,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7463,
-        "CatalogName": "PCCS2F217",
+      "Source": {
+        "Id": 7463,
+        "Name": "PCCS2F217",
         "ErrorRadius": 1.8,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2015 results. XXVI. The Second Planck Catalogue of Compact Sources",
+            "Authors": "Planck Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:1507.02058"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.9816336106547092,
           "Frequency": 217000000000.0,
@@ -339,13 +469,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 63,
-        "CatalogName": "AKARIPSC 09",
+      "Source": {
+        "Id": 63,
+        "Name": "AKARIPSC 09",
         "ErrorRadius": 0.5,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "AKARI/IRC All-Sky Survey Point Source Catalogue Version 1.0.",
+            "Authors": "Katazaa, H.; Alfageme, C; Cassatella, A. et al.",
+            "URL": "http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-IRC_PSC_V1_RN.pdf"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.008341675732365503,
           "Frequency": 33310000000000.0,
@@ -358,13 +496,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 64,
-        "CatalogName": "AKARIPSC 18",
+      "Source": {
+        "Id": 64,
+        "Name": "AKARIPSC 18",
         "ErrorRadius": 0.5,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "AKARI/IRC All-Sky Survey Point Source Catalogue Version 1.0.",
+            "Authors": "Katazaa, H.; Alfageme, C; Cassatella, A. et al.",
+            "URL": "http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-IRC_PSC_V1_RN.pdf"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.008341675732365503,
           "Frequency": 16660000000000.0,
@@ -377,13 +523,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5227,
-        "CatalogName": "allwise w1",
+      "Source": {
+        "Id": 5227,
+        "Name": "allwise w1",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.0008845051782971788,
           "Frequency": 88170000000000.0,
@@ -396,13 +550,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5228,
-        "CatalogName": "allwise w2",
+      "Source": {
+        "Id": 5228,
+        "Name": "allwise w2",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.0008845051782971788,
           "Frequency": 65170000000000.0,
@@ -415,13 +577,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5229,
-        "CatalogName": "allwise w3",
+      "Source": {
+        "Id": 5229,
+        "Name": "allwise w3",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.0008845051782971788,
           "Frequency": 24980000000000.0,
@@ -434,13 +604,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5230,
-        "CatalogName": "allwise w4",
+      "Source": {
+        "Id": 5230,
+        "Name": "allwise w4",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.0008845051782971788,
           "Frequency": 13630000000000.0,
@@ -453,13 +631,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3205,
-        "CatalogName": "WISE W1 PointPsf",
+      "Source": {
+        "Id": 3205,
+        "Name": "WISE W1 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.00106917728317609,
           "Frequency": 88170000000000.0,
@@ -472,13 +651,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3206,
-        "CatalogName": "WISE W2 PointPsf",
+      "Source": {
+        "Id": 3206,
+        "Name": "WISE W2 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.00106917728317609,
           "Frequency": 65170000000000.0,
@@ -491,13 +671,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3207,
-        "CatalogName": "WISE W3 PointPsf",
+      "Source": {
+        "Id": 3207,
+        "Name": "WISE W3 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.00106917728317609,
           "Frequency": 24980000000000.0,
@@ -510,13 +691,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3208,
-        "CatalogName": "WISE W4 PointPsf",
+      "Source": {
+        "Id": 3208,
+        "Name": "WISE W4 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.00106917728317609,
           "Frequency": 13630000000000.0,
@@ -529,13 +711,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4524,
-        "CatalogName": "DENIS_3_i",
+      "Source": {
+        "Id": 4524,
+        "Name": "DENIS_3_i",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.003763734609810372,
           "Frequency": 379000000000000.0,
@@ -548,13 +731,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4525,
-        "CatalogName": "DENIS_3_j",
+      "Source": {
+        "Id": 4525,
+        "Name": "DENIS_3_j",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.003763734609810372,
           "Frequency": 244100000000000.0,
@@ -567,13 +751,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4526,
-        "CatalogName": "DENIS_3_k",
+      "Source": {
+        "Id": 4526,
+        "Name": "DENIS_3_k",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.003763734609810372,
           "Frequency": 139800000000000.0,
@@ -586,13 +771,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6349,
-        "CatalogName": "UVOTSSC v",
+      "Source": {
+        "Id": 6349,
+        "Name": "UVOTSSC v",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 555000000000000.0,
@@ -1055,13 +1241,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6350,
-        "CatalogName": "UVOTSSC b",
+      "Source": {
+        "Id": 6350,
+        "Name": "UVOTSSC b",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 692500000000000.0,
@@ -1344,13 +1531,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6351,
-        "CatalogName": "UVOTSSC u",
+      "Source": {
+        "Id": 6351,
+        "Name": "UVOTSSC u",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 856300000000000.0,
@@ -1588,13 +1776,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6354,
-        "CatalogName": "UVOTSSC uvw1",
+      "Source": {
+        "Id": 6354,
+        "Name": "UVOTSSC uvw1",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 1157000000000000.0,
@@ -2084,13 +2273,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6353,
-        "CatalogName": "UVOTSSC uvm2",
+      "Source": {
+        "Id": 6353,
+        "Name": "UVOTSSC uvm2",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 1345000000000000.0,
@@ -2526,13 +2716,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6352,
-        "CatalogName": "UVOTSSC uvw2",
+      "Source": {
+        "Id": 6352,
+        "Name": "UVOTSSC uvw2",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Optical UV"
+        "Band": "Optical UV",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.005255810444860596,
           "Frequency": 1475000000000000.0,
@@ -2815,13 +3006,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7069,
-        "CatalogName": "1SXPS(0.3-1keV)",
+      "Source": {
+        "Id": 7069,
+        "Name": "1SXPS(0.3-1keV)",
         "ErrorRadius": 0.3,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "1SXPS_J215852.0-301333",
           "AngularDistance": 0.018546173936708443,
@@ -2835,13 +3034,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7072,
-        "CatalogName": "1SXPS(0.3\u201410 keV)",
+      "Source": {
+        "Id": 7072,
+        "Name": "1SXPS(0.3\u201410 keV)",
         "ErrorRadius": 0.3,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "1SXPS_J215852.0-301333",
           "AngularDistance": 0.018546173936708443,
@@ -2855,13 +3062,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7070,
-        "CatalogName": "1SXPS(1-2keV)",
+      "Source": {
+        "Id": 7070,
+        "Name": "1SXPS(1-2keV)",
         "ErrorRadius": 0.3,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "1SXPS_J215852.0-301333",
           "AngularDistance": 0.018546173936708443,
@@ -2875,13 +3090,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7071,
-        "CatalogName": "1SXPS(2\u201410 keV)",
+      "Source": {
+        "Id": 7071,
+        "Name": "1SXPS(2\u201410 keV)",
         "ErrorRadius": 0.3,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "1SXPS_J215852.0-301333",
           "AngularDistance": 0.018546173936708443,
@@ -2895,13 +3118,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2737,
-        "CatalogName": "ARIEL3A",
+      "Source": {
+        "Id": 2737,
+        "Name": "ARIEL3A",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Ariel V (3A) catalogue of X-ray sources - I. Sources at low galactic latitude (|b|<10\u00b0)",
+            "Authors": "Warwick, R. S.; Marshall, N.; Fraser, G. W. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1981MNRAS.197..865W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 8.3128383794308,
           "Frequency": 8.376e+17,
@@ -2919,13 +3150,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2729,
-        "CatalogName": "CMA",
+      "Source": {
+        "Id": 2729,
+        "Name": "CMA",
         "ErrorRadius": 0.5,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.0581646086076256,
           "Frequency": 7.646e+16,
@@ -3118,13 +3350,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6,
-        "CatalogName": "IPC",
+      "Source": {
+        "Id": 6,
+        "Name": "IPC",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2E2155.9-3027",
           "AngularDistance": 0.08209747895237648,
@@ -3158,13 +3391,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5,
-        "CatalogName": "IPCSLEW",
+      "Source": {
+        "Id": 5,
+        "Name": "IPCSLEW",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Einstein Slew Survey",
+            "Authors": "Elvis, M.; Plummer, D.; Schachter, J.; Fabbiano, G.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1992ApJS...80..257E"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "PKS",
           "AngularDistance": 0.13647290225676398,
@@ -3178,13 +3419,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14,
-        "CatalogName": "RASS",
+      "Source": {
+        "Id": 14,
+        "Name": "RASS",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The ROSAT all-sky survey bright source catalogue (RASSBSC).",
+            "Authors": "Voges, W.; Aschenbach, B.; Boller, T. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1999A&A...349..389V"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "1RXS J215852.2-301338",
           "AngularDistance": 0.10275389928255281,
@@ -3198,13 +3447,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 8059,
-        "CatalogName": "RXS2CAT",
+      "Source": {
+        "Id": 8059,
+        "Name": "RXS2CAT",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "List of Galaxies for Gravitational Wave Searches",
+            "Authors": "White D.J.;  Daw E.J.; Dhillon V.S. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2016A%26A...588A.103B"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.08284705475006256,
           "Frequency": 2.42e+17,
@@ -3217,13 +3474,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 8185,
-        "CatalogName": "SAXMECS",
+      "Source": {
+        "Id": 8185,
+        "Name": "SAXMECS",
         "ErrorRadius": 1.5,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.20805671375507034,
           "Frequency": 7.254e+17,
@@ -3245,13 +3503,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2936,
-        "CatalogName": "WFCCAT",
+      "Source": {
+        "Id": 2936,
+        "Name": "WFCCAT",
         "ErrorRadius": 5.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The BeppoSAX WFC X-ray source catalogue",
+            "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2007A&A...472..705V"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.3345590853433356,
           "Frequency": 5.755e+17,
@@ -3535,13 +3801,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2935,
-        "CatalogName": "WFCCAT FULL",
+      "Source": {
+        "Id": 2935,
+        "Name": "WFCCAT FULL",
         "ErrorRadius": 5.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The BeppoSAX WFC X-ray source catalogue",
+            "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2007A&A...472..705V"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.3345590853433356,
           "Frequency": 1.081e+18,
@@ -3617,13 +3891,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 15,
-        "CatalogName": "WGACAT2",
+      "Source": {
+        "Id": 15,
+        "Name": "WGACAT2",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The WGACAT version of the ROSAT PSPC Catalogue, Rev. 1",
+            "Authors": "White, N. E.; Giommi, P.; Angelini, L.",
+            "URL": "http://heasarc.gsfc.nasa.gov/wgacat/"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.07225534538317557,
           "Frequency": 2.42e+17,
@@ -3672,13 +3954,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14334,
-        "CatalogName": "4XMM-DR12 (0.5-1 keV)",
+      "Source": {
+        "Id": 14334,
+        "Name": "4XMM-DR12 (0.5-1 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J215852.0-301331",
           "AngularDistance": 0.0040226595297676165,
@@ -3902,13 +4185,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14335,
-        "CatalogName": "4XMM-DR12 (1-2 keV)",
+      "Source": {
+        "Id": 14335,
+        "Name": "4XMM-DR12 (1-2 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J215852.0-301331",
           "AngularDistance": 0.0040226595297676165,
@@ -4132,13 +4416,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14336,
-        "CatalogName": "4XMM-DR12 (2-4.5 keV)",
+      "Source": {
+        "Id": 14336,
+        "Name": "4XMM-DR12 (2-4.5 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J215852.0-301331",
           "AngularDistance": 0.0040226595297676165,
@@ -4362,13 +4647,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14337,
-        "CatalogName": "4XMM-DR12 (4.5-12 keV)",
+      "Source": {
+        "Id": 14337,
+        "Name": "4XMM-DR12 (4.5-12 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J215852.0-301331",
           "AngularDistance": 0.0040226595297676165,
@@ -4592,13 +4878,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7902,
-        "CatalogName": "2FHL (1081GeV)",
+      "Source": {
+        "Id": 7902,
+        "Name": "2FHL (1081GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J2158.8-3013",
           "AngularDistance": 0.1043429604971552,
@@ -4613,13 +4900,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7901,
-        "CatalogName": "2FHL (316GeV)",
+      "Source": {
+        "Id": 7901,
+        "Name": "2FHL (316GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J2158.8-3013",
           "AngularDistance": 0.1043429604971552,
@@ -4633,13 +4921,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7900,
-        "CatalogName": "2FHL (92GeV)",
+      "Source": {
+        "Id": 7900,
+        "Name": "2FHL (92GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J2158.8-3013",
           "AngularDistance": 0.1043429604971552,
@@ -4653,13 +4942,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5375,
-        "CatalogName": "A2PIC",
+      "Source": {
+        "Id": 5375,
+        "Name": "A2PIC",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "High-latitude HEAO 1 A-2 sources X-ray sample ",
+            "Authors": "Piccinotti, G.; Mushotzky, R. F.; Boldt, E. A. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1982ApJ...253..485P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.022021817374873853,
           "Frequency": 1.209e+18,
@@ -4681,13 +4978,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14344,
-        "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+      "Source": {
+        "Id": 14344,
+        "Name": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 1.709e+22,
@@ -4698,13 +4996,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14345,
-        "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+      "Source": {
+        "Id": 14345,
+        "Name": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 4.188e+22,
@@ -4715,13 +5014,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14346,
-        "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+      "Source": {
+        "Id": 14346,
+        "Name": "Fermi 4FGL-DR3 (0.3-1 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 1.323e+23,
@@ -4732,13 +5032,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14347,
-        "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
+      "Source": {
+        "Id": 14347,
+        "Name": "Fermi 4FGL-DR3 (1-3 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 4.188e+23,
@@ -4749,13 +5050,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14349,
-        "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
+      "Source": {
+        "Id": 14349,
+        "Name": "Fermi 4FGL-DR3 (10-30 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 4.188e+24,
@@ -4766,13 +5068,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14351,
-        "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
+      "Source": {
+        "Id": 14351,
+        "Name": "Fermi 4FGL-DR3 (100-1000 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 7.646e+25,
@@ -4783,13 +5086,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14348,
-        "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
+      "Source": {
+        "Id": 14348,
+        "Name": "Fermi 4FGL-DR3 (3-10 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 1.324e+24,
@@ -4800,13 +5104,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14350,
-        "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
+      "Source": {
+        "Id": 14350,
+        "Name": "Fermi 4FGL-DR3 (30-100 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.14894485948497332,
           "Frequency": 1.324e+25,
@@ -4817,13 +5122,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 56,
-        "CatalogName": "Fermi1FGL (200 Mev)",
+      "Source": {
+        "Id": 56,
+        "Name": "Fermi1FGL (200 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5502425931672514,
           "Frequency": 4.84e+22,
@@ -4836,13 +5149,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 58,
-        "CatalogName": "Fermi1FGL (2Gev)",
+      "Source": {
+        "Id": 58,
+        "Name": "Fermi1FGL (2Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5502425931672514,
           "Frequency": 4.84e+23,
@@ -4855,13 +5176,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 57,
-        "CatalogName": "Fermi1FGL (600 Mev)",
+      "Source": {
+        "Id": 57,
+        "Name": "Fermi1FGL (600 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5502425931672514,
           "Frequency": 1.452e+23,
@@ -4874,13 +5203,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 60,
-        "CatalogName": "Fermi1FGL (60Gev)",
+      "Source": {
+        "Id": 60,
+        "Name": "Fermi1FGL (60Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5502425931672514,
           "Frequency": 1.452e+25,
@@ -4893,13 +5230,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 59,
-        "CatalogName": "Fermi1FGL (6Gev)",
+      "Source": {
+        "Id": 59,
+        "Name": "Fermi1FGL (6Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5502425931672514,
           "Frequency": 1.452e+24,
@@ -4912,13 +5257,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 114,
-        "CatalogName": "Fermi2FGL (200 Mev)",
+      "Source": {
+        "Id": 114,
+        "Name": "Fermi2FGL (200 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4077081561616391,
           "Frequency": 4.84e+22,
@@ -4931,13 +5284,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 116,
-        "CatalogName": "Fermi2FGL (2Gev)",
+      "Source": {
+        "Id": 116,
+        "Name": "Fermi2FGL (2Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4077081561616391,
           "Frequency": 4.84e+23,
@@ -4950,13 +5311,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 115,
-        "CatalogName": "Fermi2FGL (600 Mev)",
+      "Source": {
+        "Id": 115,
+        "Name": "Fermi2FGL (600 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4077081561616391,
           "Frequency": 1.452e+23,
@@ -4969,13 +5338,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 118,
-        "CatalogName": "Fermi2FGL (60Gev)",
+      "Source": {
+        "Id": 118,
+        "Name": "Fermi2FGL (60Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4077081561616391,
           "Frequency": 1.452e+25,
@@ -4988,13 +5365,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 117,
-        "CatalogName": "Fermi2FGL (6Gev)",
+      "Source": {
+        "Id": 117,
+        "Name": "Fermi2FGL (6Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.4077081561616391,
           "Frequency": 1.452e+24,
@@ -5007,13 +5392,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2884,
-        "CatalogName": "Fermi2FglLC",
+      "Source": {
+        "Id": 2884,
+        "Name": "Fermi2FglLC",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.40146122477378793,
           "Frequency": 2.42e+23,
@@ -5233,13 +5619,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5953,
-        "CatalogName": "Fermi3FGL (200 Mev)",
+      "Source": {
+        "Id": 5953,
+        "Name": "Fermi3FGL (200 Mev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.18975201237373707,
           "Frequency": 4.84e+22,
@@ -5252,13 +5646,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5955,
-        "CatalogName": "Fermi3FGL (2Gev)",
+      "Source": {
+        "Id": 5955,
+        "Name": "Fermi3FGL (2Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.18975201237373707,
           "Frequency": 4.84e+23,
@@ -5271,13 +5673,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5954,
-        "CatalogName": "Fermi3FGL (600 Mev)",
+      "Source": {
+        "Id": 5954,
+        "Name": "Fermi3FGL (600 Mev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.18975201237373707,
           "Frequency": 1.452e+23,
@@ -5290,13 +5700,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5957,
-        "CatalogName": "Fermi3FGL (60Gev)",
+      "Source": {
+        "Id": 5957,
+        "Name": "Fermi3FGL (60Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.18975201237373707,
           "Frequency": 1.452e+25,
@@ -5309,13 +5727,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5956,
-        "CatalogName": "Fermi3FGL (6Gev)",
+      "Source": {
+        "Id": 5956,
+        "Name": "Fermi3FGL (6Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.18975201237373707,
           "Frequency": 1.452e+24,
@@ -5328,13 +5754,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7,
-        "CatalogName": "EGRET3",
+      "Source": {
+        "Id": 7,
+        "Name": "EGRET3",
         "ErrorRadius": 60.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Third EGRET Catalog of High-Energy Gamma-Ray Sources",
+            "Authors": "Hartman, R. C.; Bertsch, D. L.; Bloom, S. D. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1999ApJS..123...79H"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "3EG J2158-3023",
           "AngularDistance": 10.638628660774224,
@@ -5411,13 +5845,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3957,
-        "CatalogName": "HESS",
+      "Source": {
+        "Id": 3957,
+        "Name": "HESS",
         "ErrorRadius": 10.0,
-        "CatalogBand": "VHE"
+        "Band": "VHE",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.26100201733777684,
           "Frequency": 5.281e+25,
@@ -5570,6 +6005,3385 @@
           "NufnuError": 7.792699645292611e-12,
           "StartTime": 53944.024305555,
           "StopTime": 53944.086111111
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7667,
+        "Name": "HESS_2005A&A_430_865A",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "H.E.S.S. observations of PKS 2155-304",
+            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Aye, K. -M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2005A%26A...430..865A"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.843e+25,
+          "Nufnu": 5.870320202161494e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.0774299855076386e-11,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.312e+26,
+          "Nufnu": 4.870619879637772e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.385090365103931e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.751e+26,
+          "Nufnu": 2.277079913515223e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.472729904144492e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.335e+26,
+          "Nufnu": 1.682110006839821e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.558609991907938e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.112e+26,
+          "Nufnu": 2.5347000540132392e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 9.272129938842077e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.15e+26,
+          "Nufnu": 2.267130060074063e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.062869820245732e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.533e+26,
+          "Nufnu": 1.9835400683065885e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.1101100073906967e-11,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.379e+26,
+          "Nufnu": 1.265510005815651e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.759850054189776e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.842e+26,
+          "Nufnu": 9.441390377840087e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 9.812179714574487e-12,
+          "StartTime": 52456.0,
+          "StopTime": 52486.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.825e+25,
+          "Nufnu": 2.705279923687076e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.070870360921134e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.31e+26,
+          "Nufnu": 2.0084699528521988e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.789410183892896e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.748e+26,
+          "Nufnu": 1.3439699873829536e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.9589698666863136e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.331e+26,
+          "Nufnu": 8.801630431432006e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.911490051467959e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.107e+26,
+          "Nufnu": 1.0679499819199467e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.438369806570753e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.142e+26,
+          "Nufnu": 4.83880990831409e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.80643996425656e-12,
+          "StartTime": 52548.0,
+          "StopTime": 52578.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.795e+25,
+          "Nufnu": 1.4218399894960765e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.6812099672483538e-12,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.306e+26,
+          "Nufnu": 1.1320299732331396e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.332579988196081e-12,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.743e+26,
+          "Nufnu": 5.618630127129931e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.103140040252526e-12,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.323e+26,
+          "Nufnu": 4.971429951733386e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 9.2346204468019e-13,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.097e+26,
+          "Nufnu": 2.193759930657624e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.260389984873773e-13,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.129e+26,
+          "Nufnu": 1.1608700112297754e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.658859982849486e-13,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.506e+26,
+          "Nufnu": 7.309260076533708e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.517839974678642e-13,
+          "StartTime": 52791.0,
+          "StopTime": 52820.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.52e+25,
+          "Nufnu": 1.9204799209249224e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.6149399486030678e-12,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.365e+25,
+          "Nufnu": 1.0898800091585503e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.3303699504876865e-12,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.814e+25,
+          "Nufnu": 9.211920289076136e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.055809953354192e-12,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.308e+26,
+          "Nufnu": 5.676069857185606e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.154919881736555e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.746e+26,
+          "Nufnu": 4.751029864663581e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.972510134366228e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.328e+26,
+          "Nufnu": 2.6323700164088137e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.354699752519899e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.103e+26,
+          "Nufnu": 1.847310065333785e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.271980005669031e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.138e+26,
+          "Nufnu": 1.7501100395278524e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.748849746939344e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.517e+26,
+          "Nufnu": 5.746010221449604e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.891279980871743e-13,
+          "StartTime": 52821.0,
+          "StopTime": 52851.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.516e+25,
+          "Nufnu": 2.1085000065368398e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.9903100435120225e-12,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.36e+25,
+          "Nufnu": 1.365860029245436e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.2356200047511368e-12,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.808e+25,
+          "Nufnu": 1.0857099941308235e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.0107200449846476e-12,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.307e+26,
+          "Nufnu": 6.631260211081846e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.284189848863088e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.745e+26,
+          "Nufnu": 5.4188199066773635e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.509190209746552e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.326e+26,
+          "Nufnu": 2.947209967393838e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.272920008952576e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.101e+26,
+          "Nufnu": 9.914459661239383e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.110689753681398e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.135e+26,
+          "Nufnu": 7.694130163722612e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.712360159887021e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.513e+26,
+          "Nufnu": 1.331920034333689e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.904439806005135e-13,
+          "StartTime": 52852.0,
+          "StopTime": 52882.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.514e+25,
+          "Nufnu": 2.876040031130067e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.7508099924588034e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.357e+25,
+          "Nufnu": 1.9946799420522687e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.5374999410715526e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.804e+25,
+          "Nufnu": 1.6970199551158416e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.4495999846607663e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.307e+26,
+          "Nufnu": 8.49286006104899e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.7749300293412595e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.744e+26,
+          "Nufnu": 5.867630166467297e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.4110300384714836e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.325e+26,
+          "Nufnu": 3.1889300228238326e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.4347999784808385e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.1e+26,
+          "Nufnu": 1.6355599600365034e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.9424199661915997e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.133e+26,
+          "Nufnu": 1.973749939529479e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.6522399767793239e-12,
+          "StartTime": 52883.0,
+          "StopTime": 52912.0
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7669,
+        "Name": "HESS_2005A&A_442_895A",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "Multi-wavelength observations of PKS 2155-304 with HESS",
+            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Bazer-Bachi, A. R et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2005A%26A...442..895A"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.646e+25,
+          "Nufnu": 3.249580118880324e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.68634983649585e-12,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.532e+25,
+          "Nufnu": 2.052110044392652e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.9743800778321274e-12,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.003e+26,
+          "Nufnu": 1.8736000598207347e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.4348600432811942e-12,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.338e+26,
+          "Nufnu": 1.0700500381599642e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 9.76783974884765e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.786e+26,
+          "Nufnu": 5.933089956833282e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.348650225662279e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.381e+26,
+          "Nufnu": 4.953730134427126e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.599799916642834e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.174e+26,
+          "Nufnu": 2.7047999257012734e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.49240015447483e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.231e+26,
+          "Nufnu": 2.369920015440896e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.004799743038579e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.642e+26,
+          "Nufnu": 1.3697000348159016e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.382839898641911e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.525e+26,
+          "Nufnu": 1.4119899910750022e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.989310067865128e-13,
+          "StartTime": 52931.0,
+          "StopTime": 52969.0
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7675,
+        "Name": "HESS_2009ApJ_696L_150A",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "Simultaneous Observations of PKS 2155-304 with HESS, Fermi, RXTE, and Atom: Spectral Energy Distributions and Variability in a Low State",
+            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Barres de Almeida, U. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2009ApJ...696L.150A"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.987e+25,
+          "Nufnu": 3.260990089071214e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 9.75350984873391e-13,
+          "StartTime": 54704.0,
+          "StopTime": 54715.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.135e+26,
+          "Nufnu": 1.3914799867897898e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.65068987695011e-13,
+          "StartTime": 54704.0,
+          "StopTime": 54715.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.152e+26,
+          "Nufnu": 5.382130071479585e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.58242005538928e-13,
+          "StartTime": 54704.0,
+          "StopTime": 54715.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.08e+26,
+          "Nufnu": 2.4819699247224936e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.4027598949426816e-13,
+          "StartTime": 54704.0,
+          "StopTime": 54715.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.736e+26,
+          "Nufnu": 1.8369299137344086e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.658400180699741e-13,
+          "StartTime": 54704.0,
+          "StopTime": 54715.0
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7678,
+        "Name": "HESS_2010A&A_520A_83H",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "VHE ?-ray emission of PKS 2155-304: spectral and temporal variability",
+            "Authors": "H.E.S.S. Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...520A..83H"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.392e+25,
+          "Nufnu": 2.9559299452586174e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.035769994078839e-12,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.036e+25,
+          "Nufnu": 1.8723000580478377e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.543469971935113e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.213e+25,
+          "Nufnu": 1.279149963034909e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.279489732016752e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.204e+26,
+          "Nufnu": 9.297900123439451e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.682049882688167e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.574e+26,
+          "Nufnu": 5.757950106294318e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.065369781606655e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.058e+26,
+          "Nufnu": 2.7383000381075995e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.768819887590592e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.691e+26,
+          "Nufnu": 2.203050025392783e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.4854799128440925e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.521e+26,
+          "Nufnu": 1.95978996919699e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.2795999491591907e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.604e+26,
+          "Nufnu": 1.3591300394161232e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.135459878186476e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 6.018e+26,
+          "Nufnu": 8.675039853134336e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.682430066171555e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.871e+26,
+          "Nufnu": 8.198969931802469e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.649650026638085e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.029e+27,
+          "Nufnu": 4.006790016962414e-13,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.048649928425601e-13,
+          "StartTime": 53522.0,
+          "StopTime": 54403.0
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7680,
+        "Name": "HESS_2012A&A_539A_149H",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "A multiwavelength view of the flaring state of PKS 2155-304 in 2006",
+            "Authors": "H.E.S.S. Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012A%26A...539A.149H"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.042e+26,
+          "Nufnu": 8.151859742788758e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.317870031852797e-11,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.311e+26,
+          "Nufnu": 4.5545900384524884e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 8.500150236456783e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.649e+26,
+          "Nufnu": 4.4272998461769575e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.861969755773579e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.072e+26,
+          "Nufnu": 2.5240599541009878e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.3048498713524914e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.607e+26,
+          "Nufnu": 1.2926900001819508e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.894840175545534e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.276e+26,
+          "Nufnu": 1.9632500486421733e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 6.115660061700723e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.12e+26,
+          "Nufnu": 1.0467200023400736e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.539060100006154e-12,
+          "StartTime": 53948.5,
+          "StopTime": 53949.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 8.004e+25,
+          "Nufnu": 7.381290023644738e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.173049922452266e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.013e+26,
+          "Nufnu": 4.725499852531456e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.2501401703587405e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.284e+26,
+          "Nufnu": 3.5918698571002494e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.720170005383494e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.627e+26,
+          "Nufnu": 2.613149974184381e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.2415799645219012e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.063e+26,
+          "Nufnu": 1.3790899845711468e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.8642700190817383e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.616e+26,
+          "Nufnu": 7.1445700917938115e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.697269924772927e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.315e+26,
+          "Nufnu": 7.465549879681621e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.4447499146623697e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.202e+26,
+          "Nufnu": 4.4466301300782884e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.283329992094907e-12,
+          "StartTime": 53949.5,
+          "StopTime": 53950.5
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7687,
+        "Name": "HESS_2013PhRvD_88j2003A",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "Constraints on axionlike particles with H.E.S.S. from the irregularity of the PKS 2155-304 energy spectrum",
+            "Authors": "Abramowski, A.; Acero, F.; Aharonian, F. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2013PhRvD..88j2003A"
+          },
+          {
+            "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
+            "Authors": "Biteau, J.; Williams, D. A.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 6.798e+25,
+          "Nufnu": 3.963250005956098e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.370620181216479e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.9e+25,
+          "Nufnu": 3.414480087560179e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 5.122670083262948e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 9.18e+25,
+          "Nufnu": 2.921499986374698e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.949369906970258e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.067e+26,
+          "Nufnu": 2.416019884154963e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.494969934459858e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.24e+26,
+          "Nufnu": 1.9276200080575734e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 4.300010000846122e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.44e+26,
+          "Nufnu": 1.513529995778029e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.929539853231301e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.674e+26,
+          "Nufnu": 1.1425500129336186e-10,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.68115000287661e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 1.945e+26,
+          "Nufnu": 8.774080073603585e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 3.2193299675381537e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.26e+26,
+          "Nufnu": 6.197040103295137e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.94370994594062e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 2.626e+26,
+          "Nufnu": 4.5262800452139373e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.4575400308507467e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.052e+26,
+          "Nufnu": 3.825319921935133e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.5106800319307787e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 3.546e+26,
+          "Nufnu": 2.3888099831559373e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 2.102619944474582e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.121e+26,
+          "Nufnu": 1.7949199418443307e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.881290045621653e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 4.789e+26,
+          "Nufnu": 1.2627499740291981e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.7141800132125518e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 5.565e+26,
+          "Nufnu": 7.850890076932515e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.4588700256515374e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 6.466e+26,
+          "Nufnu": 7.176770028954893e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.44882998827367e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 7.514e+26,
+          "Nufnu": 5.784820105575461e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.433939989317623e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        },
+        {
+          "AngularDistance": 0.004330765622447073,
+          "Frequency": 8.731e+26,
+          "Nufnu": 3.644719942519359e-12,
+          "FrequencyError": 0.0,
+          "NufnuError": 1.2627400210532547e-12,
+          "StartTime": 53943.0,
+          "StopTime": 53946.0
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 14802,
+        "Name": "PKS 2155-304",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "IXPE observation of PKS 2155-304 reveals the most highly polarized blazar",
+            "Authors": "Kouch, Pouya M. ; Liodakis, Ioannis ; Middei, Riccardo "
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.0011664004572732427,
+          "Frequency": 1e+18,
+          "Nufnu": 1.8999999490398878e-11,
+          "FrequencyError": 0.0,
+          "NufnuError": 7.210000012389944e-14,
+          "StartTime": 60244.65128877,
+          "StopTime": 60255.01445993
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 7655,
+        "Name": "BeppoSAX Spectra (Giommi et al. 2002)",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "References": [
+          {
+            "Title": "A Catalog of 157 X-ray Spectra and 84 SEDs of Blazars observed with BeppoSAX",
+            "Authors": "Giommi, P.; Capalbi, M.; Fiocchi, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:astro-ph/0209596"
+          }
+        ]
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 6.782e+16,
+          "Nufnu": 1.1562600182868366e-10,
+          "FrequencyError": 1.624e+16,
+          "NufnuError": 3.3675000721961057e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.105e+17,
+          "Nufnu": 9.781529752839191e-11,
+          "FrequencyError": 2.646e+16,
+          "NufnuError": 5.553930145646424e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.801e+17,
+          "Nufnu": 8.690129865707164e-11,
+          "FrequencyError": 4.311e+16,
+          "NufnuError": 2.6150900021837398e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.934e+17,
+          "Nufnu": 7.478730135179745e-11,
+          "FrequencyError": 7.025e+16,
+          "NufnuError": 1.973329919607858e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 4.781e+17,
+          "Nufnu": 5.61078995764408e-11,
+          "FrequencyError": 1.145e+17,
+          "NufnuError": 1.415339958947548e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 7.791e+17,
+          "Nufnu": 4.2946798894938354e-11,
+          "FrequencyError": 1.865e+17,
+          "NufnuError": 8.49376992351214e-13,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.27e+18,
+          "Nufnu": 3.0085201691010255e-11,
+          "FrequencyError": 3.039e+17,
+          "NufnuError": 1.0196600508383113e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.069e+18,
+          "Nufnu": 2.1568099736746227e-11,
+          "FrequencyError": 4.953e+17,
+          "NufnuError": 1.7405700361919352e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 3.371e+18,
+          "Nufnu": 1.218820010195909e-11,
+          "FrequencyError": 8.07e+17,
+          "NufnuError": 4.353920002309053e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 5.493e+18,
+          "Nufnu": 7.570320238736716e-12,
+          "FrequencyError": 1.315e+18,
+          "NufnuError": 4.244099863215389e-12,
+          "StartTime": 50407.01109,
+          "StopTime": 50409.56257
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 7.19e+16,
+          "Nufnu": 1.5074200221398826e-10,
+          "FrequencyError": 1.592e+16,
+          "NufnuError": 5.937429801289307e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.128e+17,
+          "Nufnu": 1.4431900119404872e-10,
+          "FrequencyError": 2.497e+16,
+          "NufnuError": 8.507359747222942e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.769e+17,
+          "Nufnu": 1.3848999724785926e-10,
+          "FrequencyError": 3.917e+16,
+          "NufnuError": 4.404230018878463e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.776e+17,
+          "Nufnu": 1.2016999895170244e-10,
+          "FrequencyError": 6.145e+16,
+          "NufnuError": 3.241010107860043e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 4.354e+17,
+          "Nufnu": 9.541289980319334e-11,
+          "FrequencyError": 9.64e+16,
+          "NufnuError": 2.7590299836455223e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 6.831e+17,
+          "Nufnu": 7.092430115429593e-11,
+          "FrequencyError": 1.512e+17,
+          "NufnuError": 1.5555099526151639e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.072e+18,
+          "Nufnu": 4.992590021957177e-11,
+          "FrequencyError": 2.372e+17,
+          "NufnuError": 1.7095799602351303e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.681e+18,
+          "Nufnu": 3.393069852863917e-11,
+          "FrequencyError": 3.722e+17,
+          "NufnuError": 2.2385899557664235e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.637e+18,
+          "Nufnu": 2.659999998044782e-11,
+          "FrequencyError": 5.838e+17,
+          "NufnuError": 3.5400599552454226e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 4.137e+18,
+          "Nufnu": 1.3134699924921556e-11,
+          "FrequencyError": 9.159e+17,
+          "NufnuError": 5.446009962439824e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 6.489e+18,
+          "Nufnu": 8.721460185989738e-12,
+          "FrequencyError": 1.437e+18,
+          "NufnuError": 5.701909864402888e-12,
+          "StartTime": 50774.61666,
+          "StopTime": 50776.06611
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 7.19e+16,
+          "Nufnu": 8.965399950211506e-11,
+          "FrequencyError": 1.592e+16,
+          "NufnuError": 3.1629299873658923e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.128e+17,
+          "Nufnu": 7.390880268909328e-11,
+          "FrequencyError": 2.497e+16,
+          "NufnuError": 4.367240076519341e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.769e+17,
+          "Nufnu": 5.693619881119716e-11,
+          "FrequencyError": 3.917e+16,
+          "NufnuError": 1.976379997159494e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.776e+17,
+          "Nufnu": 4.304250011966104e-11,
+          "FrequencyError": 6.145e+16,
+          "NufnuError": 1.3471200066908495e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 4.354e+17,
+          "Nufnu": 3.1087101642901516e-11,
+          "FrequencyError": 9.64e+16,
+          "NufnuError": 1.1055999865616783e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 6.831e+17,
+          "Nufnu": 2.166419994786839e-11,
+          "FrequencyError": 1.512e+17,
+          "NufnuError": 6.51493995470348e-13,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.072e+18,
+          "Nufnu": 1.4682000407106877e-11,
+          "FrequencyError": 2.372e+17,
+          "NufnuError": 7.076899830038563e-13,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 1.681e+18,
+          "Nufnu": 9.824450281081809e-12,
+          "FrequencyError": 3.722e+17,
+          "NufnuError": 9.432309534124217e-13,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        },
+        {
+          "AngularDistance": 0.03633755901399335,
+          "Frequency": 2.637e+18,
+          "Nufnu": 7.408339566805644e-12,
+          "FrequencyError": 5.838e+17,
+          "NufnuError": 1.537309992846736e-12,
+          "StartTime": 51486.17374,
+          "StopTime": 51488.70292
+        }
+      ]
+    },
+    {
+      "Source": {
+        "Id": 14923,
+        "Name": "NuBlazar",
+        "ErrorRadius": 0.15,
+        "Kind": "Paper"
+      },
+      "Data": [
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 8.608e+17,
+          "Nufnu": 2.154280052957258e-11,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.525440031050542e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.132e+18,
+          "Nufnu": 1.6739200303650392e-11,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.070639987938495e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.402e+18,
+          "Nufnu": 1.3520899677654796e-11,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 2.982790067457969e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.673e+18,
+          "Nufnu": 1.1510199911246577e-11,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.0530799785023766e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.944e+18,
+          "Nufnu": 1.0100900151022163e-11,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.2049699266040177e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.215e+18,
+          "Nufnu": 8.063889833653803e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.2060099475379744e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.486e+18,
+          "Nufnu": 7.2201901575585925e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 3.539170096312355e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.757e+18,
+          "Nufnu": 6.767870118495889e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 4.0407800261203775e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.027e+18,
+          "Nufnu": 5.700709869438381e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 4.385900009059446e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.298e+18,
+          "Nufnu": 5.817490152798532e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 5.074760056622551e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.571e+18,
+          "Nufnu": 4.8752000700313936e-12,
+          "FrequencyError": 1.378e+17,
+          "NufnuError": 5.309590115666618e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.854e+18,
+          "Nufnu": 4.649529893041571e-12,
+          "FrequencyError": 1.451e+17,
+          "NufnuError": 5.720309751051922e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.152e+18,
+          "Nufnu": 4.286219816573844e-12,
+          "FrequencyError": 1.523e+17,
+          "NufnuError": 6.125099884755902e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.464e+18,
+          "Nufnu": 3.69981996428681e-12,
+          "FrequencyError": 1.596e+17,
+          "NufnuError": 6.477069857020734e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.785e+18,
+          "Nufnu": 3.976870048549852e-12,
+          "FrequencyError": 1.62e+17,
+          "NufnuError": 7.418999767826173e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.148e+18,
+          "Nufnu": 3.2548499485918203e-12,
+          "FrequencyError": 2.007e+17,
+          "NufnuError": 7.427630017119158e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.576e+18,
+          "Nufnu": 2.970939900343028e-12,
+          "FrequencyError": 2.273e+17,
+          "NufnuError": 8.230889927962615e-13,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 6.579e+18,
+          "Nufnu": 3.3704300201470305e-12,
+          "FrequencyError": 2.636e+17,
+          "NufnuError": 1.3448900196624813e-12,
+          "StartTime": 56116.608402778,
+          "StopTime": 56117.552905093
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 8.27e+17,
+          "Nufnu": 8.446300082953773e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.317759970494465e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.03e+18,
+          "Nufnu": 7.275969757247758e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.0664199518183324e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.233e+18,
+          "Nufnu": 6.034569979135318e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 1.9812599369277428e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.436e+18,
+          "Nufnu": 5.380420067813141e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 1.9923800565098404e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.639e+18,
+          "Nufnu": 4.937409855965136e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.0639799548291538e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.843e+18,
+          "Nufnu": 4.588990212134325e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.1753299573983031e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.046e+18,
+          "Nufnu": 4.080439978959571e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.2320299363116913e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.249e+18,
+          "Nufnu": 3.823759885113187e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.351169931490149e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.452e+18,
+          "Nufnu": 4.02443009472897e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.729149913872908e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.655e+18,
+          "Nufnu": 3.330390000236272e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 2.79205993177975e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.858e+18,
+          "Nufnu": 3.945690128792645e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 3.50161008045094e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.061e+18,
+          "Nufnu": 3.0781100324867028e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 3.4794500722475086e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.267e+18,
+          "Nufnu": 3.113649962860343e-12,
+          "FrequencyError": 1.04e+17,
+          "NufnuError": 3.801120117448431e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.472e+18,
+          "Nufnu": 3.317780078448962e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 4.378849984432859e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.683e+18,
+          "Nufnu": 2.9558599491663617e-12,
+          "FrequencyError": 1.088e+17,
+          "NufnuError": 4.438169937896058e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.907e+18,
+          "Nufnu": 2.5986699771218813e-12,
+          "FrequencyError": 1.161e+17,
+          "NufnuError": 4.375210046689282e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.135e+18,
+          "Nufnu": 3.064469901795097e-12,
+          "FrequencyError": 1.112e+17,
+          "NufnuError": 5.37556978097431e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.381e+18,
+          "Nufnu": 2.784869990862804e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 5.168840073836722e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.657e+18,
+          "Nufnu": 3.3494600322481194e-12,
+          "FrequencyError": 1.402e+17,
+          "NufnuError": 6.051780170740484e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.962e+18,
+          "Nufnu": 2.7829099701753846e-12,
+          "FrequencyError": 1.644e+17,
+          "NufnuError": 5.899579869766969e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.3e+18,
+          "Nufnu": 2.4181099830822284e-12,
+          "FrequencyError": 1.741e+17,
+          "NufnuError": 6.409719760167021e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.663e+18,
+          "Nufnu": 2.1817500063525674e-12,
+          "FrequencyError": 1.886e+17,
+          "NufnuError": 7.105650161147448e-13,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 6.021e+18,
+          "Nufnu": 2.6912699499503923e-12,
+          "FrequencyError": 1.693e+17,
+          "NufnuError": 1.0031399539159325e-12,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.977e+18,
+          "Nufnu": 3.549190021739923e-12,
+          "FrequencyError": 2.781e+17,
+          "NufnuError": 1.6066500343678292e-12,
+          "StartTime": 56405.823703704,
+          "StopTime": 56406.882696759
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 1.084950011775998e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.922740054474518e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 1.0328999808240091e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.466249740175566e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 9.94127002940104e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.384380007827927e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 8.791139691211036e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.261899856806584e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 8.423700105508747e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.355459999079049e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 7.421999646817223e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.26243003166893e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 7.47119033306376e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.558570097263793e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 7.372560027751884e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.870250032596891e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 6.761730064752669e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.95546994965751e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.012e+18,
+          "Nufnu": 6.7317700892799426e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.264450221581119e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.147e+18,
+          "Nufnu": 6.8980498396653545e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.693740071776755e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.283e+18,
+          "Nufnu": 6.029259990575353e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.651810179059137e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.418e+18,
+          "Nufnu": 6.105410014362045e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.271630129632167e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.553e+18,
+          "Nufnu": 5.459090211129558e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.532960258176125e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.696e+18,
+          "Nufnu": 5.314860097166418e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 7.6285099114351e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.848e+18,
+          "Nufnu": 4.816069851948379e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 8.074680247355248e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.001e+18,
+          "Nufnu": 5.040239926812351e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 9.046729836613421e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.165e+18,
+          "Nufnu": 4.175249989496477e-12,
+          "FrequencyError": 8.947e+16,
+          "NufnuError": 8.261199883896619e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.339e+18,
+          "Nufnu": 3.839499898572463e-12,
+          "FrequencyError": 8.463e+16,
+          "NufnuError": 8.90315978493289e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.513e+18,
+          "Nufnu": 4.989840138303059e-12,
+          "FrequencyError": 8.947e+16,
+          "NufnuError": 1.0555600447534341e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.7e+18,
+          "Nufnu": 4.1303197841069395e-12,
+          "FrequencyError": 9.672e+16,
+          "NufnuError": 1.0017900137909708e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.929e+18,
+          "Nufnu": 4.039559919205571e-12,
+          "FrequencyError": 1.33e+17,
+          "NufnuError": 9.272259609421907e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.181e+18,
+          "Nufnu": 4.994689991461021e-12,
+          "FrequencyError": 1.185e+17,
+          "NufnuError": 1.202219964205331e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.454e+18,
+          "Nufnu": 3.3878800372727502e-12,
+          "FrequencyError": 1.548e+17,
+          "NufnuError": 1.0215699813853618e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.761e+18,
+          "Nufnu": 4.704619940149035e-12,
+          "FrequencyError": 1.523e+17,
+          "NufnuError": 1.3274800095969264e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.155e+18,
+          "Nufnu": 2.935690102470745e-12,
+          "FrequencyError": 2.418e+17,
+          "NufnuError": 9.872829550422457e-13,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.658e+18,
+          "Nufnu": 3.635020019363e-12,
+          "FrequencyError": 2.611e+17,
+          "NufnuError": 1.2968999789017555e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 6.217e+18,
+          "Nufnu": 4.672979884989825e-12,
+          "FrequencyError": 2.974e+17,
+          "NufnuError": 1.7398299597889966e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.551e+18,
+          "Nufnu": 7.231389966000368e-12,
+          "FrequencyError": 3.168e+17,
+          "NufnuError": 3.2743699245052493e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 8.076e+18,
+          "Nufnu": 8.781839838656325e-12,
+          "FrequencyError": 2.079e+17,
+          "NufnuError": 4.389869977944327e-12,
+          "StartTime": 56489.952199074,
+          "StopTime": 56490.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 1.386570025463385e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.383109965411472e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 1.1613100238394569e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.387210096762963e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 9.869050021649173e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.904160081844634e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 9.345769817759031e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.974690143670247e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 8.210299627664508e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.806659948877357e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 7.90929995109213e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.952570250947198e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 6.463279998009108e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.691629893084249e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 6.053269864525479e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.841249792887249e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 6.250589889428282e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.265980030846496e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.012e+18,
+          "Nufnu": 5.298760128585878e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.117610216148373e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.147e+18,
+          "Nufnu": 4.793129868702062e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.151309930174653e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.283e+18,
+          "Nufnu": 4.052739914495174e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.002780195656088e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.423e+18,
+          "Nufnu": 3.651269824683778e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 6.014119866178114e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.573e+18,
+          "Nufnu": 4.1196898323270226e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 6.786810154667255e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.73e+18,
+          "Nufnu": 3.5876800662248964e-12,
+          "FrequencyError": 7.979e+16,
+          "NufnuError": 6.78674022362713e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.887e+18,
+          "Nufnu": 4.131469905771512e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 8.248729932609777e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.061e+18,
+          "Nufnu": 3.3037299024957223e-12,
+          "FrequencyError": 9.672e+16,
+          "NufnuError": 7.206029935084846e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.25e+18,
+          "Nufnu": 3.6374599079319614e-12,
+          "FrequencyError": 9.188e+16,
+          "NufnuError": 8.572080220127509e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.479e+18,
+          "Nufnu": 2.9140099621488558e-12,
+          "FrequencyError": 1.378e+17,
+          "NufnuError": 7.143950144991584e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.76e+18,
+          "Nufnu": 2.947600063335498e-12,
+          "FrequencyError": 1.427e+17,
+          "NufnuError": 7.980439768219549e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.161e+18,
+          "Nufnu": 1.729939975991801e-12,
+          "FrequencyError": 2.587e+17,
+          "NufnuError": 5.529589915294342e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.749e+18,
+          "Nufnu": 2.421240074754194e-12,
+          "FrequencyError": 3.288e+17,
+          "NufnuError": 6.995320121772064e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.462e+18,
+          "Nufnu": 2.2076600530301915e-12,
+          "FrequencyError": 3.845e+17,
+          "NufnuError": 8.547010213293127e-13,
+          "StartTime": 56506.910497685,
+          "StopTime": 56507.285497685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 7.741140194139629e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.261209762123797e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 6.230259797651572e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.463000064999778e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 6.32057991015178e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.5045800314662265e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 4.579930185100167e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 3.9987100002719655e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 4.496240185725142e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.1130800479925733e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 4.400679907284877e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.25174001908446e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 4.087890182608023e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.3158499777457004e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 3.5182499275032697e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.266970078051907e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 3.89455004703998e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.736099750227152e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.014e+18,
+          "Nufnu": 3.5399599918051194e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 4.698129905944537e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.152e+18,
+          "Nufnu": 3.10115995383331e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.748519828214059e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.297e+18,
+          "Nufnu": 2.6719800417379647e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 4.399759907531414e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.447e+18,
+          "Nufnu": 3.76003004773362e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 5.886120041896648e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.599e+18,
+          "Nufnu": 2.781629961090548e-12,
+          "FrequencyError": 7.979e+16,
+          "NufnuError": 5.278799858170202e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.776e+18,
+          "Nufnu": 2.4420500344124463e-12,
+          "FrequencyError": 9.672e+16,
+          "NufnuError": 5.154690151283614e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.979e+18,
+          "Nufnu": 2.0296501025002245e-12,
+          "FrequencyError": 1.064e+17,
+          "NufnuError": 5.075769990946222e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.192e+18,
+          "Nufnu": 2.581700044718138e-12,
+          "FrequencyError": 1.064e+17,
+          "NufnuError": 6.288520051911384e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.45e+18,
+          "Nufnu": 2.1411999777398716e-12,
+          "FrequencyError": 1.523e+17,
+          "NufnuError": 5.523090123270291e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.75e+18,
+          "Nufnu": 2.8411999315747227e-12,
+          "FrequencyError": 1.475e+17,
+          "NufnuError": 7.302470260428517e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.089e+18,
+          "Nufnu": 2.43383004722153e-12,
+          "FrequencyError": 1.91e+17,
+          "NufnuError": 6.679140205322065e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.63e+18,
+          "Nufnu": 1.6541599904065785e-12,
+          "FrequencyError": 3.506e+17,
+          "NufnuError": 5.334219936418971e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.438e+18,
+          "Nufnu": 1.3690499471932793e-12,
+          "FrequencyError": 4.57e+17,
+          "NufnuError": 6.501260033792144e-13,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.89e+18,
+          "Nufnu": 5.653560085361331e-12,
+          "FrequencyError": 1.257e+17,
+          "NufnuError": 2.4458698955065472e-12,
+          "StartTime": 56512.917395833,
+          "StopTime": 56513.347997685
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 1.252129996909268e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.217330032227576e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 1.0030700228758072e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.096480200008803e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 9.277620338643544e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.890989735954366e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 8.177739735382161e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.746379934390422e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 7.964439871499529e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.897589816679372e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 7.361260039029371e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.929680032580598e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 6.9496600314800094e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.06588997781321e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 5.3125399045172994e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.635880217375044e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 5.862900009229177e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.246689905793634e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.012e+18,
+          "Nufnu": 4.2867098759558075e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.698049996248622e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.147e+18,
+          "Nufnu": 3.900360069641895e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.731960045496365e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.285e+18,
+          "Nufnu": 4.981739847031985e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 6.709920162897842e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.423e+18,
+          "Nufnu": 4.831710118807786e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.319659743772189e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.561e+18,
+          "Nufnu": 4.684639828833603e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 7.784489741181899e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.711e+18,
+          "Nufnu": 3.6002199485518638e-12,
+          "FrequencyError": 7.979e+16,
+          "NufnuError": 6.946610170768808e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.89e+18,
+          "Nufnu": 3.228319955111969e-12,
+          "FrequencyError": 9.914e+16,
+          "NufnuError": 6.813329739806251e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.081e+18,
+          "Nufnu": 4.362760153142631e-12,
+          "FrequencyError": 9.188e+16,
+          "NufnuError": 8.868839907263948e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.31e+18,
+          "Nufnu": 2.849679910446601e-12,
+          "FrequencyError": 1.378e+17,
+          "NufnuError": 6.51509011670437e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.564e+18,
+          "Nufnu": 3.706590156332679e-12,
+          "FrequencyError": 1.161e+17,
+          "NufnuError": 9.42195974018567e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.811e+18,
+          "Nufnu": 3.6531901635716846e-12,
+          "FrequencyError": 1.306e+17,
+          "NufnuError": 9.588459583612097e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.207e+18,
+          "Nufnu": 1.8178699648027652e-12,
+          "FrequencyError": 2.66e+17,
+          "NufnuError": 5.792159829022536e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.715e+18,
+          "Nufnu": 3.3505199482919412e-12,
+          "FrequencyError": 2.418e+17,
+          "NufnuError": 1.0239400473344151e-12,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.274e+18,
+          "Nufnu": 2.0879198977391544e-12,
+          "FrequencyError": 3.168e+17,
+          "NufnuError": 9.515180527178146e-13,
+          "StartTime": 56518.910497685,
+          "StopTime": 56519.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 1.8968200274360747e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 8.119940267045656e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 1.7069000726732675e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.295850121963321e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 1.6914199207906933e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.285640190105025e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 1.527999948791603e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.213100017451624e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 1.427640037438005e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.237029985701637e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 1.3450699755390705e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.356220125230573e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 1.2876900067071428e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.576739799800003e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 1.254319998561515e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.929669833088571e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 1.1425399688846927e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 8.011839889437988e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.012e+18,
+          "Nufnu": 1.0782100039186115e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 8.207510192315137e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.147e+18,
+          "Nufnu": 1.1074199716964994e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 8.819819874439361e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.283e+18,
+          "Nufnu": 1.0734999694728131e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 9.18405976269021e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.418e+18,
+          "Nufnu": 1.0447399889645936e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 9.78793977292336e-13,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.553e+18,
+          "Nufnu": 9.846299990623475e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 1.0371700243441695e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.689e+18,
+          "Nufnu": 8.81857000617492e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 1.0507300324952284e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.824e+18,
+          "Nufnu": 9.563570421700085e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 1.2049899923358143e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.96e+18,
+          "Nufnu": 8.030250076007661e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 1.1951199578585925e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.097e+18,
+          "Nufnu": 9.676749852804978e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 1.3666899643244301e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.24e+18,
+          "Nufnu": 6.510739863907489e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 1.1955700101803912e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.388e+18,
+          "Nufnu": 8.669850427855952e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 1.4478800103301381e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.54e+18,
+          "Nufnu": 7.0833200416231534e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 1.3878100058040133e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.712e+18,
+          "Nufnu": 6.944909924921916e-12,
+          "FrequencyError": 9.43e+16,
+          "NufnuError": 1.3305299787283453e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.895e+18,
+          "Nufnu": 7.601239949972527e-12,
+          "FrequencyError": 8.947e+16,
+          "NufnuError": 1.5442399962928288e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.072e+18,
+          "Nufnu": 8.740309691279702e-12,
+          "FrequencyError": 8.705e+16,
+          "NufnuError": 1.8030500053070608e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.275e+18,
+          "Nufnu": 6.060989817674445e-12,
+          "FrequencyError": 1.161e+17,
+          "NufnuError": 1.413199960699496e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.551e+18,
+          "Nufnu": 5.627299841381994e-12,
+          "FrequencyError": 1.596e+17,
+          "NufnuError": 1.3225100268382528e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.88e+18,
+          "Nufnu": 4.40283009703335e-12,
+          "FrequencyError": 1.693e+17,
+          "NufnuError": 1.2781999850913772e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.22e+18,
+          "Nufnu": 5.111020114079157e-12,
+          "FrequencyError": 1.717e+17,
+          "NufnuError": 1.543420014189778e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.593e+18,
+          "Nufnu": 4.863000193505718e-12,
+          "FrequencyError": 2.007e+17,
+          "NufnuError": 1.6045900502401067e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.351e+18,
+          "Nufnu": 9.66565022464394e-12,
+          "FrequencyError": 2.563e+17,
+          "NufnuError": 3.965159797725271e-12,
+          "StartTime": 56530.827199074,
+          "StopTime": 56531.129201389
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 1.2121299623746307e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.524830046920893e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 1.075950006174109e-11,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.806749937657674e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 9.04023991082914e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.342999805611759e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 9.089530343675545e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.57475018838488e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 8.085610306296509e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.458800187048418e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 7.174049982544561e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.390730179952175e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.606e+18,
+          "Nufnu": 7.214080027795333e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.697240097225775e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.741e+18,
+          "Nufnu": 5.929479997279774e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.456689787519675e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.876e+18,
+          "Nufnu": 6.1984098409517685e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.928760087037244e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.012e+18,
+          "Nufnu": 5.816939811775779e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.09688027061045e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.147e+18,
+          "Nufnu": 5.02530005455637e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.94957026353593e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.283e+18,
+          "Nufnu": 6.0337798125920106e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 6.87427003341623e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.425e+18,
+          "Nufnu": 4.131339801510814e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 5.921530084850024e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.568e+18,
+          "Nufnu": 5.379439949049214e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 7.749690104051632e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.708e+18,
+          "Nufnu": 4.3549200703929536e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 7.279919939442991e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.856e+18,
+          "Nufnu": 4.63035989758942e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 8.315259830520005e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.006e+18,
+          "Nufnu": 4.8737099425655295e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 9.095400214237381e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.158e+18,
+          "Nufnu": 4.123799825922481e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 8.87740998333636e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.33e+18,
+          "Nufnu": 3.973299987636292e-12,
+          "FrequencyError": 9.43e+16,
+          "NufnuError": 8.614140217105826e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.525e+18,
+          "Nufnu": 3.336090084737897e-12,
+          "FrequencyError": 1.016e+17,
+          "NufnuError": 8.424159807229881e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.77e+18,
+          "Nufnu": 2.5929800841206774e-12,
+          "FrequencyError": 1.427e+17,
+          "NufnuError": 7.015560007928023e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.082e+18,
+          "Nufnu": 3.0116599318563697e-12,
+          "FrequencyError": 1.693e+17,
+          "NufnuError": 7.917660125623949e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.413e+18,
+          "Nufnu": 3.3011499350060758e-12,
+          "FrequencyError": 1.62e+17,
+          "NufnuError": 9.442670170084488e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.8e+18,
+          "Nufnu": 2.8760399010258064e-12,
+          "FrequencyError": 2.249e+17,
+          "NufnuError": 8.836730175723617e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.344e+18,
+          "Nufnu": 1.96712004324473e-12,
+          "FrequencyError": 3.192e+17,
+          "NufnuError": 8.085059856853538e-13,
+          "StartTime": 56539.91400463,
+          "StopTime": 56540.295902778
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 7.931e+17,
+          "Nufnu": 7.1623800640407964e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 5.500330009164389e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 9.285e+17,
+          "Nufnu": 5.511460211826691e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.559160124081862e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.064e+18,
+          "Nufnu": 4.9290497898535346e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.3247201067693475e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.199e+18,
+          "Nufnu": 5.211970178359282e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.61308996644455e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.335e+18,
+          "Nufnu": 4.814460028562673e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.61655995549759e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.47e+18,
+          "Nufnu": 4.291910143255917e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.564899890383001e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.608e+18,
+          "Nufnu": 3.940570092453299e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 4.533359907084311e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.748e+18,
+          "Nufnu": 3.7840199723637724e-12,
+          "FrequencyError": 7.012e+16,
+          "NufnuError": 4.737859952454182e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 1.886e+18,
+          "Nufnu": 3.403350084391077e-12,
+          "FrequencyError": 6.77e+16,
+          "NufnuError": 4.819099763339607e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.026e+18,
+          "Nufnu": 3.075509898836648e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 4.677429775966357e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.171e+18,
+          "Nufnu": 3.3554300830906936e-12,
+          "FrequencyError": 7.254e+16,
+          "NufnuError": 5.21045988473301e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.319e+18,
+          "Nufnu": 3.1550699552962413e-12,
+          "FrequencyError": 7.496e+16,
+          "NufnuError": 5.312770080638518e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.481e+18,
+          "Nufnu": 2.060550081256496e-12,
+          "FrequencyError": 8.705e+16,
+          "NufnuError": 4.4591600919553775e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.645e+18,
+          "Nufnu": 2.9349998993677406e-12,
+          "FrequencyError": 7.738e+16,
+          "NufnuError": 6.162090152375677e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 2.807e+18,
+          "Nufnu": 3.539209940742194e-12,
+          "FrequencyError": 8.463e+16,
+          "NufnuError": 7.153879810588293e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.003e+18,
+          "Nufnu": 3.095890080753727e-12,
+          "FrequencyError": 1.112e+17,
+          "NufnuError": 6.55531998041553e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.25e+18,
+          "Nufnu": 2.288999935776137e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 5.872339832284357e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.521e+18,
+          "Nufnu": 3.0333500468382457e-12,
+          "FrequencyError": 1.354e+17,
+          "NufnuError": 7.514889860567309e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 3.842e+18,
+          "Nufnu": 2.075640007093149e-12,
+          "FrequencyError": 1.862e+17,
+          "NufnuError": 6.404009809425626e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 4.36e+18,
+          "Nufnu": 2.2375300397226017e-12,
+          "FrequencyError": 3.313e+17,
+          "NufnuError": 6.223850102828055e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
+        },
+        {
+          "AngularDistance": 0.002233248940829978,
+          "Frequency": 5.044e+18,
+          "Nufnu": 2.1489500717092325e-12,
+          "FrequencyError": 3.53e+17,
+          "NufnuError": 7.480639913938492e-13,
+          "StartTime": 56563.955601852,
+          "StopTime": 56564.268101852
         }
       ]
     }

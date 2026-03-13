@@ -23,11 +23,13 @@ class ResponseInfo(BaseModel):
 
     Attributes:
         statusCode: Status code of the response (e.g., 'OK', 'ERROR').
-        message: Optional message with additional information.
+        message: Optional messages with additional information.
+        APIVersion: API version code.
     """
 
     statusCode: str
-    message: Optional[str] = None
+    message: Optional[list[str]] = None
+    APIVersion: Optional[str] = None
 
 
 class Properties(BaseModel):
@@ -35,108 +37,88 @@ class Properties(BaseModel):
 
     Attributes:
         Nh: Hydrogen column density in cm^-2 along the line of sight.
+        Units: Units of measure for data and properties..
     """
 
-    Nh: Annotated[
-        Optional[float],
-        Field(default=None, description="Hydrogen column density in cm^-2."),
-    ]
-    Units: Annotated[
-        dict[str, str],
-        Field(default=None, description="Units of measure for data and properties."),
-    ]
+    Nh: Optional[float] = None
+    Units: Optional[dict[str, str]] = None
 
 
-class Catalog(BaseModel):
+class Reference(BaseModel):
+    """Literature reference metadata.
+
+    Attributes:
+        ID: Reference ID.
+        Title: Reference title.
+        Authors: Reference author.
+        URL: Reference URL.
+    """
+
+    Id: Optional[int] = None
+    Title: Optional[str] = None
+    Authors: Optional[str] = None
+    URL: Optional[str] = None
+
+
+class Source(BaseModel):
     """Catalog metadata.
 
     Attributes:
-        CatalogName: Name of the astronomical catalog.
-        CatalogId: Unique identifier for the catalog.
+        Kind: Source type (either "catalog" or "paper").
+        Name: Name of the astronomical catalog.
+        Id: Unique identifier for the catalog.
         ErrorRadius: Search radius in arcsec used for source matching.
-        CatalogBand: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
+        Band: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
+        References: A list of literature reference metadata associated to this source.
     """
 
-    CatalogName: str
-    CatalogId: int
-    ErrorRadius: Annotated[
-        float,
-        Field(ge=0.0, description="Error radius in arcsec."),
-    ]
-    CatalogBand: Annotated[
-        Optional[str],
-        Field(default=None, description="Catalog spectral classifier."),
-    ]
+    Kind: Literal["Catalog", "Paper"]
+    Name: str
+    Id: int
+    ErrorRadius: Annotated[float, Field(ge=0.0)]
+    Band: Optional[str] = None
+    References: Optional[list[Reference]] = None
 
     def __repr__(self) -> str:
         return (
-            f"Catalog(CatalogName={self.CatalogName!r}, "
-            f"CatalogId={self.CatalogId}, "
+            f"Source(Name={self.Name!r}, "
+            f"Kind={self.Kind}, "
+            f"Id={self.Id}, "
             f"ErrorRadius={self.ErrorRadius}, "
-            f"CatalogBand={self.CatalogBand!r})"
+            f"Band={self.Band!r})"
         )
 
 
-class SourceData(BaseModel):
+class Data(BaseModel):
     """Spectral energy distribution data point.
 
-    This model represents a single row from a catalog.
+    Represents a single row from a data source.
     """
 
-    Frequency: Annotated[
-        float,
-        Field(gt=0.0, description="Frequency of the observation in Hz."),
-    ]
-    Nufnu: Annotated[
-        float,
-        Field(description="Spectral flux density (nu*F_nu) in erg/cm^2/s."),
-    ]
-    FrequencyError: Annotated[
-        float,
-        Field(ge=0.0, description="Error on frequency in Hz."),
-    ]
-    NufnuError: Annotated[
-        float,
-        Field(description="Error on spectral flux density in erg/cm^2/s."),
-    ]
-    Name: Annotated[
-        Optional[str],
-        Field(default=None, description="Optional source name in the catalog."),
-    ]
-    AngularDistance: Annotated[
-        Optional[float],
-        Field(default=None, ge=0.0, description="Angular distance from query position in arcsec."),
-    ]
-    StartTime: Annotated[
-        Optional[float],
-        Field(default=None, ge=0.0, description="Start time of observation in MJD."),
-    ]
-    StopTime: Annotated[
-        Optional[float],
-        Field(default=None, ge=0.0, description="End time of observation in MJD."),
-    ]
-    Info: Annotated[
-        Optional[str],
-        Field(
-            default="",
-            description="Optional information flags (e.g., 'Upper Limit', quality notes). Multiple values may be separated by the separator defined in Meta.InfoSeparator.",
-        ),
-    ]
+    Frequency: Annotated[float, Field(gt=0.0)]
+    Nufnu: float
+    FrequencyError: Annotated[float, Field(ge=0.0)]
+    NufnuError: float
+    Name: Optional[str] = None
+    AngularDistance: Annotated[Optional[float], Field(default=None, ge=0.0)]
+    StartTime: Annotated[Optional[float], Field(default=None, ge=0.0)]
+    StopTime: Annotated[Optional[float], Field(default=None, ge=0.0)]
+    Info: Optional[str] = ""
 
 
 class Dataset(BaseModel):
     """A catalog entry with its associated source data.
 
     Attributes:
-        Catalog: Metadata about the catalog.
-        SourceData: List of measurements from this catalog.
+        Source: Metadata about the catalog.
+        Data: List of measurements from this catalog.
     """
 
-    Catalog: Catalog
-    SourceData: list[SourceData]
+    Source: Source
+    Data: list[Data]
 
     def __repr__(self) -> str:
-        return f"Dataset({self.Catalog!r}, SourceData: [#{len(self.SourceData)} entries])"
+        return f"Dataset({self.Source!r}, Data: [#{len(self.Data)} entries])"
 
 
 class DataColumn(NamedTuple):
@@ -145,13 +127,12 @@ class DataColumn(NamedTuple):
     units: u.Unit | None
 
 
-class CatalogColumn(NamedTuple):
-    name: str  # field name in Catalog
+class SourceColumn(NamedTuple):
+    # the field name could be too generic to be used as column name
+    name: str  # column name in the astropy table, essentially a more descriptive alias
+    field: str  # field name in Source model
     dtype: type
     units: u.Unit | None
-
-    def __eq__(self, other: str):
-        return self.name == other
 
 
 class PropertyMetadata(NamedTuple):
@@ -171,12 +152,12 @@ class AstropySchema:
     START_TIME = DataColumn("StartTime", np.float64, u.d)
     STOP_TIME = DataColumn("StopTime", np.float64, u.d)
     INFO = DataColumn("Info", str, None)
-    CATALOG_NAME = CatalogColumn("CatalogName", str, None)
-    CATALOG_BAND = CatalogColumn("CatalogBand", str, None)
-    ERROR_RADIUS = CatalogColumn("ErrorRadius", np.float64, u.arcsec)
+    SOURCE_NAME = SourceColumn("SourceName", "Name", str, None)
+    SOURCE_BAND = SourceColumn("SourceBand", "Band", str, None)
+    ERROR_RADIUS = SourceColumn("ErrorRadius", "ErrorRadius", np.float64, u.arcsec)
     METADATA_NH = PropertyMetadata("Nh", u.cm**-2)
 
-    def columns(self, kind: Literal["data", "catalog", "all"] = "all"):
+    def columns(self, kind: Literal["data", "source", "all"] = "all"):
         """Iterate over columns, defines table order."""
         if kind == "all" or kind == "data":
             yield self.NAME
@@ -188,9 +169,9 @@ class AstropySchema:
             yield self.START_TIME
             yield self.STOP_TIME
             yield self.INFO
-        if kind == "all" or kind == "catalog":
-            yield self.CATALOG_NAME
-            yield self.CATALOG_BAND
+        if kind == "all" or kind == "source":
+            yield self.SOURCE_NAME
+            yield self.SOURCE_BAND
             yield self.ERROR_RADIUS
 
     def metadata(self):
@@ -280,22 +261,23 @@ class GetDataResponse(BaseModel):
         # the gist of it is to build two different tables and to stack them horizontally.
         # the first table is for data columns, the second for the catalog columns.
         columns_data = [*TABLE_SCHEMA.columns(kind="data")]
-        columns_catalog = [*TABLE_SCHEMA.columns(kind="catalog")]
+        columns_source = [*TABLE_SCHEMA.columns(kind="source")]
 
         # first we have to unpack the data
-        rows_data, rows_catalog = [], []
+        rows_data, rows_source = [], []
         for dataset in self.Datasets:
-            catalog_dump = {k: v for k, v in dataset.Catalog.model_dump().items() if k in columns_catalog}
-            for source_data in dataset.SourceData:
+            _dsmp = dataset.Source.model_dump()
+            source_dump = {col.name: _dsmp[col.field] for col in columns_source if col.field in _dsmp}
+            for source_data in dataset.Data:
                 rows_data.append(source_data.model_dump())
-                rows_catalog.append(catalog_dump)
+                rows_source.append(source_dump)
 
         # TODO: this is an awful hack around astropy 6, which we need to support over 3.10.
         #  remove when we stop supporting astropy 6.
         #  N! i am unsure on whether we could have catalog info without data. the contrary should not be possible.
         #  N! this said, no data means no science: it seems safe to me to just check for `rows_data`
         if not rows_data:
-            columns = columns_data + columns_catalog
+            columns = columns_data + columns_source
             table = Table(
                 np.zeros(len(columns)),
                 names=[col.name for col in columns],
@@ -312,15 +294,15 @@ class GetDataResponse(BaseModel):
             )
 
             # second, the catalog property table
-            table_catalog = Table(
-                rows_catalog,
-                names=[col.name for col in columns_catalog],
-                dtype=[col.dtype for col in columns_catalog],
-                units=[col.units for col in columns_catalog],
+            table_source = Table(
+                rows_source,
+                names=[col.name for col in columns_source],
+                dtype=[col.dtype for col in columns_source],
+                units=[col.units for col in columns_source],
             )
 
             # then, we stack
-            table = hstack((table_data, table_catalog))
+            table = hstack((table_data, table_source))
 
         # and add metadata
         for m in TABLE_SCHEMA.metadata():
@@ -332,26 +314,11 @@ class GetDataResponse(BaseModel):
     @validate_call
     def to_jetset(
         self,
-        z: Annotated[
-            float,
-            Field(ge=0.0, le=1.0, description="Source redshift, must be between 0 and 1."),
-        ],
-        ul_cl: Annotated[
-            float,
-            Field(ge=0.0, le=1.0, description="Confidence level for upper limits, must be between 0 and 1."),
-        ] = 0.95,
-        restframe: Annotated[
-            Literal["obs", "src"],
-            Field(description="Reference frame for the data. Defaults to 'obs'."),
-        ] = "obs",
-        data_scale: Annotated[
-            Literal["lin-lin", "log-log"],
-            Field(description="Scale format of the data."),
-        ] = "lin-lin",
-        obj_name: Annotated[
-            str,
-            Field(description="Name identifier for the object."),
-        ] = "new-src",
+        z: Annotated[float, Field(ge=0.0, le=1.0)],
+        ul_cl: Annotated[float, Field(ge=0.0, le=1.0)] = 0.95,
+        restframe: Literal["obs", "src"] = "obs",
+        data_scale: Literal["lin-lin", "log-log"] = "lin-lin",
+        obj_name: str = "new-src",
     ) -> Table:
         # noinspection PyUnresolvedReferences
         """Convert data to Jetset format.
@@ -404,7 +371,7 @@ class GetDataResponse(BaseModel):
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
         table.add_column(info2ul(t[TABLE_SCHEMA.INFO.name]), name="UL")
-        table.add_column(t[TABLE_SCHEMA.CATALOG_NAME.name].astype(str), name="dataset")
+        table.add_column(t[TABLE_SCHEMA.SOURCE_NAME.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
         table.meta["restframe"] = restframe
@@ -426,7 +393,7 @@ class CatalogsResponse(BaseModel):
     """
 
     ResponseInfo: ResponseInfo
-    Catalogs: list[Catalog]
+    Catalogs: list[Source]
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.

@@ -1,7 +1,8 @@
 {
   "ResponseInfo": {
     "statusCode": "OK",
-    "message": null
+    "message": [],
+    "APIVersion": "1.4785_1"
   },
   "Properties": {
     "Nh": 8.77e+20,
@@ -22,13 +23,21 @@
   },
   "Datasets": [
     {
-      "Catalog": {
-        "CatalogId": 3,
-        "CatalogName": "DIXON",
+      "Source": {
+        "Id": 3,
+        "Name": "DIXON",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "A Master List of Radio Sources",
+            "Authors": "Dixon, R. S.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1970ApJS...20....1D"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "BTD359.9-00.0",
           "AngularDistance": 0.3115247435694773,
@@ -56,13 +65,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 9,
-        "CatalogName": "NVSS",
+      "Source": {
+        "Id": 9,
+        "Name": "NVSS",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The NRAO VLA Sky Survey",
+            "Authors": "Condon, J. J.; Cotton, W. D.; Greisen, E. W. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1998AJ....115.1693C"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5326141754426227,
           "Frequency": 1400000000.0,
@@ -84,13 +101,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2809,
-        "CatalogName": "IRASPSC 12",
+      "Source": {
+        "Id": 2809,
+        "Name": "IRASPSC 12",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "IRAS Catalog of Point Sources, Version 2.0",
+            "Authors": "Joint IRAS Science W.G.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1994yCat.2125....0J"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.20081387741886428,
           "Frequency": 24980000000000.0,
@@ -103,13 +128,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2810,
-        "CatalogName": "IRASPSC 25",
+      "Source": {
+        "Id": 2810,
+        "Name": "IRASPSC 25",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "IRAS Catalog of Point Sources, Version 2.0",
+            "Authors": "Joint IRAS Science W.G.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1994yCat.2125....0J"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.20081387741886428,
           "Frequency": 11990000000000.0,
@@ -122,13 +155,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2811,
-        "CatalogName": "IRASPSC 60",
+      "Source": {
+        "Id": 2811,
+        "Name": "IRASPSC 60",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "IRAS Catalog of Point Sources, Version 2.0",
+            "Authors": "Joint IRAS Science W.G.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1994yCat.2125....0J"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.20081387741886428,
           "Frequency": 4997000000000.0,
@@ -141,13 +182,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2812,
-        "CatalogName": "IRASPSC100",
+      "Source": {
+        "Id": 2812,
+        "Name": "IRASPSC100",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "IRAS Catalog of Point Sources, Version 2.0",
+            "Authors": "Joint IRAS Science W.G.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1994yCat.2125....0J"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.20081387741886428,
           "Frequency": 2998000000000.0,
@@ -160,13 +209,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 88,
-        "CatalogName": "ERCSC030",
+      "Source": {
+        "Id": 88,
+        "Name": "ERCSC030",
         "ErrorRadius": 7.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck early results. VII. The Planck Early Release Compact Source Catalogue",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2011A%26A...536A...7P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.1694421015596195,
           "Frequency": 30000000000.0,
@@ -179,13 +236,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 89,
-        "CatalogName": "ERCSC044 ",
+      "Source": {
+        "Id": 89,
+        "Name": "ERCSC044 ",
         "ErrorRadius": 7.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck early results. VII. The Planck Early Release Compact Source Catalogue",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2011A%26A...536A...7P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 6.634443510726125,
           "Frequency": 44000000000.0,
@@ -198,13 +263,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 90,
-        "CatalogName": "ERCSC070",
+      "Source": {
+        "Id": 90,
+        "Name": "ERCSC070",
         "ErrorRadius": 5.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck early results. VII. The Planck Early Release Compact Source Catalogue",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2011A%26A...536A...7P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 2.724979121773023,
           "Frequency": 70000000000.0,
@@ -217,13 +290,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 91,
-        "CatalogName": "ERCSC100",
+      "Source": {
+        "Id": 91,
+        "Name": "ERCSC100",
         "ErrorRadius": 4.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck early results. VII. The Planck Early Release Compact Source Catalogue",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2011A%26A...536A...7P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.2983878124280583,
           "Frequency": 100000000000.0,
@@ -236,13 +317,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 92,
-        "CatalogName": "ERCSC143",
+      "Source": {
+        "Id": 92,
+        "Name": "ERCSC143",
         "ErrorRadius": 3.0,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck early results. VII. The Planck Early Release Compact Source Catalogue",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2011A%26A...536A...7P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.2983878124280583,
           "Frequency": 143000000000.0,
@@ -255,13 +344,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 4165,
-        "CatalogName": "PCCS1F143",
+      "Source": {
+        "Id": 4165,
+        "Name": "PCCS1F143",
         "ErrorRadius": 1.8,
-        "CatalogBand": "Radio"
+        "Band": "Radio",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Planck 2013 results. XXVIII. The Planck Catalogue of Compact Sources",
+            "Authors": "The Planck collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2014A%26A...571A..28P"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 1.051050033471,
           "Frequency": 143000000000.0,
@@ -274,13 +371,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5227,
-        "CatalogName": "allwise w1",
+      "Source": {
+        "Id": 5227,
+        "Name": "allwise w1",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.06313607475241548,
           "Frequency": 88170000000000.0,
@@ -304,13 +409,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5228,
-        "CatalogName": "allwise w2",
+      "Source": {
+        "Id": 5228,
+        "Name": "allwise w2",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.06313607475241548,
           "Frequency": 65170000000000.0,
@@ -334,13 +447,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5229,
-        "CatalogName": "allwise w3",
+      "Source": {
+        "Id": 5229,
+        "Name": "allwise w3",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.06313607475241548,
           "Frequency": 24980000000000.0,
@@ -362,13 +483,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 6,
-        "CatalogName": "IPC",
+      "Source": {
+        "Id": 6,
+        "Name": "IPC",
         "ErrorRadius": 1.0,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2E1742.5-2859",
           "AngularDistance": 0.3225900230374546,
@@ -392,13 +514,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 8185,
-        "CatalogName": "SAXMECS",
+      "Source": {
+        "Id": 8185,
+        "Name": "SAXMECS",
         "ErrorRadius": 1.5,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.2909051263691218,
           "Frequency": 7.254e+17,
@@ -429,13 +552,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14640,
-        "CatalogName": "XMMSL2 (0.2-12 keV)",
+      "Source": {
+        "Id": 14640,
+        "Name": "XMMSL2 (0.2-12 keV)",
         "ErrorRadius": 0.5,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "XMMSL2_J174539.6-290028",
           "AngularDistance": 0.10597241173098151,
@@ -459,13 +583,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14641,
-        "CatalogName": "XMMSL2 (2-12 keV)",
+      "Source": {
+        "Id": 14641,
+        "Name": "XMMSL2 (2-12 keV)",
         "ErrorRadius": 0.5,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "XMMSL2_J174539.6-290028",
           "AngularDistance": 0.10597241173098151,
@@ -489,13 +614,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14334,
-        "CatalogName": "4XMM-DR12 (0.5-1 keV)",
+      "Source": {
+        "Id": 14334,
+        "Name": "4XMM-DR12 (0.5-1 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J174539.9-290028",
           "AngularDistance": 0.09455636412294087,
@@ -624,13 +750,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14335,
-        "CatalogName": "4XMM-DR12 (1-2 keV)",
+      "Source": {
+        "Id": 14335,
+        "Name": "4XMM-DR12 (1-2 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J174539.9-290028",
           "AngularDistance": 0.09455636412294087,
@@ -755,13 +882,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14336,
-        "CatalogName": "4XMM-DR12 (2-4.5 keV)",
+      "Source": {
+        "Id": 14336,
+        "Name": "4XMM-DR12 (2-4.5 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J174539.9-290028",
           "AngularDistance": 0.09455636412294087,
@@ -885,13 +1013,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14337,
-        "CatalogName": "4XMM-DR12 (4.5-12 keV)",
+      "Source": {
+        "Id": 14337,
+        "Name": "4XMM-DR12 (4.5-12 keV)",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Soft X-Ray"
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4XMM_J174539.9-290028",
           "AngularDistance": 0.09455636412294087,
@@ -1015,13 +1144,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7902,
-        "CatalogName": "2FHL (1081GeV)",
+      "Source": {
+        "Id": 7902,
+        "Name": "2FHL (1081GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J1745.7-2900",
           "AngularDistance": 0.6776347070412873,
@@ -1035,13 +1165,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7901,
-        "CatalogName": "2FHL (316GeV)",
+      "Source": {
+        "Id": 7901,
+        "Name": "2FHL (316GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J1745.7-2900",
           "AngularDistance": 0.6776347070412873,
@@ -1055,13 +1186,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7900,
-        "CatalogName": "2FHL (92GeV)",
+      "Source": {
+        "Id": 7900,
+        "Name": "2FHL (92GeV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "2FHL J1745.7-2900",
           "AngularDistance": 0.6776347070412873,
@@ -1075,13 +1207,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 8051,
-        "CatalogName": "BATPA100",
+      "Source": {
+        "Id": 8051,
+        "Name": "BATPA100",
         "ErrorRadius": 5.0,
-        "CatalogBand": "Hard X-Ray"
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The 100-month Palermo BAT Catalogue",
+            "Authors": "Cusumano G.; La Parola V.; Segreto A. et al.",
+            "URL": "http://bat.ifc.inaf.it/100m_bat_catalog/100m_bat_catalog_v0.0.htm"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "4PBC J1745.6-2900",
           "AngularDistance": 0.1538427519010118,
@@ -1095,13 +1235,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14344,
-        "CatalogName": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+      "Source": {
+        "Id": 14344,
+        "Name": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 1.709e+22,
@@ -1129,13 +1270,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14345,
-        "CatalogName": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+      "Source": {
+        "Id": 14345,
+        "Name": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 4.188e+22,
@@ -1162,13 +1304,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14346,
-        "CatalogName": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+      "Source": {
+        "Id": 14346,
+        "Name": "Fermi 4FGL-DR3 (0.3-1 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 1.323e+23,
@@ -1194,13 +1337,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14347,
-        "CatalogName": "Fermi 4FGL-DR3 (1-3 GeV)",
+      "Source": {
+        "Id": 14347,
+        "Name": "Fermi 4FGL-DR3 (1-3 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 4.188e+23,
@@ -1225,13 +1369,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14349,
-        "CatalogName": "Fermi 4FGL-DR3 (10-30 GeV)",
+      "Source": {
+        "Id": 14349,
+        "Name": "Fermi 4FGL-DR3 (10-30 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 4.188e+24,
@@ -1256,13 +1401,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14351,
-        "CatalogName": "Fermi 4FGL-DR3 (100-1000 GeV)",
+      "Source": {
+        "Id": 14351,
+        "Name": "Fermi 4FGL-DR3 (100-1000 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 7.646e+25,
@@ -1289,13 +1435,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14348,
-        "CatalogName": "Fermi 4FGL-DR3 (3-10 GeV)",
+      "Source": {
+        "Id": 14348,
+        "Name": "Fermi 4FGL-DR3 (3-10 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 1.324e+24,
@@ -1320,13 +1467,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 14350,
-        "CatalogName": "Fermi 4FGL-DR3 (30-100 GeV)",
+      "Source": {
+        "Id": 14350,
+        "Name": "Fermi 4FGL-DR3 (30-100 GeV)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 10.411669391760945,
           "Frequency": 1.324e+25,
@@ -1352,13 +1500,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 56,
-        "CatalogName": "Fermi1FGL (200 Mev)",
+      "Source": {
+        "Id": 56,
+        "Name": "Fermi1FGL (200 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5211621549557406,
           "Frequency": 4.84e+22,
@@ -1382,13 +1538,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 58,
-        "CatalogName": "Fermi1FGL (2Gev)",
+      "Source": {
+        "Id": 58,
+        "Name": "Fermi1FGL (2Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5211621549557406,
           "Frequency": 4.84e+23,
@@ -1410,13 +1574,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 57,
-        "CatalogName": "Fermi1FGL (600 Mev)",
+      "Source": {
+        "Id": 57,
+        "Name": "Fermi1FGL (600 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5211621549557406,
           "Frequency": 1.452e+23,
@@ -1439,13 +1611,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 60,
-        "CatalogName": "Fermi1FGL (60Gev)",
+      "Source": {
+        "Id": 60,
+        "Name": "Fermi1FGL (60Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5211621549557406,
           "Frequency": 1.452e+25,
@@ -1467,13 +1647,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 59,
-        "CatalogName": "Fermi1FGL (6Gev)",
+      "Source": {
+        "Id": 59,
+        "Name": "Fermi1FGL (6Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.5211621549557406,
           "Frequency": 1.452e+24,
@@ -1495,13 +1683,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 114,
-        "CatalogName": "Fermi2FGL (200 Mev)",
+      "Source": {
+        "Id": 114,
+        "Name": "Fermi2FGL (200 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.018819453034528,
           "Frequency": 4.84e+22,
@@ -1524,13 +1720,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 116,
-        "CatalogName": "Fermi2FGL (2Gev)",
+      "Source": {
+        "Id": 116,
+        "Name": "Fermi2FGL (2Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.018819453034528,
           "Frequency": 4.84e+23,
@@ -1553,13 +1757,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 115,
-        "CatalogName": "Fermi2FGL (600 Mev)",
+      "Source": {
+        "Id": 115,
+        "Name": "Fermi2FGL (600 Mev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.018819453034528,
           "Frequency": 1.452e+23,
@@ -1582,13 +1794,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 118,
-        "CatalogName": "Fermi2FGL (60Gev)",
+      "Source": {
+        "Id": 118,
+        "Name": "Fermi2FGL (60Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.018819453034528,
           "Frequency": 1.452e+25,
@@ -1610,13 +1830,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 117,
-        "CatalogName": "Fermi2FGL (6Gev)",
+      "Source": {
+        "Id": 117,
+        "Name": "Fermi2FGL (6Gev)",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Second Source Catalog",
+            "Authors": "Nolan, P. L.; Abdo, A. A.; Ackermann, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2012ApJS..199...31N"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.018819453034528,
           "Frequency": 1.452e+24,
@@ -1638,13 +1866,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 2884,
-        "CatalogName": "Fermi2FglLC",
+      "Source": {
+        "Id": 2884,
+        "Name": "Fermi2FglLC",
         "ErrorRadius": 30.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 16.0038788820093,
           "Frequency": 2.42e+23,
@@ -2104,13 +2333,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5953,
-        "CatalogName": "Fermi3FGL (200 Mev)",
+      "Source": {
+        "Id": 5953,
+        "Name": "Fermi3FGL (200 Mev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.091748658314588,
           "Frequency": 4.84e+22,
@@ -2143,13 +2380,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5955,
-        "CatalogName": "Fermi3FGL (2Gev)",
+      "Source": {
+        "Id": 5955,
+        "Name": "Fermi3FGL (2Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.091748658314588,
           "Frequency": 4.84e+23,
@@ -2180,13 +2425,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5954,
-        "CatalogName": "Fermi3FGL (600 Mev)",
+      "Source": {
+        "Id": 5954,
+        "Name": "Fermi3FGL (600 Mev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.091748658314588,
           "Frequency": 1.452e+23,
@@ -2217,13 +2470,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5957,
-        "CatalogName": "Fermi3FGL (60Gev)",
+      "Source": {
+        "Id": 5957,
+        "Name": "Fermi3FGL (60Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.091748658314588,
           "Frequency": 1.452e+25,
@@ -2254,13 +2515,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 5956,
-        "CatalogName": "Fermi3FGL (6Gev)",
+      "Source": {
+        "Id": 5956,
+        "Name": "Fermi3FGL (6Gev)",
         "ErrorRadius": 15.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "Fermi Large Area Telescope Third Source Catalog",
+            "Authors": "Acero, F.; Ackermann, M.; Ajello, M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJS..218...23A"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 5.091748658314588,
           "Frequency": 1.452e+24,
@@ -2291,13 +2560,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 61,
-        "CatalogName": "IBISSG4CAT (20-40 keV)",
+      "Source": {
+        "Id": 61,
+        "Name": "IBISSG4CAT (20-40 keV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Hard X-Ray"
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
+            "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..186....1B"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 4.286845180402781,
           "Frequency": 6.839e+18,
@@ -2328,13 +2605,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 62,
-        "CatalogName": "IBISSG4CAT (40-100 keV)",
+      "Source": {
+        "Id": 62,
+        "Name": "IBISSG4CAT (40-100 keV)",
         "ErrorRadius": 6.0,
-        "CatalogBand": "Hard X-Ray"
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
+            "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..186....1B"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 4.286845180402781,
           "Frequency": 1.529e+19,
@@ -2365,13 +2650,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 12344,
-        "CatalogName": "SWBAT105 (14-195 keV)",
+      "Source": {
+        "Id": 12344,
+        "Name": "SWBAT105 (14-195 keV)",
         "ErrorRadius": 5.0,
-        "CatalogBand": "Hard X-Ray"
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.41653033954592006,
           "Frequency": 7.254e+18,
@@ -2393,13 +2679,21 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 7,
-        "CatalogName": "EGRET3",
+      "Source": {
+        "Id": 7,
+        "Name": "EGRET3",
         "ErrorRadius": 60.0,
-        "CatalogBand": "Gamma-Ray"
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "References": [
+          {
+            "Title": "The Third EGRET Catalog of High-Energy Gamma-Ray Sources",
+            "Authors": "Hartman, R. C.; Bertsch, D. L.; Bloom, S. D. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1999ApJS..123...79H"
+          }
+        ]
       },
-      "SourceData": [
+      "Data": [
         {
           "Name": "3EG J1746-2851",
           "AngularDistance": 10.08661326940716,

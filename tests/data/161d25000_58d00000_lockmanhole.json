@@ -1,7 +1,8 @@
 {
   "ResponseInfo": {
     "statusCode": "OK",
-    "message": null
+    "message": [],
+    "APIVersion": "1.4785_1"
   },
   "Properties": {
     "Nh": 7.45e+19,
@@ -22,13 +23,14 @@
   },
   "Datasets": [
     {
-      "Catalog": {
-        "CatalogId": 3205,
-        "CatalogName": "WISE W1 PointPsf",
+      "Source": {
+        "Id": 3205,
+        "Name": "WISE W1 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 88170000000000.0,
@@ -41,13 +43,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3206,
-        "CatalogName": "WISE W2 PointPsf",
+      "Source": {
+        "Id": 3206,
+        "Name": "WISE W2 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 65170000000000.0,
@@ -60,13 +63,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3207,
-        "CatalogName": "WISE W3 PointPsf",
+      "Source": {
+        "Id": 3207,
+        "Name": "WISE W3 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 24980000000000.0,
@@ -80,13 +84,14 @@
       ]
     },
     {
-      "Catalog": {
-        "CatalogId": 3208,
-        "CatalogName": "WISE W4 PointPsf",
+      "Source": {
+        "Id": 3208,
+        "Name": "WISE W4 PointPsf",
         "ErrorRadius": 0.1,
-        "CatalogBand": "Infrared"
+        "Band": "Infrared",
+        "Kind": "Catalog"
       },
-      "SourceData": [
+      "Data": [
         {
           "AngularDistance": 0.09281778399566679,
           "Frequency": 13630000000000.0,
