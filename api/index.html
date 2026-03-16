@@ -1658,7 +1658,7 @@ against <code>catalogs</code> response schema.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Source name to resolve (e.g. <code>"Crab Nebula"</code>).</p>
+                <p>Source name to resolve.</p>
               </div>
             </td>
             <td>
@@ -1700,7 +1700,7 @@ against <code>catalogs</code> response schema.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>A tuple composed by a <code>(ra, dec)</code> tuple in degrees, and a <code>str</code> containing</p>
+                <p>The source <code>(ra, dec)</code> tuple, in degrees.</p>
               </div>
             </td>
           </tr>
@@ -1710,7 +1710,7 @@ against <code>catalogs</code> response schema.</p>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>the name of the DB resolving the call.</p>
+                <p><code>str</code> containing the name of the DB resolving the call.</p>
               </div>
             </td>
           </tr>
@@ -1804,12 +1804,12 @@ against <code>catalogs</code> response schema.</p>
 </span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="sd">    Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.</span>
 </span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78"></a>
 </span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="sd">    Args:</span>
-</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">        name: Source name to resolve (e.g. `&quot;Crab Nebula&quot;`).</span>
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">        name: Source name to resolve.</span>
 </span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81"></a><span class="sd">        timeout: Timeout in seconds for the SSDC request. Defaults to 2.0.</span>
 </span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82"></a>
 </span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83"></a><span class="sd">    Returns:</span>
-</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84"></a><span class="sd">        A tuple composed by a `(ra, dec)` tuple in degrees, and a `str` containing</span>
-</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">        the name of the DB resolving the call.</span>
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84"></a><span class="sd">        The source `(ra, dec)` tuple, in degrees.</span>
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">        `str` containing the name of the DB resolving the call.</span>
 </span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86"></a>
 </span><span id="__span-0-87"><a id="__codelineno-0-87" name="__codelineno-0-87"></a><span class="sd">    Raises:</span>
 </span><span id="__span-0-88"><a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="sd">        RuntimeError: If no resolver can identify the source.</span>
