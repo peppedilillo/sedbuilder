@@ -77,12 +77,12 @@ def resolve_name(
     Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.
 
     Args:
-        name: Source name to resolve (e.g. `"Crab Nebula"`).
+        name: Source name to resolve.
         timeout: Timeout in seconds for the SSDC request. Defaults to 2.0.
 
     Returns:
-        A tuple composed by a `(ra, dec)` tuple in degrees, and a `str` containing
-        the name of the DB resolving the call.
+        The source `(ra, dec)` tuple, in degrees.
+        `str` containing the name of the DB resolving the call.
 
     Raises:
         RuntimeError: If no resolver can identify the source.
