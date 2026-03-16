@@ -119,7 +119,7 @@ def fetch_and_save_test_data(
             filepath_nameresolver = dir_nameresolver / f"{name_slug}_{flags_str}.json"
             print(f"Resolving '{first_source_name}' (ssdc={ssdc}, simbad={simbad}, ned={ned})...", end=" ")
             try:
-                url = APIPaths.NAME_RESOLVER(term=first_source_name, ssdc=ssdc, simbad=simbad, ned=ned)
+                url = APIPaths.NAME_RESOLVER(name=first_source_name, ssdc=ssdc, simbad=simbad, ned=ned)
                 print(f"URL: {url}", end=" ")
                 response = httpx.get(url, timeout=timeout)
                 filepath_nameresolver.write_text(json.dumps(response.json(), indent=2))
@@ -134,7 +134,7 @@ def fetch_and_save_test_data(
             filepath_nameresolver = dir_nameresolver / f"{name_slug}_ssdc1_simbad1_ned1.json"
             print(f"Resolving '{source_name}'...", end=" ")
             try:
-                url = APIPaths.NAME_RESOLVER(term=source_name, ssdc=True, simbad=True, ned=True)
+                url = APIPaths.NAME_RESOLVER(name=source_name, ssdc=True, simbad=True, ned=True)
                 print(f"URL: {url}", end=" ")
                 response = httpx.get(url, timeout=timeout)
                 filepath_nameresolver.write_text(json.dumps(response.json(), indent=2))
