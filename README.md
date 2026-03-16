@@ -62,6 +62,7 @@ To build and serve the documentation locally:
 ```bash
 pip install -e ".[docs]"
 mkdocs serve
+mkdocs build
 ```
 
 To publish the documentation to GitHub Pages:
