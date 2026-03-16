@@ -136,7 +136,7 @@ class TestGetDataByName:
     def test_name_resolves_via_ssdc(self, mock_response):
         """Name resolved by SSDC catalog is used directly."""
         with (
-            patch("sedbuilder.requests._resolve_name", return_value=(83.6329, 22.0144)) as mock_resolve,
+            patch("sedbuilder.requests.resolve_name", return_value=((83.6329, 22.0144), "db")) as mock_resolve,
             patch("httpx.get") as mock_get,
         ):
             mock_get.return_value = Mock(json=lambda: mock_response)
@@ -153,17 +153,16 @@ class TestGetDataByName:
             patch("sedbuilder.requests._get_and_validate", side_effect=RuntimeError("unreachable")),
             patch("httpx.get") as mock_get,
         ):
-            mock_get.return_value = Mock(json=lambda: mock_response)
             # Call _resolve_name directly to test the fallback path
-            from sedbuilder.requests import _resolve_name
+            from sedbuilder.requests import resolve_name
 
-            ra, dec = _resolve_name("Crab Nebula")
+            (ra, dec), _ = resolve_name("Crab Nebula")
             assert ra == 83.6329
             assert dec == 22.0144
 
     def test_name_not_found_raises(self):
         """When all resolvers fail, RuntimeError is raised."""
-        with patch("sedbuilder.requests._resolve_name", side_effect=RuntimeError("Cannot resolve source")):
+        with patch("sedbuilder.requests.resolve_name", side_effect=RuntimeError("Cannot resolve source")):
             with pytest.raises(RuntimeError):
                 get_data(name="NonExistentSource12345")
 
@@ -179,7 +178,7 @@ class TestGetDataByName:
 
     def test_db_priority_ssdc_over_simbad(self, mock_response):
         """SSDC result is preferred over SIMBAD when both are present."""
-        from sedbuilder.requests import _resolve_name
+        from sedbuilder.requests import resolve_name
         from sedbuilder.schemas import NameResolverResponse
 
         ssdc_simbad_response = NameResolverResponse(
@@ -191,9 +190,10 @@ class TestGetDataByName:
         mock_http = Mock()
         mock_http.json.return_value = ssdc_simbad_response.model_dump(by_alias=True)
         with patch("sedbuilder.requests._get_and_validate", return_value=mock_http):
-            ra, dec = _resolve_name("Crab Nebula")
+            (ra, dec), db = resolve_name("Crab Nebula")
         assert ra == 83.6329
         assert dec == 22.0144
+        assert db == "SSDC"
 
 
 class TestResponseConversions:

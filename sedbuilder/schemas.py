@@ -284,7 +284,7 @@ class GetDataResponse(BaseModel):
         """
         try:
             return self.to_astropy().to_pandas()
-        except AttributeError:
+        except ImportError:
             raise ImportError("pandas is required for this method. Install it with: pip install pandas")
 
     def to_astropy(self) -> Table:
@@ -463,7 +463,7 @@ class NameResolverItem(BaseModel):
     db: Literal["SSDC", "NED", "SIMBAD"] = Field(alias="valueDB")
     ra: Annotated[float, BeforeValidator(float)] = Field(alias="valueRA")
     dec: Annotated[float, BeforeValidator(float)] = Field(alias="valueDEC")
-    id: Optional[str]
+    id: Optional[str] = None
     name: str = Field(alias="text")
 
 

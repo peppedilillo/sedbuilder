@@ -12,6 +12,7 @@ The package provides functions to query astronomical sources and convert spectra
 ::: sedbuilder.utils.get_data_from_json
 ::: sedbuilder.requests.catalogs
 ::: sedbuilder.utils.catalogs_from_json
+::: sedbuilder.requests.resolve_name
 
 ## Classes
 

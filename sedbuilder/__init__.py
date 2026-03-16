@@ -2,6 +2,7 @@
 
 from sedbuilder.requests import catalogs
 from sedbuilder.requests import get_data
+from sedbuilder.requests import resolve_name
 from sedbuilder.schemas import CatalogsResponse
 from sedbuilder.schemas import GetDataResponse
 from sedbuilder.utils import catalogs_from_json
@@ -12,6 +13,7 @@ __all__ = [
     "catalogs",
     "get_data_from_json",
     "catalogs_from_json",
+    "resolve_name",
     "GetDataResponse",
     "CatalogsResponse",
 ]

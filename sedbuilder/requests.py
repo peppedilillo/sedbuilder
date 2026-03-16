@@ -67,22 +67,32 @@ def _resolve_name_astropy(name: str) -> tuple[float, float] | None:
     return coord.ra.deg, coord.dec.deg
 
 
-def _resolve_name(name: str, timeout: float = 2.0) -> tuple[float, float]:
+@validate_call
+def resolve_name(
+    name: str,
+    timeout: Annotated[float, Field(gt=0.0)] = 2.0,
+) -> tuple[tuple[float, float], str]:
     """Resolve a source name to (ra, dec) via SSDC/SIMBAD/NED, with astropy fallback.
 
-    Queries the SSDC name resolver first. On failure or empty result, falls back
-    to `_resolve_name_astropy`. Logs the resolved coordinates at INFO level.
+    Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.
 
     Args:
-        name: Source name to resolve (e.g. ``"Crab Nebula"``).
-        timeout: Timeout in seconds for the SSDC request. Defaults to 2.0 to
-            avoid blocking the main request when the name resolver is slow.
+        name: Source name to resolve (e.g. `"Crab Nebula"`).
+        timeout: Timeout in seconds for the SSDC request. Defaults to 2.0.
 
     Returns:
-        A ``(ra, dec)`` tuple in degrees.
+        A tuple composed by a `(ra, dec)` tuple in degrees, and a `str` containing
+        the name of the DB resolving the call.
 
     Raises:
         RuntimeError: If no resolver can identify the source.
+
+    Example:
+        ```python
+        from sedbuilder import resolve_name
+
+        (ra, dec), db = resolve_name("Crab Nebula")
+        ```
     """
     try:
         r = _get_and_validate(APIPaths.NAME_RESOLVER(name=name, ssdc=True, simbad=True, ned=True), timeout)
@@ -100,7 +110,7 @@ def _resolve_name(name: str, timeout: float = 2.0) -> tuple[float, float]:
         ra, dec = coords
         source = "astropy"
     _log.info("Resolved %r → ra=%.6f, dec=%.6f (via %s)", name, ra, dec, source)
-    return ra, dec
+    return (ra, dec), source
 
 
 @validate_call
@@ -137,7 +147,7 @@ def get_data(*, ra: float, dec: float, timeout: float = ...) -> GetDataResponse:
 def get_data(*, name: str, timeout: float = ...) -> GetDataResponse: ...
 
 
-def get_data(*, name: str = None, ra=None, dec=None, timeout=30.0) -> GetDataResponse:
+def get_data(*, name: str = None, ra: float = None, dec: float = None, timeout: float = 30.0) -> GetDataResponse:
     """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
     data for the specified sky coordinates or source name.
 
@@ -179,7 +189,7 @@ def get_data(*, name: str = None, ra=None, dec=None, timeout=30.0) -> GetDataRes
         # we are calling _resolve_name leaving its default timeout
         # this is to avoid waiting too long for just the name resolver
         # if we get delayed by the exponential rate meter
-        ra, dec = _resolve_name(name)
+        (ra, dec), _ = resolve_name(name)
         return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
     if name is None and ((ra is not None) and (dec is not None)):
         return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
