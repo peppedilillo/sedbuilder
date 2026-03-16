@@ -51,6 +51,9 @@ git clone https://github.com/peppedilillo/sedbuilder.git
 cd sedbuilder
 pip install -e ".[dev]"
 pre-commit install
+# next line will route queries to test server. 
+# use only on SSDC internal network 
+source dev.env 
 pytest
 ```
 
