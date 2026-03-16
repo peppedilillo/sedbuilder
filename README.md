@@ -47,29 +47,22 @@ Resolving a source name takes time. We suggest querying on coordinates when avai
 ## Development
 
 ```bash
+# install with development dependencies
 git clone https://github.com/peppedilillo/sedbuilder.git
 cd sedbuilder
 pip install -e ".[dev]"
-pre-commit install
-# next line will route queries to test server. 
-# use only on SSDC internal network 
+# routes queries to test server (requires internal network)
 source dev.env 
+# install linter pre-commit hooks
+pre-commit install
+# runs tests
 pytest
-```
-
-To build and serve the documentation locally:
-
-```bash
-pip install -e ".[docs]"
+# serve and build documentation
 mkdocs serve
 mkdocs build
 ```
 
-To publish the documentation to GitHub Pages:
-
-```bash
-mkdocs gh-deploy
-```
+For more, see [documentation](https://peppedilillo.github.io/sedbuilder/development/).
 
 ## Requests
 
