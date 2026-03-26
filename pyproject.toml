@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "ssdc-sedbuilder"
 description = "A client to the ASI-SSDC's SED Builder API."
 keywords = ["astrophysics", "astronomy", "ssdc"]
-version = "1.1.0"
+version = "1.1.1"
 authors = [
     { name="Giuseppe Dilillo", email="peppedilillo@gmail.com" },
 ]
@@ -19,7 +19,6 @@ classifiers = [
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
