@@ -27,6 +27,6 @@ class TestCatalogsConversions:
         # Each item should be a dict with required fields
         for cat_dict in catalog_list:
             assert isinstance(cat_dict, dict)
-            assert "Name" in cat_dict
-            assert "ErrorRadius" in cat_dict
-            assert "Id" in cat_dict
+            assert "name" in cat_dict
+            assert "error_radius" in cat_dict
+            assert "id" in cat_dict

@@ -20,8 +20,8 @@ class TestCatalogsFromJson:
         response = catalogs_from_json(fixture)
         assert response is not None
         assert isinstance(response, CatalogsResponse)
-        assert hasattr(response, "ResponseInfo")
-        assert hasattr(response, "Catalogs")
+        assert hasattr(response, "response_info")
+        assert hasattr(response, "catalogs")
 
     def test_response_structure(self):
         """Test that response has expected structure."""
@@ -31,19 +31,19 @@ class TestCatalogsFromJson:
         response = catalogs_from_json(fixture)
 
         # ResponseInfo should indicate success
-        assert response.ResponseInfo.statusCode == "OK"
+        assert response.response_info.status_code == "OK"
 
         # Catalogs should be a non-empty list
-        assert isinstance(response.Catalogs, list)
-        assert len(response.Catalogs) > 0
+        assert isinstance(response.catalogs, list)
+        assert len(response.catalogs) > 0
 
         # Each catalog should have minimum required fields
-        for catalog in response.Catalogs:
-            assert hasattr(catalog, "Name")
-            assert hasattr(catalog, "ErrorRadius")
-            assert hasattr(catalog, "Id")
+        for catalog in response.catalogs:
+            assert hasattr(catalog, "name")
+            assert hasattr(catalog, "error_radius")
+            assert hasattr(catalog, "id")
             # SubGroupName is optional
-            assert hasattr(catalog, "Band")
+            assert hasattr(catalog, "band")
 
     def test_nonexistent_file(self):
         """Test that nonexistent file raises ValidationError."""

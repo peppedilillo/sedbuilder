@@ -20,9 +20,9 @@ class TestGetDataFromJson:
 
         response = get_data_from_json(fixture)
         assert response is not None
-        assert hasattr(response, "ResponseInfo")
-        assert hasattr(response, "Properties")
-        assert hasattr(response, "Datasets")
+        assert hasattr(response, "response_info")
+        assert hasattr(response, "properties")
+        assert hasattr(response, "datasets")
 
     def test_nonexistent_file(self):
         with pytest.raises(ValidationError):

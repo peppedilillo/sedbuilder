@@ -31,6 +31,9 @@ data_dict = response.to_dict()    # Python dictionary
 jt = response.to_jetset(z=0.034)  # Jetset table
 json_str = response.to_json()     # JSON string
 df = response.to_pandas()         # Pandas DataFrame (requires pandas)
+
+# Gets references to the dataset catalog and papers
+refs = response.sources()
 ```
 
 When calling `get_data` by name, `resolve_name` queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.

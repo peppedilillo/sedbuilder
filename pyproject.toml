@@ -6,13 +6,13 @@ build-backend = "hatchling.build"
 name = "ssdc-sedbuilder"
 description = "A client to the ASI-SSDC's SED Builder API."
 keywords = ["astrophysics", "astronomy", "ssdc"]
-version = "1.0.0"
+version = "1.1.0"
 authors = [
     { name="Giuseppe Dilillo", email="peppedilillo@gmail.com" },
 ]
 readme = "README.md"
 license = {file = "LICENSE"}
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -26,7 +26,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Astronomy",
 ]
 dependencies = [
-    "astropy",
+    "astropy~=7.0",
     "httpx",
     "pydantic",
 ]

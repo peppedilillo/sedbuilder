@@ -24,70 +24,70 @@ class ResponseInfo(BaseModel):
     """Response status information.
 
     Attributes:
-        statusCode: Status code of the response (e.g., 'OK', 'ERROR').
+        status_code: Status code of the response (e.g., 'OK', 'ERROR').
         message: Optional messages with additional information.
-        APIVersion: API version code.
+        api_version: API version code.
     """
 
-    statusCode: str
+    status_code: str = Field(alias="statusCode")
     message: Optional[list[str]] = None
-    APIVersion: Optional[str] = None
+    api_version: Optional[str] = Field(default=None, alias="APIVersion")
 
 
 class Properties(BaseModel):
     """Additional properties for the queried source.
 
     Attributes:
-        Nh: Hydrogen column density in cm^-2 along the line of sight.
-        Units: Units of measure for data and properties..
+        nh: Hydrogen column density in cm^-2 along the line of sight.
+        units: Units of measure for data and properties..
     """
 
-    Nh: Optional[float] = None
-    Units: Optional[dict[str, str]] = None
+    nh: Optional[float] = Field(default=None, alias="Nh")
+    units: Optional[dict[str, str]] = Field(default=None, alias="Units")
 
 
 class Reference(BaseModel):
     """Literature reference metadata.
 
     Attributes:
-        Id: Reference ID.
-        Title: Reference title.
-        Authors: Reference author.
-        URL: Reference URL.
+        id: Reference ID.
+        title: Reference title.
+        authors: Reference author.
+        url: Reference URL.
     """
 
-    Id: Optional[int] = None
-    Title: Optional[str] = None
-    Authors: Optional[str] = None
-    URL: Optional[str] = None
+    id: Optional[int] = Field(default=None, alias="Id")
+    title: Optional[str] = Field(default=None, alias="Title")
+    authors: Optional[str] = Field(default=None, alias="Authors")
+    url: Optional[str] = Field(default=None, alias="URL")
 
 
 class Source(BaseModel):
     """Catalog metadata.
 
     Attributes:
-        Kind: Source type (either "catalog" or "paper").
-        Name: Name of the astronomical catalog.
-        Id: Unique identifier for the catalog.
-        ErrorRadius: Search radius in arcsec used for source matching.
-        Band: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
-        References: A list of literature reference metadata associated to this source.
+        kind: Source type (either "catalog" or "paper").
+        name: Name of the astronomical catalog.
+        id: Unique identifier for the catalog.
+        error_radius: Search radius in arcsec used for source matching.
+        band: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
+        references: A list of literature reference metadata associated to this source.
     """
 
-    Kind: Literal["Catalog", "Paper"]
-    Name: str
-    Id: int
-    ErrorRadius: Annotated[float, Field(ge=0.0)]
-    Band: Optional[str] = None
-    References: Optional[list[Reference]] = None
+    kind: Literal["Catalog", "Paper"] = Field(alias="Kind")
+    name: str = Field(alias="Name")
+    id: int = Field(alias="Id")
+    error_radius: Annotated[float, Field(ge=0.0)] = Field(alias="ErrorRadius")
+    band: Optional[str] = Field(default=None, alias="Band")
+    references: Optional[list[Reference]] = Field(default=None, alias="References")
 
     def __repr__(self) -> str:
         return (
-            f"Source(Name={self.Name!r}, "
-            f"Kind={self.Kind}, "
-            f"Id={self.Id}, "
-            f"ErrorRadius={self.ErrorRadius}, "
-            f"Band={self.Band!r})"
+            f"Source(Name={self.name!r}, "
+            f"Kind={self.kind}, "
+            f"Id={self.id}, "
+            f"error_radius={self.error_radius}, "
+            f"Band={self.band!r})"
         )
 
 
@@ -97,30 +97,32 @@ class Data(BaseModel):
     Represents a single row from a data source.
     """
 
-    Frequency: Annotated[float, Field(gt=0.0)]
-    Nufnu: float
-    FrequencyError: Annotated[float, Field(ge=0.0)]
-    NufnuError: float
-    Name: Optional[str] = None
-    AngularDistance: Annotated[Optional[float], Field(default=None, ge=0.0)]
-    StartTime: Annotated[Optional[float], Field(default=None, ge=0.0)]
-    StopTime: Annotated[Optional[float], Field(default=None, ge=0.0)]
-    Info: Optional[str] = ""
+    frequency: Annotated[float, Field(gt=0.0)] = Field(alias="Frequency")
+    nufnu: float = Field(alias="Nufnu")
+    frequency_error: Annotated[float, Field(ge=0.0)] = Field(alias="FrequencyError")
+    nufnu_error: float = Field(alias="NufnuError")
+    name: Optional[str] = Field(default=None, alias="Name")
+    angular_distance: Annotated[Optional[float], Field(default=None, ge=0.0)] = Field(
+        default=None, alias="AngularDistance"
+    )
+    start_time: Annotated[Optional[float], Field(default=None, ge=0.0)] = Field(default=None, alias="StartTime")
+    stop_time: Annotated[Optional[float], Field(default=None, ge=0.0)] = Field(default=None, alias="StopTime")
+    info: Optional[str] = Field(default="", alias="Info")
 
 
 class Dataset(BaseModel):
     """A catalog entry with its associated source data.
 
     Attributes:
-        Source: Metadata about the catalog.
-        Data: List of measurements from this catalog.
+        source: Metadata about the catalog.
+        data: List of measurements from this catalog.
     """
 
-    Source: Source
-    Data: list[Data]
+    source: Source = Field(alias="Source")
+    data: list[Data] = Field(alias="Data")
 
     def __repr__(self) -> str:
-        return f"Dataset({self.Source!r}, Data: [#{len(self.Data)} entries])"
+        return f"Dataset({self.source!r}, Data: [#{len(self.data)} entries])"
 
 
 class DataColumn(NamedTuple):
@@ -178,19 +180,19 @@ class AstropySchema:
     """
 
     # TODO: it would be nice to have units parsed from the response!
-    NAME = DataColumn("Name", str, None)
-    FREQUENCY = DataColumn("Frequency", np.float64, u.Hz)
-    NUFNU = DataColumn("Nufnu", np.float64, u.erg / (u.cm**2 * u.s))
-    FREQUENCY_ERROR = DataColumn("FrequencyError", np.float64, u.Hz)
-    NUFNU_ERROR = DataColumn("NufnuError", np.float64, u.erg / (u.cm**2 * u.s))
-    ANGULAR_DISTANCE = DataColumn("AngularDistance", np.float64, u.arcsec)
-    START_TIME = DataColumn("StartTime", np.float64, u.d)
-    STOP_TIME = DataColumn("StopTime", np.float64, u.d)
-    INFO = DataColumn("Info", str, None)
-    SOURCE_NAME = SourceColumn("SourceName", "Name", str, None)
-    SOURCE_BAND = SourceColumn("SourceBand", "Band", str, None)
-    ERROR_RADIUS = SourceColumn("ErrorRadius", "ErrorRadius", np.float64, u.arcsec)
-    METADATA_NH = PropertyMetadata("Nh", u.cm**-2)
+    NAME = DataColumn("name", str, None)
+    FREQUENCY = DataColumn("frequency", np.float64, u.Hz)
+    NUFNU = DataColumn("nufnu", np.float64, u.erg / (u.cm**2 * u.s))
+    FREQUENCY_ERROR = DataColumn("frequency_error", np.float64, u.Hz)
+    NUFNU_ERROR = DataColumn("nufnu_error", np.float64, u.erg / (u.cm**2 * u.s))
+    ANGULAR_DISTANCE = DataColumn("angular_distance", np.float64, u.arcsec)
+    START_TIME = DataColumn("start_time", np.float64, u.d)
+    STOP_TIME = DataColumn("stop_time", np.float64, u.d)
+    INFO = DataColumn("info", str, None)
+    SOURCE_NAME = SourceColumn("source_name", "name", str, None)
+    SOURCE_BAND = SourceColumn("source_band", "band", str, None)
+    ERROR_RADIUS = SourceColumn("error_radius", "error_radius", np.float64, u.arcsec)
+    METADATA_NH = PropertyMetadata("nh", u.cm**-2)
 
     def columns(self, kind: Literal["data", "source", "all"] = "all"):
         """Iterate over columns, defines table order."""
@@ -221,10 +223,10 @@ class Meta(BaseModel):
     """Metadata about the response format and other non-science info.
 
     Attributes:
-        InfoSeparator: Character used to separate multiple values in the Info field.
+        info_separator: Character used to separate multiple values in the Info field.
     """
 
-    InfoSeparator: str
+    info_separator: str = Field(alias="InfoSeparator")
 
 
 class GetDataResponse(BaseModel):
@@ -233,19 +235,19 @@ class GetDataResponse(BaseModel):
     To retrieve data you call `.to_astropy()`, or `.to_dict()` and other methods.
 
     Attributes:
-        ResponseInfo: Status information about the API response.
-        Properties: Additional science properties for the queried source.
-        Datasets: List of catalog entries with measurements.
-        Meta: Metadata about the response format and other non-science info.
+        response_info: Status information about the API response.
+        properties: Additional science properties for the queried source.
+        datasets: List of catalog entries with measurements.
+        meta: Metadata about the response format and other non-science info.
     """
 
-    ResponseInfo: ResponseInfo
-    Properties: Properties
-    Datasets: list[Dataset]
-    Meta: Meta
+    response_info: ResponseInfo = Field(alias="ResponseInfo")
+    properties: Properties = Field(alias="Properties")
+    datasets: list[Dataset] = Field(alias="Datasets")
+    meta: Meta = Field(alias="Meta")
 
     def __repr__(self) -> str:
-        return f"Response(status={self.ResponseInfo.statusCode!r}, " f"Datasets: [#{len(self.Datasets)} entries])"
+        return f"Response(status={self.response_info.status_code!r}, " f"datasets: [#{len(self.datasets)} entries])"
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.
@@ -253,7 +255,7 @@ class GetDataResponse(BaseModel):
         Returns:
             True if the response status code is 'OK'.
         """
-        return self.ResponseInfo.statusCode == "OK"
+        return self.response_info.status_code == "OK"
 
     def to_dict(self) -> dict:
         """Converts data to a dictionary.
@@ -300,48 +302,35 @@ class GetDataResponse(BaseModel):
 
         # first we have to unpack the data
         rows_data, rows_source = [], []
-        for dataset in self.Datasets:
-            _dsmp = dataset.Source.model_dump()
+        for dataset in self.datasets:
+            _dsmp = dataset.source.model_dump()
             source_dump = {col.name: _dsmp[col.field] for col in columns_source if col.field in _dsmp}
-            for source_data in dataset.Data:
+            for source_data in dataset.data:
                 rows_data.append(source_data.model_dump())
                 rows_source.append(source_dump)
 
-        # TODO: this is an awful hack around astropy 6, which we need to support over 3.10.
-        #  remove when we stop supporting astropy 6.
-        #  N! i am unsure on whether we could have catalog info without data. the contrary should not be possible.
-        #  N! this said, no data means no science: it seems safe to me to just check for `rows_data`
-        if not rows_data:
-            columns = columns_data + columns_source
-            table = Table(
-                np.zeros(len(columns)),
-                names=[col.name for col in columns],
-                dtype=[col.dtype for col in columns],
-                units=[col.units for col in columns],
-            )[:0]
-        else:
-            # first, the column table
-            table_data = Table(
-                rows_data,
-                names=[col.name for col in columns_data],
-                dtype=[col.dtype for col in columns_data],
-                units=[col.units for col in columns_data],
-            )
+        # first, the column table
+        table_data = Table(
+            rows_data,
+            names=[col.name for col in columns_data],
+            dtype=[col.dtype for col in columns_data],
+            units=[col.units for col in columns_data],
+        )
 
-            # second, the catalog property table
-            table_source = Table(
-                rows_source,
-                names=[col.name for col in columns_source],
-                dtype=[col.dtype for col in columns_source],
-                units=[col.units for col in columns_source],
-            )
+        # second, the catalog property table
+        table_source = Table(
+            rows_source,
+            names=[col.name for col in columns_source],
+            dtype=[col.dtype for col in columns_source],
+            units=[col.units for col in columns_source],
+        )
 
-            # then, we stack
-            table = hstack((table_data, table_source))
+        # then, we stack
+        table = hstack((table_data, table_source))
 
         # and add metadata
         for m in TABLE_SCHEMA.metadata():
-            table.meta[m.name] = getattr(self.Properties, m.name)
+            table.meta[m.name] = getattr(self.properties, m.name)
             if m.units:
                 table.meta[m.name] *= m.units
         return table
@@ -393,7 +382,7 @@ class GetDataResponse(BaseModel):
 
         def info2ul(infos: Column) -> list[bool]:
             """Parses info column and checks where it contains 'Upper Limit' tag.'"""
-            return ["Upper Limit" in [i.strip() for i in str(info).split(self.Meta.InfoSeparator)] for info in infos]
+            return ["Upper Limit" in [i.strip() for i in str(info).split(self.meta.info_separator)] for info in infos]
 
         # type and label choice from Jetset documentation, "Data format and SED data".
         # fmt: off
@@ -415,6 +404,14 @@ class GetDataResponse(BaseModel):
         # fmt: on
         return table
 
+    def sources(self) -> list[dict]:
+        """Returns a list of references to the catalog and papers from which the data is collected.
+
+        Returns:
+            Datasets source metadata.
+        """
+        return [d.source.model_dump() for d in self.datasets]
+
 
 class CatalogsResponse(BaseModel):
     """SED Builder API response to `catalogs` endpoint.
@@ -423,12 +420,12 @@ class CatalogsResponse(BaseModel):
     including their names, identifiers, error radii, and spectral classifications.
 
     Attributes:
-        ResponseInfo: Status information about the API response.
-        Catalogs: List of catalog information entries.
+        response_info: Status information about the API response.
+        catalogs: List of catalog information entries.
     """
 
-    ResponseInfo: ResponseInfo
-    Catalogs: list[Source]
+    response_info: ResponseInfo = Field(alias="ResponseInfo")
+    catalogs: list[Source] = Field(alias="Catalogs")
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.
@@ -436,7 +433,7 @@ class CatalogsResponse(BaseModel):
         Returns:
             True if the response status code is 'OK'.
         """
-        return self.ResponseInfo.statusCode == "OK"
+        return self.response_info.status_code == "OK"
 
     def to_list(self) -> list[dict]:
         """Converts catalog data to a list of dictionaries.
@@ -444,7 +441,7 @@ class CatalogsResponse(BaseModel):
         Returns:
             A list of dictionaries, one per catalog, containing all catalog metadata.
         """
-        return [c.model_dump() for c in self.Catalogs]
+        return [c.model_dump() for c in self.catalogs]
 
 
 class NameResolverItem(BaseModel):

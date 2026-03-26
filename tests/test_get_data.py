@@ -213,9 +213,9 @@ class TestResponseConversions:
             response = get_data_from_json(fixture)
             result = response.to_dict()
             assert isinstance(result, dict)
-            assert "ResponseInfo" in result
-            assert "Properties" in result
-            assert "Datasets" in result
+            assert "response_info" in result
+            assert "properties" in result
+            assert "datasets" in result
 
     def test_to_json(self, fixtures):
         for fixture in fixtures:
