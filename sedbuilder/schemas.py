@@ -338,7 +338,7 @@ class GetDataResponse(BaseModel):
     @validate_call
     def to_jetset(
         self,
-        z: Annotated[float, Field(ge=0.0, le=1.0)],
+        z: Annotated[float, Field(ge=0.0)],
         ul_cl: Annotated[float, Field(ge=0.0, le=1.0)] = 0.95,
         restframe: Literal["obs", "src"] = "obs",
         data_scale: Literal["lin-lin", "log-log"] = "lin-lin",
@@ -351,7 +351,7 @@ class GetDataResponse(BaseModel):
         plus metadata needed for Jetset analysis.
 
         Args:
-            z: Source redshift, must be between 0 and 1.
+            z: Source redshift, must be greater or equal to 0.
             ul_cl: Confidence level for upper limits, must be between 0 and 1,
                 exclusive. Default is 0.95.
             restframe: Reference frame for the data. Options are "obs" for observed flux (default)

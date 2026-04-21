@@ -72,7 +72,7 @@ def resolve_name(
     name: str,
     timeout: Annotated[float, Field(gt=0.0)] = 2.0,
 ) -> tuple[tuple[float, float], str]:
-    """Resolve a source name to (ra, dec) via SSDC/SIMBAD/NED, with astropy fallback.
+    """Resolve a source name to (ra, dec) via SSDC name resolver, with astropy fallback.
 
     Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.
 
