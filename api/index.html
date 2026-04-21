@@ -1656,7 +1656,7 @@ against <code>catalogs</code> response schema.</p>
 
     <div class="doc doc-contents first">
 
-        <p>Resolve a source name to (ra, dec) via SSDC/SIMBAD/NED, with astropy fallback.</p>
+        <p>Resolve a source name to (ra, dec) via SSDC name resolver, with astropy fallback.</p>
 <p>Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.</p>
 
 
@@ -1821,7 +1821,7 @@ against <code>catalogs</code> response schema.</p>
 </span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
 </span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73"></a>    <span class="n">timeout</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">gt</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">,</span>
 </span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">],</span> <span class="nb">str</span><span class="p">]:</span>
-</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Resolve a source name to (ra, dec) via SSDC/SIMBAD/NED, with astropy fallback.</span>
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Resolve a source name to (ra, dec) via SSDC name resolver, with astropy fallback.</span>
 </span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76"></a>
 </span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="sd">    Queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.</span>
 </span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78"></a>
@@ -2244,7 +2244,7 @@ against <code>catalogs</code> response schema.</p>
 </span><span id="__span-0-338"><a id="__codelineno-0-338" name="__codelineno-0-338"></a>    <span class="nd">@validate_call</span>
 </span><span id="__span-0-339"><a id="__codelineno-0-339" name="__codelineno-0-339"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">to_jetset</span><span class="p">(</span>
 </span><span id="__span-0-340"><a id="__codelineno-0-340" name="__codelineno-0-340"></a>        <span class="bp">self</span><span class="p">,</span>
-</span><span id="__span-0-341"><a id="__codelineno-0-341" name="__codelineno-0-341"></a>        <span class="n">z</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)],</span>
+</span><span id="__span-0-341"><a id="__codelineno-0-341" name="__codelineno-0-341"></a>        <span class="n">z</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)],</span>
 </span><span id="__span-0-342"><a id="__codelineno-0-342" name="__codelineno-0-342"></a>        <span class="n">ul_cl</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.95</span><span class="p">,</span>
 </span><span id="__span-0-343"><a id="__codelineno-0-343" name="__codelineno-0-343"></a>        <span class="n">restframe</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;obs&quot;</span><span class="p">,</span> <span class="s2">&quot;src&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;obs&quot;</span><span class="p">,</span>
 </span><span id="__span-0-344"><a id="__codelineno-0-344" name="__codelineno-0-344"></a>        <span class="n">data_scale</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;lin-lin&quot;</span><span class="p">,</span> <span class="s2">&quot;log-log&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;lin-lin&quot;</span><span class="p">,</span>
@@ -2257,7 +2257,7 @@ against <code>catalogs</code> response schema.</p>
 </span><span id="__span-0-351"><a id="__codelineno-0-351" name="__codelineno-0-351"></a><span class="sd">        plus metadata needed for Jetset analysis.</span>
 </span><span id="__span-0-352"><a id="__codelineno-0-352" name="__codelineno-0-352"></a>
 </span><span id="__span-0-353"><a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">        Args:</span>
-</span><span id="__span-0-354"><a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">            z: Source redshift, must be between 0 and 1.</span>
+</span><span id="__span-0-354"><a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">            z: Source redshift, must be greater or equal to 0.</span>
 </span><span id="__span-0-355"><a id="__codelineno-0-355" name="__codelineno-0-355"></a><span class="sd">            ul_cl: Confidence level for upper limits, must be between 0 and 1,</span>
 </span><span id="__span-0-356"><a id="__codelineno-0-356" name="__codelineno-0-356"></a><span class="sd">                exclusive. Default is 0.95.</span>
 </span><span id="__span-0-357"><a id="__codelineno-0-357" name="__codelineno-0-357"></a><span class="sd">            restframe: Reference frame for the data. Options are &quot;obs&quot; for observed flux (default)</span>
@@ -2673,11 +2673,11 @@ plus metadata needed for Jetset analysis.</p>
                 <code>z</code>
             </td>
             <td>
-                  <code><span title="typing.Annotated">Annotated</span>[<span title="float">float</span>, <span title="pydantic.Field">Field</span>(ge=0.0, le=1.0)]</code>
+                  <code><span title="typing.Annotated">Annotated</span>[<span title="float">float</span>, <span title="pydantic.Field">Field</span>(ge=0.0)]</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>Source redshift, must be between 0 and 1.</p>
+                <p>Source redshift, must be greater or equal to 0.</p>
               </div>
             </td>
             <td>
@@ -2887,7 +2887,7 @@ are missing.</p>
 <span class="normal"><a href="#__codelineno-0-405">405</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-338"><a id="__codelineno-0-338" name="__codelineno-0-338"></a><span class="nd">@validate_call</span>
 </span><span id="__span-0-339"><a id="__codelineno-0-339" name="__codelineno-0-339"></a><span class="k">def</span><span class="w"> </span><span class="nf">to_jetset</span><span class="p">(</span>
 </span><span id="__span-0-340"><a id="__codelineno-0-340" name="__codelineno-0-340"></a>    <span class="bp">self</span><span class="p">,</span>
-</span><span id="__span-0-341"><a id="__codelineno-0-341" name="__codelineno-0-341"></a>    <span class="n">z</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)],</span>
+</span><span id="__span-0-341"><a id="__codelineno-0-341" name="__codelineno-0-341"></a>    <span class="n">z</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)],</span>
 </span><span id="__span-0-342"><a id="__codelineno-0-342" name="__codelineno-0-342"></a>    <span class="n">ul_cl</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Field</span><span class="p">(</span><span class="n">ge</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)]</span> <span class="o">=</span> <span class="mf">0.95</span><span class="p">,</span>
 </span><span id="__span-0-343"><a id="__codelineno-0-343" name="__codelineno-0-343"></a>    <span class="n">restframe</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;obs&quot;</span><span class="p">,</span> <span class="s2">&quot;src&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;obs&quot;</span><span class="p">,</span>
 </span><span id="__span-0-344"><a id="__codelineno-0-344" name="__codelineno-0-344"></a>    <span class="n">data_scale</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;lin-lin&quot;</span><span class="p">,</span> <span class="s2">&quot;log-log&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;lin-lin&quot;</span><span class="p">,</span>
@@ -2900,7 +2900,7 @@ are missing.</p>
 </span><span id="__span-0-351"><a id="__codelineno-0-351" name="__codelineno-0-351"></a><span class="sd">    plus metadata needed for Jetset analysis.</span>
 </span><span id="__span-0-352"><a id="__codelineno-0-352" name="__codelineno-0-352"></a>
 </span><span id="__span-0-353"><a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">    Args:</span>
-</span><span id="__span-0-354"><a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">        z: Source redshift, must be between 0 and 1.</span>
+</span><span id="__span-0-354"><a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">        z: Source redshift, must be greater or equal to 0.</span>
 </span><span id="__span-0-355"><a id="__codelineno-0-355" name="__codelineno-0-355"></a><span class="sd">        ul_cl: Confidence level for upper limits, must be between 0 and 1,</span>
 </span><span id="__span-0-356"><a id="__codelineno-0-356" name="__codelineno-0-356"></a><span class="sd">            exclusive. Default is 0.95.</span>
 </span><span id="__span-0-357"><a id="__codelineno-0-357" name="__codelineno-0-357"></a><span class="sd">        restframe: Reference frame for the data. Options are &quot;obs&quot; for observed flux (default)</span>
