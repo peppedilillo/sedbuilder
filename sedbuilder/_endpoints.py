@@ -9,7 +9,7 @@ import os
 from typing import Callable
 from urllib.parse import quote
 
-_DEV_DOMAIN_URL = r"https://toolsdev.ssdc.asi.it"
+_DEV_DOMAIN_URL = r"https://tools2.ssdc.asi.it"
 """Nightly URL for the SSDC SED Builder REST API."""
 _PROD_DOMAIN_URL = r"https://tools.ssdc.asi.it"
 """Production URL for the SSDC SED Builder REST API."""
@@ -19,17 +19,21 @@ DOMAIN_URL = _DEV_DOMAIN_URL if int(os.getenv("SEDBUILDER_DEV", "0")) else _PROD
 SED_URL = f"{DOMAIN_URL}{_DEV_SED_PATH}" if int(os.getenv("SEDBUILDER_DEV", "0")) else f"{DOMAIN_URL}{_PROD_SED_PATH}"
 
 
-def _get_data(*, ra: float, dec: float) -> str:
+def _get_data(*, ra: float, dec: float, catalog_ids: tuple[int] = tuple()) -> str:
     """Build the getData endpoint URL.
 
     Args:
         ra: Right ascension in degrees.
         dec: Declination in degrees.
+        catalogs: The ids of the catalogs to fetch.
 
     Returns:
         Complete URL for the getData endpoint.
     """
-    return f"{SED_URL}/getData/{ra}/{dec}"
+    if catalog_ids == tuple():
+        return f"{SED_URL}/getData?ra={ra}&dec={dec}"
+    catalog_string = "-".join(map(str, catalog_ids))
+    return f"{SED_URL}/getData?ra={ra}&dec={dec}&catalogs={catalog_string}"
 
 
 def _name_resolver(*, name: str, ssdc: bool, simbad: bool, ned: bool) -> str:

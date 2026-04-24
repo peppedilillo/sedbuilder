@@ -5,7 +5,7 @@ REST API endpoints.
 """
 
 import logging
-from typing import Annotated, overload, Union
+from typing import Annotated, overload, Sequence, Union
 
 import httpx
 from pydantic import Field
@@ -117,6 +117,7 @@ def resolve_name(
 def _get_data_coords(
     ra: Annotated[float, Field(ge=0.0, lt=360.0)],
     dec: Annotated[float, Field(ge=-90.0, le=90.0)],
+    catalog_ids: Sequence[int] = tuple(),
     timeout: Annotated[
         Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
         Field(gt=0.0),
@@ -137,17 +138,26 @@ def _get_data_coords(
         TimeoutError: If the request times out.
         RuntimeError: If the request fails.
     """
-    r = _get_and_validate(APIPaths.GET_DATA(ra=ra, dec=dec), timeout)
+    r = _get_and_validate(APIPaths.GET_DATA(ra=ra, dec=dec, catalog_ids=catalog_ids), timeout)
     return GetDataResponse(**r.json())
 
 
 @overload
-def get_data(*, ra: float, dec: float, timeout: float = ...) -> GetDataResponse: ...
+def get_data(
+    *, ra: float, dec: float, catalog_ids: Sequence[int] = tuple(), timeout: float = ...
+) -> GetDataResponse: ...
 @overload
-def get_data(*, name: str, timeout: float = ...) -> GetDataResponse: ...
+def get_data(*, name: str, catalog_ids: Sequence[int] = tuple(), timeout: float = ...) -> GetDataResponse: ...
 
 
-def get_data(*, name: str = None, ra: float = None, dec: float = None, timeout: float = 30.0) -> GetDataResponse:
+def get_data(
+    *,
+    name: str = None,
+    ra: float = None,
+    dec: float = None,
+    catalog_ids: Sequence[int] = tuple(),
+    timeout: float = 30.0,
+) -> GetDataResponse:
     """Queries the SSDC SED Builder API to retrieve Spectral Energy Distribution
     data for the specified sky coordinates or source name.
 
@@ -156,6 +166,7 @@ def get_data(*, name: str = None, ra: float = None, dec: float = None, timeout: 
         dec: Declination in degrees (-90 to 90). Mutually exclusive with `name`.
         name: Source name to resolve to coordinates. Tried against SSDC, SIMBAD,
             NED, and finally astropy's CDS/Sesame resolver.
+        catalog_ids: A sequence of catalog ids to query from (see Notes).
         timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
@@ -183,6 +194,9 @@ def get_data(*, name: str = None, ra: float = None, dec: float = None, timeout: 
         json_str = response.to_json()     # JSON string
         df = response.to_pandas()         # Pandas DataFrame (requires pandas)
         ```
+
+    Note:
+        You can find available catalogs and their ids with [`catalogs`][sedbuilder.requests.catalogs].
     """
 
     if name is not None and ((ra is None) and (dec is None)):
@@ -190,9 +204,9 @@ def get_data(*, name: str = None, ra: float = None, dec: float = None, timeout: 
         # this is to avoid waiting too long for just the name resolver
         # if we get delayed by the exponential rate meter
         (ra, dec), _ = resolve_name(name)
-        return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
+        return _get_data_coords(ra=ra, dec=dec, catalog_ids=catalog_ids, timeout=timeout)
     if name is None and ((ra is not None) and (dec is not None)):
-        return _get_data_coords(ra=ra, dec=dec, timeout=timeout)
+        return _get_data_coords(ra=ra, dec=dec, catalog_ids=catalog_ids, timeout=timeout)
     raise ValueError("Provide either 'name' or both 'ra' and 'dec'.")
 
 
