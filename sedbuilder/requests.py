@@ -5,7 +5,7 @@ REST API endpoints.
 """
 
 import logging
-from typing import Annotated, overload, Sequence, Union
+from typing import Annotated, Never, overload, Sequence
 
 import httpx
 from pydantic import Field
@@ -119,7 +119,7 @@ def _get_data_coords(
     dec: Annotated[float, Field(ge=-90.0, le=90.0)],
     catalog_ids: Sequence[int] = tuple(),
     timeout: Annotated[
-        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
+        float | int,
         Field(gt=0.0),
     ] = 30.0,
 ) -> GetDataResponse:
@@ -144,14 +144,23 @@ def _get_data_coords(
 
 @overload
 def get_data(
-    *, ra: float, dec: float, catalog_ids: Sequence[int] = tuple(), timeout: float = ...
+    *args: Never,
+    ra: float,
+    dec: float,
+    catalog_ids: Sequence[int] = tuple(),
+    timeout: float = ...,
 ) -> GetDataResponse: ...
 @overload
-def get_data(*, name: str, catalog_ids: Sequence[int] = tuple(), timeout: float = ...) -> GetDataResponse: ...
+def get_data(
+    *args: Never,
+    name: str,
+    catalog_ids: Sequence[int] = tuple(),
+    timeout: float = ...,
+) -> GetDataResponse: ...
 
 
 def get_data(
-    *,
+    *args,
     name: str = None,
     ra: float = None,
     dec: float = None,
@@ -198,7 +207,12 @@ def get_data(
     Note:
         You can find available catalogs and their ids with [`catalogs`][sedbuilder.requests.catalogs].
     """
-
+    if args:
+        raise TypeError(
+            "Are you trying to call `get_data` with a positional argument? "
+            "get_data() accepts keyword arguments only. "
+            f"Hint: get_data(name='Crab Nebula'); get_data(ra=194.04, dec=-5.78)."
+        )
     if name is not None and ((ra is None) and (dec is None)):
         # we are calling _resolve_name leaving its default timeout
         # this is to avoid waiting too long for just the name resolver
@@ -207,13 +221,14 @@ def get_data(
         return _get_data_coords(ra=ra, dec=dec, catalog_ids=catalog_ids, timeout=timeout)
     if name is None and ((ra is not None) and (dec is not None)):
         return _get_data_coords(ra=ra, dec=dec, catalog_ids=catalog_ids, timeout=timeout)
+    # catches missing args, partial coordinates or mixed name/coordinates queries
     raise ValueError("Provide either 'name' or both 'ra' and 'dec'.")
 
 
 @validate_call
 def catalogs(
     timeout: Annotated[
-        Union[float, int],  # TODO: replace with | syntax when we drop python 3.10 support
+        float | int,
         Field(gt=0.0, description="Request timeout in seconds."),
     ] = 30.0,
 ) -> CatalogsResponse:

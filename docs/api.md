@@ -1,7 +1,7 @@
 # API Reference
 
 This API reference describes the Python interface to the ASI-SSDC SED Builder service. 
-The package provides functions to query astronomical sources and convert spectral energy distribution data into various formats.
+The package provides functions to build spectral energy distributions (SEDs) for astronomical sources by querying data from multi-frequency catalogs and converting them into various output formats.
 
 !!! note
     At present, only internally hosted catalogs are supported. More will come.
