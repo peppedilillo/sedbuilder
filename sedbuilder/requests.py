@@ -176,7 +176,8 @@ def get_data(
         dec: Declination in degrees (-90 to 90). Mutually exclusive with `name`.
         name: Source name to resolve to coordinates. Tried against SSDC, SIMBAD,
             NED, and finally astropy's CDS/Sesame resolver.
-        catalog_ids: A sequence of catalog ids to query from (see Notes).
+        catalog_ids: A sequence of catalog ids to query from (see Notes). By default
+            fetches from all catalogs.
         timeout: Request timeout in seconds (default: 30.0).
 
     Returns:
