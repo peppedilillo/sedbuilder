@@ -53,7 +53,9 @@ Resolving a source name takes time. We suggest querying on coordinates when avai
 # install with development dependencies
 git clone https://github.com/peppedilillo/sedbuilder.git
 cd sedbuilder
-pip install -e ".[dev]"
+pip install -e ".[dev, docs]" 
+# or with uv
+uv sync --extra dev --extra docs
 # routes queries to test server (requires internal network)
 source dev.env 
 # install linter pre-commit hooks

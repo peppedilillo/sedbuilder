@@ -5,7 +5,9 @@ Clone the repository and install with development dependencies:
 ```bash
 git clone https://github.com/peppedilillo/sedbuilder.git
 cd sedbuilder
-pip install -e ".[dev]"
+pip install -e ".[dev, docs]"
+# or with uv
+uv sync --extra dev --extra docs
 # next line will route queries to test server. 
 # use only on SSDC internal network 
 source dev.env 
