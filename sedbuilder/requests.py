@@ -128,6 +128,7 @@ def _get_data_coords(
     Args:
         ra: Right ascension in degrees, must be in [0, 360).
         dec: Declination in degrees, must be in [-90, 90].
+        catalog_ids:  A sequence of catalog ids to query from.
         timeout: Request timeout in seconds.
 
     Returns:

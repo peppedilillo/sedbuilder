@@ -125,9 +125,66 @@ class TestGetDataHTTP:
             get_data(ra=194.04625, dec=-5.789167)
 
             called_url = mock_get.call_args[0][0]
-            assert "194.04625" in called_url
-            assert "-5.789167" in called_url
             assert "getData" in called_url
+            assert "ra=194.04625" in called_url
+            assert "dec=-5.789167" in called_url
+
+
+class TestGetDataEndpointURL:
+    """Unit tests for the _get_data URL builder in _endpoints.py."""
+
+    def test_no_catalogs(self):
+        from sedbuilder._endpoints import _get_data
+
+        url = _get_data(ra=194.04625, dec=-5.789167)
+        assert "catalogs" not in url
+
+    def test_single_catalog(self):
+        from sedbuilder._endpoints import _get_data
+
+        url = _get_data(ra=194.04625, dec=-5.789167, catalog_ids=(5,))
+        assert "catalogs=5" in url
+
+    def test_multiple_catalogs(self):
+        from sedbuilder._endpoints import _get_data
+
+        url = _get_data(ra=194.04625, dec=-5.789167, catalog_ids=(1, 2, 3))
+        assert "catalogs=1-2-3" in url
+
+
+class TestGetDataCatalogIds:
+    """Test that catalog_ids flows through the public get_data interface."""
+
+    def test_coords_no_catalog_ids(self, mock_response):
+        with patch("httpx.get") as mock_get:
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            get_data(ra=194.04625, dec=-5.789167)
+            assert "catalogs" not in mock_get.call_args[0][0]
+
+    def test_coords_single_catalog_id(self, mock_response):
+        with patch("httpx.get") as mock_get:
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            get_data(ra=194.04625, dec=-5.789167, catalog_ids=[5])
+            assert "catalogs=5" in mock_get.call_args[0][0]
+
+    def test_coords_multiple_catalog_ids(self, mock_response):
+        with patch("httpx.get") as mock_get:
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            get_data(ra=194.04625, dec=-5.789167, catalog_ids=[1, 2, 3])
+            assert "catalogs=1-2-3" in mock_get.call_args[0][0]
+
+    def test_name_with_catalog_ids(self, mock_response):
+        with (
+            patch("sedbuilder.requests.resolve_name", return_value=((83.6329, 22.0144), "db")),
+            patch("httpx.get") as mock_get,
+        ):
+            mock_get.return_value = Mock(json=lambda: mock_response)
+            get_data(name="Crab Nebula", catalog_ids=[5])
+            assert "catalogs=5" in mock_get.call_args[0][0]
+
+    def test_catalog_ids_wrong_type_raises(self):
+        with pytest.raises(ValidationError):
+            get_data(ra=194.04625, dec=-5.789167, catalog_ids=["foo", "bar"])
 
 
 class TestGetDataByName:

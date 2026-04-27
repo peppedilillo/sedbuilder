@@ -60,6 +60,8 @@ source dev.env
 pre-commit install
 # runs tests
 pytest
+# runs smoke tests against the live server
+pytest --smoke
 # serve and build documentation
 mkdocs serve
 mkdocs build

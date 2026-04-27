@@ -53,3 +53,8 @@ docs = [
     "mkdocs-material",
     "mkdocstrings[python]",
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "smoke: marks tests requiring live server access (run with --smoke)",
+]

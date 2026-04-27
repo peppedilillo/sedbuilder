@@ -29,6 +29,12 @@ pytest
 
 You must first `cd` into the project directory.
 
+To run smoke tests against the live server:
+
+```bash
+pytest --smoke
+```
+
 ### Building and shipping Documentation
 
 ```bash

@@ -25,12 +25,12 @@ def _get_data(*, ra: float, dec: float, catalog_ids: tuple[int] = tuple()) -> st
     Args:
         ra: Right ascension in degrees.
         dec: Declination in degrees.
-        catalogs: The ids of the catalogs to fetch.
+        catalog_ids: The ids of the catalogs to fetch.
 
     Returns:
         Complete URL for the getData endpoint.
     """
-    if catalog_ids == tuple():
+    if not catalog_ids:
         return f"{SED_URL}/getData?ra={ra}&dec={dec}"
     catalog_string = "-".join(map(str, catalog_ids))
     return f"{SED_URL}/getData?ra={ra}&dec={dec}&catalogs={catalog_string}"
