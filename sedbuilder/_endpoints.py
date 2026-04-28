@@ -9,14 +9,13 @@ import os
 from typing import Callable
 from urllib.parse import quote
 
-_DEV_DOMAIN_URL = r"https://tools2.ssdc.asi.it"
+_DEV_DOMAIN_URL = r"https://toolsdev2.ssdc.asi.it"
 """Nightly URL for the SSDC SED Builder REST API."""
 _PROD_DOMAIN_URL = r"https://tools.ssdc.asi.it"
 """Production URL for the SSDC SED Builder REST API."""
-_DEV_SED_PATH = r"/SED-REST2/rest"
-_PROD_SED_PATH = r"/SED-REST/rest"
+_SED_PATH = r"/SED-REST/rest"
 DOMAIN_URL = _DEV_DOMAIN_URL if int(os.getenv("SEDBUILDER_DEV", "0")) else _PROD_DOMAIN_URL
-SED_URL = f"{DOMAIN_URL}{_DEV_SED_PATH}" if int(os.getenv("SEDBUILDER_DEV", "0")) else f"{DOMAIN_URL}{_PROD_SED_PATH}"
+SED_URL = f"{DOMAIN_URL}{_SED_PATH}"
 
 
 def _get_data(*, ra: float, dec: float, catalog_ids: tuple[int] = tuple()) -> str:
