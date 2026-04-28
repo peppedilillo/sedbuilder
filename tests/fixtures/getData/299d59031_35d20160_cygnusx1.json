@@ -2,10 +2,10 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4785_1"
+    "APIVersion": "1.4941_1"
   },
   "Properties": {
-    "Nh": 7.05e+21,
+    "Nh": -1.0,
     "Units": {
       "Frequency": "Hz",
       "FrequencyError": "Hz",
@@ -977,341 +977,6 @@
     },
     {
       "Source": {
-        "Id": 2729,
-        "Name": "CMA",
-        "ErrorRadius": 0.5,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog"
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.4651319379077621,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.939654535022263e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.6159262486725203e-11,
-          "StartTime": 45505.742188,
-          "StopTime": 45505.742188
-        },
-        {
-          "AngularDistance": 0.4651319379077621,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.939654535022263e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.6159262486725203e-11,
-          "StartTime": 45505.742188,
-          "StopTime": 45505.742188
-        },
-        {
-          "AngularDistance": 0.3843471630907671,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.0458849993224105e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.5006891048079117e-11,
-          "StartTime": 45505.414062,
-          "StopTime": 45505.414062
-        },
-        {
-          "AngularDistance": 0.36021753875810625,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.879442090465016e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.590412691070767e-11,
-          "StartTime": 45505.414062,
-          "StopTime": 45505.414062
-        },
-        {
-          "AngularDistance": 0.39051184382441706,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.269626057142211e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.072138842768487e-10,
-          "StartTime": 45543.785156,
-          "StopTime": 45543.785156
-        },
-        {
-          "AngularDistance": 0.40374913662712775,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.7011885993776606e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.586948161390524e-11,
-          "StartTime": 45543.917969,
-          "StopTime": 45543.917969
-        },
-        {
-          "AngularDistance": 0.4226038536089526,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.5057106585208485e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.884069069751138e-11,
-          "StartTime": 45544.007812,
-          "StopTime": 45544.007812
-        },
-        {
-          "AngularDistance": 0.18491215491258903,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.3094008923986e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3233024215752013e-10,
-          "StartTime": 45506.058594,
-          "StopTime": 45506.058594
-        },
-        {
-          "AngularDistance": 0.32172706967313514,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.2249200653353984e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1658340143431244e-10,
-          "StartTime": 45602.179688,
-          "StopTime": 45602.179688
-        },
-        {
-          "AngularDistance": 0.17435883845097125,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.4392128582329904e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.841469163104396e-11,
-          "StartTime": 45505.308594,
-          "StopTime": 45505.308594
-        },
-        {
-          "AngularDistance": 0.1563183460625363,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.1221238692136094e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.6353865669438772e-11,
-          "StartTime": 45505.003906,
-          "StopTime": 45505.003906
-        },
-        {
-          "AngularDistance": 0.13953224095217498,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.965525321409281e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.8801288349854716e-11,
-          "StartTime": 45505.003906,
-          "StopTime": 45505.003906
-        },
-        {
-          "AngularDistance": 0.1326617586975061,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.6244949818551326e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6800499381130908e-10,
-          "StartTime": 45543.695312,
-          "StopTime": 45543.695312
-        },
-        {
-          "AngularDistance": 0.08207759709988424,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.936414442435097e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.961196571058005e-11,
-          "StartTime": 46222.5,
-          "StopTime": 46222.5
-        },
-        {
-          "AngularDistance": 0.08529087755686955,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.98849389775669e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.454000184316718e-11,
-          "StartTime": 46222.609375,
-          "StopTime": 46222.609375
-        },
-        {
-          "AngularDistance": 0.07868532115707494,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.8086308351315654e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.598724733941015e-11,
-          "StartTime": 46222.546875,
-          "StopTime": 46222.546875
-        },
-        {
-          "AngularDistance": 0.1386377392198756,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.4733254651118104e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3328036659623057e-10,
-          "StartTime": 45506.101562,
-          "StopTime": 45506.101562
-        },
-        {
-          "AngularDistance": 0.05420414727728415,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.64852129115755e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.014261987838403e-11,
-          "StartTime": 45841.28125,
-          "StopTime": 45841.28125
-        },
-        {
-          "AngularDistance": 0.04933816102270886,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.7543372766277958e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0055954307359325e-10,
-          "StartTime": 45889.246094,
-          "StopTime": 45889.246094
-        },
-        {
-          "AngularDistance": 0.07448880963376345,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.1517034230678215e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1291457845266927e-10,
-          "StartTime": 45505.953125,
-          "StopTime": 45505.953125
-        },
-        {
-          "AngularDistance": 0.03800066639636965,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.2045575615308117e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0547502835375867e-10,
-          "StartTime": 45841.21875,
-          "StopTime": 45841.21875
-        },
-        {
-          "AngularDistance": 0.07654137656646405,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.6475626115637355e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0144253016930224e-10,
-          "StartTime": 45506.007812,
-          "StopTime": 45506.007812
-        },
-        {
-          "AngularDistance": 0.06251686286838729,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.6181203496766375e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0151025034399988e-10,
-          "StartTime": 45505.90625,
-          "StopTime": 45505.90625
-        },
-        {
-          "AngularDistance": 0.01791772173295301,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.1078584942642084e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0636912903965297e-10,
-          "StartTime": 45841.378906,
-          "StopTime": 45841.378906
-        },
-        {
-          "AngularDistance": 0.05584631543486258,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.9196340745414283e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1656772707205809e-10,
-          "StartTime": 46222.75,
-          "StopTime": 46222.75
-        },
-        {
-          "AngularDistance": 0.026040086602804026,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.492969675970348e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.032198636724093e-11,
-          "StartTime": 45888.453125,
-          "StopTime": 45888.453125
-        },
-        {
-          "AngularDistance": 0.05194278285305318,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.3049534828160944e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.22805067661217e-11,
-          "StartTime": 46356.753906,
-          "StopTime": 46356.753906
-        },
-        {
-          "AngularDistance": 0.04227705262726586,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.858671613198729e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.348856019172503e-11,
-          "StartTime": 46356.808594,
-          "StopTime": 46356.808594
-        },
-        {
-          "AngularDistance": 0.06804124408479778,
-          "Frequency": 7.646e+16,
-          "Nufnu": 9.52359323551443e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.361831977629028e-11,
-          "StartTime": 45889.058594,
-          "StopTime": 45889.058594
-        },
-        {
-          "AngularDistance": 0.06499284749111403,
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.340111468884441e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4618370826649542e-10,
-          "StartTime": 45888.5625,
-          "StopTime": 45888.5625
-        },
-        {
-          "AngularDistance": 0.08113192504022691,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.3551028693567934e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.2139947530609275e-11,
-          "StartTime": 45889.195312,
-          "StopTime": 45889.195312
-        },
-        {
-          "AngularDistance": 0.06429957491189296,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.4561611868553795e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.722703907028306e-11,
-          "StartTime": 46356.710938,
-          "StopTime": 46356.710938
-        },
-        {
-          "AngularDistance": 0.09316175900698097,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.367398450393928e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0906239467862666e-10,
-          "StartTime": 45890.582031,
-          "StopTime": 45890.582031
-        },
-        {
-          "AngularDistance": 0.07631339329829938,
-          "Frequency": 7.646e+16,
-          "Nufnu": 3.2025693383347018e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0334440595390579e-10,
-          "StartTime": 45890.496094,
-          "StopTime": 45890.496094
-        },
-        {
-          "AngularDistance": 0.08515628758239543,
-          "Frequency": 7.646e+16,
-          "Nufnu": 5.776747709400557e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.32313076730645e-10,
-          "StartTime": 46006.769531,
-          "StopTime": 46006.769531
-        },
-        {
-          "AngularDistance": 0.388169237798648,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.3849353452063097e-09,
-          "FrequencyError": 0.0,
-          "NufnuError": 9.112818646213483e-11,
-          "StartTime": 45602.273438,
-          "StopTime": 45602.273438
-        }
-      ]
-    },
-    {
-      "Source": {
         "Id": 6,
         "Name": "IPC",
         "ErrorRadius": 1.0,
@@ -1323,9 +988,9 @@
           "Name": "2E1956.4+3503",
           "AngularDistance": 0.16426533118795972,
           "Frequency": 2.42e+17,
-          "Nufnu": 5.049743153603034e-10,
+          "Nufnu": 1.7586348382747623e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 5.042085558852117e-12,
+          "NufnuError": 1.7559679872099228e-12,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -1351,9 +1016,9 @@
           "Name": "1RXS J195821.9+351156",
           "AngularDistance": 0.16073048777315124,
           "Frequency": 2.42e+17,
-          "Nufnu": 2.8510755789004216e-09,
+          "Nufnu": 4.1386580984038365e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 1.466732922304527e-11,
+          "NufnuError": 2.1291284356033453e-12,
           "StartTime": 47892.5,
           "StopTime": 48257.5
         }
@@ -9586,14 +9251,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "Polarized x-rays constrain the disk-jet geometry in the black hole x-ray binary Cygnus X-1",
-            "Authors": "Krawczynski, Henric  Muleri, Fabio Dovciak, Michal et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2022Sci...378..650K"
-          },
-          {
             "Title": "An IXPE-led X-Ray Spectropolarimetric Campaign on the Soft State of Cygnus X-1: X-Ray Polarimetric Evidence for Strong Gravitational Lensing",
             "Authors": "Steiner, James F. ; Nathan, Edward ; Hu, Kun et al.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2024ApJ...969L..30S"
+          },
+          {
+            "Title": "Polarized x-rays constrain the disk-jet geometry in the black hole x-ray binary Cygnus X-1",
+            "Authors": "Krawczynski, Henric  Muleri, Fabio Dovciak, Michal et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2022Sci...378..650K"
           }
         ]
       },

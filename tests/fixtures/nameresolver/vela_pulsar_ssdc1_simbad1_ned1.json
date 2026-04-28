@@ -3,22 +3,22 @@
     {
       "valueDB": "SSDC",
       "valueDEC": "-45.17645",
-      "text": "VELAPULSAR",
       "id": "SSDC255137",
+      "text": "VELAPULSAR",
       "valueRA": "128.8361"
     },
     {
       "valueDB": "NED",
       "valueDEC": "-45.176",
-      "text": "Vela Pulsar",
       "id": "NED2null",
+      "text": "Vela Pulsar",
       "valueRA": "128.836"
     },
     {
       "valueDB": "SIMBAD",
       "valueDEC": "-45.176432",
-      "text": "Vela Pulsar",
       "id": "SIMBAD3null",
+      "text": "Vela Pulsar",
       "valueRA": "128.836064"
     }
   ]

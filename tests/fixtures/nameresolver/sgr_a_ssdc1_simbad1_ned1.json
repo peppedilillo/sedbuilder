@@ -3,15 +3,15 @@
     {
       "valueDB": "NED",
       "valueDEC": "-29.007797",
-      "text": "Sgr A*",
       "id": "NED1null",
+      "text": "Sgr A*",
       "valueRA": "266.416826"
     },
     {
       "valueDB": "SIMBAD",
       "valueDEC": "-29.007825",
-      "text": "Sgr A*",
       "id": "SIMBAD2null",
+      "text": "Sgr A*",
       "valueRA": "266.416817"
     }
   ]

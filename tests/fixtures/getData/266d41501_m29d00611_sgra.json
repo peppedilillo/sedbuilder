@@ -2,10 +2,10 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4785_1"
+    "APIVersion": "1.4941_1"
   },
   "Properties": {
-    "Nh": 8.77e+20,
+    "Nh": -1.0,
     "Units": {
       "Frequency": "Hz",
       "FrequencyError": "Hz",
@@ -495,9 +495,9 @@
           "Name": "2E1742.5-2859",
           "AngularDistance": 0.3225900230374546,
           "Frequency": 2.42e+17,
-          "Nufnu": 2.2836615206410327e-13,
+          "Nufnu": 2.084713053504178e-13,
           "FrequencyError": 0.0,
-          "NufnuError": 5.739333442791707e-14,
+          "NufnuError": 5.239333079116892e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -505,9 +505,9 @@
           "Name": "2E1742.5-2858",
           "AngularDistance": 0.40161256974104986,
           "Frequency": 2.42e+17,
-          "Nufnu": 3.196078963250331e-13,
+          "Nufnu": 2.917642336438616e-13,
           "FrequencyError": 0.0,
-          "NufnuError": 4.4297843783187766e-14,
+          "NufnuError": 4.043869563952625e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -1881,8 +1881,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54682.7,
-          "StopTime": 54713.0,
-          "Info": "Upper Limit"
+          "StopTime": 54713.0
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1891,8 +1890,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54713.0,
-          "StopTime": 54743.4,
-          "Info": "Upper Limit"
+          "StopTime": 54743.4
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1901,8 +1899,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54743.4,
-          "StopTime": 54773.8,
-          "Info": "Upper Limit"
+          "StopTime": 54773.8
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1911,8 +1908,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54773.8,
-          "StopTime": 54804.1,
-          "Info": "Upper Limit"
+          "StopTime": 54804.1
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1921,8 +1917,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54804.1,
-          "StopTime": 54834.5,
-          "Info": "Upper Limit"
+          "StopTime": 54834.5
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1931,8 +1926,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54834.5,
-          "StopTime": 54864.9,
-          "Info": "Upper Limit"
+          "StopTime": 54864.9
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1941,8 +1935,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54864.9,
-          "StopTime": 54895.2,
-          "Info": "Upper Limit"
+          "StopTime": 54895.2
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1951,8 +1944,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54895.2,
-          "StopTime": 54925.6,
-          "Info": "Upper Limit"
+          "StopTime": 54925.6
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1961,8 +1953,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54925.6,
-          "StopTime": 54956.0,
-          "Info": "Upper Limit"
+          "StopTime": 54956.0
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1971,8 +1962,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54956.0,
-          "StopTime": 54986.4,
-          "Info": "Upper Limit"
+          "StopTime": 54986.4
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1981,8 +1971,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54986.4,
-          "StopTime": 55016.7,
-          "Info": "Upper Limit"
+          "StopTime": 55016.7
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -1991,8 +1980,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55016.7,
-          "StopTime": 55047.1,
-          "Info": "Upper Limit"
+          "StopTime": 55047.1
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2001,8 +1989,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55047.1,
-          "StopTime": 55077.5,
-          "Info": "Upper Limit"
+          "StopTime": 55077.5
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2011,8 +1998,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55077.5,
-          "StopTime": 55107.8,
-          "Info": "Upper Limit"
+          "StopTime": 55107.8
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2021,8 +2007,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55107.8,
-          "StopTime": 55138.2,
-          "Info": "Upper Limit"
+          "StopTime": 55138.2
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2031,8 +2016,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55138.2,
-          "StopTime": 55168.6,
-          "Info": "Upper Limit"
+          "StopTime": 55168.6
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2041,8 +2025,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55168.6,
-          "StopTime": 55198.9,
-          "Info": "Upper Limit"
+          "StopTime": 55198.9
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2051,8 +2034,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55198.9,
-          "StopTime": 55229.3,
-          "Info": "Upper Limit"
+          "StopTime": 55229.3
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2061,8 +2043,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55229.3,
-          "StopTime": 55259.7,
-          "Info": "Upper Limit"
+          "StopTime": 55259.7
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2071,8 +2052,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55259.7,
-          "StopTime": 55290.1,
-          "Info": "Upper Limit"
+          "StopTime": 55290.1
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2081,8 +2061,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55290.1,
-          "StopTime": 55320.4,
-          "Info": "Upper Limit"
+          "StopTime": 55320.4
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2091,8 +2070,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55320.4,
-          "StopTime": 55350.8,
-          "Info": "Upper Limit"
+          "StopTime": 55350.8
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2101,8 +2079,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55350.8,
-          "StopTime": 55381.2,
-          "Info": "Upper Limit"
+          "StopTime": 55381.2
         },
         {
           "AngularDistance": 16.0038788820093,
@@ -2111,8 +2088,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 55381.2,
-          "StopTime": 55409.0,
-          "Info": "Upper Limit"
+          "StopTime": 55409.0
         },
         {
           "AngularDistance": 1.7031814385590238,

@@ -2,10 +2,10 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4785_1"
+    "APIVersion": "1.4941_1"
   },
   "Properties": {
-    "Nh": 2.35e+20,
+    "Nh": -1.0,
     "Units": {
       "Frequency": "Hz",
       "FrequencyError": "Hz",
@@ -1711,9 +1711,9 @@
           "Name": "2E1322.5-4245",
           "AngularDistance": 0.25822246170915186,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.074044049178135e-11,
+          "Nufnu": 1.1351443410286746e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 1.418539435613186e-13,
+          "NufnuError": 1.4992374047363225e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -1721,9 +1721,9 @@
           "Name": "2E1322.5-4245",
           "AngularDistance": 0.2374494762171787,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.993648720886634e-12,
+          "Nufnu": 2.1070635466443303e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 5.1895161401305765e-14,
+          "NufnuError": 5.4847376917677713e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -1749,9 +1749,9 @@
           "Name": "CEN A",
           "AngularDistance": 0.28085452274047457,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.297626354907218e-11,
+          "Nufnu": 1.3714458123665767e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 1.1563007122935603e-12,
+          "NufnuError": 1.2220804268613058e-12,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }

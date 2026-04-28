@@ -2,10 +2,10 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4785_1"
+    "APIVersion": "1.4941_1"
   },
   "Properties": {
-    "Nh": 1.28e+20,
+    "Nh": -1.0,
     "Units": {
       "Frequency": "Hz",
       "FrequencyError": "Hz",
@@ -3151,206 +3151,6 @@
     },
     {
       "Source": {
-        "Id": 2729,
-        "Name": "CMA",
-        "ErrorRadius": 0.5,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog"
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.0581646086076256,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.4991745235300366e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.547216878889886e-12,
-          "StartTime": 46381.570312,
-          "StopTime": 46381.570312
-        },
-        {
-          "AngularDistance": 0.02553328348266277,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.152393732299443e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.1709205335958865e-12,
-          "StartTime": 46381.507812,
-          "StopTime": 46381.507812
-        },
-        {
-          "AngularDistance": 0.02528196066889014,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.4803648496702186e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6013444985012153e-12,
-          "StartTime": 45638.121094,
-          "StopTime": 45638.121094
-        },
-        {
-          "AngularDistance": 0.011477245851930013,
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.97504834125695e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.6656591973549215e-12,
-          "StartTime": 45667.839844,
-          "StopTime": 45667.839844
-        },
-        {
-          "AngularDistance": 0.04588051377585534,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.552074068309236e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.827613545885632e-12,
-          "StartTime": 46015.488281,
-          "StopTime": 46015.488281
-        },
-        {
-          "AngularDistance": 0.009989969955940106,
-          "Frequency": 7.646e+16,
-          "Nufnu": 8.463982214357318e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.7664105729776347e-12,
-          "StartTime": 45638.039062,
-          "StopTime": 45638.039062
-        },
-        {
-          "AngularDistance": 0.009989969955940106,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.032922614191326e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.151895775812566e-12,
-          "StartTime": 46371.347656,
-          "StopTime": 46371.347656
-        },
-        {
-          "AngularDistance": 0.01844870383035584,
-          "Frequency": 7.646e+16,
-          "Nufnu": 8.46257382981333e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.67079693986205e-12,
-          "StartTime": 46015.53125,
-          "StopTime": 46015.53125
-        },
-        {
-          "AngularDistance": 0.01844870383035584,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.8993175879076743e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0736329080980866e-11,
-          "StartTime": 46015.503906,
-          "StopTime": 46015.503906
-        },
-        {
-          "AngularDistance": 0.08657650339378407,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.2126372339337674e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.477577055855729e-12,
-          "StartTime": 46011.472656,
-          "StopTime": 46011.472656
-        },
-        {
-          "AngularDistance": 0.02322296255000314,
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.089243041537689e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2322466927390456e-11,
-          "StartTime": 46362.460938,
-          "StopTime": 46362.460938
-        },
-        {
-          "AngularDistance": 0.03257026673015451,
-          "Frequency": 7.646e+16,
-          "Nufnu": 4.7766407770414006e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7094208260412211e-12,
-          "StartTime": 45638.074219,
-          "StopTime": 45638.074219
-        },
-        {
-          "AngularDistance": 0.07710011457888456,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.6518838724228614e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.961235832968383e-12,
-          "StartTime": 46011.441406,
-          "StopTime": 46011.441406
-        },
-        {
-          "AngularDistance": 0.0464396281903524,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.315531156898749e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.013497128351505e-12,
-          "StartTime": 46370.894531,
-          "StopTime": 46370.894531
-        },
-        {
-          "AngularDistance": 0.0939878088588347,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.604558191328356e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.756024339132326e-12,
-          "StartTime": 46011.414062,
-          "StopTime": 46011.414062
-        },
-        {
-          "AngularDistance": 0.0893900995351824,
-          "Frequency": 7.646e+16,
-          "Nufnu": 2.1527021908368457e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.554474145744558e-12,
-          "StartTime": 46010.578125,
-          "StopTime": 46010.578125
-        },
-        {
-          "AngularDistance": 0.07419974050720322,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.416838205086321e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.664183808949608e-12,
-          "StartTime": 46010.605469,
-          "StopTime": 46010.605469
-        },
-        {
-          "AngularDistance": 0.08711827326881647,
-          "Frequency": 7.646e+16,
-          "Nufnu": 9.463262254674227e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.539663895167292e-12,
-          "StartTime": 46010.636719,
-          "StopTime": 46010.636719
-        },
-        {
-          "AngularDistance": 0.059516238000663316,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.9697057077749058e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.249444342310616e-12,
-          "StartTime": 46370.875,
-          "StopTime": 46370.875
-        },
-        {
-          "AngularDistance": 0.08653652821380779,
-          "Frequency": 7.646e+16,
-          "Nufnu": 9.553898515497621e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.580018540512274e-12,
-          "StartTime": 45667.796875,
-          "StopTime": 45667.796875
-        },
-        {
-          "AngularDistance": 0.10713241693299286,
-          "Frequency": 7.646e+16,
-          "Nufnu": 1.4293031251607759e-10,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3462303776674095e-11,
-          "StartTime": 45667.785156,
-          "StopTime": 45667.785156
-        }
-      ]
-    },
-    {
-      "Source": {
         "Id": 6,
         "Name": "IPC",
         "ErrorRadius": 1.0,
@@ -3362,9 +3162,9 @@
           "Name": "2E2155.9-3027",
           "AngularDistance": 0.08209747895237648,
           "Frequency": 2.42e+17,
-          "Nufnu": 2.2104718836023822e-11,
+          "Nufnu": 2.4141696421802946e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 3.0520787482580715e-13,
+          "NufnuError": 3.333331635768348e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -3372,9 +3172,9 @@
           "Name": "2E2155.9-3027",
           "AngularDistance": 0.09889942117776027,
           "Frequency": 2.42e+17,
-          "Nufnu": 3.852537492921553e-11,
+          "Nufnu": 4.2075536584592876e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 2.560443507129284e-13,
+          "NufnuError": 2.79639159008686e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -3382,9 +3182,9 @@
           "Name": "2E2155.9-3027",
           "AngularDistance": 0.1292502385236847,
           "Frequency": 2.42e+17,
-          "Nufnu": 5.074319367585008e-11,
+          "Nufnu": 5.5419242664091734e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 3.858541368660083e-13,
+          "NufnuError": 4.214110798882969e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -3410,9 +3210,9 @@
           "Name": "PKS",
           "AngularDistance": 0.13647290225676398,
           "Frequency": 2.42e+17,
-          "Nufnu": 6.315943000979295e-11,
+          "Nufnu": 6.897965076061594e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 1.989273386135211e-12,
+          "NufnuError": 2.1725874255312106e-12,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -3438,9 +3238,9 @@
           "Name": "1RXS J215852.2-301338",
           "AngularDistance": 0.10275389928255281,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.7403611001810372e-10,
+          "Nufnu": 2.447382797129583e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 7.36121812666303e-12,
+          "NufnuError": 1.0351712990619882e-11,
           "StartTime": 47892.5,
           "StopTime": 48257.5
         }
@@ -3909,45 +3709,45 @@
         {
           "AngularDistance": 0.07225534538317557,
           "Frequency": 2.42e+17,
-          "Nufnu": 6.31511455377178e-11,
+          "Nufnu": 8.934321678250281e-11,
           "FrequencyError": 0.0,
-          "NufnuError": 5.572159619839547e-13,
+          "NufnuError": 7.883224613315926e-13,
           "StartTime": 48943.001829,
           "StopTime": 48943.066227
         },
         {
           "AngularDistance": 0.06554257545209298,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.1190754330020672e-10,
+          "Nufnu": 1.583214336895307e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 6.036506168148135e-13,
+          "NufnuError": 8.540159875130979e-13,
           "StartTime": 48943.466076,
           "StopTime": 48945.878056
         },
         {
           "AngularDistance": 0.09714198538139078,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.4441180847519934e-10,
+          "Nufnu": 2.0430691162754928e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 3.5754691498859323e-13,
+          "NufnuError": 5.058402545787837e-13,
           "StartTime": 49472.472002,
           "StopTime": 49473.0
         },
         {
           "AngularDistance": 0.0882573304436633,
           "Frequency": 2.42e+17,
-          "Nufnu": 2.544619581126916e-10,
+          "Nufnu": 3.600005937023569e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 4.3184239042088826e-13,
+          "NufnuError": 6.109499356619581e-13,
           "StartTime": 49111.122778,
           "StopTime": 49112.080289
         },
         {
           "AngularDistance": 0.13043578691030017,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.1980143095915074e-10,
+          "Nufnu": 1.694893279591371e-10,
           "FrequencyError": 0.0,
-          "NufnuError": 5.107813071066613e-13,
+          "NufnuError": 7.226289350843939e-13,
           "StartTime": 48382.689132,
           "StopTime": 48382.774664
         }
@@ -6016,14 +5816,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "H.E.S.S. observations of PKS 2155-304",
-            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Aye, K. -M. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2005A%26A...430..865A"
-          },
-          {
             "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
             "Authors": "Biteau, J.; Williams, D. A.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "H.E.S.S. observations of PKS 2155-304",
+            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Aye, K. -M. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2005A%26A...430..865A"
           }
         ]
       },
@@ -6582,14 +6382,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "Simultaneous Observations of PKS 2155-304 with HESS, Fermi, RXTE, and Atom: Spectral Energy Distributions and Variability in a Low State",
-            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Barres de Almeida, U. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2009ApJ...696L.150A"
-          },
-          {
             "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
             "Authors": "Biteau, J.; Williams, D. A.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "Simultaneous Observations of PKS 2155-304 with HESS, Fermi, RXTE, and Atom: Spectral Energy Distributions and Variability in a Low State",
+            "Authors": "Aharonian, F.; Akhperjanian, A. G.; Barres de Almeida, U. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2009ApJ...696L.150A"
           }
         ]
       },
@@ -6649,14 +6449,14 @@
         "Kind": "Paper",
         "References": [
           {
-            "Title": "VHE ?-ray emission of PKS 2155-304: spectral and temporal variability",
-            "Authors": "H.E.S.S. Collaboration",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...520A..83H"
-          },
-          {
             "Title": "The Extragalactic Background Light, the Hubble Constant, and Anomalies: Conclusions from 20 Years of TeV Gamma-Ray Observations",
             "Authors": "Biteau, J.; Williams, D. A.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2015ApJ...812...60B"
+          },
+          {
+            "Title": "VHE ?-ray emission of PKS 2155-304: spectral and temporal variability",
+            "Authors": "H.E.S.S. Collaboration",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...520A..83H"
           }
         ]
       },

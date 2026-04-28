@@ -2,10 +2,10 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4785_1"
+    "APIVersion": "1.4941_1"
   },
   "Properties": {
-    "Nh": 6.78e+20,
+    "Nh": -1.0,
     "Units": {
       "Frequency": "Hz",
       "FrequencyError": "Hz",
@@ -10404,519 +10404,6 @@
     },
     {
       "Source": {
-        "Id": 2893,
-        "Name": "1SWXRT (0.1-10 keV)",
-        "ErrorRadius": 0.3,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Seven Year Swift-XRT Point Source Catalog (1SWXRT) ",
-            "Authors": "D'Elia, V.; Perri, M.; Puccetti, S. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2013A%26A...551A.142D"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.04044475853677972,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.4216665140485436e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.3339688619017012e-13,
-          "StartTime": 55729.717558,
-          "StopTime": 55729.87566
-        },
-        {
-          "AngularDistance": 0.05254448183905903,
-          "Frequency": 4.836e+17,
-          "Nufnu": 5.526013286884323e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1690891919848236e-13,
-          "StartTime": 55575.377176,
-          "StopTime": 55575.395104
-        },
-        {
-          "AngularDistance": 0.056825115615222736,
-          "Frequency": 4.836e+17,
-          "Nufnu": 6.157325373048495e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.376511564448263e-13,
-          "StartTime": 55577.709769,
-          "StopTime": 55577.727731
-        },
-        {
-          "AngularDistance": 0.02671466426305279,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.444304869186984e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1790315915735774e-13,
-          "StartTime": 54854.259271,
-          "StopTime": 54854.327882
-        },
-        {
-          "AngularDistance": 0.015308234403445777,
-          "Frequency": 4.836e+17,
-          "Nufnu": 1.7331468035671418e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2311972194790228e-13,
-          "StartTime": 54852.713854,
-          "StopTime": 54852.789549
-        },
-        {
-          "AngularDistance": 0.020047395587675824,
-          "Frequency": 4.836e+17,
-          "Nufnu": 3.2346836111937834e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.055484537327356e-13,
-          "StartTime": 54856.273981,
-          "StopTime": 54856.284687
-        },
-        {
-          "AngularDistance": 0.02986096142466732,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.7874180292525884e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.68367520272635e-13,
-          "StartTime": 54832.503553,
-          "StopTime": 54832.51662
-        },
-        {
-          "AngularDistance": 0.023464046406739852,
-          "Frequency": 4.836e+17,
-          "Nufnu": 5.419334825954293e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2178281080825832e-13,
-          "StartTime": 54974.144687,
-          "StopTime": 54974.624259
-        },
-        {
-          "AngularDistance": 0.03641534666062775,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.7378261260291783e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.5929170599213144e-13,
-          "StartTime": 54830.22831,
-          "StopTime": 54830.243021
-        },
-        {
-          "AngularDistance": 0.022755712905083943,
-          "Frequency": 4.836e+17,
-          "Nufnu": 1.5639375170977791e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2030287965465791e-13,
-          "StartTime": 54827.69022,
-          "StopTime": 54827.709699
-        },
-        {
-          "AngularDistance": 0.059513996160709084,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.138671530749192e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.8597142741893524e-13,
-          "StartTime": 54853.723275,
-          "StopTime": 54853.793727
-        },
-        {
-          "AngularDistance": 0.03204591752108604,
-          "Frequency": 4.836e+17,
-          "Nufnu": 3.2632361100527315e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.5944149436569294e-13,
-          "StartTime": 54825.205081,
-          "StopTime": 54825.411065
-        },
-        {
-          "AngularDistance": 0.07763145616206965,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.392804198904666e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.459026877695176e-13,
-          "StartTime": 54829.020683,
-          "StopTime": 54829.036065
-        },
-        {
-          "AngularDistance": 0.03578276107163527,
-          "Frequency": 4.836e+17,
-          "Nufnu": 3.956652177171359e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.394515674813674e-13,
-          "StartTime": 54858.483056,
-          "StopTime": 54858.494398
-        },
-        {
-          "AngularDistance": 0.03936008992269176,
-          "Frequency": 4.836e+17,
-          "Nufnu": 2.7218590174539747e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1072456931044987e-13,
-          "StartTime": 54831.698785,
-          "StopTime": 54831.70691
-        },
-        {
-          "AngularDistance": 0.04176520893708701,
-          "Frequency": 4.836e+17,
-          "Nufnu": 4.299740029863886e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.503646030226468e-13,
-          "StartTime": 54857.344861,
-          "StopTime": 54857.355509
-        },
-        {
-          "AngularDistance": 0.06599510228076882,
-          "Frequency": 4.836e+17,
-          "Nufnu": 3.3872924672350217e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6082100906801814e-13,
-          "StartTime": 54826.220579,
-          "StopTime": 54826.238171
-        }
-      ]
-    },
-    {
-      "Source": {
-        "Id": 2600,
-        "Name": "1SWXRT (0.1-2.4 keV)",
-        "ErrorRadius": 0.3,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Seven Year Swift-XRT Point Source Catalog (1SWXRT) ",
-            "Authors": "D'Elia, V.; Perri, M.; Puccetti, S. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2013A%26A...551A.142D"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.04044475853677972,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.183640958989078e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2983810869646865e-13,
-          "StartTime": 55729.717558,
-          "StopTime": 55729.87566
-        },
-        {
-          "AngularDistance": 0.05254448183905903,
-          "Frequency": 2.418e+17,
-          "Nufnu": 4.890589777200088e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1314918848049505e-13,
-          "StartTime": 55575.377176,
-          "StopTime": 55575.395104
-        },
-        {
-          "AngularDistance": 0.056825115615222736,
-          "Frequency": 2.418e+17,
-          "Nufnu": 5.519255659512968e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.299689782966856e-13,
-          "StartTime": 55577.709769,
-          "StopTime": 55577.727731
-        },
-        {
-          "AngularDistance": 0.02671466426305279,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.1331212363275066e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1558140199590306e-13,
-          "StartTime": 54854.259271,
-          "StopTime": 54854.327882
-        },
-        {
-          "AngularDistance": 0.015308234403445777,
-          "Frequency": 2.418e+17,
-          "Nufnu": 1.54284100376166e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2478860313691192e-13,
-          "StartTime": 54852.713854,
-          "StopTime": 54852.789549
-        },
-        {
-          "AngularDistance": 0.020047395587675824,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.894852234616446e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.0591000914225108e-13,
-          "StartTime": 54856.273981,
-          "StopTime": 54856.284687
-        },
-        {
-          "AngularDistance": 0.02986096142466732,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.6381815221237517e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.8038849073340104e-13,
-          "StartTime": 54832.503553,
-          "StopTime": 54832.51662
-        },
-        {
-          "AngularDistance": 0.023464046406739852,
-          "Frequency": 2.418e+17,
-          "Nufnu": 4.8719060207826884e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.2913486027296373e-13,
-          "StartTime": 54974.144687,
-          "StopTime": 54974.624259
-        },
-        {
-          "AngularDistance": 0.03641534666062775,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.3606911060254856e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6280629288159657e-13,
-          "StartTime": 54830.22831,
-          "StopTime": 54830.243021
-        },
-        {
-          "AngularDistance": 0.022755712905083943,
-          "Frequency": 2.418e+17,
-          "Nufnu": 1.3881200925573465e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.1689432907473362e-13,
-          "StartTime": 54827.69022,
-          "StopTime": 54827.709699
-        },
-        {
-          "AngularDistance": 0.059513996160709084,
-          "Frequency": 2.418e+17,
-          "Nufnu": 1.8475343240109803e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.7764752352061331e-13,
-          "StartTime": 54853.723275,
-          "StopTime": 54853.793727
-        },
-        {
-          "AngularDistance": 0.03204591752108604,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.9181582861496943e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6812435039378836e-13,
-          "StartTime": 54825.205081,
-          "StopTime": 54825.411065
-        },
-        {
-          "AngularDistance": 0.07763145616206965,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.138240409971269e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.4944690991190355e-13,
-          "StartTime": 54829.020683,
-          "StopTime": 54829.036065
-        },
-        {
-          "AngularDistance": 0.03578276107163527,
-          "Frequency": 2.418e+17,
-          "Nufnu": 3.4415513855630714e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.36063075306567e-13,
-          "StartTime": 54858.483056,
-          "StopTime": 54858.494398
-        },
-        {
-          "AngularDistance": 0.03936008992269176,
-          "Frequency": 2.418e+17,
-          "Nufnu": 2.4901276356843114e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.1843224374731282e-13,
-          "StartTime": 54831.698785,
-          "StopTime": 54831.70691
-        },
-        {
-          "AngularDistance": 0.04176520893708701,
-          "Frequency": 2.418e+17,
-          "Nufnu": 3.9240579642213045e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 2.5512449724386126e-13,
-          "StartTime": 54857.344861,
-          "StopTime": 54857.355509
-        },
-        {
-          "AngularDistance": 0.06599510228076882,
-          "Frequency": 2.418e+17,
-          "Nufnu": 3.0845708601042274e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.6357573336328448e-13,
-          "StartTime": 54826.220579,
-          "StopTime": 54826.238171
-        }
-      ]
-    },
-    {
-      "Source": {
-        "Id": 2578,
-        "Name": "1SWXRT (2-10 keV)",
-        "ErrorRadius": 0.3,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Seven Year Swift-XRT Point Source Catalog (1SWXRT) ",
-            "Authors": "D'Elia, V.; Perri, M.; Puccetti, S. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2013A%26A...551A.142D"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.04044475853677972,
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.5351435268182585e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.9325006406973223e-13,
-          "StartTime": 55729.717558,
-          "StopTime": 55729.87566
-        },
-        {
-          "AngularDistance": 0.05254448183905903,
-          "Frequency": 1.081e+18,
-          "Nufnu": 1.0018470068045054e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.644903927467928e-13,
-          "StartTime": 55575.377176,
-          "StopTime": 55575.395104
-        },
-        {
-          "AngularDistance": 0.056825115615222736,
-          "Frequency": 1.081e+18,
-          "Nufnu": 1.0332912925212507e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.682978480040351e-13,
-          "StartTime": 55577.709769,
-          "StopTime": 55577.727731
-        },
-        {
-          "AngularDistance": 0.02671466426305279,
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.104792577513349e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.581374681579289e-13,
-          "StartTime": 54854.259271,
-          "StopTime": 54854.327882
-        },
-        {
-          "AngularDistance": 0.015308234403445777,
-          "Frequency": 1.081e+18,
-          "Nufnu": 3.694486529686405e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.649695832951913e-13,
-          "StartTime": 54852.713854,
-          "StopTime": 54852.789549
-        },
-        {
-          "AngularDistance": 0.020047395587675824,
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.398801949581534e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.655887902533333e-13,
-          "StartTime": 54856.273981,
-          "StopTime": 54856.284687
-        },
-        {
-          "AngularDistance": 0.02986096142466732,
-          "Frequency": 1.081e+18,
-          "Nufnu": 6.4585061611280995e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.054849290927614e-13,
-          "StartTime": 54832.503553,
-          "StopTime": 54832.51662
-        },
-        {
-          "AngularDistance": 0.023464046406739852,
-          "Frequency": 1.081e+18,
-          "Nufnu": 1.035274055638376e-11,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.875903045233006e-13,
-          "StartTime": 54974.144687,
-          "StopTime": 54974.624259
-        },
-        {
-          "AngularDistance": 0.03641534666062775,
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.1889511328516346e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.934591021149674e-13,
-          "StartTime": 54830.22831,
-          "StopTime": 54830.243021
-        },
-        {
-          "AngularDistance": 0.022755712905083943,
-          "Frequency": 1.081e+18,
-          "Nufnu": 2.5177541722640446e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 3.3981957447040066e-13,
-          "StartTime": 54827.69022,
-          "StopTime": 54827.709699
-        },
-        {
-          "AngularDistance": 0.059513996160709084,
-          "Frequency": 1.081e+18,
-          "Nufnu": 3.7826131006759786e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 5.622803154603183e-13,
-          "StartTime": 54853.723275,
-          "StopTime": 54853.793727
-        },
-        {
-          "AngularDistance": 0.03204591752108604,
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.643260735199022e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.719818199891783e-13,
-          "StartTime": 54825.205081,
-          "StopTime": 54825.411065
-        },
-        {
-          "AngularDistance": 0.07763145616206965,
-          "Frequency": 1.081e+18,
-          "Nufnu": 4.884132393198334e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.868917336522104e-13,
-          "StartTime": 54829.020683,
-          "StopTime": 54829.036065
-        },
-        {
-          "AngularDistance": 0.03578276107163527,
-          "Frequency": 1.081e+18,
-          "Nufnu": 5.589788655782285e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.210876177007418e-13,
-          "StartTime": 54858.483056,
-          "StopTime": 54858.494398
-        },
-        {
-          "AngularDistance": 0.03936008992269176,
-          "Frequency": 1.081e+18,
-          "Nufnu": 6.704178577360686e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 8.004989526811956e-13,
-          "StartTime": 54831.698785,
-          "StopTime": 54831.70691
-        },
-        {
-          "AngularDistance": 0.04176520893708701,
-          "Frequency": 1.081e+18,
-          "Nufnu": 7.204027952258965e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.204028143680277e-13,
-          "StartTime": 54857.344861,
-          "StopTime": 54857.355509
-        },
-        {
-          "AngularDistance": 0.06599510228076882,
-          "Frequency": 1.081e+18,
-          "Nufnu": 6.67251246450991e-12,
-          "FrequencyError": 0.0,
-          "NufnuError": 4.991650709561479e-13,
-          "StartTime": 54826.220579,
-          "StopTime": 54826.238171
-        }
-      ]
-    },
-    {
-      "Source": {
         "Id": 7069,
         "Name": "1SXPS(0.3-1keV)",
         "ErrorRadius": 0.3,
@@ -11029,114 +10516,6 @@
     },
     {
       "Source": {
-        "Id": 2858,
-        "Name": "CHANDRASRC (0.2-0.5 keV)",
-        "ErrorRadius": 0.1,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Chandra Source Catalog",
-            "Authors": "Evans, I. N.; Primini, F.; Glotfelty, K. J. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..189...37E"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.08684389321905418,
-          "Frequency": 7.646e+16,
-          "Nufnu": 9.545989825247587e-15,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.719710307714011e-14,
-          "StartTime": 52584.90625,
-          "StopTime": 52584.964844
-        }
-      ]
-    },
-    {
-      "Source": {
-        "Id": 2859,
-        "Name": "CHANDRASRC (0.5-1.2 keV)",
-        "ErrorRadius": 0.1,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Chandra Source Catalog",
-            "Authors": "Evans, I. N.; Primini, F.; Glotfelty, K. J. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..189...37E"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.08684389321905418,
-          "Frequency": 1.873e+17,
-          "Nufnu": 2.4081246270988318e-14,
-          "FrequencyError": 0.0,
-          "NufnuError": 6.006482251764122e-15,
-          "StartTime": 52584.90625,
-          "StopTime": 52584.964844
-        }
-      ]
-    },
-    {
-      "Source": {
-        "Id": 2860,
-        "Name": "CHANDRASRC (1.2-2.0 keV)",
-        "ErrorRadius": 0.1,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Chandra Source Catalog",
-            "Authors": "Evans, I. N.; Primini, F.; Glotfelty, K. J. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..189...37E"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.08684389321905418,
-          "Frequency": 3.746e+17,
-          "Nufnu": 3.181467209984239e-14,
-          "FrequencyError": 0.0,
-          "NufnuError": 7.800705230135193e-15,
-          "StartTime": 52584.90625,
-          "StopTime": 52584.964844
-        }
-      ]
-    },
-    {
-      "Source": {
-        "Id": 2861,
-        "Name": "CHANDRASRC (2.0-7.0 keV)",
-        "ErrorRadius": 0.1,
-        "Band": "Soft X-Ray",
-        "Kind": "Catalog",
-        "References": [
-          {
-            "Title": "The Chandra Source Catalog",
-            "Authors": "Evans, I. N.; Primini, F.; Glotfelty, K. J. et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..189...37E"
-          }
-        ]
-      },
-      "Data": [
-        {
-          "AngularDistance": 0.08684389321905418,
-          "Frequency": 9.047e+17,
-          "Nufnu": 3.3230019707744866e-14,
-          "FrequencyError": 0.0,
-          "NufnuError": 1.0202468627428398e-14,
-          "StartTime": 52584.90625,
-          "StopTime": 52584.964844
-        }
-      ]
-    },
-    {
-      "Source": {
         "Id": 6,
         "Name": "IPC",
         "ErrorRadius": 1.0,
@@ -11148,9 +10527,9 @@
           "Name": "2E2251.5+1553",
           "AngularDistance": 0.3400799018885351,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.7158314861391962e-12,
+          "Nufnu": 1.5663513460452635e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 9.292901965886826e-14,
+          "NufnuError": 8.483321130611692e-14,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -11158,9 +10537,9 @@
           "Name": "2E2251.5+1553",
           "AngularDistance": 0.37063842842754124,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.7708255320271847e-12,
+          "Nufnu": 1.616554409980726e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 1.3095062258782763e-13,
+          "NufnuError": 1.1954244085906072e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         },
@@ -11168,9 +10547,9 @@
           "Name": "2E2251.5+1553",
           "AngularDistance": 0.35272846308114586,
           "Frequency": 2.42e+17,
-          "Nufnu": 1.6879209517606877e-12,
+          "Nufnu": 1.5408723270123465e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 1.3296363492477428e-13,
+          "NufnuError": 1.2138008319693207e-13,
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
@@ -11196,9 +10575,9 @@
           "Name": "1RXS J225358.0+160855",
           "AngularDistance": 0.06554778545069824,
           "Frequency": 2.42e+17,
-          "Nufnu": 6.382452702056021e-12,
+          "Nufnu": 4.117711420681304e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 5.989702494758513e-13,
+          "NufnuError": 3.8643241901667824e-13,
           "StartTime": 47892.5,
           "StopTime": 48257.5
         }
@@ -11270,27 +10649,27 @@
         {
           "AngularDistance": 0.11658280949525811,
           "Frequency": 2.42e+17,
-          "Nufnu": 2.865922843235708e-12,
+          "Nufnu": 1.8525578599921426e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 7.317249550576893e-14,
+          "NufnuError": 4.7299347923618595e-14,
           "StartTime": 48588.699456,
           "StopTime": 48589.722431
         },
         {
           "AngularDistance": 0.014200121183142553,
           "Frequency": 2.42e+17,
-          "Nufnu": 3.8009048237582675e-12,
+          "Nufnu": 2.4569384772360075e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 4.6749096191710014e-14,
+          "NufnuError": 3.0219029030000394e-14,
           "StartTime": 48972.762477,
           "StopTime": 48974.781875
         },
         {
           "AngularDistance": 0.2059809069311711,
           "Frequency": 2.42e+17,
-          "Nufnu": 4.654583865461694e-12,
+          "Nufnu": 3.0087641561271725e-12,
           "FrequencyError": 0.0,
-          "NufnuError": 8.333534394408634e-14,
+          "NufnuError": 5.3868702991481225e-14,
           "StartTime": 48769.127326,
           "StopTime": 48769.621019
         }
@@ -12249,8 +11628,7 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0,
           "StartTime": 54895.2,
-          "StopTime": 54925.6,
-          "Info": "Upper Limit"
+          "StopTime": 54925.6
         },
         {
           "AngularDistance": 0.45318287634584314,
