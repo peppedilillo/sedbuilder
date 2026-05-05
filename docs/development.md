@@ -37,6 +37,24 @@ To run smoke tests against the live server:
 pytest --smoke
 ```
 
+### Pushing to gitlab
+
+Setup the GitLab remote repository:
+
+```shell
+git remote add gitlab git@gitrepo.ssdc.asi.it:sedbuilder/sedbuilder.git
+git push -u gitlab
+```
+
+Push to GitHub and GitLab:
+
+```python
+# pushes to github
+git push origin
+# pushes to gitlab
+git push gitlab
+```
+
 ### Building and shipping Documentation
 
 ```bash
