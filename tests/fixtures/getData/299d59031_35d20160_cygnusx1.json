@@ -2,7 +2,7 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4941_1"
+    "APIVersion": "1.4941_2"
   },
   "Properties": {
     "Nh": -1.0,
@@ -23,13 +23,13 @@
   },
   "Datasets": [
     {
-      "Source": {
+      "Reference": {
         "Id": 63,
         "Name": "AKARIPSC 09",
         "ErrorRadius": 0.5,
         "Band": "Infrared",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "AKARI/IRC All-Sky Survey Point Source Catalogue Version 1.0.",
             "Authors": "Katazaa, H.; Alfageme, C; Cassatella, A. et al.",
@@ -47,16 +47,30 @@
           "StartTime": 53856.5,
           "StopTime": 54338.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 63,
+        "Name": "AKARIPSC 09",
+        "ErrorRadius": 0.5,
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "AKARI/IRC All-Sky Survey Point Source Catalogue Version 1.0.",
+            "Authors": "Katazaa, H.; Alfageme, C; Cassatella, A. et al.",
+            "URL": "http://www.ir.isas.jaxa.jp/AKARI/Observation/PSC/Public/RN/AKARI-IRC_PSC_V1_RN.pdf"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 5227,
         "Name": "allwise w1",
         "ErrorRadius": 0.1,
         "Band": "Infrared",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
             "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
@@ -74,16 +88,30 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 5227,
+        "Name": "allwise w1",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 5228,
         "Name": "allwise w2",
         "ErrorRadius": 0.1,
         "Band": "Infrared",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
             "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
@@ -101,16 +129,30 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 5228,
+        "Name": "allwise w2",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 5229,
         "Name": "allwise w3",
         "ErrorRadius": 0.1,
         "Band": "Infrared",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
             "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
@@ -128,16 +170,30 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 5229,
+        "Name": "allwise w3",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 5230,
         "Name": "allwise w4",
         "ErrorRadius": 0.1,
         "Band": "Infrared",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
             "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
@@ -155,10 +211,24 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 5230,
+        "Name": "allwise w4",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Wide-field Infrared Survey Explorer (WISE): Mission Description and Initial On-orbit Performance",
+            "Authors": "Wright, E. L.; Eisenhardt, P. R. M.; Mainzer, A. K. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3205,
         "Name": "WISE W1 PointPsf",
         "ErrorRadius": 0.1,
@@ -175,10 +245,17 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3205,
+        "Name": "WISE W1 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3206,
         "Name": "WISE W2 PointPsf",
         "ErrorRadius": 0.1,
@@ -195,10 +272,17 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3206,
+        "Name": "WISE W2 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3207,
         "Name": "WISE W3 PointPsf",
         "ErrorRadius": 0.1,
@@ -215,10 +299,17 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3207,
+        "Name": "WISE W3 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3208,
         "Name": "WISE W4 PointPsf",
         "ErrorRadius": 0.1,
@@ -235,10 +326,17 @@
           "StartTime": 55318.66463411,
           "StopTime": 55322.5676719
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3208,
+        "Name": "WISE W4 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6349,
         "Name": "UVOTSSC v",
         "ErrorRadius": 0.1,
@@ -345,10 +443,17 @@
           "StartTime": 54672.477176,
           "StopTime": 54672.477176
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6349,
+        "Name": "UVOTSSC v",
+        "ErrorRadius": 0.1,
+        "Band": "Optical UV",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6350,
         "Name": "UVOTSSC b",
         "ErrorRadius": 0.1,
@@ -419,10 +524,17 @@
           "StartTime": 54734.584745,
           "StopTime": 54734.584745
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6350,
+        "Name": "UVOTSSC b",
+        "ErrorRadius": 0.1,
+        "Band": "Optical UV",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6351,
         "Name": "UVOTSSC u",
         "ErrorRadius": 0.1,
@@ -529,10 +641,17 @@
           "StartTime": 55072.787778,
           "StopTime": 55072.787778
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6351,
+        "Name": "UVOTSSC u",
+        "ErrorRadius": 0.1,
+        "Band": "Optical UV",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6353,
         "Name": "UVOTSSC uvm2",
         "ErrorRadius": 0.1,
@@ -666,10 +785,17 @@
           "StartTime": 54574.999479,
           "StopTime": 54574.999479
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6353,
+        "Name": "UVOTSSC uvm2",
+        "ErrorRadius": 0.1,
+        "Band": "Optical UV",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6352,
         "Name": "UVOTSSC uvw2",
         "ErrorRadius": 0.1,
@@ -821,16 +947,23 @@
           "StartTime": 55013.674595,
           "StopTime": 55013.674595
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6352,
+        "Name": "UVOTSSC uvw2",
+        "ErrorRadius": 0.1,
+        "Band": "Optical UV",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 7069,
         "Name": "1SXPS(0.3-1keV)",
         "ErrorRadius": 0.3,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
             "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
@@ -849,16 +982,30 @@
           "StartTime": 54264.469919,
           "StopTime": 54264.529676
         }
-      ]
+      ],
+      "Source": {
+        "Id": 7069,
+        "Name": "1SXPS(0.3-1keV)",
+        "ErrorRadius": 0.3,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 7072,
         "Name": "1SXPS(0.3\u201410 keV)",
         "ErrorRadius": 0.3,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
             "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
@@ -877,16 +1024,30 @@
           "StartTime": 54264.469919,
           "StopTime": 54264.529676
         }
-      ]
+      ],
+      "Source": {
+        "Id": 7072,
+        "Name": "1SXPS(0.3\u201410 keV)",
+        "ErrorRadius": 0.3,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 7070,
         "Name": "1SXPS(1-2keV)",
         "ErrorRadius": 0.3,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
             "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
@@ -905,16 +1066,30 @@
           "StartTime": 54264.469919,
           "StopTime": 54264.529676
         }
-      ]
+      ],
+      "Source": {
+        "Id": 7070,
+        "Name": "1SXPS(1-2keV)",
+        "ErrorRadius": 0.3,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 7071,
         "Name": "1SXPS(2\u201410 keV)",
         "ErrorRadius": 0.3,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
             "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
@@ -933,16 +1108,30 @@
           "StartTime": 54264.469919,
           "StopTime": 54264.529676
         }
-      ]
+      ],
+      "Source": {
+        "Id": 7071,
+        "Name": "1SXPS(2\u201410 keV)",
+        "ErrorRadius": 0.3,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "1SXPS: A DEEP SWIFT X-RAY TELESCOPE POINT SOURCE CATALOG WITH LIGHT CURVES AND SPECTRA",
+            "Authors": "Evans, P. A.; Osborne, J. P.; Beardmore, A. P. et al.",
+            "URL": "http://iopscience.iop.org/article/10.1088/0067-0049/210/1/8/meta"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2737,
         "Name": "ARIEL3A",
         "ErrorRadius": 15.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Ariel V (3A) catalogue of X-ray sources - I. Sources at low galactic latitude (|b|<10\u00b0)",
             "Authors": "Warwick, R. S.; Marshall, N.; Fraser, G. W. et al.",
@@ -973,10 +1162,24 @@
           "FrequencyError": 0.0,
           "NufnuError": -3.5334365922766302e-09
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2737,
+        "Name": "ARIEL3A",
+        "ErrorRadius": 15.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Ariel V (3A) catalogue of X-ray sources - I. Sources at low galactic latitude (|b|<10\u00b0)",
+            "Authors": "Warwick, R. S.; Marshall, N.; Fraser, G. W. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1981MNRAS.197..865W"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 6,
         "Name": "IPC",
         "ErrorRadius": 1.0,
@@ -994,16 +1197,23 @@
           "StartTime": 43813.5,
           "StopTime": 44695.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 6,
+        "Name": "IPC",
+        "ErrorRadius": 1.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14,
         "Name": "RASS",
         "ErrorRadius": 1.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The ROSAT all-sky survey bright source catalogue (RASSBSC).",
             "Authors": "Voges, W.; Aschenbach, B.; Boller, T. et al.",
@@ -1022,16 +1232,30 @@
           "StartTime": 47892.5,
           "StopTime": 48257.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14,
+        "Name": "RASS",
+        "ErrorRadius": 1.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The ROSAT all-sky survey bright source catalogue (RASSBSC).",
+            "Authors": "Voges, W.; Aschenbach, B.; Boller, T. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1999A&A...349..389V"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 8059,
         "Name": "RXS2CAT",
         "ErrorRadius": 1.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "List of Galaxies for Gravitational Wave Searches",
             "Authors": "White D.J.;  Daw E.J.; Dhillon V.S. et al.",
@@ -1049,10 +1273,24 @@
           "StartTime": 48104.0,
           "StopTime": 48499.0
         }
-      ]
+      ],
+      "Source": {
+        "Id": 8059,
+        "Name": "RXS2CAT",
+        "ErrorRadius": 1.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "List of Galaxies for Gravitational Wave Searches",
+            "Authors": "White D.J.;  Daw E.J.; Dhillon V.S. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2016A%26A...588A.103B"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 8185,
         "Name": "SAXMECS",
         "ErrorRadius": 1.5,
@@ -1096,16 +1334,23 @@
           "StartTime": 50936.782731,
           "StopTime": 50937.869572
         }
-      ]
+      ],
+      "Source": {
+        "Id": 8185,
+        "Name": "SAXMECS",
+        "ErrorRadius": 1.5,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2738,
         "Name": "UHURU4",
         "ErrorRadius": 15.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Uhuru Fourth (4U) Catalog ",
             "Authors": "Forman, W.; Jones, C.; Cominsky, L. et al.",
@@ -1121,16 +1366,30 @@
           "FrequencyError": 0.0,
           "NufnuError": 0.0
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2738,
+        "Name": "UHURU4",
+        "ErrorRadius": 15.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Uhuru Fourth (4U) Catalog ",
+            "Authors": "Forman, W.; Jones, C.; Cominsky, L. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1978ApJS...38..357F"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2936,
         "Name": "WFCCAT",
         "ErrorRadius": 5.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The BeppoSAX WFC X-ray source catalogue",
             "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
@@ -7043,16 +7302,30 @@
           "StartTime": 50419.358403,
           "StopTime": 50419.411532
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2936,
+        "Name": "WFCCAT",
+        "ErrorRadius": 5.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The BeppoSAX WFC X-ray source catalogue",
+            "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2007A&A...472..705V"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2935,
         "Name": "WFCCAT FULL",
         "ErrorRadius": 5.0,
         "Band": "Soft X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The BeppoSAX WFC X-ray source catalogue",
             "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
@@ -8537,10 +8810,24 @@
           "StartTime": 50419.358403,
           "StopTime": 50419.411532
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2935,
+        "Name": "WFCCAT FULL",
+        "ErrorRadius": 5.0,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The BeppoSAX WFC X-ray source catalogue",
+            "Authors": "Verrecchia, F.; in't Zand, J. J. M.; Giommi, P. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2007A&A...472..705V"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14640,
         "Name": "XMMSL2 (0.2-12 keV)",
         "ErrorRadius": 0.5,
@@ -8558,10 +8845,17 @@
           "StartTime": 53675.30468537,
           "StopTime": 53675.3052062
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14640,
+        "Name": "XMMSL2 (0.2-12 keV)",
+        "ErrorRadius": 0.5,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14642,
         "Name": "XMMSL2 (0.2-2 keV)",
         "ErrorRadius": 0.5,
@@ -8579,10 +8873,17 @@
           "StartTime": 53675.30468537,
           "StopTime": 53675.3052062
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14642,
+        "Name": "XMMSL2 (0.2-2 keV)",
+        "ErrorRadius": 0.5,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14641,
         "Name": "XMMSL2 (2-12 keV)",
         "ErrorRadius": 0.5,
@@ -8600,16 +8901,23 @@
           "StartTime": 53675.30468537,
           "StopTime": 53675.3052062
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14641,
+        "Name": "XMMSL2 (2-12 keV)",
+        "ErrorRadius": 0.5,
+        "Band": "Soft X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2752,
         "Name": "A4 (13-25 keV)",
         "ErrorRadius": 1.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
             "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
@@ -8625,16 +8933,30 @@
           "FrequencyError": 0.0,
           "NufnuError": 2.2225429552396944e-11
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2752,
+        "Name": "A4 (13-25 keV)",
+        "ErrorRadius": 1.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
+            "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1984ApJS...54..581L"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2753,
         "Name": "A4 (25-40 keV)",
         "ErrorRadius": 1.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
             "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
@@ -8650,16 +8972,30 @@
           "FrequencyError": 0.0,
           "NufnuError": 3.220953801170971e-11
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2753,
+        "Name": "A4 (25-40 keV)",
+        "ErrorRadius": 1.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
+            "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1984ApJS...54..581L"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2754,
         "Name": "A4 (40-80 keV)",
         "ErrorRadius": 1.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
             "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
@@ -8675,16 +9011,30 @@
           "FrequencyError": 0.0,
           "NufnuError": 3.7288945166065885e-11
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2754,
+        "Name": "A4 (40-80 keV)",
+        "ErrorRadius": 1.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
+            "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1984ApJS...54..581L"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 2755,
         "Name": "A4 (80-180 keV)",
         "ErrorRadius": 1.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
             "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
@@ -8700,16 +9050,30 @@
           "FrequencyError": 0.0,
           "NufnuError": 9.588210991164765e-12
         }
-      ]
+      ],
+      "Source": {
+        "Id": 2755,
+        "Name": "A4 (80-180 keV)",
+        "ErrorRadius": 1.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "HEAO 1 A-4 Catalog of High-Energy X-Ray Sources",
+            "Authors": "Levine, A. M.; Lang, F. L.; Lewin, W. H. G. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/1984ApJS...54..581L"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 35,
         "Name": "BAT39MCAT (10-150keV)",
         "ErrorRadius": 5.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Palermo Swift-BAT hard X-ray catalogue. II. Results after 39 months of sky survey",
             "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
@@ -8727,16 +9091,30 @@
           "StartTime": 53340.5,
           "StopTime": 54525.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 35,
+        "Name": "BAT39MCAT (10-150keV)",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Palermo Swift-BAT hard X-ray catalogue. II. Results after 39 months of sky survey",
+            "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...510A..48C"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 34,
         "Name": "BAT39MCAT (15-30keV)",
         "ErrorRadius": 5.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Palermo Swift-BAT hard X-ray catalogue. II. Results after 39 months of sky survey",
             "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
@@ -8754,16 +9132,30 @@
           "StartTime": 53340.5,
           "StopTime": 54525.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 34,
+        "Name": "BAT39MCAT (15-30keV)",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Palermo Swift-BAT hard X-ray catalogue. II. Results after 39 months of sky survey",
+            "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A%26A...510A..48C"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 103,
         "Name": "BAT54MCAT (15-150keV)",
         "ErrorRadius": 5.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Palermo Swift-BAT Hard X-ray Catalogue: III Results After 54 Months of Sky Survey",
             "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
@@ -8781,16 +9173,30 @@
           "StartTime": 53340.5,
           "StopTime": 54525.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 103,
+        "Name": "BAT54MCAT (15-150keV)",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Palermo Swift-BAT Hard X-ray Catalogue: III Results After 54 Months of Sky Survey",
+            "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A&A...524A..64C"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 102,
         "Name": "BAT54MCAT (15-50keV)",
         "ErrorRadius": 5.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Palermo Swift-BAT Hard X-ray Catalogue: III Results After 54 Months of Sky Survey",
             "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
@@ -8808,16 +9214,30 @@
           "StartTime": 53340.5,
           "StopTime": 54525.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 102,
+        "Name": "BAT54MCAT (15-50keV)",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Palermo Swift-BAT Hard X-ray Catalogue: III Results After 54 Months of Sky Survey",
+            "Authors": "Cusumano, G.; La Parola, V.; Segreto, A. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010A&A...524A..64C"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 8051,
         "Name": "BATPA100",
         "ErrorRadius": 5.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The 100-month Palermo BAT Catalogue",
             "Authors": "Cusumano G.; La Parola V.; Segreto A. et al.",
@@ -8836,10 +9256,24 @@
           "StartTime": 53351.425781,
           "StopTime": 55406.425781
         }
-      ]
+      ],
+      "Source": {
+        "Id": 8051,
+        "Name": "BATPA100",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The 100-month Palermo BAT Catalogue",
+            "Authors": "Cusumano G.; La Parola V.; Segreto A. et al.",
+            "URL": "http://bat.ifc.inaf.it/100m_bat_catalog/100m_bat_catalog_v0.0.htm"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14344,
         "Name": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
         "ErrorRadius": 15.0,
@@ -8855,10 +9289,17 @@
           "NufnuError": 0.0,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14344,
+        "Name": "Fermi 4FGL-DR3 (0.05-0.1 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14345,
         "Name": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
         "ErrorRadius": 15.0,
@@ -8874,10 +9315,17 @@
           "NufnuError": 0.0,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14345,
+        "Name": "Fermi 4FGL-DR3 (0.1-0.3 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14346,
         "Name": "Fermi 4FGL-DR3 (0.3-1 GeV)",
         "ErrorRadius": 15.0,
@@ -8892,10 +9340,17 @@
           "FrequencyError": 0.0,
           "NufnuError": 4.738054024643057e-13
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14346,
+        "Name": "Fermi 4FGL-DR3 (0.3-1 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14347,
         "Name": "Fermi 4FGL-DR3 (1-3 GeV)",
         "ErrorRadius": 15.0,
@@ -8910,10 +9365,17 @@
           "FrequencyError": 0.0,
           "NufnuError": 2.4308918593340945e-13
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14347,
+        "Name": "Fermi 4FGL-DR3 (1-3 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14349,
         "Name": "Fermi 4FGL-DR3 (10-30 GeV)",
         "ErrorRadius": 15.0,
@@ -8928,10 +9390,17 @@
           "FrequencyError": 0.0,
           "NufnuError": 2.4991095889763393e-13
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14349,
+        "Name": "Fermi 4FGL-DR3 (10-30 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14351,
         "Name": "Fermi 4FGL-DR3 (100-1000 GeV)",
         "ErrorRadius": 15.0,
@@ -8946,10 +9415,17 @@
           "FrequencyError": 0.0,
           "NufnuError": 6.685768475303555e-13
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14351,
+        "Name": "Fermi 4FGL-DR3 (100-1000 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14348,
         "Name": "Fermi 4FGL-DR3 (3-10 GeV)",
         "ErrorRadius": 15.0,
@@ -8964,10 +9440,17 @@
           "FrequencyError": 0.0,
           "NufnuError": 1.9730426331372036e-13
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14348,
+        "Name": "Fermi 4FGL-DR3 (3-10 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14350,
         "Name": "Fermi 4FGL-DR3 (30-100 GeV)",
         "ErrorRadius": 15.0,
@@ -8983,16 +9466,23 @@
           "NufnuError": 0.0,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14350,
+        "Name": "Fermi 4FGL-DR3 (30-100 GeV)",
+        "ErrorRadius": 15.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 56,
         "Name": "Fermi1FGL (200 Mev)",
         "ErrorRadius": 30.0,
         "Band": "Gamma-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Fermi Large Area Telescope First Source Catalog.",
             "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
@@ -9011,16 +9501,30 @@
           "StopTime": 55016.61944,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 56,
+        "Name": "Fermi1FGL (200 Mev)",
+        "ErrorRadius": 30.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 58,
         "Name": "Fermi1FGL (2Gev)",
         "ErrorRadius": 30.0,
         "Band": "Gamma-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Fermi Large Area Telescope First Source Catalog.",
             "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
@@ -9038,16 +9542,30 @@
           "StartTime": 54682.65486,
           "StopTime": 55016.61944
         }
-      ]
+      ],
+      "Source": {
+        "Id": 58,
+        "Name": "Fermi1FGL (2Gev)",
+        "ErrorRadius": 30.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 57,
         "Name": "Fermi1FGL (600 Mev)",
         "ErrorRadius": 30.0,
         "Band": "Gamma-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Fermi Large Area Telescope First Source Catalog.",
             "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
@@ -9066,16 +9584,30 @@
           "StopTime": 55016.61944,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 57,
+        "Name": "Fermi1FGL (600 Mev)",
+        "ErrorRadius": 30.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 60,
         "Name": "Fermi1FGL (60Gev)",
         "ErrorRadius": 30.0,
         "Band": "Gamma-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Fermi Large Area Telescope First Source Catalog.",
             "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
@@ -9094,16 +9626,30 @@
           "StopTime": 55016.61944,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 60,
+        "Name": "Fermi1FGL (60Gev)",
+        "ErrorRadius": 30.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 59,
         "Name": "Fermi1FGL (6Gev)",
         "ErrorRadius": 30.0,
         "Band": "Gamma-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "Fermi Large Area Telescope First Source Catalog.",
             "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
@@ -9122,16 +9668,30 @@
           "StopTime": 55016.61944,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 59,
+        "Name": "Fermi1FGL (6Gev)",
+        "ErrorRadius": 30.0,
+        "Band": "Gamma-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "Fermi Large Area Telescope First Source Catalog.",
+            "Authors": "Abdo, A. A.; Ackermann, M.; Ajello, M. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..188..405A"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 61,
         "Name": "IBISSG4CAT (20-40 keV)",
         "ErrorRadius": 6.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
             "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
@@ -9149,16 +9709,30 @@
           "StartTime": 52671.5,
           "StopTime": 54557.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 61,
+        "Name": "IBISSG4CAT (20-40 keV)",
+        "ErrorRadius": 6.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
+            "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..186....1B"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 62,
         "Name": "IBISSG4CAT (40-100 keV)",
         "ErrorRadius": 6.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
             "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
@@ -9176,10 +9750,24 @@
           "StartTime": 52671.5,
           "StopTime": 54557.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 62,
+        "Name": "IBISSG4CAT (40-100 keV)",
+        "ErrorRadius": 6.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The Fourth IBIS/ISGRI Soft Gamma-ray Survey Catalog",
+            "Authors": "Bird, A. J.; Bazzano, A.; Bassani, L. et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2010ApJS..186....1B"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 12344,
         "Name": "SWBAT105 (14-195 keV)",
         "ErrorRadius": 5.0,
@@ -9205,16 +9793,23 @@
           "StartTime": 53340.5,
           "StopTime": 56535.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 12344,
+        "Name": "SWBAT105 (14-195 keV)",
+        "ErrorRadius": 5.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3865,
         "Name": "SWBAT70M  (14-195 keV)",
         "ErrorRadius": 3.0,
         "Band": "Hard X-Ray",
         "Kind": "Catalog",
-        "References": [
+        "Bibliography": [
           {
             "Title": "The 70 Month Swift-BAT All-Sky Hard X-Ray Survey",
             "Authors": "Baumgartner, W. H.; Tueller, J.; Markwardt, C. B. et al",
@@ -9241,24 +9836,38 @@
           "StartTime": 53340.5,
           "StopTime": 55469.5
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3865,
+        "Name": "SWBAT70M  (14-195 keV)",
+        "ErrorRadius": 3.0,
+        "Band": "Hard X-Ray",
+        "Kind": "Catalog",
+        "Bibliography": [
+          {
+            "Title": "The 70 Month Swift-BAT All-Sky Hard X-Ray Survey",
+            "Authors": "Baumgartner, W. H.; Tueller, J.; Markwardt, C. B. et al",
+            "URL": "https://ui.adsabs.harvard.edu/abs/arXiv:1212.3336"
+          }
+        ]
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 14666,
         "Name": "Cygnus X-1",
         "ErrorRadius": 1.0,
         "Kind": "Paper",
-        "References": [
-          {
-            "Title": "An IXPE-led X-Ray Spectropolarimetric Campaign on the Soft State of Cygnus X-1: X-Ray Polarimetric Evidence for Strong Gravitational Lensing",
-            "Authors": "Steiner, James F. ; Nathan, Edward ; Hu, Kun et al.",
-            "URL": "https://ui.adsabs.harvard.edu/abs/2024ApJ...969L..30S"
-          },
+        "Bibliography": [
           {
             "Title": "Polarized x-rays constrain the disk-jet geometry in the black hole x-ray binary Cygnus X-1",
             "Authors": "Krawczynski, Henric  Muleri, Fabio Dovciak, Michal et al.",
             "URL": "https://ui.adsabs.harvard.edu/abs/2022Sci...378..650K"
+          },
+          {
+            "Title": "An IXPE-led X-Ray Spectropolarimetric Campaign on the Soft State of Cygnus X-1: X-Ray Polarimetric Evidence for Strong Gravitational Lensing",
+            "Authors": "Steiner, James F. ; Nathan, Edward ; Hu, Kun et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2024ApJ...969L..30S"
           }
         ]
       },
@@ -9363,7 +9972,25 @@
           "StopTime": 60115.89650143,
           "Info": "Flux data not present ; "
         }
-      ]
+      ],
+      "Source": {
+        "Id": 14666,
+        "Name": "Cygnus X-1",
+        "ErrorRadius": 1.0,
+        "Kind": "Paper",
+        "Bibliography": [
+          {
+            "Title": "Polarized x-rays constrain the disk-jet geometry in the black hole x-ray binary Cygnus X-1",
+            "Authors": "Krawczynski, Henric  Muleri, Fabio Dovciak, Michal et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2022Sci...378..650K"
+          },
+          {
+            "Title": "An IXPE-led X-Ray Spectropolarimetric Campaign on the Soft State of Cygnus X-1: X-Ray Polarimetric Evidence for Strong Gravitational Lensing",
+            "Authors": "Steiner, James F. ; Nathan, Edward ; Hu, Kun et al.",
+            "URL": "https://ui.adsabs.harvard.edu/abs/2024ApJ...969L..30S"
+          }
+        ]
+      }
     }
   ]
 }

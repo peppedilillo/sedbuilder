@@ -3,22 +3,22 @@
     {
       "valueDB": "SSDC",
       "valueDEC": "22.01447",
-      "id": "SSDC1223270",
       "text": "Crabnebula",
+      "id": "SSDC1223270",
       "valueRA": "83.63321"
     },
     {
       "valueDB": "NED",
       "valueDEC": "22.014486",
-      "id": "NED2null",
       "text": "Crab Nebula",
+      "id": "NED2null",
       "valueRA": "83.633107"
     },
     {
       "valueDB": "SIMBAD",
       "valueDEC": "22.0174",
-      "id": "SIMBAD3null",
       "text": "Crab Nebula",
+      "id": "SIMBAD3null",
       "valueRA": "83.6324"
     }
   ]

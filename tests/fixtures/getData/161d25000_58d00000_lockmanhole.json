@@ -2,7 +2,7 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4941_1"
+    "APIVersion": "1.4941_2"
   },
   "Properties": {
     "Nh": -1.0,
@@ -23,7 +23,7 @@
   },
   "Datasets": [
     {
-      "Source": {
+      "Reference": {
         "Id": 3205,
         "Name": "WISE W1 PointPsf",
         "ErrorRadius": 0.1,
@@ -40,10 +40,17 @@
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3205,
+        "Name": "WISE W1 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3206,
         "Name": "WISE W2 PointPsf",
         "ErrorRadius": 0.1,
@@ -60,10 +67,17 @@
           "StartTime": 55316.73125995,
           "StopTime": 55318.12051844
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3206,
+        "Name": "WISE W2 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3207,
         "Name": "WISE W3 PointPsf",
         "ErrorRadius": 0.1,
@@ -81,10 +95,17 @@
           "StopTime": 55318.12051844,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3207,
+        "Name": "WISE W3 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     },
     {
-      "Source": {
+      "Reference": {
         "Id": 3208,
         "Name": "WISE W4 PointPsf",
         "ErrorRadius": 0.1,
@@ -102,7 +123,14 @@
           "StopTime": 55318.12051844,
           "Info": "Upper Limit"
         }
-      ]
+      ],
+      "Source": {
+        "Id": 3208,
+        "Name": "WISE W4 PointPsf",
+        "ErrorRadius": 0.1,
+        "Band": "Infrared",
+        "Kind": "Catalog"
+      }
     }
   ]
 }
