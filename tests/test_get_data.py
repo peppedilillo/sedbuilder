@@ -302,6 +302,26 @@ class TestResponseConversions:
             for meta in TABLE_SCHEMA.metadata():
                 assert meta.name in table.meta, f"Missing metadata: {meta.name}"
 
+    def test_reference_surface(self, fixtures):
+        for fixture in fixtures:
+            response = get_data_from_json(fixture)
+            refs = response.references()
+            assert len(refs) == len(response.datasets)
+            if not response.datasets:
+                assert refs == []
+                continue
+            assert hasattr(response.datasets[0], "reference")
+            assert "bibliography" in refs[0]
+
+    def test_to_astropy_reference_columns(self, fixtures):
+        for fixture in fixtures:
+            response = get_data_from_json(fixture)
+            table = response.to_astropy()
+            assert "reference_name" in table.colnames
+            assert "reference_band" in table.colnames
+            assert "source_name" not in table.colnames
+            assert "source_band" not in table.colnames
+
     def test_to_jetset(self, fixtures):
         for fixture in fixtures:
             response = get_data_from_json(fixture)

@@ -35,7 +35,7 @@ class ResponseInfo(BaseModel):
 
 
 class Properties(BaseModel):
-    """Additional properties for the queried source.
+    """Additional properties for the queried astronomical source.
 
     Attributes:
         nh: Hydrogen column density in cm^-2 along the line of sight.
@@ -46,14 +46,14 @@ class Properties(BaseModel):
     units: Optional[dict[str, str]] = Field(default=None, alias="Units")
 
 
-class Reference(BaseModel):
-    """Literature reference metadata.
+class BibItem(BaseModel):
+    """Metadata for a bibliographic item.
 
     Attributes:
-        id: Reference ID.
-        title: Reference title.
-        authors: Reference author.
-        url: Reference URL.
+        id: Bibliography item ID.
+        title: Bibliography item title.
+        authors: Bibliography item author.
+        url: Bibliography item URL.
     """
 
     id: Optional[int] = Field(default=None, alias="Id")
@@ -62,16 +62,16 @@ class Reference(BaseModel):
     url: Optional[str] = Field(default=None, alias="URL")
 
 
-class Source(BaseModel):
-    """Catalog metadata.
+class Reference(BaseModel):
+    """A reference to the catalog or paper from which the data come from.
 
     Attributes:
-        kind: Source type (either "catalog" or "paper").
-        name: Name of the astronomical catalog.
-        id: Unique identifier for the catalog.
+        kind: Reference type (either "catalog" or "paper").
+        name: Name of the reference.
+        id: Unique referemce identifier.
         error_radius: Search radius in arcsec used for source matching.
         band: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
-        references: A list of literature reference metadata associated to this source.
+        bibliography: A list of bibliographic items associated to this reference.
     """
 
     kind: Literal["Catalog", "Paper"] = Field(alias="Kind")
@@ -79,11 +79,11 @@ class Source(BaseModel):
     id: int = Field(alias="Id")
     error_radius: Annotated[float, Field(ge=0.0)] = Field(alias="ErrorRadius")
     band: Optional[str] = Field(default=None, alias="Band")
-    references: Optional[list[Reference]] = Field(default=None, alias="References")
+    bibliography: Optional[list[BibItem]] = Field(default=None, alias="Bibliography")
 
     def __repr__(self) -> str:
         return (
-            f"Source(Name={self.name!r}, "
+            f"Reference(Name={self.name!r}, "
             f"Kind={self.kind}, "
             f"Id={self.id}, "
             f"error_radius={self.error_radius}, "
@@ -94,7 +94,7 @@ class Source(BaseModel):
 class Data(BaseModel):
     """Spectral energy distribution data point.
 
-    Represents a single row from a data source.
+    Represents a single data row.
     """
 
     frequency: Annotated[float, Field(gt=0.0)] = Field(alias="Frequency")
@@ -111,22 +111,22 @@ class Data(BaseModel):
 
 
 class Dataset(BaseModel):
-    """A catalog entry with its associated source data.
+    """Data and a reference on its origin.
 
     Attributes:
-        source: Metadata about the catalog.
-        data: List of measurements from this catalog.
+        reference: reference metadata.
+        data: a data table.
     """
 
-    source: Source = Field(alias="Source")
+    reference: Reference = Field(alias="Reference")
     data: list[Data] = Field(alias="Data")
 
     def __repr__(self) -> str:
-        return f"Dataset({self.source!r}, Data: [#{len(self.data)} entries])"
+        return f"Dataset({self.reference!r}, Data: [#{len(self.data)} entries])"
 
 
 class DataColumn(NamedTuple):
-    """Schema descriptor for a column sourced from a `Data` measurement.
+    """A column from a data table.
 
     Attributes:
         name: Column name in the output astropy Table (matches the `Data` field name).
@@ -134,25 +134,25 @@ class DataColumn(NamedTuple):
         units: Astropy unit, or ``None`` for dimensionless columns.
     """
 
-    name: str  # field name in SourceData
+    name: str
     dtype: type
     units: u.Unit | None
 
 
-class SourceColumn(NamedTuple):
-    """Schema descriptor for a column sourced from a `Source` catalog entry.
+class ReferenceColumn(NamedTuple):
+    """A column holding information about a dataset reference.
 
     Attributes:
         name: Column name in the output astropy Table. More descriptive than the
             raw model field name to avoid ambiguity when tables are stacked.
-        field: Corresponding field name in the `Source` model.
+        field: Corresponding field name in the `Reference` model.
         dtype: NumPy or Python dtype for the column.
         units: Astropy unit, or ``None`` for dimensionless columns.
     """
 
     # the field name could be too generic to be used as column name
     name: str  # column name in the astropy table, essentially a more descriptive alias
-    field: str  # field name in Source model
+    field: str
     dtype: type
     units: u.Unit | None
 
@@ -174,7 +174,7 @@ class PropertyMetadata(NamedTuple):
 class AstropySchema:
     """Frozen schema definition for the output astropy Table produced by `GetDataResponse.to_astropy`.
 
-    Each class attribute is a `DataColumn`, `SourceColumn`, or `PropertyMetadata`
+    Each class attribute is a `DataColumn`, `ReferenceColumn`, or `PropertyMetadata`
     descriptor. The `columns` and `metadata` methods yield them in the canonical
     output order.
     """
@@ -189,12 +189,12 @@ class AstropySchema:
     START_TIME = DataColumn("start_time", np.float64, u.d)
     STOP_TIME = DataColumn("stop_time", np.float64, u.d)
     INFO = DataColumn("info", str, None)
-    SOURCE_NAME = SourceColumn("source_name", "name", str, None)
-    SOURCE_BAND = SourceColumn("source_band", "band", str, None)
-    ERROR_RADIUS = SourceColumn("error_radius", "error_radius", np.float64, u.arcsec)
+    REFERENCE_NAME = ReferenceColumn("reference_name", "name", str, None)
+    REFERENCE_BAND = ReferenceColumn("reference_band", "band", str, None)
+    ERROR_RADIUS = ReferenceColumn("error_radius", "error_radius", np.float64, u.arcsec)
     METADATA_NH = PropertyMetadata("nh", u.cm**-2)
 
-    def columns(self, kind: Literal["data", "source", "all"] = "all"):
+    def columns(self, kind: Literal["data", "reference", "all"] = "all"):
         """Iterate over columns, defines table order."""
         if kind == "all" or kind == "data":
             yield self.NAME
@@ -206,9 +206,9 @@ class AstropySchema:
             yield self.START_TIME
             yield self.STOP_TIME
             yield self.INFO
-        if kind == "all" or kind == "source":
-            yield self.SOURCE_NAME
-            yield self.SOURCE_BAND
+        if kind == "all" or kind == "reference":
+            yield self.REFERENCE_NAME
+            yield self.REFERENCE_BAND
             yield self.ERROR_RADIUS
 
     def metadata(self):
@@ -298,16 +298,16 @@ class GetDataResponse(BaseModel):
         # the gist of it is to build two different tables and to stack them horizontally.
         # the first table is for data columns, the second for the catalog columns.
         columns_data = [*TABLE_SCHEMA.columns(kind="data")]
-        columns_source = [*TABLE_SCHEMA.columns(kind="source")]
+        columns_reference = [*TABLE_SCHEMA.columns(kind="reference")]
 
         # first we have to unpack the data
-        rows_data, rows_source = [], []
+        rows_data, rows_ref = [], []
         for dataset in self.datasets:
-            _dsmp = dataset.source.model_dump()
-            source_dump = {col.name: _dsmp[col.field] for col in columns_source if col.field in _dsmp}
-            for source_data in dataset.data:
-                rows_data.append(source_data.model_dump())
-                rows_source.append(source_dump)
+            _dsmp = dataset.reference.model_dump()
+            ref_dump = {col.name: _dsmp[col.field] for col in columns_reference if col.field in _dsmp}
+            for data in dataset.data:
+                rows_data.append(data.model_dump())
+                rows_ref.append(ref_dump)
 
         # first, the column table
         table_data = Table(
@@ -318,15 +318,15 @@ class GetDataResponse(BaseModel):
         )
 
         # second, the catalog property table
-        table_source = Table(
-            rows_source,
-            names=[col.name for col in columns_source],
-            dtype=[col.dtype for col in columns_source],
-            units=[col.units for col in columns_source],
+        table_ref = Table(
+            rows_ref,
+            names=[col.name for col in columns_reference],
+            dtype=[col.dtype for col in columns_reference],
+            units=[col.units for col in columns_reference],
         )
 
         # then, we stack
-        table = hstack((table_data, table_source))
+        table = hstack((table_data, table_ref))
 
         # and add metadata
         for m in TABLE_SCHEMA.metadata():
@@ -351,7 +351,7 @@ class GetDataResponse(BaseModel):
         plus metadata needed for Jetset analysis.
 
         Args:
-            z: Source redshift, must be greater or equal to 0.
+            z: Astronomical source redshift, must be greater or equal to 0.
             ul_cl: Confidence level for upper limits, must be between 0 and 1,
                 exclusive. Default is 0.95.
             restframe: Reference frame for the data. Options are "obs" for observed flux (default)
@@ -395,7 +395,7 @@ class GetDataResponse(BaseModel):
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
         table.add_column(info2ul(t[TABLE_SCHEMA.INFO.name]), name="UL")
-        table.add_column(t[TABLE_SCHEMA.SOURCE_NAME.name].astype(str), name="dataset")
+        table.add_column(t[TABLE_SCHEMA.REFERENCE_NAME.name].astype(str), name="dataset")
         table.meta["z"] = z
         table.meta["UL_CL"] = ul_cl
         table.meta["restframe"] = restframe
@@ -404,13 +404,13 @@ class GetDataResponse(BaseModel):
         # fmt: on
         return table
 
-    def sources(self) -> list[dict]:
+    def references(self) -> list[dict]:
         """Returns a list of references to the catalog and papers from which the data is collected.
 
         Returns:
-            Datasets source metadata.
+            Datasets reference metadata.
         """
-        return [d.source.model_dump() for d in self.datasets]
+        return [d.reference.model_dump() for d in self.datasets]
 
 
 class CatalogsResponse(BaseModel):
@@ -425,7 +425,7 @@ class CatalogsResponse(BaseModel):
     """
 
     response_info: ResponseInfo = Field(alias="ResponseInfo")
-    catalogs: list[Source] = Field(alias="Catalogs")
+    catalogs: list[Reference] = Field(alias="Catalogs")
 
     def is_successful(self) -> bool:
         """Check if the API response indicates success.
@@ -452,7 +452,7 @@ class NameResolverItem(BaseModel):
         ra: Right ascension in degrees.
         dec: Declination in degrees.
         id: Internal identifier assigned by the resolver database.
-        name: Display name of the resolved source.
+        name: Display name of the resolved astronomical source.
     """
 
     model_config = ConfigDict(populate_by_name=True)

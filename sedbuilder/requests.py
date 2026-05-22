@@ -199,11 +199,11 @@ def get_data(
         response = get_data(name="Crab Nebula")
 
         # Access data in different formats
-        table = response.to_astropy()     # Astropy Table
-        data_dict = response.to_dict()    # Python dictionary
+        table = response.to_astropy()  # Astropy Table
+        data_dict = response.to_dict()  # Python dictionary
         jt = response.to_jetset(z=0.034)  # Jetset table
-        json_str = response.to_json()     # JSON string
-        df = response.to_pandas()         # Pandas DataFrame (requires pandas)
+        json_str = response.to_json()  # JSON string
+        df = response.to_pandas()  # Pandas DataFrame (requires pandas)
         ```
 
     Note:

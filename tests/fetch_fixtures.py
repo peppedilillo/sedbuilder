@@ -5,7 +5,7 @@ sources and saves the responses as JSON files. Run this script whenever the
 upstream API changes to update test fixtures with the latest data format.
 
 Usage:
-    python tests/fetch_fixtures.py [--no-data] [--no-catalogs] [--no-names]
+    uv run tests/fetch_fixtures.py [--no-data] [--no-catalogs] [--no-names]
 """
 
 import argparse
@@ -54,7 +54,7 @@ def format_filename(ra: float, dec: float, source_name: str) -> str:
 
 
 def fetch_and_save_test_data(
-    output_dir: Path = Path("fixtures"),
+    output_dir: Path = Path("tests/fixtures"),
     timeout: int = 30,
     fetch_data: bool = True,
     fetch_catalogs: bool = True,
@@ -63,8 +63,8 @@ def fetch_and_save_test_data(
     """Fetch test data and catalogs from API and save as JSON files.
 
     Args:
-        output_dir: Root directory for fixtures (default: fixtures).
-        timeout: Timeout in seconds (default: 10).
+        output_dir: Root directory for fixtures (default: tests/fixtures).
+        timeout: Timeout in seconds (default: 30).
         fetch_data: Whether to fetch source SED data (default: True).
         fetch_catalogs: Whether to fetch catalogs data (default: True).
         fetch_names: Whether to fetch name resolver data (default: True).

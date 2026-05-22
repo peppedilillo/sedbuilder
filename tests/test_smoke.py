@@ -27,5 +27,5 @@ class TestSmoke:
 
     def test_get_data_with_catalog_ids(self):
         response = get_data(ra=194.04625, dec=-5.789167, catalog_ids=(85, 5092))
-        catalog_ids = [d.source.id for d in response.datasets]
+        catalog_ids = [d.reference.id for d in response.datasets]
         assert len(catalog_ids) == 2 and 85 in catalog_ids and 5092 in catalog_ids

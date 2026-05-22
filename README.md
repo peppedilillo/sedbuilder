@@ -15,7 +15,7 @@ pip install ssdc-sedbuilder
 
 ## Quick Start
 
-You can fetch data querying a source name or its coordinates.
+You can fetch data by querying a source name or its coordinates.
 
 ```python
 from sedbuilder import get_data
@@ -26,14 +26,15 @@ response = get_data(ra=244.9795, dec=-15.64022)
 response = get_data(name="Sco X-1")
 
 # Access data in different formats
-table = response.to_astropy()     # Astropy Table
-data_dict = response.to_dict()    # Python dictionary
+table = response.to_astropy()  # Astropy Table
+data_dict = response.to_dict()  # Python dictionary
 jt = response.to_jetset(z=0.034)  # Jetset table
-json_str = response.to_json()     # JSON string
-df = response.to_pandas()         # Pandas DataFrame (requires pandas)
+json_str = response.to_json()  # JSON string
+df = response.to_pandas()  # Pandas DataFrame (requires pandas)
 
-# Gets references to the dataset catalog and papers
-refs = response.sources()
+# Find where data come from
+first_reference = response.datasets[0].reference
+refs = response.references()
 ```
 
 When calling `get_data` by name, `resolve_name` queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.
@@ -53,11 +54,11 @@ Resolving a source name takes time. We suggest querying on coordinates when avai
 # install with development dependencies
 git clone https://github.com/peppedilillo/sedbuilder.git
 cd sedbuilder
-pip install -e ".[dev, docs]" 
+pip install -e ".[dev,docs]"
 # or with uv
 uv sync --extra dev --extra docs
 # routes queries to test server (requires internal network)
-source dev.env 
+source dev.env
 # install linter pre-commit hooks
 pre-commit install
 # runs tests

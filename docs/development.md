@@ -8,9 +8,9 @@ cd sedbuilder
 pip install -e ".[dev, docs]"
 # or with uv
 uv sync --extra dev --extra docs
-# next line will route queries to test server. 
-# use only on SSDC internal network 
-source dev.env 
+# next line will route queries to test server.
+# use only on SSDC internal network
+source dev.env
 ```
 
 ### Pre-commit Hooks
@@ -30,11 +30,18 @@ pytest
 ```
 
 You must first `cd` into the project directory.
-
 To run smoke tests against the live server:
 
 ```bash
 pytest --smoke
+```
+
+### Collecting fixtures
+
+From project root:
+
+```bash
+uv run tests/fetch_fixtures.py
 ```
 
 ### Pushing to gitlab
@@ -48,7 +55,7 @@ git push -u gitlab
 
 Push to GitHub and GitLab:
 
-```python
+```bash
 # pushes to github
 git push origin
 # pushes to gitlab
