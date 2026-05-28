@@ -41,6 +41,7 @@ Issues = "https://github.com/peppedilillo/sedbuilder/issues"
 
 [project.optional-dependencies]
 dev = [
+    "pandas",
     "pre-commit",
     "pytest",
     "pyinstrument",
@@ -57,9 +58,4 @@ docs = [
 [tool.pytest.ini_options]
 markers = [
     "smoke: marks tests requiring live server access (run with --smoke)",
-]
-
-[dependency-groups]
-dev = [
-    "pandas>=3.0.3",
 ]

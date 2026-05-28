@@ -1344,6 +1344,7 @@ dev = [
     { name = "ipython", version = "9.10.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "ipython", version = "9.11.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "isort" },
+    { name = "pandas" },
     { name = "pre-commit" },
     { name = "pyinstrument" },
     { name = "pytest" },
@@ -1352,11 +1353,6 @@ docs = [
     { name = "mkdocs" },
     { name = "mkdocs-material" },
     { name = "mkdocstrings", extra = ["python"] },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "pandas" },
 ]
 
 [package.metadata]
@@ -1369,15 +1365,13 @@ requires-dist = [
     { name = "mkdocs", marker = "extra == 'docs'" },
     { name = "mkdocs-material", marker = "extra == 'docs'" },
     { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'" },
+    { name = "pandas", marker = "extra == 'dev'" },
     { name = "pre-commit", marker = "extra == 'dev'" },
     { name = "pydantic" },
     { name = "pyinstrument", marker = "extra == 'dev'" },
     { name = "pytest", marker = "extra == 'dev'" },
 ]
 provides-extras = ["dev", "docs"]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pandas", specifier = ">=3.0.3" }]
 
 [[package]]
 name = "stack-data"
