@@ -9,7 +9,7 @@ import os
 from typing import Callable
 from urllib.parse import quote
 
-_DEV_DOMAIN_URL = r"https://toolsdev2.ssdc.asi.it"
+_DEV_DOMAIN_URL = r"https://toolsdev.ssdc.asi.it"
 """Nightly URL for the SSDC SED Builder REST API."""
 _PROD_DOMAIN_URL = r"https://tools.ssdc.asi.it"
 """Production URL for the SSDC SED Builder REST API."""
