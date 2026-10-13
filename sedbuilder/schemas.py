@@ -39,10 +39,10 @@ class Properties(BaseModel):
 
     Attributes:
         nh: Hydrogen column density in cm^-2 along the line of sight.
-        units: Units of measure for data and properties..
+        units: Units of measure for data and properties.
     """
 
-    nh: Optional[float] = Field(default=None, alias="Nh")
+    nh: Optional[float] = Field(default=None, alias="nH")
     units: Optional[dict[str, str]] = Field(default=None, alias="Units")
 
 
@@ -68,8 +68,8 @@ class Reference(BaseModel):
     Attributes:
         kind: Reference type (either "catalog" or "paper").
         name: Name of the reference.
-        id: Unique referemce identifier.
-        error_radius: Search radius in arcsec used for source matching.
+        id: Unique reference identifier.
+        error_radius: Search radius in arcmin used for source matching.
         band: Spectral band classification (e.g., 'Radio', 'Infrared', 'Optical').
         bibliography: A list of bibliographic items associated to this reference.
     """
@@ -94,13 +94,32 @@ class Reference(BaseModel):
 class Data(BaseModel):
     """Spectral energy distribution data point.
 
-    Represents a single data row.
+    Represents a single data row. Error fields ending in ``_lower`` and ``_upper``
+    are nonnegative deviations from the central value, not bounds. Polarization
+    fraction and its errors are in percent; angle and its errors are in degrees,
+    as specified in `Properties`. Missing polarization measurements are ``None``.
     """
 
     frequency: Annotated[float, Field(gt=0.0)] = Field(alias="Frequency")
+    frequency_error_lower: Annotated[Optional[float], Field(ge=0.0)] = Field(alias="FrequencyErrorLower")
+    frequency_error_upper: Annotated[Optional[float], Field(ge=0.0)] = Field(alias="FrequencyErrorUpper")
     nufnu: float = Field(alias="Nufnu")
-    frequency_error: Annotated[float, Field(ge=0.0)] = Field(alias="FrequencyError")
-    nufnu_error: float = Field(alias="NufnuError")
+    nufnu_error_lower: Annotated[float, Field(ge=0.0)] = Field(alias="NufnuErrorLower")
+    nufnu_error_upper: Annotated[float, Field(ge=0.0)] = Field(alias="NufnuErrorUpper")
+    polarization_fraction: Annotated[Optional[float], Field(ge=0.0)] = Field(default=None, alias="PolarizationFraction")
+    polarization_fraction_error_lower: Annotated[Optional[float], Field(ge=0.0)] = Field(
+        default=None, alias="PolarizationFractionErrorLower"
+    )
+    polarization_fraction_error_upper: Annotated[Optional[float], Field(ge=0.0)] = Field(
+        default=None, alias="PolarizationFractionErrorUpper"
+    )
+    polarization_angle: Annotated[Optional[float], Field(ge=0.0)] = Field(default=None, alias="PolarizationAngle")
+    polarization_angle_error_lower: Annotated[Optional[float], Field(ge=0.0)] = Field(
+        default=None, alias="PolarizationAngleErrorLower"
+    )
+    polarization_angle_error_upper: Annotated[Optional[float], Field(ge=0.0)] = Field(
+        default=None, alias="PolarizationAngleErrorUpper"
+    )
     name: Optional[str] = Field(default=None, alias="Name")
     angular_distance: Annotated[Optional[float], Field(default=None, ge=0.0)] = Field(
         default=None, alias="AngularDistance"
@@ -182,16 +201,24 @@ class AstropySchema:
     # TODO: it would be nice to have units parsed from the response!
     NAME = DataColumn("name", str, None)
     FREQUENCY = DataColumn("frequency", np.float64, u.Hz)
+    FREQUENCY_ERROR_LOWER = DataColumn("frequency_error_lower", np.float64, u.Hz)
+    FREQUENCY_ERROR_UPPER = DataColumn("frequency_error_upper", np.float64, u.Hz)
     NUFNU = DataColumn("nufnu", np.float64, u.erg / (u.cm**2 * u.s))
-    FREQUENCY_ERROR = DataColumn("frequency_error", np.float64, u.Hz)
-    NUFNU_ERROR = DataColumn("nufnu_error", np.float64, u.erg / (u.cm**2 * u.s))
+    NUFNU_ERROR_LOWER = DataColumn("nufnu_error_lower", np.float64, u.erg / (u.cm**2 * u.s))
+    NUFNU_ERROR_UPPER = DataColumn("nufnu_error_upper", np.float64, u.erg / (u.cm**2 * u.s))
+    POLARIZATION_FRACTION = DataColumn("polarization_fraction", np.float64, u.percent)
+    POLARIZATION_FRACTION_ERROR_LOWER = DataColumn("polarization_fraction_error_lower", np.float64, u.percent)
+    POLARIZATION_FRACTION_ERROR_UPPER = DataColumn("polarization_fraction_error_upper", np.float64, u.percent)
+    POLARIZATION_ANGLE = DataColumn("polarization_angle", np.float64, u.deg)
+    POLARIZATION_ANGLE_ERROR_LOWER = DataColumn("polarization_angle_error_lower", np.float64, u.deg)
+    POLARIZATION_ANGLE_ERROR_UPPER = DataColumn("polarization_angle_error_upper", np.float64, u.deg)
     ANGULAR_DISTANCE = DataColumn("angular_distance", np.float64, u.arcsec)
     START_TIME = DataColumn("start_time", np.float64, u.d)
     STOP_TIME = DataColumn("stop_time", np.float64, u.d)
     INFO = DataColumn("info", str, None)
     REFERENCE_NAME = ReferenceColumn("reference_name", "name", str, None)
     REFERENCE_BAND = ReferenceColumn("reference_band", "band", str, None)
-    ERROR_RADIUS = ReferenceColumn("error_radius", "error_radius", np.float64, u.arcsec)
+    ERROR_RADIUS = ReferenceColumn("error_radius", "error_radius", np.float64, u.arcmin)
     METADATA_NH = PropertyMetadata("nh", u.cm**-2)
 
     def columns(self, kind: Literal["data", "reference", "all"] = "all"):
@@ -199,9 +226,17 @@ class AstropySchema:
         if kind == "all" or kind == "data":
             yield self.NAME
             yield self.FREQUENCY
+            yield self.FREQUENCY_ERROR_LOWER
+            yield self.FREQUENCY_ERROR_UPPER
             yield self.NUFNU
-            yield self.FREQUENCY_ERROR
-            yield self.NUFNU_ERROR
+            yield self.NUFNU_ERROR_LOWER
+            yield self.NUFNU_ERROR_UPPER
+            yield self.POLARIZATION_FRACTION
+            yield self.POLARIZATION_FRACTION_ERROR_LOWER
+            yield self.POLARIZATION_FRACTION_ERROR_UPPER
+            yield self.POLARIZATION_ANGLE
+            yield self.POLARIZATION_ANGLE_ERROR_LOWER
+            yield self.POLARIZATION_ANGLE_ERROR_UPPER
             yield self.ANGULAR_DISTANCE
             yield self.START_TIME
             yield self.STOP_TIME
@@ -277,6 +312,8 @@ class GetDataResponse(BaseModel):
         """Converts data to a pandas DataFrame.
 
         Requires pandas to be installed. Install with `pip install pandas`.
+        Uses the same column names as `to_astropy`, with missing numeric values
+        represented by NaN. Astropy column units are not retained in the DataFrame.
 
         Returns:
             A pandas dataframe.
@@ -292,8 +329,14 @@ class GetDataResponse(BaseModel):
     def to_astropy(self) -> Table:
         """Convert data to an astropy Table.
 
+        Includes separate lower/upper error columns and all six polarization
+        columns, even when no polarization measurements are available. Missing
+        numeric values are NaN. Search radii are in arcmin and angular distances
+        are in arcsec. Hydrogen column density is stored in ``table.meta['nh']``
+        as a quantity in cm^-2.
+
         Returns:
-            Astropy Table with one row per measurements.
+            Astropy Table with one row per measurement.
         """
         # the gist of it is to build two different tables and to stack them horizontally.
         # the first table is for data columns, the second for the catalog columns.
@@ -349,6 +392,10 @@ class GetDataResponse(BaseModel):
 
         The output includes both the data table with renamed columns and appropriate units,
         plus metadata needed for Jetset analysis.
+        The symmetric uncertainties ``dx`` and ``dy`` are the arithmetic means
+        of the corresponding lower and upper error magnitudes. This approximates
+        asymmetric errors; `to_astropy` and `to_pandas` preserve both components.
+        Polarization columns are not included in the Jetset table.
 
         Args:
             z: Astronomical source redshift, must be greater or equal to 0.
@@ -389,9 +436,9 @@ class GetDataResponse(BaseModel):
         t = self.to_astropy()
         table = Table()
         table.add_column(t[TABLE_SCHEMA.FREQUENCY.name].astype(np.float64), name="x")
-        table.add_column(t[TABLE_SCHEMA.FREQUENCY_ERROR.name].astype(np.float64), name="dx")
+        table.add_column((t[TABLE_SCHEMA.FREQUENCY_ERROR_LOWER.name] + t[TABLE_SCHEMA.FREQUENCY_ERROR_UPPER.name]) / 2., name="dx")
         table.add_column(t[TABLE_SCHEMA.NUFNU.name].astype(np.float64), name="y")
-        table.add_column(t[TABLE_SCHEMA.NUFNU_ERROR.name].astype(np.float64), name="dy")
+        table.add_column((t[TABLE_SCHEMA.NUFNU_ERROR_LOWER.name]+ t[TABLE_SCHEMA.NUFNU_ERROR_UPPER.name]) / 2., name="dy")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.START_TIME.name].value, nan=0.0).astype(np.float64), name="T_start")
         table.add_column(np.nan_to_num(t[TABLE_SCHEMA.STOP_TIME.name].value, nan=0.0).astype(np.float64), name="T_stop")
         table.add_column(info2ul(t[TABLE_SCHEMA.INFO.name]), name="UL")

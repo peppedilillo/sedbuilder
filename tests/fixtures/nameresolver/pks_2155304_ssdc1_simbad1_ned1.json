@@ -3,22 +3,22 @@
     {
       "valueDB": "SSDC",
       "valueDEC": "-30.225278",
-      "text": "PKS2155-304",
       "id": "SSDC427832",
+      "text": "PKS2155-304",
       "valueRA": "329.71625"
     },
     {
       "valueDB": "NED",
       "valueDEC": "-30.225588",
-      "text": "PKS 2155-304",
       "id": "NED2null",
+      "text": "PKS 2155-304",
       "valueRA": "329.716938"
     },
     {
       "valueDB": "SIMBAD",
       "valueDEC": "-30.225588",
-      "text": "PKS 2155-304",
       "id": "SIMBAD3null",
+      "text": "PKS 2155-304",
       "valueRA": "329.716938"
     }
   ]

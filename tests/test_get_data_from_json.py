@@ -44,19 +44,9 @@ class TestGetDataFromJson:
 
 
 class TestFixtureParsing:
-    """Test that all fixtures in tests/data parse correctly."""
+    """Test each API fixture independently."""
 
-    def test_all_fixtures_parse(self):
-        data_dir = GET_DATA_DIR
-        assert data_dir.exists()
-
-        fixtures = [f for f in data_dir.glob("*.json") if f.name != "catalogs.json"]
-        if not fixtures:
-            pytest.skip("No test fixtures found")
-
-        fixtures = [f for f in fixtures if f.name != "README.json"]
-        assert len(fixtures) > 0, "Expected at least one test fixture"
-
-        for fixture in fixtures:
-            response = get_data_from_json(fixture)
-            assert response is not None, f"Failed to parse {fixture.name}"
+    @pytest.mark.parametrize("fixture", sorted(GET_DATA_DIR.glob("*.json")), ids=lambda path: path.stem)
+    def test_all_fixtures_parse(self, fixture):
+        response = get_data_from_json(fixture)
+        assert response is not None

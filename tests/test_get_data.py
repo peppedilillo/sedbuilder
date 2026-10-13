@@ -6,6 +6,8 @@ from unittest.mock import Mock
 from unittest.mock import patch
 
 from astropy.table import Table
+import astropy.units as u
+import numpy as np
 from pydantic import ValidationError
 import pytest
 
@@ -25,17 +27,25 @@ def mock_response():
             "message": None,
         },
         "Properties": {
-            "Nh": 1e20,
+            "nH": 1e20,
             "Units": {
                 "Frequency": "Hz",
-                "FrequencyError": "Hz",
+                "FrequencyErrorLower": "Hz",
+                "FrequencyErrorUpper": "Hz",
                 "Nufnu": "erg cm**(-2) s**(-1)",
-                "NufnuError": "erg cm**(-2) s**(-1)",
+                "NufnuErrorLower": "erg cm**(-2) s**(-1)",
+                "NufnuErrorUpper": "erg cm**(-2) s**(-1)",
+                "PolarizationFraction": "%",
+                "PolarizationFractionErrorLower": "%",
+                "PolarizationFractionErrorUpper": "%",
+                "PolarizationAngle": "deg",
+                "PolarizationAngleErrorLower": "deg",
+                "PolarizationAngleErrorUpper": "deg",
                 "AngularDistance": "arcsec",
                 "StartTime": "mjd",
                 "StopTime": "mjd",
-                "ErrorRadius": "arcsec",
-                "Nh": "cm**-2",
+                "ErrorRadius": "arcmin",
+                "nH": "cm**-2",
             },
         },
         "Datasets": [],
@@ -256,14 +266,10 @@ class TestGetDataByName:
 class TestResponseConversions:
     """Test conversion methods on all fixtures."""
 
-    @pytest.fixture
-    def fixtures(self):
-        data_dir = GET_DATA_DIR
-        assert data_dir.exists()
-
-        fixtures = [f for f in data_dir.glob("*.json") if f.name != "catalogs.json"]
-        assert fixtures
-        return fixtures
+    @pytest.fixture(params=sorted(GET_DATA_DIR.glob("*.json")), ids=lambda path: path.stem)
+    def fixtures(self, request):
+        # Run each response independently so a bad fixture cannot hide later ones.
+        return [request.param]
 
     def test_to_dict(self, fixtures):
         for fixture in fixtures:
@@ -332,3 +338,57 @@ class TestResponseConversions:
             assert "UL" in table.colnames
             assert "dataset" in table.colnames
             assert table.meta["z"] == 0.1
+
+
+@pytest.mark.parametrize(
+    "filename",
+    [
+        "0d00000_90d00000_northpole.json",
+        "161d25000_58d00000_lockmanhole.json",
+        "166d11381_38d20883_mrk421.json",
+    ],
+)
+def test_export_preserves_api_measurements(filename):
+    """Check values and units against the response, independently of TABLE_SCHEMA."""
+    path = GET_DATA_DIR / filename
+    raw = json.loads(path.read_text())
+    response = get_data_from_json(path)
+    table = response.to_astropy()
+    frame = response.to_pandas()
+    rows = [row for dataset in raw["Datasets"] for row in dataset["Data"]]
+    fields = {
+        "frequency_error_lower": ("FrequencyErrorLower", u.Hz),
+        "frequency_error_upper": ("FrequencyErrorUpper", u.Hz),
+        "nufnu_error_lower": ("NufnuErrorLower", u.erg / (u.cm**2 * u.s)),
+        "nufnu_error_upper": ("NufnuErrorUpper", u.erg / (u.cm**2 * u.s)),
+        "polarization_fraction": ("PolarizationFraction", u.percent),
+        "polarization_fraction_error_lower": ("PolarizationFractionErrorLower", u.percent),
+        "polarization_fraction_error_upper": ("PolarizationFractionErrorUpper", u.percent),
+        "polarization_angle": ("PolarizationAngle", u.deg),
+        "polarization_angle_error_lower": ("PolarizationAngleErrorLower", u.deg),
+        "polarization_angle_error_upper": ("PolarizationAngleErrorUpper", u.deg),
+    }
+    assert len(table) == len(frame) == len(rows)
+    for column, (alias, unit) in fields.items():
+        expected = np.array([row.get(alias, np.nan) for row in rows], dtype=float)
+        assert table[column].unit == unit
+        # Both masked values and NaNs represent missing measurements.
+        actual = np.ma.asarray(table[column]).filled(np.nan)
+        np.testing.assert_allclose(actual, expected, rtol=1e-12, atol=0, equal_nan=True)
+        np.testing.assert_allclose(frame[column], expected, rtol=1e-12, atol=0, equal_nan=True)
+    assert "frequency_error" not in table.colnames
+    assert "nufnu_error" not in table.colnames
+    assert table["angular_distance"].unit == u.arcsec
+    assert table["error_radius"].unit == u.arcmin
+    assert table.meta["nh"].to_value(u.cm**-2) == raw["Properties"]["nH"]
+
+
+def test_jetset_preserves_symmetric_uncertainties():
+    """Symmetrization must leave equal lower/upper uncertainties unchanged."""
+    response = get_data_from_json(GET_DATA_DIR / "161d25000_58d00000_lockmanhole.json")
+    # Use nonzero frequency errors as well as flux errors to check both outputs.
+    measurement = response.datasets[0].data[0]
+    measurement.frequency_error_lower = measurement.frequency_error_upper = 2.0
+    measurement.nufnu_error_lower = measurement.nufnu_error_upper = 3e-15
+    table = response.to_jetset(z=0.1)
+    np.testing.assert_allclose([table["dx"][0], table["dy"][0]], [2.0, 3e-15], rtol=1e-12, atol=0)

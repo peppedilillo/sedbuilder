@@ -3,15 +3,15 @@
     {
       "valueDB": "SSDC",
       "valueDEC": "16.148056",
-      "text": "3C454.3",
       "id": "SSDC1126418",
+      "text": "3C454.3",
       "valueRA": "343.490417"
     },
     {
       "valueDB": "SIMBAD",
       "valueDEC": "16.148212",
-      "text": "3C 454.3",
       "id": "SIMBAD2null",
+      "text": "3C 454.3",
       "valueRA": "343.490617"
     }
   ]

@@ -2,20 +2,28 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4941_2"
+    "APIVersion": "1.5070_1"
   },
   "Properties": {
-    "Nh": -1.0,
+    "nH": 6.12e+20,
     "Units": {
       "Frequency": "Hz",
-      "FrequencyError": "Hz",
+      "FrequencyErrorLower": "Hz",
+      "FrequencyErrorUpper": "Hz",
       "Nufnu": "erg cm**(-2) s**(-1)",
-      "NufnuError": "erg cm**(-2) s**(-1)",
+      "NufnuErrorLower": "erg cm**(-2) s**(-1)",
+      "NufnuErrorUpper": "erg cm**(-2) s**(-1)",
       "AngularDistance": "arcsec",
       "StartTime": "mjd",
       "StopTime": "mjd",
-      "ErrorRadius": "arcsec",
-      "Nh": "cm**-2"
+      "ErrorRadius": "arcmin",
+      "nH": "cm**-2",
+      "PolarizationFraction": "%",
+      "PolarizationFractionErrorLower": "%",
+      "PolarizationFractionErrorUpper": "%",
+      "PolarizationAngle": "deg",
+      "PolarizationAngleErrorLower": "deg",
+      "PolarizationAngleErrorUpper": "deg"
     }
   },
   "Meta": {

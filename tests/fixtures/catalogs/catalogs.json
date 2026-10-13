@@ -2,7 +2,7 @@
   "ResponseInfo": {
     "statusCode": "OK",
     "message": [],
-    "APIVersion": "1.4941_2"
+    "APIVersion": "1.5070_1"
   },
   "Catalogs": [
     {
@@ -157,6 +157,13 @@
       "Name": "IRASPSC100",
       "ErrorRadius": 1.0,
       "Band": "Infrared",
+      "Kind": "Catalog"
+    },
+    {
+      "Id": 15230,
+      "Name": "LoTSS_DR3",
+      "ErrorRadius": 0.2,
+      "Band": "Radio",
       "Kind": "Catalog"
     },
     {
@@ -1490,6 +1497,13 @@
       "Kind": "Catalog"
     },
     {
+      "Id": 15229,
+      "Name": "SteVECat",
+      "ErrorRadius": 1.0,
+      "Band": "VHE",
+      "Kind": "Catalog"
+    },
+    {
       "Id": 3958,
       "Name": "VERITAS",
       "ErrorRadius": 10.0,
@@ -1497,477 +1511,241 @@
       "Kind": "Catalog"
     },
     {
-      "Id": 7656,
-      "Name": "HEGRA_2001A&A_366_62A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7664,
-      "Name": "ARGO_YBJ_2011ApJ_734_110B",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7665,
-      "Name": "ARGO_YBJ_2012ApJ_758_2B",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7666,
-      "Name": "HEGRA_2003A&A_406L_9A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7667,
-      "Name": "HESS_2005A&A_430_865A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7668,
-      "Name": "HESS_2005A&A_437_95A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7669,
-      "Name": "HESS_2005A&A_442_895A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7670,
-      "Name": "HESS_2007A&A_470_475A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7671,
-      "Name": "HESS_2007A&A_473L_25A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7672,
-      "Name": "HESS_2007A&A_475L_9A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7673,
-      "Name": "HESS_2008A&A_477_481A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7674,
-      "Name": "HESS_2008A&A_481L_103A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7675,
-      "Name": "HESS_2009ApJ_696L_150A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7676,
-      "Name": "HESS_2010A&A_511A_52H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7677,
-      "Name": "HESS_2010A&A_516A_56H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7678,
-      "Name": "HESS_2010A&A_520A_83H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7679,
-      "Name": "HESS_2012A&A_538A_103H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7680,
-      "Name": "HESS_2012A&A_539A_149H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7681,
-      "Name": "HESS_2012A&A_542A_94H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7682,
-      "Name": "HESS_2013A&A_552A_118H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7683,
-      "Name": "HESS_2013A&A_554A_107H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7684,
-      "Name": "HESS_2013A&A_554A_72H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7685,
-      "Name": "HESS_2013A&A_559A_136H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7686,
-      "Name": "HESS_2013MNRAS_434_1889H",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7687,
-      "Name": "HESS_2013PhRvD_88j2003A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7688,
-      "Name": "HESS_2015ApJ_802_65A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
       "Id": 7689,
       "Name": "TACTIC_2008JPhG_35f5202G",
       "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 7690,
       "Name": "TACTIC_2010JPhG_37l5201C",
       "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 7691,
       "Name": "TACTIC_2012JPhG_39d5201C",
       "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 7692,
       "Name": "TACTIC_2015NIMPA_770_42S",
       "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 7693,
       "Name": "TIBET_2013ApJ_598_242A",
       "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7694,
-      "Name": "VERITAS_2008ApJ_684L_73A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7695,
-      "Name": "VERITAS_2009ApJ_690L_126A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7696,
-      "Name": "VERITAS_2009ApJ_695_1370A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7697,
-      "Name": "VERITAS_2010ApJ_709L_163A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7698,
-      "Name": "VERITAS_2010ApJ_715L_49A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7699,
-      "Name": "VERITAS_2011ApJ_738_169A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7700,
-      "Name": "VERITAS_2011ApJ_738_25A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7701,
-      "Name": "VERITAS_2011ApJ_742_127A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7702,
-      "Name": "VERITAS_2012ApJ_750_94A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7703,
-      "Name": "VERITAS_2012ApJ_755_118A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7704,
-      "Name": "VERITAS_2013ApJ_762_92A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7705,
-      "Name": "VERITAS_2013ApJ_775_3A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7706,
-      "Name": "VERITAS_2013ApJ_776_69A",
-      "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 7707,
       "Name": "VERITAS_2013ApJ_779_92A",
       "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7708,
-      "Name": "VERITAS_2014ApJ_782_13A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7709,
-      "Name": "VERITAS_2014ApJ_785L_16A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7710,
-      "Name": "VERITAS_2015ApJ_799_7A",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7711,
-      "Name": "WHIPPLE_2005ApJ_621_181D",
-      "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7712,
-      "Name": "WHIPPLE_2005ApJ_634_947S",
-      "ErrorRadius": 1.0,
+      "Band": "VHE",
       "Kind": "Paper"
     },
     {
       "Id": 14658,
       "Name": "4U 0142+61",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14659,
       "Name": "BL Lac",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14660,
       "Name": "Mrk 501",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14661,
       "Name": "Mrk 421",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14662,
       "Name": "IC 4329A",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14663,
       "Name": "4U 1626-67",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14664,
       "Name": "PG 1553+113",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14665,
       "Name": "Centaurus A",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14666,
       "Name": "Cygnus X-1",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14667,
       "Name": "Cassiopea A",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14668,
       "Name": "MCG-05-23-16",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14669,
       "Name": "Vela X-1 (Nebula)",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14670,
       "Name": "Vela X-1 (Pulsar)",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14671,
       "Name": "Cen X-3",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14672,
       "Name": "Hercules X-1",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14673,
       "Name": "Circinus",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14674,
       "Name": "GX 9+9",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14675,
       "Name": "4U 1820-303",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14676,
       "Name": "GRB 221009A",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14677,
       "Name": "GS 1826-238",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14678,
       "Name": "GRO J1008-57",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14679,
       "Name": "GX 301-2",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14680,
       "Name": "EXO 2030+375",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14681,
       "Name": "XTE J1701-462",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14682,
       "Name": "Crab (PSR+PWN)",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14683,
       "Name": "1RXS J170849.0-400910",
       "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14802,
       "Name": "PKS 2155-304",
       "ErrorRadius": 1.0,
-      "Kind": "Paper"
-    },
-    {
-      "Id": 7655,
-      "Name": "BeppoSAX Spectra (Giommi et al. 2002)",
-      "ErrorRadius": 1.0,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     },
     {
       "Id": 14923,
       "Name": "NuBlazar",
       "ErrorRadius": 0.15,
+      "Band": "Soft X-Ray",
       "Kind": "Paper"
     }
   ]
