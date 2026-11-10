@@ -15,8 +15,6 @@ pip install ssdc-sedbuilder
 
 ## Quick Start
 
-You can fetch data by querying a source name or its coordinates.
-
 ```python
 from sedbuilder import get_data
 
@@ -37,16 +35,7 @@ first_reference = response.datasets[0].reference
 refs = response.references()
 ```
 
-When calling `get_data` by name, `resolve_name` queries the SSDC server — which checks SSDC, SIMBAD, and NED — falling back to the CDS Sesame resolver via astropy if no match is found.
-
-```python
-from sedbuilder import resolve_name
-
-(ra, dec), db = resolve_name("Crab Nebula")
-```
-
-Resolving a source name takes time. We suggest querying on coordinates when available.
-
+Looking for a more in-depth tutorial? We got your back, take a look [here](https://github.com/peppedilillo/sedbuilder-demo).
 
 ## Development
 
